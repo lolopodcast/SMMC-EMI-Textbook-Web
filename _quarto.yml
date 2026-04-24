@@ -1,19 +1,22 @@
 project: 
   type: website
+  
 website: 
   page-navigation: true
   title: "SMMC-EMI Course Textbook" 
+  description: "Strategic Management of Multinational Corporations — An EMI Capstone Course at NCNU"
   site-url: "https://lolopodcast.github.io/SMMC-EMI-Textbook-Web" 
   repo-url: "https://github.com/lolopodcast/SMMC-EMI-Textbook-Web"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
   page-footer:
-    right: "This page is built with [Quarto](https://quarto.org/)."
-    left: "&copy; 2026 Prof. Shihmin Lo, National Chi Nan University"
+    right: "Built with [Quarto](https://quarto.org/)."
+    left: "&copy; 2026 Prof. Shihmin Lo, Department of International Business, National Chi Nan University"
   
   sidebar:
-    background: "#D9E3E4"
+    background: "#004030"
+    foreground: "#D8C3A5"
     favicon: images/favicon.ico
     pinned: true
     align: center
@@ -21,30 +24,77 @@ website:
       - icon: github
         href: https://github.com/lolopodcast/SMMC-EMI-Textbook-Web
         text: "GitHub Repository"
+      - icon: house-door
+        href: https://lolopodcast.github.io/SMMC-Executive-Hub/
+        text: "SMMC Executive Hub (SPA)"
     style: "docked"
     search: true
     collapse-level: 1
     contents:
       - href: index.qmd
-        text: Home
-      - href: content/add-content.qmd
-        text: Add content
-      - href: content/customizing.qmd
-        text: Customizing
-      - href: content/rendering.qmd
-        text: Rendering
-      - href: content/publishing.qmd
-        text: Publishing
-      - href: content/acknowledgements.qmd
-        text: Acknowledgements
+        text: "Home — Course Overview"
+      - section: "Part I. Concepts & Frameworks"
+        contents:
+          - href: content/ch01.qmd
+            text: "Ch 1. Superior Performance & Strategy"
+          - href: content/ch02.qmd
+            text: "Ch 2. Strategic Innovation & Business Model"
+          - href: content/ch03.qmd
+            text: "Ch 3. General Environment & Industry Analysis"
+          - href: content/ch04.qmd
+            text: "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+          - href: content/ch05.qmd
+            text: "Ch 5. Resource-Based View & Value Chain"
+          - href: content/ch06.qmd
+            text: "Ch 6. Core Competencies & Dynamic Capabilities"
+          - href: content/ch07.qmd
+            text: "Ch 7. Competitive Advantages & Generic Strategies"
+          - href: content/ch08.qmd
+            text: "Ch 8. Technology, Innovation & Entrepreneurship"
+          - href: content/ch09.qmd
+            text: "Ch 9. Corporate Strategy — Vertical Integration"
+          - href: content/ch10.qmd
+            text: "Ch 10. Corporate Strategy — Horizontal Diversification"
+          - href: content/ch11.qmd
+            text: "Ch 11. Globalization & Geographical Expansion"
+          - href: content/ch12.qmd
+            text: "Ch 12. Strategic Alliances and M&A"
+      - section: "Part II. Term Project Guide"
+        contents:
+          - href: content/ch13.qmd
+            text: "Ch 13. TP Overview — Becoming a PM"
+          - href: content/ch14.qmd
+            text: "Ch 14. TP0 — Company Overview"
+          - href: content/ch15.qmd
+            text: "Ch 15. TP1 — External Analysis"
+          - href: content/ch16.qmd
+            text: "Ch 16. TP2 — Internal Analysis"
+          - href: content/ch17.qmd
+            text: "Ch 17. TP3 — Growth Strategy"
+          - href: content/ch18.qmd
+            text: "Ch 18. TP Final — SPA Contest"
+      - section: "Appendix"
+        contents:
+          - href: content/appendix-a.qmd
+            text: "A. Grading Structure"
+          - href: content/appendix-b.qmd
+            text: "B. Digital Tools Reference"
+          - href: content/appendix-c.qmd
+            text: "C. References"
+
 format:
   html:
     theme:
       light: [cosmo, theme.scss] 
       dark: [cosmo, theme-dark.scss]
+    toc: true
+    toc-depth: 3
+    toc-title: "On This Page"
     code-copy: true
     code-overflow: wrap
-    toc: true
+    mermaid:
+      theme: neutral
+    
 filters:
   - include-files.lua
   - quarto
