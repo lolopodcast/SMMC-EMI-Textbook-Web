@@ -100,53 +100,32 @@
     ]
   },
   {
-    "objectID": "content/publishing.html",
-    "href": "content/publishing.html",
-    "title": "Publishing",
+    "objectID": "content/acknowledgements.html",
+    "href": "content/acknowledgements.html",
+    "title": "Acknowledgments",
     "section": "",
-    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
   },
   {
-    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "title": "Publishing",
-    "section": "Turn on GitHub Pages for your repo",
-    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
-  },
-  {
-    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "title": "Publishing",
-    "section": "Do your first publish to gh-pages",
-    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
-  },
-  {
-    "objectID": "content/publishing.html#dont-like-using-gh-pages",
-    "href": "content/publishing.html#dont-like-using-gh-pages",
-    "title": "Publishing",
-    "section": "Don’t like using gh-pages?",
-    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
-  },
-  {
-    "objectID": "content/customizing.html",
-    "href": "content/customizing.html",
-    "title": "Customization",
+    "objectID": "content/add-content.html",
+    "href": "content/add-content.html",
+    "title": "Customize",
     "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
   },
   {
-    "objectID": "content/customizing.html#quarto-documentation",
-    "href": "content/customizing.html#quarto-documentation",
-    "title": "Customization",
+    "objectID": "content/add-content.html#edit-and-add-your-pages",
+    "href": "content/add-content.html#edit-and-add-your-pages",
+    "title": "Customize",
     "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
   },
   {
-    "objectID": "content/customizing.html#examples",
-    "href": "content/customizing.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
+    "objectID": "content/add-content.html#add-your-pages-the-project",
+    "href": "content/add-content.html#add-your-pages-the-project",
+    "title": "Customize",
+    "section": "Add your pages the project",
+    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
   },
   {
     "objectID": "content/rendering.html",
@@ -177,31 +156,96 @@
     "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
   },
   {
-    "objectID": "content/add-content.html",
-    "href": "content/add-content.html",
-    "title": "Customize",
+    "objectID": "content/customizing.html",
+    "href": "content/customizing.html",
+    "title": "Customization",
     "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
   },
   {
-    "objectID": "content/add-content.html#edit-and-add-your-pages",
-    "href": "content/add-content.html#edit-and-add-your-pages",
-    "title": "Customize",
+    "objectID": "content/customizing.html#quarto-documentation",
+    "href": "content/customizing.html#quarto-documentation",
+    "title": "Customization",
     "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
   },
   {
-    "objectID": "content/add-content.html#add-your-pages-the-project",
-    "href": "content/add-content.html#add-your-pages-the-project",
-    "title": "Customize",
-    "section": "Add your pages the project",
-    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
+    "objectID": "content/customizing.html#examples",
+    "href": "content/customizing.html#examples",
+    "title": "Customization",
+    "section": "Examples",
+    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
   },
   {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
+    "objectID": "content/publishing.html",
+    "href": "content/publishing.html",
+    "title": "Publishing",
     "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
+    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+  },
+  {
+    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "title": "Publishing",
+    "section": "Turn on GitHub Pages for your repo",
+    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
+  },
+  {
+    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "title": "Publishing",
+    "section": "Do your first publish to gh-pages",
+    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
+  },
+  {
+    "objectID": "content/publishing.html#dont-like-using-gh-pages",
+    "href": "content/publishing.html#dont-like-using-gh-pages",
+    "title": "Publishing",
+    "section": "Don’t like using gh-pages?",
+    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+  },
+  {
+    "objectID": "content/ch02.html",
+    "href": "content/ch02.html",
+    "title": "Strategic Innovation & Business Model",
+    "section": "",
+    "text": "After completing this chapter, students should be able to:\n\nExplain the V-P-C framework (Value, Price, Cost) and use it to decompose a firm’s profitability into consumer surplus, firm profit, and cost structure.\nDistinguish between value proposition, value creation, value appropriation, and value sustaining — the four pillars of any business model.\nMap a real company’s business model onto the Business Model Canvas (BMC) and critique its internal coherence.\nApply three standards of firm performance measurement — economic value (NPV), accounting profitability (DuPont Identity), and shareholder value — and recognize their respective drawbacks.\nRecognize when a firm is pursuing strategic innovation (new rules of competition) versus product or process innovation (better execution of old rules).",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#learning-objectives",
+    "href": "content/ch02.html#learning-objectives",
+    "title": "Strategic Innovation & Business Model",
+    "section": "",
+    "text": "After completing this chapter, students should be able to:\n\nExplain the V-P-C framework (Value, Price, Cost) and use it to decompose a firm’s profitability into consumer surplus, firm profit, and cost structure.\nDistinguish between value proposition, value creation, value appropriation, and value sustaining — the four pillars of any business model.\nMap a real company’s business model onto the Business Model Canvas (BMC) and critique its internal coherence.\nApply three standards of firm performance measurement — economic value (NPV), accounting profitability (DuPont Identity), and shareholder value — and recognize their respective drawbacks.\nRecognize when a firm is pursuing strategic innovation (new rules of competition) versus product or process innovation (better execution of old rules).",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#why-business-models-matter",
+    "href": "content/ch02.html#why-business-models-matter",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.1 Why Business Models Matter",
+    "text": "2.1 Why Business Models Matter\nA strategy without a viable business model (商業模式) is a wish list. A business model without a clear strategy is a checklist. The two must fit together.\nIn Chapter 1 we argued that strategy is a unifying theme directing a firm’s actions toward survival, success, superior performance, and sustainability. But how do we translate that abstract theme into concrete choices about what to sell, to whom, at what price, and through what activities? That is the job of a business model — a deliberate configuration of four decisions:\n\nValue Proposition (價值主張) — what problem we solve, for whom\nValue Creation (價值創造) — how we produce the value\nValue Appropriation (價值獲取) — how we capture a fair share\nValue Sustaining (價值維繫) — how we defend the model over time\n\nThese four decisions are not independent. A premium value proposition (V↑) that is delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions coherent.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#the-v-p-c-framework",
+    "href": "content/ch02.html#the-v-p-c-framework",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.2 The V-P-C Framework",
+    "text": "2.2 The V-P-C Framework\nThe V-P-C framework decomposes every transaction into three layers and, from them, four strategic quantities.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
   }
 ]
