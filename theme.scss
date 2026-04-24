@@ -1,6 +1,210 @@
 /*-- scss:defaults --*/
 
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+// BCG Academic Style — Deep Green + Warm Gold
+$bcg-green:      #004030;
+$bcg-green-dark: #002A1F;
+$bcg-gold:       #D8C3A5;
+$bcg-gold-light: #EFE4D2;
+$bcg-cream:      #FAF6F0;
+$bcg-gray-text:  #2C2C2C;
+$bcg-gray-soft:  #6B6B6B;
 
-$font-family: "Atkinson Hyperlegible", sans-serif;
+// Quarto theme variable overrides
+$primary:        $bcg-green !default;
+$secondary:      $bcg-gold !default;
+$body-bg:        $bcg-cream !default;
+$body-color:     $bcg-gray-text !default;
+$link-color:     $bcg-green !default;
+$link-hover-color: $bcg-green-dark !default;
 
+// Typography
+$font-family-sans-serif: 
+  "Noto Sans TC", 
+  "Helvetica Neue", 
+  "Segoe UI", 
+  Arial, 
+  sans-serif !default;
+
+$font-family-serif: 
+  "Noto Serif TC", 
+  Georgia, 
+  "Times New Roman", 
+  serif !default;
+
+$headings-font-family: $font-family-serif !default;
+$headings-font-weight: 700 !default;
+$headings-color: $bcg-green !default;
+
+/*-- scss:rules --*/
+
+// Sidebar styling
+.sidebar {
+  background-color: $bcg-green !important;
+  
+  .sidebar-title, 
+  .sidebar-item-text, 
+  a {
+    color: $bcg-gold !important;
+  }
+  
+  a:hover {
+    color: #FFFFFF !important;
+  }
+  
+  .sidebar-item.active > .sidebar-item-container > a {
+    color: #FFFFFF !important;
+    font-weight: 600;
+  }
+  
+  .sidebar-search input {
+    background-color: $bcg-green-dark;
+    color: $bcg-gold;
+    border: 1px solid $bcg-gold;
+  }
+}
+
+// Body content
+body {
+  font-family: $font-family-sans-serif;
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+  color: $bcg-green;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  border-bottom: 3px solid $bcg-gold;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  border-left: 4px solid $bcg-gold;
+  padding-left: 0.75rem;
+}
+
+h3 {
+  color: $bcg-green-dark;
+  margin-top: 2rem;
+}
+
+// Callout styling — academic look
+.callout {
+  border-radius: 4px;
+  border-left-width: 5px;
+}
+
+.callout-note {
+  border-left-color: $bcg-green !important;
+  background-color: rgba(0, 64, 48, 0.04);
+}
+
+.callout-tip {
+  border-left-color: $bcg-gold !important;
+  background-color: rgba(216, 195, 165, 0.15);
+}
+
+.callout-warning {
+  border-left-color: #B8860B !important;
+}
+
+.callout-caution {
+  border-left-color: #8B4513 !important;
+  background-color: rgba(139, 69, 19, 0.05);
+}
+
+.callout-important {
+  border-left-color: $bcg-green-dark !important;
+}
+
+// Code blocks
+pre {
+  background-color: #F5F1EA !important;
+  border-left: 3px solid $bcg-green;
+  border-radius: 2px;
+}
+
+code {
+  color: $bcg-green-dark;
+  background-color: rgba(216, 195, 165, 0.25);
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+
+// Tables
+table {
+  border-top: 2px solid $bcg-green;
+  border-bottom: 2px solid $bcg-green;
+}
+
+thead {
+  background-color: rgba(0, 64, 48, 0.08);
+  border-bottom: 1px solid $bcg-green;
+  
+  th {
+    color: $bcg-green !important;
+    font-weight: 600;
+  }
+}
+
+// Links
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted $bcg-green;
+  transition: all 0.2s;
+}
+
+a:hover {
+  border-bottom: 1px solid $bcg-green;
+  color: $bcg-green-dark !important;
+}
+
+// Page footer
+.page-footer {
+  background-color: $bcg-green;
+  color: $bcg-gold;
+  
+  a {
+    color: $bcg-gold;
+    border-bottom: 1px dotted $bcg-gold;
+  }
+}
+
+// Navbar (top)
+.navbar {
+  background-color: $bcg-green !important;
+  
+  .navbar-brand, 
+  .nav-link {
+    color: $bcg-gold !important;
+  }
+}
+
+// TOC (right sidebar)
+#toc-title {
+  color: $bcg-green !important;
+  font-weight: 600;
+}
+
+.sidebar-chapter nav#TOC a {
+  color: $bcg-gray-soft;
+  border-bottom: none;
+}
+
+.sidebar-chapter nav#TOC a:hover,
+.sidebar-chapter nav#TOC a.active {
+  color: $bcg-green !important;
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $bcg-gold;
+  background-color: rgba(216, 195, 165, 0.1);
+  padding: 1rem 1.25rem;
+  font-style: italic;
+  color: $bcg-gray-soft;
+}
