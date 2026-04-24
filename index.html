@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Prof.&nbsp;Shihmin Lo, Ph.D.">
+<meta name="dcterms.date" content="2026-01-01">
 
-<title>NOAA quarto simple with R – SMMC-EMI Course Textbook</title>
+<title>Strategic Management of Multinational Corporations – SMMC-EMI Course Textbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,6 +77,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -455,7 +461,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On This Page</h2>
    
   <ul>
-  <li><a href="#github-set-up" id="toc-github-set-up" class="nav-link active" data-scroll-target="#github-set-up">GitHub Set-up</a></li>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#course-positioning" id="toc-course-positioning" class="nav-link" data-scroll-target="#course-positioning">Course Positioning</a></li>
+  <li><a href="#how-this-book-is-organized" id="toc-how-this-book-is-organized" class="nav-link" data-scroll-target="#how-this-book-is-organized">How This Book Is Organized</a>
+  <ul class="collapse">
+  <li><a href="#part-i-concepts-frameworks-12-chapters" id="toc-part-i-concepts-frameworks-12-chapters" class="nav-link" data-scroll-target="#part-i-concepts-frameworks-12-chapters">Part I — Concepts &amp; Frameworks (12 chapters)</a></li>
+  <li><a href="#part-ii-term-project-guide-6-chapters" id="toc-part-ii-term-project-guide-6-chapters" class="nav-link" data-scroll-target="#part-ii-term-project-guide-6-chapters">Part II — Term Project Guide (6 chapters)</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
+  </ul></li>
+  <li><a href="#the-v-p-c-framework-our-north-star" id="toc-the-v-p-c-framework-our-north-star" class="nav-link" data-scroll-target="#the-v-p-c-framework-our-north-star">The V-P-C Framework — Our North Star</a></li>
+  <li><a href="#evaluation-criteria" id="toc-evaluation-criteria" class="nav-link" data-scroll-target="#evaluation-criteria">Evaluation Criteria</a></li>
+  <li><a href="#digital-tools-you-will-use" id="toc-digital-tools-you-will-use" class="nav-link" data-scroll-target="#digital-tools-you-will-use">Digital Tools You Will Use</a></li>
+  <li><a href="#how-to-use-this-book" id="toc-how-to-use-this-book" class="nav-link" data-scroll-target="#how-to-use-this-book">How to Use This Book</a></li>
+  <li><a href="#about-the-instructor" id="toc-about-the-instructor" class="nav-link" data-scroll-target="#about-the-instructor">About the Instructor</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -465,15 +484,27 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">NOAA quarto simple with R</h1>
-<p class="subtitle lead">A simple Quarto webpage with a book layout</p>
+<h1 class="title">Strategic Management of Multinational Corporations</h1>
+<p class="subtitle lead">國際策略管理 — An EMI Capstone Course at NCNU</p>
 </div>
 
 
 
 <div class="quarto-title-meta column-body">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Shihmin Lo, Ph.D. </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -483,16 +514,252 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a template for a simple Quarto website that looks like a “book”. This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to <code>theme.scss</code>. The webpage will be on the <code>gh-pages</code> branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch.</p>
-<p>The GitHub Action installs R so you can have R code in your qmd or Rmd files. Note, you do not need to make changes to your Rmd files unless your need Quarto features like cross-references.</p>
-<section id="github-set-up" class="level2">
-<h2 class="anchored" data-anchor-id="github-set-up">GitHub Set-up</h2>
+<section id="welcome" class="level2">
+<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
+<p>Welcome to the course textbook for <strong>Strategic Management of Multinational Corporations (SMMC-EMI)</strong>, a capstone, English-as-a-Medium-of-Instruction (EMI) course offered by the <strong>Department of International Business</strong> at <strong>National Chi Nan University (NCNU)</strong>.</p>
+<p>This textbook is designed around a single overarching question:</p>
+<blockquote class="blockquote">
+<p><strong>How does a firm achieve, sustain, and renew superior performance in a globalized, technology-driven world?</strong></p>
+</blockquote>
+<p>To answer this question, the textbook integrates three perspectives — <strong>Entrepreneurship (ENT)</strong>, <strong>Corporate Strategy (CS)</strong>, and <strong>Business Strategy (BS)</strong> — and weaves them together with hands-on Term Project (TP) practice, digital tools (including Generative AI), and real-world multinational case studies.</p>
+<hr>
+</section>
+<section id="course-positioning" class="level2">
+<h2 class="anchored" data-anchor-id="course-positioning">Course Positioning</h2>
+<p>This course is a <strong>capstone</strong> for International Business majors, typically taken by upper-year undergraduates who have completed foundational courses in economics, management, marketing, and finance. The course adopts a <strong>Flipped Classroom + Problem-Based Learning (PBL) + Self-Directed Learning (SDL)</strong> approach, supported by:</p>
 <ul>
-<li><p>Click the green “use template” button to make a repository with this content. Make sure to make your repo public (since GitHub Pages doesn’t work on private repos unless you have a paid account) and check box to include all the branches (so that you get the gh-pages branch). <img width="637" alt="image" src="https://user-images.githubusercontent.com/2545978/197051535-c43c62de-17e8-40bf-a536-3eea8db250c4.png"></p></li>
-<li><p>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and root directory. <img width="540" alt="image" src="https://user-images.githubusercontent.com/2545978/196808262-3d2262be-b9b5-4897-bba5-fc2f056dd335.png"></p></li>
-<li><p>Turn on GitHub Actions under Settings &gt; Actions &gt; General <img width="719" alt="image" src="https://user-images.githubusercontent.com/2545978/196808404-0c075fcf-db03-4516-88dd-3143b9fca475.png"></p></li>
-<li><p>Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the Settings &gt; Pages page to find the url.</p></li>
+<li><strong>MOOCs on Coursera</strong> (UPenn Wharton — Entrepreneurship; UIUC — Corporate Strategy)</li>
+<li><strong>Prof.&nbsp;Lo’s Lecture Notes (LN)</strong> — the core conceptual chapters in this book</li>
+<li><strong>Coggle mindmaps</strong> for collaborative knowledge construction</li>
+<li><strong>Generative AI tools</strong> (ChatGPT / Gemini / Claude / NotebookLM / D-ID) for research, synthesis, and presentation</li>
 </ul>
+<p>Upon completion, students should be equipped with the <strong>Knowledge, Skills, and Attitudes (KSA)</strong> required to serve as a competent <strong>Product Manager (PM) in a multinational corporation (MNC)</strong> — which is the course’s signature learning outcome:</p>
+<blockquote class="blockquote">
+<p>成為一位在國際企業裡稱職的產品經理 <em>Become a competent Product Manager in MNCs.</em></p>
+</blockquote>
+<hr>
+</section>
+<section id="how-this-book-is-organized" class="level2">
+<h2 class="anchored" data-anchor-id="how-this-book-is-organized">How This Book Is Organized</h2>
+<p>This textbook has <strong>two parts</strong> plus an appendix, totaling <strong>18 chapters</strong>:</p>
+<section id="part-i-concepts-frameworks-12-chapters" class="level3">
+<h3 class="anchored" data-anchor-id="part-i-concepts-frameworks-12-chapters">Part I — Concepts &amp; Frameworks (12 chapters)</h3>
+<p>The conceptual spine of the course, built around the <strong>V-P-C framework</strong> (Value, Price, Cost) and the inside-out / outside-in perspective of strategic analysis:</p>
+<ul>
+<li><strong>Ch 1–2</strong> establish the foundation: <em>What is strategy? How do firms create, deliver, appropriate, and sustain value?</em></li>
+<li><strong>Ch 3–4</strong> look outward: <em>external environment, industry, competitors, complementors</em></li>
+<li><strong>Ch 5–8</strong> look inward: <em>resources, capabilities, competitive advantages, innovation</em></li>
+<li><strong>Ch 9–12</strong> scale up to <strong>corporate strategy</strong>: <em>vertical integration, diversification, globalization, alliances and M&amp;A</em></li>
+</ul>
+</section>
+<section id="part-ii-term-project-guide-6-chapters" class="level3">
+<h3 class="anchored" data-anchor-id="part-ii-term-project-guide-6-chapters">Part II — Term Project Guide (6 chapters)</h3>
+<p>A hands-on manual for the semester-long <strong>Term Project (TP)</strong>, in which student teams analyze a real multinational corporation and present their findings in an end-of-semester <strong>Single-Page Application (SPA) contest</strong>:</p>
+<ul>
+<li><strong>Ch 13–14</strong>: Company selection and TP0 company overview</li>
+<li><strong>Ch 15–16</strong>: TP1 external analysis and TP2 internal analysis</li>
+<li><strong>Ch 17</strong>: TP3 growth strategy and future challenges</li>
+<li><strong>Ch 18</strong>: TP Final SPA preparation, contest, and evaluation</li>
+</ul>
+</section>
+<section id="appendix" class="level3">
+<h3 class="anchored" data-anchor-id="appendix">Appendix</h3>
+<p>Grading policies, digital tools reference, and bibliography.</p>
+<hr>
+</section>
+</section>
+<section id="the-v-p-c-framework-our-north-star" class="level2">
+<h2 class="anchored" data-anchor-id="the-v-p-c-framework-our-north-star">The V-P-C Framework — Our North Star</h2>
+<p>Throughout this book you will see one framework referenced again and again:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[Cost&lt;br/&gt;C] --&gt; B[Price&lt;br/&gt;P]
+    B --&gt; C[Value&lt;br/&gt;V]
+    C --&gt; D{"Consumer Surplus&lt;br/&gt;(V − P)"}
+    B --&gt; E{"Firm Profit&lt;br/&gt;(P − C)"}
+    C --&gt; F{"Economic Value Created&lt;br/&gt;(V − C)"}
+    
+    style A fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style B fill:#EFE4D2,stroke:#004030,color:#2C2C2C
+    style C fill:#004030,stroke:#004030,color:#FFFFFF
+    style D fill:#FAF6F0,stroke:#6B6B6B
+    style E fill:#FAF6F0,stroke:#6B6B6B
+    style F fill:#FAF6F0,stroke:#6B6B6B
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>The <strong>V-P-C framework</strong> is the lens through which we examine every strategic decision — from why TSMC redefined the semiconductor industry through the foundry model, to why Southwest Airlines can fly the same routes as American Airlines while earning higher margins, to why Costco maintains 14% Return on Invested Capital (ROIC) year after year. Every chapter in Part I ties back to at least one of the four V-P-C questions:</p>
+<ol type="1">
+<li><strong>Value Proposition</strong> (V): What problem are we solving, and for whom?</li>
+<li><strong>Value Creation</strong> (V−C): How do we produce value efficiently?</li>
+<li><strong>Value Appropriation</strong> (P−C): How do we capture a fair share of the value?</li>
+<li><strong>Value Sustaining</strong>: How do we defend our advantage over time?</li>
+</ol>
+<hr>
+</section>
+<section id="evaluation-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-criteria">Evaluation Criteria</h2>
+<p>Your semester grade is composed of five components, summing to 100% plus up to 10 bonus points:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Weight</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Group Presentation</td>
+<td><strong>15%</strong></td>
+<td>Per group, including Coggle mindmaps and Brief Interactive Tasks (BITs)</td>
+</tr>
+<tr class="even">
+<td>Term Project (TP)</td>
+<td><strong>40%</strong></td>
+<td>Per group — TP0/TP1/TP2/TP3 each 5%, TP Final 20%</td>
+</tr>
+<tr class="odd">
+<td>Peer Review</td>
+<td><strong>30%</strong></td>
+<td>Per person, conducted at midterm and end-of-semester</td>
+</tr>
+<tr class="even">
+<td>Participation</td>
+<td><strong>15%</strong></td>
+<td>Per person — class attendance + Moodle engagement</td>
+</tr>
+<tr class="odd">
+<td>Bonus Assignment</td>
+<td><strong>+10%</strong> (max)</td>
+<td>Per person — optional enrichment submissions</td>
+</tr>
+</tbody>
+</table>
+<p>For the full attendance and Moodle participation policy, see <strong>Appendix A — Grading Structure</strong>.</p>
+<hr>
+</section>
+<section id="digital-tools-you-will-use" class="level2">
+<h2 class="anchored" data-anchor-id="digital-tools-you-will-use">Digital Tools You Will Use</h2>
+<p>This course treats <strong>digital fluency</strong> as a core professional skill. You will gain hands-on experience with:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>GenAI &amp; Knowledge Tools
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>ChatGPT / Gemini / Claude</strong> for analysis and drafting · <strong>NotebookLM / Poe</strong> for source-grounded Q&amp;A · <strong>Coggle</strong> for collaborative mindmapping</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Content Production
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>D-ID / ElevenLabs</strong> for AI video and voice · <strong>Gamma / Napkin</strong> for rapid visual design · <strong>Otter / NaturalReader</strong> for transcription and read-aloud</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Information Sources
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Public Information Observation Post</strong> (公開資訊觀測站, <a href="https://mops.twse.com.tw/">mops.twse.com.tw</a>) — annual reports, financial statements · <strong>Industry Value Chain Platform</strong> (產業價值鏈資訊平台, <a href="https://ic.tpex.org.tw/">ic.tpex.org.tw</a>) · <strong>Government Open Data</strong> (政府資料開放平台, <a href="https://data.gov.tw/">data.gov.tw</a>)</p>
+</div>
+</div>
+<p>See <strong>Appendix B — Digital Tools Reference</strong> for sign-up guides, AI Use Disclosure Policy, and CRF (Context–Role–Format) prompting templates.</p>
+<hr>
+</section>
+<section id="how-to-use-this-book" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-this-book">How to Use This Book</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>For students
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Read the assigned chapter <strong>before</strong> class (Flipped Classroom). Use the Coggle mindmap to summarize what you read with your study group. Come to class with one question you couldn’t resolve from the reading alone — that is where real learning begins.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>For group leaders
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Each week’s presenting groups should use this textbook alongside the assigned Coursera videos. The chapters here are <strong>not</strong> a replacement for the Coursera lectures — they are a structured complement, especially for students whose first language is not English.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>For TAs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tina Wang (s112212015) and Tina Lin (s113212016) — the TP chapters (Ch 13–18) are your primary reference when advising student teams. The rubrics and deliverable specifications there are authoritative.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="about-the-instructor" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-instructor">About the Instructor</h2>
+<p><strong>Prof.&nbsp;Shihmin Lo (駱世民)</strong> holds a Ph.D.&nbsp;in Management and teaches strategy, entrepreneurship, and international business at the Department of International Business, NCNU. His research and teaching integrate corporate strategy, technology management, and the use of emerging digital tools in higher education.</p>
+<ul>
+<li><strong>Office</strong>: MGMT 5059</li>
+<li><strong>Email (course)</strong>: <a href="mailto:smlo@ncnu.edu.tw">smlo@ncnu.edu.tw</a></li>
+<li><strong>Email (Coggle / NotebookLM group access)</strong>: <a href="mailto:jimmylo.ntu@gmail.com">jimmylo.ntu@gmail.com</a></li>
+<li><strong>Office hours</strong>: 3ze, by appointment</li>
+<li><strong>YouTube</strong>: <a href="https://youtube.com/@shihminlo6097">Prof.&nbsp;Lolo’s Channel</a></li>
+</ul>
+<hr>
+</section>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p>This textbook was developed as an open educational resource for NCNU students and is made freely available on GitHub Pages. It draws on two decades of teaching international business strategy at NCNU, along with reference frameworks from Grant (2016), Dess et al.&nbsp;(2014), Barney &amp; Hesterly (2012), Rothaermel (2013), Peng (2009), and the Coursera specializations from UPenn Wharton and UIUC Gies College of Business.</p>
+<p>The 2026 edition integrates <strong>Generative AI workflows</strong> developed in collaboration with the SMMC Executive Hub project and the <code>interactive-learning-spa</code> and <code>note-to-kb</code> skill pipelines.</p>
+<blockquote class="blockquote">
+<p>兵者，國之大事，死生之地，存亡之道，不可不察也。 — 孫子，〈計篇〉</p>
+<p><em>Strategy is the great work of the organization. In situations of life or death, it is the Tao of survival or extinction. Its study cannot be neglected.</em> — Sun Tzu, <em>The Art of War</em> (circa 500 BC)</p>
+</blockquote>
+<p>Let’s begin.</p>
 
 
 </section>
