@@ -1,0 +1,37 @@
+---
+title: "Strategic Innovation & Business Model"
+subtitle: "Chapter 2 — The V-P-C Framework"
+---
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Explain the **V-P-C framework** (Value, Price, Cost) and use it to decompose a firm's profitability into consumer surplus, firm profit, and cost structure.
+2. Distinguish between **value proposition**, **value creation**, **value appropriation**, and **value sustaining** — the four pillars of any business model.
+3. Map a real company's business model onto the **Business Model Canvas (BMC)** and critique its internal coherence.
+4. Apply three standards of firm performance measurement — **economic value (NPV)**, **accounting profitability (DuPont Identity)**, and **shareholder value** — and recognize their respective drawbacks.
+5. Recognize when a firm is pursuing **strategic innovation** (new rules of competition) versus **product or process innovation** (better execution of old rules).
+
+---
+
+## 2.1 Why Business Models Matter
+
+A **strategy** without a viable **business model (商業模式)** is a wish list. A **business model** without a clear strategy is a checklist. The two must fit together.
+
+In Chapter 1 we argued that strategy is a *unifying theme* directing a firm's actions toward survival, success, superior performance, and sustainability. But how do we translate that abstract theme into concrete choices about what to sell, to whom, at what price, and through what activities? That is the job of a **business model** — a deliberate configuration of four decisions:
+
+1. **Value Proposition (價值主張)** — what problem we solve, for whom
+2. **Value Creation (價值創造)** — how we produce the value
+3. **Value Appropriation (價值獲取)** — how we capture a fair share
+4. **Value Sustaining (價值維繫)** — how we defend the model over time
+
+These four decisions are not independent. A premium value proposition (V↑) that is delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions **coherent**.
+
+---
+
+## 2.2 The V-P-C Framework
+
+The **V-P-C framework** decomposes every transaction into three layers and, from them, four strategic quantities.
+
+```{mermaid}
