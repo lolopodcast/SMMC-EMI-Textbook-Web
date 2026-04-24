@@ -8,7 +8,7 @@ page-layout: full
 
 ## Welcome
 
-Welcome to the course textbook for **Strategic Management of Multinational Corporations (SMMC-EMI)**, a capstone, English-as-a-Medium-of-Instruction (EMI) course offered by the **Department of International Business** at **National Chi Nan University (NCNU)**.
+Welcome to the course textbook for **Strategic Management of Multinational Corporations (SMMC-EMI)**, a capstone, English-as-a-Medium-of-Instruction (EMI) course offered by the **Department of International Business Studies (國際企業學系)** at **National Chi Nan University (國立暨南國際大學, NCNU)**.
 
 This textbook is designed around a single overarching question:
 
