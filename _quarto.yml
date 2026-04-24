@@ -1,32 +1,26 @@
 project: 
   type: website
-
 website: 
   page-navigation: true
-  title: "NOAA quarto simple" 
-  site-url: "https://nmfs-opensci.github.io/NOAA-quarto-simple" 
-  repo-url: "https://github.com/nmfs-opensci/NOAA-quarto-simple"
+  title: "SMMC-EMI Course Textbook" 
+  site-url: "https://lolopodcast.github.io/SMMC-EMI-Textbook-Web" 
+  repo-url: "https://github.com/lolopodcast/SMMC-EMI-Textbook-Web"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
-    left: "&copy; CC-1.0"
+    left: "&copy; 2026 Prof. Shihmin Lo, National Chi Nan University"
   
   sidebar:
     background: "#D9E3E4"
-    logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
     favicon: images/favicon.ico
     pinned: true
     align: center
     tools: 
-      - icon: globe
-        href: https://nmfs-opensci.github.io
-        text: "NMFS Open Science"
       - icon: github
-        href: https://github.com/nmfs-opensci
-        text: "NMFS OpenSci"
-
+        href: https://github.com/lolopodcast/SMMC-EMI-Textbook-Web
+        text: "GitHub Repository"
     style: "docked"
     search: true
     collapse-level: 1
@@ -39,13 +33,10 @@ website:
         text: Customizing
       - href: content/rendering.qmd
         text: Rendering
-      - href: content/rmarkdown.Rmd
-        text: R Markdown files
-      - href: content/code.qmd
-        text: Code in your files
+      - href: content/publishing.qmd
+        text: Publishing
       - href: content/acknowledgements.qmd
         text: Acknowledgements
-
 format:
   html:
     theme:
@@ -54,10 +45,6 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-
-
 filters:
   - include-files.lua
   - quarto
-
-  
