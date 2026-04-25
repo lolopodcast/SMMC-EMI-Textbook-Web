@@ -85,13 +85,14 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, theme.scss] 
+      light: [cosmo, theme.scss]
       dark: [cosmo, theme-dark.scss]
     toc: true
     toc-depth: 3
     toc-title: "On This Page"
     code-copy: true
     code-overflow: wrap
+    back-to-top-navigation: true
     mermaid:
       theme: neutral
     
