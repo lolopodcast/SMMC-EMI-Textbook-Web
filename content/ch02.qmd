@@ -2,7 +2,7 @@
 title: "Strategic Innovation & Business Model"
 subtitle: "Chapter 2 — The V-P-C Framework"
 ---
-
+{{< include ../_includes/tts-player.html >}}
 ## Learning Objectives
 
 After completing this chapter, students should be able to:
