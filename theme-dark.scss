@@ -137,26 +137,3 @@ blockquote {
 .bmc-canvas .bmc-rs {
   background: rgba(216, 195, 165, 0.1) !important;
 }
-    
-    &::after {
-      content: "Switch theme · 切換主題";
-      position: absolute;
-      bottom: -2.2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: $bcg-gold;
-      color: $bcg-bg-dark;
-      padding: 0.25rem 0.6rem;
-      border-radius: 3px;
-      font-size: 0.75rem;
-      white-space: nowrap;
-      z-index: 999;
-    }
-  }
-  
- i.bi {
-    color: $bcg-gold-bright !important;
-    font-size: 1.1rem !important;
-    font-weight: bold !important;
-  }
-}
