@@ -76,7 +76,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -458,7 +491,30 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#why-business-models-matter" id="toc-why-business-models-matter" class="nav-link" data-scroll-target="#why-business-models-matter">2.1 Why Business Models Matter</a></li>
-  <li><a href="#the-v-p-c-framework" id="toc-the-v-p-c-framework" class="nav-link" data-scroll-target="#the-v-p-c-framework">2.2 The V-P-C Framework</a></li>
+  <li><a href="#the-v-p-c-framework" id="toc-the-v-p-c-framework" class="nav-link" data-scroll-target="#the-v-p-c-framework">2.2 The V-P-C Framework</a>
+  <ul class="collapse">
+  <li><a href="#sources-of-superior-profitability" id="toc-sources-of-superior-profitability" class="nav-link" data-scroll-target="#sources-of-superior-profitability">2.2.1 Sources of Superior Profitability</a></li>
+  <li><a href="#do-better-or-do-different" id="toc-do-better-or-do-different" class="nav-link" data-scroll-target="#do-better-or-do-different">2.2.2 Do Better or Do Different?</a></li>
+  </ul></li>
+  <li><a href="#the-four-pillars-of-a-business-model" id="toc-the-four-pillars-of-a-business-model" class="nav-link" data-scroll-target="#the-four-pillars-of-a-business-model">2.3 The Four Pillars of a Business Model</a>
+  <ul class="collapse">
+  <li><a href="#value-proposition-for-whom-what-problem" id="toc-value-proposition-for-whom-what-problem" class="nav-link" data-scroll-target="#value-proposition-for-whom-what-problem">2.3.1 Value Proposition — For Whom, What Problem</a></li>
+  <li><a href="#value-creation-the-activity-system" id="toc-value-creation-the-activity-system" class="nav-link" data-scroll-target="#value-creation-the-activity-system">2.3.2 Value Creation — The Activity System</a></li>
+  <li><a href="#value-appropriation-keeping-your-fair-share" id="toc-value-appropriation-keeping-your-fair-share" class="nav-link" data-scroll-target="#value-appropriation-keeping-your-fair-share">2.3.3 Value Appropriation — Keeping Your Fair Share</a></li>
+  <li><a href="#value-sustaining-defending-the-model" id="toc-value-sustaining-defending-the-model" class="nav-link" data-scroll-target="#value-sustaining-defending-the-model">2.3.4 Value Sustaining — Defending the Model</a></li>
+  </ul></li>
+  <li><a href="#the-business-model-canvas-bmc" id="toc-the-business-model-canvas-bmc" class="nav-link" data-scroll-target="#the-business-model-canvas-bmc">2.4 The Business Model Canvas (BMC)</a></li>
+  <li><a href="#measuring-what-you-manage" id="toc-measuring-what-you-manage" class="nav-link" data-scroll-target="#measuring-what-you-manage">2.5 Measuring What You Manage</a>
+  <ul class="collapse">
+  <li><a href="#economic-value-npv" id="toc-economic-value-npv" class="nav-link" data-scroll-target="#economic-value-npv">2.5.1 Economic Value (NPV)</a></li>
+  <li><a href="#accounting-profitability-the-dupont-identity" id="toc-accounting-profitability-the-dupont-identity" class="nav-link" data-scroll-target="#accounting-profitability-the-dupont-identity">2.5.2 Accounting Profitability — The DuPont Identity</a></li>
+  <li><a href="#shareholder-value-eva" id="toc-shareholder-value-eva" class="nav-link" data-scroll-target="#shareholder-value-eva">2.5.3 Shareholder Value — EVA</a></li>
+  </ul></li>
+  <li><a href="#strategic-innovation-changing-the-rules" id="toc-strategic-innovation-changing-the-rules" class="nav-link" data-scroll-target="#strategic-innovation-changing-the-rules">2.6 Strategic Innovation — Changing the Rules</a></li>
+  <li><a href="#modern-tools-for-business-model-design" id="toc-modern-tools-for-business-model-design" class="nav-link" data-scroll-target="#modern-tools-for-business-model-design">2.7 Modern Tools for Business Model Design</a></li>
+  <li><a href="#self-check-questions" id="toc-self-check-questions" class="nav-link" data-scroll-target="#self-check-questions">Self-Check Questions</a></li>
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings">Further Readings</a></li>
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch02.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch02.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -508,12 +564,487 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Value Appropriation (價值獲取)</strong> — how we capture a fair share</li>
 <li><strong>Value Sustaining (價值維繫)</strong> — how we defend the model over time</li>
 </ol>
-<p>These four decisions are not independent. A premium value proposition (V↑) that is delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions <strong>coherent</strong>.</p>
+<p>These four decisions are not independent. A premium value proposition (V↑) delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions <strong>coherent</strong>.</p>
 <hr>
 </section>
 <section id="the-v-p-c-framework" class="level2">
 <h2 class="anchored" data-anchor-id="the-v-p-c-framework">2.2 The V-P-C Framework</h2>
 <p>The <strong>V-P-C framework</strong> decomposes every transaction into three layers and, from them, four strategic quantities.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    V["&lt;b&gt;V — Value&lt;/b&gt;&lt;br/&gt;Consumer's Maximum&lt;br/&gt;Willingness-To-Pay (WTP)"]
+    P["&lt;b&gt;P — Price&lt;/b&gt;&lt;br/&gt;What the customer pays"]
+    C["&lt;b&gt;C — Cost&lt;/b&gt;&lt;br/&gt;Firm's cost to deliver"]
+    
+    V --&gt; VP["&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Consumer Surplus"]
+    V --&gt; VC["&lt;b&gt;V − C&lt;/b&gt;&lt;br/&gt;Economic Value Created"]
+    P --&gt; PC["&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Firm's Profit"]
+    C --&gt; PC
+    
+    style V fill:#004030,stroke:#004030,color:#FFFFFF
+    style P fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style C fill:#EFE4D2,stroke:#004030,color:#2C2C2C
+    style VP fill:#FAF6F0,stroke:#6B6B6B
+    style VC fill:#FAF6F0,stroke:#6B6B6B
+    style PC fill:#FAF6F0,stroke:#6B6B6B
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Three terms deserve careful distinction:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Key Definitions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Perceived Value (PV, 感知價值)</strong> — the customer’s subjective assessment of benefit before purchase.</li>
+<li><strong>Willingness-To-Pay (WTP, 支付意願)</strong> — the maximum monetary amount a customer would rationally give up for the offering. In economic theory, <span class="math inline">\(V = WTP\)</span>.</li>
+<li><strong>Reservation Price (RP, 保留價格)</strong> — the price above which the customer walks away. Typically <span class="math inline">\(RP \leq WTP\)</span>, because customers compare against alternatives.</li>
+</ul>
+</div>
+</div>
+<section id="sources-of-superior-profitability" class="level3">
+<h3 class="anchored" data-anchor-id="sources-of-superior-profitability">2.2.1 Sources of Superior Profitability</h3>
+<p>With the V-P-C lens, the perennial question — <em>how does a firm earn superior profits?</em> — reduces to three levers:</p>
+<ol type="1">
+<li><strong>Raise V</strong> (increase value perceived by customers) — differentiation, branding, premium features</li>
+<li><strong>Lower C</strong> (reduce cost of production and delivery) — scale, experience, process innovation</li>
+<li><strong>Expand P − C</strong> (widen the margin between price and cost) — pricing power, market structure</li>
+</ol>
+<p>Observe that “raising P” is <strong>not</strong> an independent lever. Price is bounded above by V (customers will not pay more than WTP) and bounded below by C (firms will not sell at a loss for long). Strategic choices expand the spread by attacking V or C directly.</p>
+</section>
+<section id="do-better-or-do-different" class="level3">
+<h3 class="anchored" data-anchor-id="do-better-or-do-different">2.2.2 Do Better or Do Different?</h3>
+<p>A recurring choice for managers: should we pursue <strong>operational effectiveness</strong> (do the same things better) or <strong>strategic innovation</strong> (do different things altogether)?</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Operational Effectiveness</th>
+<th>Strategic Innovation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>What changes</td>
+<td>How activities are performed</td>
+<td>What activities are performed</td>
+</tr>
+<tr class="even">
+<td>Examples</td>
+<td>Six Sigma, Lean Manufacturing, ERP, benchmarking</td>
+<td>Redefining the industry value chain, new business models</td>
+</tr>
+<tr class="odd">
+<td>Competitive outcome</td>
+<td>Necessary but not sufficient for advantage</td>
+<td>Can create temporary monopoly rents</td>
+</tr>
+<tr class="even">
+<td>Imitability</td>
+<td>High — tools and techniques diffuse quickly</td>
+<td>Low — at least until competitors reconfigure</td>
+</tr>
+</tbody>
+</table>
+<p>Michael Porter’s classic warning: <em>operational effectiveness is not strategy</em>. If every firm in the industry adopts the same quality-management tools, the productivity frontier shifts outward but <strong>relative</strong> position does not change — and in the long run, the gains are competed away to customers via lower prices.</p>
+<hr>
+</section>
+</section>
+<section id="the-four-pillars-of-a-business-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-four-pillars-of-a-business-model">2.3 The Four Pillars of a Business Model</h2>
+<section id="value-proposition-for-whom-what-problem" class="level3">
+<h3 class="anchored" data-anchor-id="value-proposition-for-whom-what-problem">2.3.1 Value Proposition — For Whom, What Problem</h3>
+<p>The first question every business must answer: <strong>who is the customer, and what problem are we solving for them?</strong></p>
+<p>A disciplined value proposition answers four sub-questions:</p>
+<ol type="1">
+<li><strong>Unsatisfied or future demand</strong> — what problem is not yet adequately solved?</li>
+<li><strong>Substitution and complementarity</strong> — what else could the customer use instead, or alongside?</li>
+<li><strong>Market size, installed base, penetration rate</strong> — how large is the opportunity?</li>
+<li><strong>Price elasticity of demand</strong> — how sensitive is the customer to price?</li>
+</ol>
+<p>In marketing terms, this involves <strong>STP (Segmentation, Targeting, Positioning, 區隔、目標、定位)</strong> and the classic <strong>4P mix (Product, Price, Place, Promotion, 產品、價格、通路、推廣)</strong>. Strategic management takes STP/4P as inputs and asks the higher-order question: <em>does this positioning defensibly raise V relative to the cost structure required to deliver it?</em></p>
+</section>
+<section id="value-creation-the-activity-system" class="level3">
+<h3 class="anchored" data-anchor-id="value-creation-the-activity-system">2.3.2 Value Creation — The Activity System</h3>
+<p>Creating value means configuring an <strong>activity system (活動系統)</strong> that transforms inputs into an offering customers will pay for. Michael Porter’s <strong>Value Chain (價值鏈)</strong> distinguishes:</p>
+<ul>
+<li><strong>Primary activities</strong>: inbound logistics, operations, outbound logistics, marketing &amp; sales, service</li>
+<li><strong>Support activities</strong>: firm infrastructure, HR, technology development, procurement</li>
+</ul>
+<p>We will examine value-chain analysis in depth in Chapter 5. The key insight for now: value creation is not a single act but a <strong>network</strong> of interdependent activities, each of which can be a source of advantage or weakness.</p>
+</section>
+<section id="value-appropriation-keeping-your-fair-share" class="level3">
+<h3 class="anchored" data-anchor-id="value-appropriation-keeping-your-fair-share">2.3.3 Value Appropriation — Keeping Your Fair Share</h3>
+<p>Creating value and capturing value are different. A firm may create enormous economic value (V − C is large) yet capture very little of it if <strong>market structure (市場結構)</strong> forces it to share the gains with customers, suppliers, or complementors.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Market Structures and Profitability
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>From fragmented to consolidated markets, the typical pattern:</p>
+<ul>
+<li><strong>Perfect Competition</strong> — many small firms, commodity products, price takers → fragmented, low profitability</li>
+<li><strong>Monopolistic Competition</strong> — many firms, differentiated products, some pricing power → medium profitability</li>
+<li><strong>Oligopoly</strong> — few large firms, differentiated products, high entry barriers → higher profitability</li>
+<li><strong>Monopoly</strong> — one firm, unique product, very high entry barriers → consolidated, high profitability</li>
+</ul>
+</div>
+</div>
+<p>The structural determinants of value appropriation — the “five forces” — will be the subject of Chapter 3.</p>
+</section>
+<section id="value-sustaining-defending-the-model" class="level3">
+<h3 class="anchored" data-anchor-id="value-sustaining-defending-the-model">2.3.4 Value Sustaining — Defending the Model</h3>
+<p>Even a well-configured business model is worthless if competitors can copy it overnight. <strong>Value sustaining</strong> asks: <em>what makes this model hard to imitate, hard to substitute, over time?</em></p>
+<p>Three levels of barriers:</p>
+<ul>
+<li><strong>Institutional factors (制度因素)</strong> — regulation, patents, industry standards</li>
+<li><strong>Industry factors (產業因素)</strong> — economies of scale, network effects, switching costs</li>
+<li><strong>Firm-specific factors (廠商因素)</strong> — proprietary resources, tacit know-how, culture, reputation</li>
+</ul>
+<p>Firm-specific factors — particularly <strong>hard-to-replicate capabilities</strong> — are the subject of the Resource-Based View (RBV) in Chapter 5.</p>
+<hr>
+</section>
+</section>
+<section id="the-business-model-canvas-bmc" class="level2">
+<h2 class="anchored" data-anchor-id="the-business-model-canvas-bmc">2.4 The Business Model Canvas (BMC)</h2>
+<p>Alexander Osterwalder’s <strong>Business Model Canvas (BMC, 商業模式畫布)</strong> operationalizes the four pillars into nine building blocks. We overlay the V-P-C framework on top of it:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    subgraph VP["① Value Proposition (V)"]
+        VP1["What problem are we solving?&lt;br/&gt;Which customer need are we satisfying?"]
+    end
+    
+    subgraph VC["② Value Creation (C-side)"]
+        KA["Key Activities"]
+        KR["Key Resources"]
+        KP["Key Partners"]
+    end
+    
+    subgraph VA["③ Value Appropriation (P-side)"]
+        CS["Customer Segments"]
+        CR["Customer Relationships"]
+        CH["Channels"]
+        RS["Revenue Streams"]
+    end
+    
+    subgraph VSus["④ Value Sustaining (underlying)"]
+        COST["Cost Structure"]
+    end
+    
+    VC --&gt; VP
+    VP --&gt; VA
+    COST -.supports.-&gt; VC
+    COST -.constrains.-&gt; VA
+    
+    style VP fill:#004030,stroke:#004030,color:#FFFFFF
+    style VC fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style VA fill:#EFE4D2,stroke:#004030,color:#2C2C2C
+    style VSus fill:#FAF6F0,stroke:#004030,color:#2C2C2C
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>The BMC is a diagnostic tool, not a strategy in itself. Its power lies in forcing the analyst to articulate <strong>every</strong> block and check whether they reinforce each other.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Coherence Test
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A business model is coherent when answers to the following three questions are all “yes”:</p>
+<ol type="1">
+<li>Do the <strong>Key Activities and Resources</strong> (left side) actually produce the <strong>Value Proposition</strong> (center)?</li>
+<li>Does the <strong>Value Proposition</strong> resonate with the <strong>Customer Segments</strong> through the chosen <strong>Channels and Relationships</strong> (right side)?</li>
+<li>Does the <strong>Revenue Stream</strong> exceed the <strong>Cost Structure</strong> by a margin that justifies the capital employed?</li>
+</ol>
+<p>A “no” on any of these three is where strategy breaks.</p>
+</div>
+</div>
+</section>
+<section id="measuring-what-you-manage" class="level2">
+<h2 class="anchored" data-anchor-id="measuring-what-you-manage">2.5 Measuring What You Manage</h2>
+<p>“What gets measured gets managed.” But profit maximization is a notoriously <strong>ambiguous</strong> goal:</p>
+<ul>
+<li>Total profit vs.&nbsp;rate of profit?</li>
+<li>Over what time period?</li>
+<li>Accounting profit vs.&nbsp;economic profit?</li>
+</ul>
+<p>Three standards dominate practice, each with drawbacks.</p>
+<section id="economic-value-npv" class="level3">
+<h3 class="anchored" data-anchor-id="economic-value-npv">2.5.1 Economic Value (NPV)</h3>
+<p>The <strong>Net Present Value (NPV, 淨現值)</strong> approach:</p>
+<p><span class="math display">\[
+V = \sum_{t=0}^{T} \frac{C_t}{(1 + R_{WACC})^t}
+\]</span></p>
+<p>where <span class="math inline">\(C_t\)</span> is the cash flow in period <span class="math inline">\(t\)</span> and <span class="math inline">\(R_{WACC}\)</span> is the weighted-average cost of capital. Free Cash Flow is typically calculated as <span class="math inline">\(FCF = EBITDA - WC - CAPEX\)</span>.</p>
+<p><strong>Drawback</strong>: cash flows must be forecasted, and forecasts become increasingly unreliable as the horizon lengthens.</p>
+</section>
+<section id="accounting-profitability-the-dupont-identity" class="level3">
+<h3 class="anchored" data-anchor-id="accounting-profitability-the-dupont-identity">2.5.2 Accounting Profitability — The DuPont Identity</h3>
+<p>The <strong>DuPont Identity (杜邦分析)</strong> decomposes Return on Equity (ROE) into three levers:</p>
+<p><span class="math display">\[
+ROE = \underbrace{\frac{\text{Net Income}}{\text{Sales}}}_{\text{Return on Sales}} \times \underbrace{\frac{\text{Sales}}{\text{Assets}}}_{\text{Asset Turnover}} \times \underbrace{\left(1 + \frac{D}{E}\right)}_{\text{Financial Leverage}}
+\]</span></p>
+<p>This is powerful because it tells managers <strong>where</strong> returns come from: pricing (ROS), efficiency (turnover), or leverage. Two firms with identical ROE may pursue very different strategies.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Mini-case: UPS vs.&nbsp;FedEx (ROCE Decomposition)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Return on Capital Employed (ROCE) splits into Return on Sales × Sales/Capital Employed. In a historical comparison, UPS showed ROS of 11.9% against FedEx’s 6.1% — yet asset turnover was nearly identical (1.79 vs.&nbsp;1.75). The gap was entirely on the margin side. Drilling deeper, UPS had dramatically lower fuel costs (6.0% vs.&nbsp;10.6%) and maintenance (2.3% vs.&nbsp;5.0%) relative to sales, reflecting the advantage of ground-network density over air-hub dependence. This is the DuPont logic in action: the same top-line performance indicator traces back to fundamentally different activity systems.</p>
+</div>
+</div>
+<p><strong>Drawback</strong>: accounting profit ignores the <strong>cost of capital</strong> and can be manipulated through depreciation policy, inventory valuation, and other choices.</p>
+</section>
+<section id="shareholder-value-eva" class="level3">
+<h3 class="anchored" data-anchor-id="shareholder-value-eva">2.5.3 Shareholder Value — EVA</h3>
+<p><strong>Economic Value Added (EVA, 經濟附加價值)</strong>, popularized by Stern Stewart &amp; Co., corrects the accounting-profit problem by subtracting a capital charge:</p>
+<p><span class="math display">\[
+EVA = NOPAT - WACC \times K
+\]</span></p>
+<p>where <span class="math inline">\(NOPAT\)</span> is Net Operating Profit After Tax and <span class="math inline">\(K\)</span> is the capital employed. A firm with positive EVA is earning more than the opportunity cost of its capital.</p>
+<p><strong>Drawback</strong>: EVA — like NPV and accounting profit — focuses on <strong>tangible</strong> assets. Intangible assets (skilled people, specialized processes, brand, relationships) are typically the sources of sustained competitive advantage but rarely appear at full value on the balance sheet. In 1980, roughly 80% of S&amp;P 500 market value was captured in book value; by 2010 only 30% was. <strong>70% of what makes modern firms valuable is invisible to traditional accounting.</strong></p>
+<hr>
+</section>
+</section>
+<section id="strategic-innovation-changing-the-rules" class="level2">
+<h2 class="anchored" data-anchor-id="strategic-innovation-changing-the-rules">2.6 Strategic Innovation — Changing the Rules</h2>
+<p><strong>Innovation (創新)</strong> is:</p>
+<ul>
+<li>making a <strong>change</strong> or a <strong>difference</strong></li>
+<li>a <strong>dis-equilibrium</strong> phenomenon</li>
+<li>a <strong>recombination</strong> process rather than a discovery</li>
+<li>a matter of <strong>degree</strong>, not zero-or-one</li>
+</ul>
+<p>We can distinguish three levels:</p>
+<ol type="1">
+<li><strong>Product innovation</strong> — a new or improved offering</li>
+<li><strong>Process innovation</strong> — a new or improved way of producing</li>
+<li><strong>Strategic innovation (策略創新)</strong> — a new business model that includes but usually goes beyond product or process innovation, introducing a new <strong>rule of competition</strong></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Case: TSMC and the Foundry Model
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before Morris Chang founded TSMC in 1987, the semiconductor industry operated on the <strong>Integrated Device Manufacturer (IDM)</strong> model: a single firm designed, fabricated, packaged, and sold its own chips. TSMC’s strategic innovation was to <strong>unbundle fabrication from design</strong>, declaring that it would only manufacture — never compete with its customers on design. This was not a product innovation (chips are chips) nor merely a process innovation (fabrication techniques existed). It was a <strong>redefinition of the industry value chain</strong>, creating the fabless design house as a viable business model and positioning TSMC as an indispensable partner rather than a potential rival. The result is one of the most durable competitive advantages in the history of manufacturing.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Case: SWATCH and Redefining the Watch Market
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the 1970s, Swiss watchmakers dominated the high-end, hand-made mechanical segment and nearly went bankrupt when quartz technology commoditized timekeeping. The response — forming SMH (later Swatch Group) and launching the SWATCH brand — was not to compete on precision or craftsmanship but to <strong>redefine watches as fashion accessories</strong>. Multiple affordable watches per customer, seasonal collections, colorful designs. Demand was reframed, supply was reconfigured, and the Swiss industry was saved not by out-engineering the Japanese but by out-positioning them.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Case: Southwest Airlines
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Southwest Airlines was not the first discount carrier. Its strategic innovation was the <strong>coherent activity system</strong>: point-to-point routes instead of hub-and-spoke, standardized Boeing 737 fleet (lowering training and maintenance costs), secondary airports (lower landing fees, faster turnarounds), no assigned seats (faster boarding), and happy employees (lower attrition, higher productivity including pilots helping load luggage). No single element is revolutionary. The innovation is the <strong>configuration</strong> — and decades of competitor imitation attempts have failed because copying one or two elements without the others just creates cost without capturing the synergies.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="modern-tools-for-business-model-design" class="level2">
+<h2 class="anchored" data-anchor-id="modern-tools-for-business-model-design">2.7 Modern Tools for Business Model Design</h2>
+<p>The 2026 edition of this course integrates <strong>Generative AI (GenAI)</strong> workflows into every phase of business model analysis:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>How GenAI Augments the BMC
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Value Proposition discovery</strong> — use Claude or ChatGPT to synthesize customer interviews, online reviews, and industry reports into candidate problem statements.</li>
+<li><strong>Competitive benchmarking</strong> — use NotebookLM to ingest competitor annual reports and extract comparable BMC blocks side-by-side.</li>
+<li><strong>Scenario stress-testing</strong> — prompt the model to act as a skeptical investor and attack each block for internal inconsistency.</li>
+<li><strong>Visualization</strong> — use Gamma or Napkin to turn a completed BMC into a polished deck-ready diagram.</li>
+</ul>
+<p>The AI is a <strong>thinking partner</strong>, not a replacement for analysis. Poor prompts produce plausible-but-shallow BMCs. See <strong>Appendix B</strong> for CRF (Context–Role–Format) prompting templates used in this course.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="self-check-questions" class="level2">
+<h2 class="anchored" data-anchor-id="self-check-questions">Self-Check Questions</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 1 — V-P-C Decomposition
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A specialty coffee chain sells a latte for NT$150. Customer surveys indicate the average customer would pay up to NT$220 before switching to a substitute. Ingredient and direct labor costs total NT$55 per cup; allocated overhead adds another NT$30.</p>
+<ol type="a">
+<li>Calculate the consumer surplus, the firm’s gross profit per cup, and the total economic value created per cup.</li>
+<li>If a competitor opens next door and forces the chain to drop prices to NT$130, which of the three quantities above is most affected? Explain.</li>
+<li>If instead the chain invests in a new roasting process that lowers ingredient cost to NT$40 without changing perceived quality, which quantities shift and by how much?</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 2 — BMC Coherence Check
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Select a Taiwan-listed company you know well (e.g., 台積電 TSMC, 統一超商 7-ELEVEN, 鼎泰豐 Din Tai Fung, 王品 Wowprime).</p>
+<ol type="a">
+<li>Fill in all nine blocks of the Business Model Canvas for that company.</li>
+<li>Identify at least two pairs of blocks that visibly reinforce each other. Explain the reinforcement.</li>
+<li>Identify at least one block that feels like a potential weakness or vulnerability. What would you change?</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 3 — Strategic vs.&nbsp;Operational Innovation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For each of the following, classify as primarily operational effectiveness, product innovation, process innovation, or strategic innovation. Defend each classification in one to two sentences.</p>
+<ol type="a">
+<li>Toyota implementing the Toyota Production System (TPS) in its plants.</li>
+<li>Netflix shifting from DVD-by-mail to streaming.</li>
+<li>Apple launching a faster iPhone each year.</li>
+<li>Foxconn offering contract-manufacturing services to branded electronics firms.</li>
+<li>Dyson inventing the bagless vacuum cleaner.</li>
+<li>Costco’s membership-fee-based warehouse retail model.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 4 — Measurement Method Selection
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>You have been asked to evaluate the performance of three divisions within a multinational conglomerate:</p>
+<ul>
+<li><strong>Division A</strong>: a mature consumer goods business with stable cash flows and minimal reinvestment needs.</li>
+<li><strong>Division B</strong>: a growing cloud-software business with negative current cash flow but rapidly expanding subscriber base.</li>
+<li><strong>Division C</strong>: a pharmaceutical R&amp;D unit with long development cycles and uncertain outcomes.</li>
+</ul>
+<p>Which measurement standard (NPV, DuPont/ROE, or EVA) would you apply to each division, and why? What additional qualitative indicators would you add?</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="further-readings" class="level2">
+<h2 class="anchored" data-anchor-id="further-readings">Further Readings</h2>
+<ul>
+<li><strong>Osterwalder, A. &amp; Pigneur, Y. (2010)</strong>. <em>Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers</em>. Wiley. — The canonical BMC reference.</li>
+<li><strong>Grant, R. M. (2016)</strong>. <em>Contemporary Strategy Analysis</em>, 9th ed., Chapter 2 — “Goals, Values and Performance”. Wiley.</li>
+<li><strong>Porter, M. E. (1996)</strong>. “What Is Strategy?” <em>Harvard Business Review</em>, Nov–Dec.&nbsp;— The classic argument against confusing operational effectiveness with strategy.</li>
+<li><strong>Magretta, J. (2002)</strong>. “Why Business Models Matter.” <em>Harvard Business Review</em>, May. — Short, readable introduction to the concept.</li>
+<li><strong>Chesbrough, H. (2010)</strong>. “Business Model Innovation: Opportunities and Barriers.” <em>Long Range Planning</em>, 43(2-3), 354-363.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Coursera Companion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>[ENT] Entrepreneurship 1: Developing the Opportunity</strong> — UPenn Wharton. Video 1.1–1.7 (business model foundations, ~84 min) directly complements this chapter.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>Chapter 2 has given us the <strong>V-P-C lens</strong> and the <strong>four pillars</strong> of a business model. Starting in Chapter 3, we take the <strong>outside-in</strong> perspective: how does the external environment — macro forces and industry structure — shape the Value and Price sides of our framework? Then in Chapter 5 we turn <strong>inside-out</strong>, asking how a firm’s <strong>resources and capabilities</strong> shape the Cost side and the ability to sustain whatever advantage it creates.</p>
+<p>Every subsequent chapter is a refinement of the core question posed here: <strong>how does a firm create, deliver, appropriate, and sustain value?</strong></p>
 
 
 </section>
