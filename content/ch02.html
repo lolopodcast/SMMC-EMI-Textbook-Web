@@ -46,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7018ac00b9fc61806e862f20ccc9c332.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-e89d6fb76fe51776f5f94906692b8a27.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-7018ac00b9fc61806e862f20ccc9c332.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c82e598575139dd25da91aeb70fdd403.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c4377468a7f126cc02ce43b85e1222b6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-c82e598575139dd25da91aeb70fdd403.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -542,6 +542,10 @@ window.Quarto = {
 </header>
 
 
+<div class="tts-controls">
+<p><button onclick="TTS.speak('en')" title="Read in English">🔊 Read Aloud (EN)</button> <button onclick="TTS.speak('zh')" title="朗讀中文">🔊 朗讀 (中文)</button> <button onclick="TTS.pause()" title="Pause / Resume">⏸</button> <button onclick="TTS.stop()" title="Stop">⏹</button> <button onclick="TTS.setRate(-0.2)" title="Slower">🐢</button> <button onclick="TTS.setRate(0.2)" title="Faster">🐰</button> <span class="tts-status"></span></p>
+</div>
+<script src="../assets/tts-player.js"></script>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>After completing this chapter, students should be able to:</p>
@@ -731,46 +735,51 @@ window.Quarto = {
 <section id="the-business-model-canvas-bmc" class="level2">
 <h2 class="anchored" data-anchor-id="the-business-model-canvas-bmc">2.4 The Business Model Canvas (BMC)</h2>
 <p>Alexander Osterwalder’s <strong>Business Model Canvas (BMC, 商業模式畫布)</strong> operationalizes the four pillars into nine building blocks. We overlay the V-P-C framework on top of it:</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    subgraph VP["① Value Proposition (V)"]
-        VP1["What problem are we solving?&lt;br/&gt;Which customer need are we satisfying?"]
-    end
-    
-    subgraph VC["② Value Creation (C-side)"]
-        KA["Key Activities"]
-        KR["Key Resources"]
-        KP["Key Partners"]
-    end
-    
-    subgraph VA["③ Value Appropriation (P-side)"]
-        CS["Customer Segments"]
-        CR["Customer Relationships"]
-        CH["Channels"]
-        RS["Revenue Streams"]
-    end
-    
-    subgraph VSus["④ Value Sustaining (underlying)"]
-        COST["Cost Structure"]
-    end
-    
-    VC --&gt; VP
-    VP --&gt; VA
-    COST -.supports.-&gt; VC
-    COST -.constrains.-&gt; VA
-    
-    style VP fill:#004030,stroke:#004030,color:#FFFFFF
-    style VC fill:#D8C3A5,stroke:#004030,color:#2C2C2C
-    style VA fill:#EFE4D2,stroke:#004030,color:#2C2C2C
-    style VSus fill:#FAF6F0,stroke:#004030,color:#2C2C2C
-</pre>
+<div class="bmc-canvas">
+<div class="bmc-block bmc-kp">
+<pre><code>&lt;div class="bmc-num"&gt;⑦&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Key Partners&lt;br/&gt;&lt;small&gt;重要夥伴&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;Who are our key partners and suppliers?&lt;/div&gt;</code></pre>
 </div>
-<p></p></figure><p></p>
+<div class="bmc-block bmc-ka">
+<pre><code>&lt;div class="bmc-num"&gt;⑤&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Key Activities&lt;br/&gt;&lt;small&gt;關鍵活動&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;What activities does the value proposition require?&lt;/div&gt;</code></pre>
 </div>
+<div class="bmc-block bmc-vp">
+<pre><code>&lt;div class="bmc-num"&gt;①&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Value Proposition&lt;br/&gt;&lt;small&gt;價值主張&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;What problem are we solving? Which need are we satisfying?&lt;/div&gt;</code></pre>
+</div>
+<div class="bmc-block bmc-cr">
+<pre><code>&lt;div class="bmc-num"&gt;④&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Customer Relationships&lt;br/&gt;&lt;small&gt;顧客關係&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;How will we get, keep, and grow customers?&lt;/div&gt;</code></pre>
+</div>
+<div class="bmc-block bmc-cs">
+<pre><code>&lt;div class="bmc-num"&gt;②&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Customer Segments&lt;br/&gt;&lt;small&gt;顧客區隔&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;For whom are we creating value? Who are our customers?&lt;/div&gt;</code></pre>
+</div>
+<div class="bmc-block bmc-kr">
+<pre><code>&lt;div class="bmc-num"&gt;⑥&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Key Resources&lt;br/&gt;&lt;small&gt;關鍵資源&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;What key resources does the value proposition require?&lt;/div&gt;</code></pre>
+</div>
+<div class="bmc-block bmc-ch">
+<pre><code>&lt;div class="bmc-num"&gt;③&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Channels&lt;br/&gt;&lt;small&gt;通路&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;Through which channels do our customer segments want to be reached?&lt;/div&gt;</code></pre>
+</div>
+<div class="bmc-block bmc-cost">
+<pre><code>&lt;div class="bmc-num"&gt;⑨&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Cost Structure&lt;br/&gt;&lt;small&gt;成本結構&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;What are the most important costs? (Value Creation side)&lt;/div&gt;</code></pre>
+</div>
+<div class="bmc-block bmc-rs">
+<pre><code>&lt;div class="bmc-num"&gt;⑧&lt;/div&gt;
+&lt;div class="bmc-title"&gt;Revenue Streams&lt;br/&gt;&lt;small&gt;收入來源&lt;/small&gt;&lt;/div&gt;
+&lt;div class="bmc-desc"&gt;For what value are customers willing to pay? (Value Appropriation side)&lt;/div&gt;</code></pre>
 </div>
 </div>
 <p>The BMC is a diagnostic tool, not a strategy in itself. Its power lies in forcing the analyst to articulate <strong>every</strong> block and check whether they reinforce each other.</p>
