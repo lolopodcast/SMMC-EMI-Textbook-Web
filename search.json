@@ -100,11 +100,234 @@
     ]
   },
   {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
+    "objectID": "content/ch02.html",
+    "href": "content/ch02.html",
+    "title": "Strategic Innovation & Business Model",
     "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#learning-objectives",
+    "href": "content/ch02.html#learning-objectives",
+    "title": "Strategic Innovation & Business Model",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nExplain the V-P-C framework (Value, Price, Cost) and use it to decompose a firm’s profitability into consumer surplus, firm profit, and cost structure.\nDistinguish between value proposition, value creation, value appropriation, and value sustaining — the four pillars of any business model.\nMap a real company’s business model onto the Business Model Canvas (BMC) and critique its internal coherence.\nApply three standards of firm performance measurement — economic value (NPV), accounting profitability (DuPont Identity), and shareholder value — and recognize their respective drawbacks.\nRecognize when a firm is pursuing strategic innovation (new rules of competition) versus product or process innovation (better execution of old rules).",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#why-business-models-matter",
+    "href": "content/ch02.html#why-business-models-matter",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.1 Why Business Models Matter",
+    "text": "2.1 Why Business Models Matter\nA strategy without a viable business model (商業模式) is a wish list. A business model without a clear strategy is a checklist. The two must fit together.\nIn Chapter 1 we argued that strategy is a unifying theme directing a firm’s actions toward survival, success, superior performance, and sustainability. But how do we translate that abstract theme into concrete choices about what to sell, to whom, at what price, and through what activities? That is the job of a business model — a deliberate configuration of four decisions:\n\nValue Proposition (價值主張) — what problem we solve, for whom\nValue Creation (價值創造) — how we produce the value\nValue Appropriation (價值獲取) — how we capture a fair share\nValue Sustaining (價值維繫) — how we defend the model over time\n\nThese four decisions are not independent. A premium value proposition (V↑) delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions coherent.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#the-v-p-c-framework",
+    "href": "content/ch02.html#the-v-p-c-framework",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.2 The V-P-C Framework",
+    "text": "2.2 The V-P-C Framework\nThe V-P-C framework decomposes every transaction into three layers and, from them, four strategic quantities.\n\n\n\n\n\nflowchart TB\n    V[\"&lt;b&gt;V — Value&lt;/b&gt;&lt;br/&gt;Consumer's Maximum&lt;br/&gt;Willingness-To-Pay (WTP)\"]\n    P[\"&lt;b&gt;P — Price&lt;/b&gt;&lt;br/&gt;What the customer pays\"]\n    C[\"&lt;b&gt;C — Cost&lt;/b&gt;&lt;br/&gt;Firm's cost to deliver\"]\n    \n    V --&gt; VP[\"&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Consumer Surplus\"]\n    V --&gt; VC[\"&lt;b&gt;V − C&lt;/b&gt;&lt;br/&gt;Economic Value Created\"]\n    P --&gt; PC[\"&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Firm's Profit\"]\n    C --&gt; PC\n    \n    style V fill:#004030,stroke:#004030,color:#FFFFFF\n    style P fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style C fill:#EFE4D2,stroke:#004030,color:#2C2C2C\n    style VP fill:#FAF6F0,stroke:#6B6B6B\n    style VC fill:#FAF6F0,stroke:#6B6B6B\n    style PC fill:#FAF6F0,stroke:#6B6B6B\n\n\n\n\n\n\nThree terms deserve careful distinction:\n\n\n\n\n\n\nNoteKey Definitions\n\n\n\n\nPerceived Value (PV, 感知價值) — the customer’s subjective assessment of benefit before purchase.\nWillingness-To-Pay (WTP, 支付意願) — the maximum monetary amount a customer would rationally give up for the offering. In economic theory, \\(V = WTP\\).\nReservation Price (RP, 保留價格) — the price above which the customer walks away. Typically \\(RP \\leq WTP\\), because customers compare against alternatives.\n\n\n\n\n2.2.1 Sources of Superior Profitability\nWith the V-P-C lens, the perennial question — how does a firm earn superior profits? — reduces to three levers:\n\nRaise V (increase value perceived by customers) — differentiation, branding, premium features\nLower C (reduce cost of production and delivery) — scale, experience, process innovation\nExpand P − C (widen the margin between price and cost) — pricing power, market structure\n\nObserve that “raising P” is not an independent lever. Price is bounded above by V (customers will not pay more than WTP) and bounded below by C (firms will not sell at a loss for long). Strategic choices expand the spread by attacking V or C directly.\n\n\n2.2.2 Do Better or Do Different?\nA recurring choice for managers: should we pursue operational effectiveness (do the same things better) or strategic innovation (do different things altogether)?\n\n\n\n\n\n\n\n\nDimension\nOperational Effectiveness\nStrategic Innovation\n\n\n\n\nWhat changes\nHow activities are performed\nWhat activities are performed\n\n\nExamples\nSix Sigma, Lean Manufacturing, ERP, benchmarking\nRedefining the industry value chain, new business models\n\n\nCompetitive outcome\nNecessary but not sufficient for advantage\nCan create temporary monopoly rents\n\n\nImitability\nHigh — tools and techniques diffuse quickly\nLow — at least until competitors reconfigure\n\n\n\nMichael Porter’s classic warning: operational effectiveness is not strategy. If every firm in the industry adopts the same quality-management tools, the productivity frontier shifts outward but relative position does not change — and in the long run, the gains are competed away to customers via lower prices.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#the-four-pillars-of-a-business-model",
+    "href": "content/ch02.html#the-four-pillars-of-a-business-model",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.3 The Four Pillars of a Business Model",
+    "text": "2.3 The Four Pillars of a Business Model\n\n2.3.1 Value Proposition — For Whom, What Problem\nThe first question every business must answer: who is the customer, and what problem are we solving for them?\nA disciplined value proposition answers four sub-questions:\n\nUnsatisfied or future demand — what problem is not yet adequately solved?\nSubstitution and complementarity — what else could the customer use instead, or alongside?\nMarket size, installed base, penetration rate — how large is the opportunity?\nPrice elasticity of demand — how sensitive is the customer to price?\n\nIn marketing terms, this involves STP (Segmentation, Targeting, Positioning, 區隔、目標、定位) and the classic 4P mix (Product, Price, Place, Promotion, 產品、價格、通路、推廣). Strategic management takes STP/4P as inputs and asks the higher-order question: does this positioning defensibly raise V relative to the cost structure required to deliver it?\n\n\n2.3.2 Value Creation — The Activity System\nCreating value means configuring an activity system (活動系統) that transforms inputs into an offering customers will pay for. Michael Porter’s Value Chain (價值鏈) distinguishes:\n\nPrimary activities: inbound logistics, operations, outbound logistics, marketing & sales, service\nSupport activities: firm infrastructure, HR, technology development, procurement\n\nWe will examine value-chain analysis in depth in Chapter 5. The key insight for now: value creation is not a single act but a network of interdependent activities, each of which can be a source of advantage or weakness.\n\n\n2.3.3 Value Appropriation — Keeping Your Fair Share\nCreating value and capturing value are different. A firm may create enormous economic value (V − C is large) yet capture very little of it if market structure (市場結構) forces it to share the gains with customers, suppliers, or complementors.\n\n\n\n\n\n\nTipMarket Structures and Profitability\n\n\n\nFrom fragmented to consolidated markets, the typical pattern:\n\nPerfect Competition — many small firms, commodity products, price takers → fragmented, low profitability\nMonopolistic Competition — many firms, differentiated products, some pricing power → medium profitability\nOligopoly — few large firms, differentiated products, high entry barriers → higher profitability\nMonopoly — one firm, unique product, very high entry barriers → consolidated, high profitability\n\n\n\nThe structural determinants of value appropriation — the “five forces” — will be the subject of Chapter 3.\n\n\n2.3.4 Value Sustaining — Defending the Model\nEven a well-configured business model is worthless if competitors can copy it overnight. Value sustaining asks: what makes this model hard to imitate, hard to substitute, over time?\nThree levels of barriers:\n\nInstitutional factors (制度因素) — regulation, patents, industry standards\nIndustry factors (產業因素) — economies of scale, network effects, switching costs\nFirm-specific factors (廠商因素) — proprietary resources, tacit know-how, culture, reputation\n\nFirm-specific factors — particularly hard-to-replicate capabilities — are the subject of the Resource-Based View (RBV) in Chapter 5.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#the-business-model-canvas-bmc",
+    "href": "content/ch02.html#the-business-model-canvas-bmc",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.4 The Business Model Canvas (BMC)",
+    "text": "2.4 The Business Model Canvas (BMC)\nAlexander Osterwalder’s Business Model Canvas (BMC, 商業模式畫布) operationalizes the four pillars into nine building blocks. We overlay the V-P-C framework on top of it:\n\n⑦Key Partners重要夥伴Who are our key partners and suppliers?\n⑤Key Activities關鍵活動What activities does the value proposition require?\n①Value Proposition價值主張What problem are we solving? Which need are we satisfying?\n④Customer Relationships顧客關係How will we get, keep, and grow customers?\n②Customer Segments顧客區隔For whom are we creating value? Who are our customers?\n⑥Key Resources關鍵資源What key resources does the value proposition require?\n③Channels通路Through which channels do our customer segments want to be reached?\n⑨Cost Structure成本結構What are the most important costs? (Value Creation side)\n⑧Revenue Streams收入來源For what value are customers willing to pay? (Value Appropriation side)\n\nThe BMC is a diagnostic tool, not a strategy in itself. Its power lies in forcing the analyst to articulate every block and check whether they reinforce each other.\n\n\n\n\n\n\nImportantCoherence Test\n\n\n\nA business model is coherent when answers to the following three questions are all “yes”:\n\nDo the Key Activities and Resources (left side) actually produce the Value Proposition (center)?\nDoes the Value Proposition resonate with the Customer Segments through the chosen Channels and Relationships (right side)?\nDoes the Revenue Stream exceed the Cost Structure by a margin that justifies the capital employed?\n\nA “no” on any of these three is where strategy breaks.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#measuring-what-you-manage",
+    "href": "content/ch02.html#measuring-what-you-manage",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.5 Measuring What You Manage",
+    "text": "2.5 Measuring What You Manage\n“What gets measured gets managed.” But profit maximization is a notoriously ambiguous goal:\n\nTotal profit vs. rate of profit?\nOver what time period?\nAccounting profit vs. economic profit?\n\nThree standards dominate practice, each with drawbacks.\n\n2.5.1 Economic Value (NPV)\nThe Net Present Value (NPV, 淨現值) approach:\n\\[\nV = \\sum_{t=0}^{T} \\frac{C_t}{(1 + R_{WACC})^t}\n\\]\nwhere \\(C_t\\) is the cash flow in period \\(t\\) and \\(R_{WACC}\\) is the weighted-average cost of capital. Free Cash Flow is typically calculated as \\(FCF = EBITDA - WC - CAPEX\\).\nDrawback: cash flows must be forecasted, and forecasts become increasingly unreliable as the horizon lengthens.\n\n\n2.5.2 Accounting Profitability — The DuPont Identity\nThe DuPont Identity (杜邦分析) decomposes Return on Equity (ROE) into three levers:\n\\[\nROE = \\underbrace{\\frac{\\text{Net Income}}{\\text{Sales}}}_{\\text{Return on Sales}} \\times \\underbrace{\\frac{\\text{Sales}}{\\text{Assets}}}_{\\text{Asset Turnover}} \\times \\underbrace{\\left(1 + \\frac{D}{E}\\right)}_{\\text{Financial Leverage}}\n\\]\nThis is powerful because it tells managers where returns come from: pricing (ROS), efficiency (turnover), or leverage. Two firms with identical ROE may pursue very different strategies.\n\n\n\n\n\n\nTipMini-case: UPS vs. FedEx (ROCE Decomposition)\n\n\n\nReturn on Capital Employed (ROCE) splits into Return on Sales × Sales/Capital Employed. In a historical comparison, UPS showed ROS of 11.9% against FedEx’s 6.1% — yet asset turnover was nearly identical (1.79 vs. 1.75). The gap was entirely on the margin side. Drilling deeper, UPS had dramatically lower fuel costs (6.0% vs. 10.6%) and maintenance (2.3% vs. 5.0%) relative to sales, reflecting the advantage of ground-network density over air-hub dependence. This is the DuPont logic in action: the same top-line performance indicator traces back to fundamentally different activity systems.\n\n\nDrawback: accounting profit ignores the cost of capital and can be manipulated through depreciation policy, inventory valuation, and other choices.\n\n\n2.5.3 Shareholder Value — EVA\nEconomic Value Added (EVA, 經濟附加價值), popularized by Stern Stewart & Co., corrects the accounting-profit problem by subtracting a capital charge:\n\\[\nEVA = NOPAT - WACC \\times K\n\\]\nwhere \\(NOPAT\\) is Net Operating Profit After Tax and \\(K\\) is the capital employed. A firm with positive EVA is earning more than the opportunity cost of its capital.\nDrawback: EVA — like NPV and accounting profit — focuses on tangible assets. Intangible assets (skilled people, specialized processes, brand, relationships) are typically the sources of sustained competitive advantage but rarely appear at full value on the balance sheet. In 1980, roughly 80% of S&P 500 market value was captured in book value; by 2010 only 30% was. 70% of what makes modern firms valuable is invisible to traditional accounting.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#strategic-innovation-changing-the-rules",
+    "href": "content/ch02.html#strategic-innovation-changing-the-rules",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.6 Strategic Innovation — Changing the Rules",
+    "text": "2.6 Strategic Innovation — Changing the Rules\nInnovation (創新) is:\n\nmaking a change or a difference\na dis-equilibrium phenomenon\na recombination process rather than a discovery\na matter of degree, not zero-or-one\n\nWe can distinguish three levels:\n\nProduct innovation — a new or improved offering\nProcess innovation — a new or improved way of producing\nStrategic innovation (策略創新) — a new business model that includes but usually goes beyond product or process innovation, introducing a new rule of competition\n\n\n\n\n\n\n\nTipCase: TSMC and the Foundry Model\n\n\n\nBefore Morris Chang founded TSMC in 1987, the semiconductor industry operated on the Integrated Device Manufacturer (IDM) model: a single firm designed, fabricated, packaged, and sold its own chips. TSMC’s strategic innovation was to unbundle fabrication from design, declaring that it would only manufacture — never compete with its customers on design. This was not a product innovation (chips are chips) nor merely a process innovation (fabrication techniques existed). It was a redefinition of the industry value chain, creating the fabless design house as a viable business model and positioning TSMC as an indispensable partner rather than a potential rival. The result is one of the most durable competitive advantages in the history of manufacturing.\n\n\n\n\n\n\n\n\nTipCase: SWATCH and Redefining the Watch Market\n\n\n\nIn the 1970s, Swiss watchmakers dominated the high-end, hand-made mechanical segment and nearly went bankrupt when quartz technology commoditized timekeeping. The response — forming SMH (later Swatch Group) and launching the SWATCH brand — was not to compete on precision or craftsmanship but to redefine watches as fashion accessories. Multiple affordable watches per customer, seasonal collections, colorful designs. Demand was reframed, supply was reconfigured, and the Swiss industry was saved not by out-engineering the Japanese but by out-positioning them.\n\n\n\n\n\n\n\n\nTipCase: Southwest Airlines\n\n\n\nSouthwest Airlines was not the first discount carrier. Its strategic innovation was the coherent activity system: point-to-point routes instead of hub-and-spoke, standardized Boeing 737 fleet (lowering training and maintenance costs), secondary airports (lower landing fees, faster turnarounds), no assigned seats (faster boarding), and happy employees (lower attrition, higher productivity including pilots helping load luggage). No single element is revolutionary. The innovation is the configuration — and decades of competitor imitation attempts have failed because copying one or two elements without the others just creates cost without capturing the synergies.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#modern-tools-for-business-model-design",
+    "href": "content/ch02.html#modern-tools-for-business-model-design",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.7 Modern Tools for Business Model Design",
+    "text": "2.7 Modern Tools for Business Model Design\nThe 2026 edition of this course integrates Generative AI (GenAI) workflows into every phase of business model analysis:\n\n\n\n\n\n\nNoteHow GenAI Augments the BMC\n\n\n\n\nValue Proposition discovery — use Claude or ChatGPT to synthesize customer interviews, online reviews, and industry reports into candidate problem statements.\nCompetitive benchmarking — use NotebookLM to ingest competitor annual reports and extract comparable BMC blocks side-by-side.\nScenario stress-testing — prompt the model to act as a skeptical investor and attack each block for internal inconsistency.\nVisualization — use Gamma or Napkin to turn a completed BMC into a polished deck-ready diagram.\n\nThe AI is a thinking partner, not a replacement for analysis. Poor prompts produce plausible-but-shallow BMCs. See Appendix B for CRF (Context–Role–Format) prompting templates used in this course.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#self-check-questions",
+    "href": "content/ch02.html#self-check-questions",
+    "title": "Strategic Innovation & Business Model",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — V-P-C Decomposition\n\n\n\n\n\nA specialty coffee chain sells a latte for NT$150. Customer surveys indicate the average customer would pay up to NT$220 before switching to a substitute. Ingredient and direct labor costs total NT$55 per cup; allocated overhead adds another NT$30.\n\nCalculate the consumer surplus, the firm’s gross profit per cup, and the total economic value created per cup.\nIf a competitor opens next door and forces the chain to drop prices to NT$130, which of the three quantities above is most affected? Explain.\nIf instead the chain invests in a new roasting process that lowers ingredient cost to NT$40 without changing perceived quality, which quantities shift and by how much?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — BMC Coherence Check\n\n\n\n\n\nSelect a Taiwan-listed company you know well (e.g., 台積電 TSMC, 統一超商 7-ELEVEN, 鼎泰豐 Din Tai Fung, 王品 Wowprime).\n\nFill in all nine blocks of the Business Model Canvas for that company.\nIdentify at least two pairs of blocks that visibly reinforce each other. Explain the reinforcement.\nIdentify at least one block that feels like a potential weakness or vulnerability. What would you change?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Strategic vs. Operational Innovation\n\n\n\n\n\nFor each of the following, classify as primarily operational effectiveness, product innovation, process innovation, or strategic innovation. Defend each classification in one to two sentences.\n\nToyota implementing the Toyota Production System (TPS) in its plants.\nNetflix shifting from DVD-by-mail to streaming.\nApple launching a faster iPhone each year.\nFoxconn offering contract-manufacturing services to branded electronics firms.\nDyson inventing the bagless vacuum cleaner.\nCostco’s membership-fee-based warehouse retail model.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Measurement Method Selection\n\n\n\n\n\nYou have been asked to evaluate the performance of three divisions within a multinational conglomerate:\n\nDivision A: a mature consumer goods business with stable cash flows and minimal reinvestment needs.\nDivision B: a growing cloud-software business with negative current cash flow but rapidly expanding subscriber base.\nDivision C: a pharmaceutical R&D unit with long development cycles and uncertain outcomes.\n\nWhich measurement standard (NPV, DuPont/ROE, or EVA) would you apply to each division, and why? What additional qualitative indicators would you add?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#further-readings",
+    "href": "content/ch02.html#further-readings",
+    "title": "Strategic Innovation & Business Model",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nOsterwalder, A. & Pigneur, Y. (2010). Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers. Wiley. — The canonical BMC reference.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 2 — “Goals, Values and Performance”. Wiley.\nPorter, M. E. (1996). “What Is Strategy?” Harvard Business Review, Nov–Dec. — The classic argument against confusing operational effectiveness with strategy.\nMagretta, J. (2002). “Why Business Models Matter.” Harvard Business Review, May. — Short, readable introduction to the concept.\nChesbrough, H. (2010). “Business Model Innovation: Opportunities and Barriers.” Long Range Planning, 43(2-3), 354-363.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — UPenn Wharton. Video 1.1–1.7 (business model foundations, ~84 min) directly complements this chapter.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#looking-ahead",
+    "href": "content/ch02.html#looking-ahead",
+    "title": "Strategic Innovation & Business Model",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapter 2 has given us the V-P-C lens and the four pillars of a business model. Starting in Chapter 3, we take the outside-in perspective: how does the external environment — macro forces and industry structure — shape the Value and Price sides of our framework? Then in Chapter 5 we turn inside-out, asking how a firm’s resources and capabilities shape the Cost side and the ability to sustain whatever advantage it creates.\nEvery subsequent chapter is a refinement of the core question posed here: how does a firm create, deliver, appropriate, and sustain value?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/publishing.html",
+    "href": "content/publishing.html",
+    "title": "Publishing",
+    "section": "",
+    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+  },
+  {
+    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "title": "Publishing",
+    "section": "Turn on GitHub Pages for your repo",
+    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
+  },
+  {
+    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "title": "Publishing",
+    "section": "Do your first publish to gh-pages",
+    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
+  },
+  {
+    "objectID": "content/publishing.html#dont-like-using-gh-pages",
+    "href": "content/publishing.html#dont-like-using-gh-pages",
+    "title": "Publishing",
+    "section": "Don’t like using gh-pages?",
+    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+  },
+  {
+    "objectID": "content/add-content.html",
+    "href": "content/add-content.html",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/add-content.html#edit-and-add-your-pages",
+    "href": "content/add-content.html#edit-and-add-your-pages",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/add-content.html#add-your-pages-the-project",
+    "href": "content/add-content.html#add-your-pages-the-project",
+    "title": "Customize",
+    "section": "Add your pages the project",
+    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
+  },
+  {
+    "objectID": "content/rendering.html",
+    "href": "content/rendering.html",
+    "title": "Rendering",
+    "section": "",
+    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
+  },
+  {
+    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "title": "Rendering",
+    "section": "Step 1. Make sure you have a recent RStudio",
+    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
+  },
+  {
+    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "title": "Rendering",
+    "section": "Step 2. Clone and create RStudio project",
+    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
+  },
+  {
+    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
+    "href": "content/rendering.html#step-3.-render-within-rstudio",
+    "title": "Rendering",
+    "section": "Step 3. Render within RStudio",
+    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
+  },
+  {
+    "objectID": "content/customizing.html",
+    "href": "content/customizing.html",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#quarto-documentation",
+    "href": "content/customizing.html#quarto-documentation",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#examples",
+    "href": "content/customizing.html#examples",
+    "title": "Customization",
+    "section": "Examples",
+    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
   },
   {
     "objectID": "content/ch01.html",
@@ -250,233 +473,131 @@
     ]
   },
   {
-    "objectID": "content/customizing.html",
-    "href": "content/customizing.html",
-    "title": "Customization",
+    "objectID": "content/acknowledgements.html",
+    "href": "content/acknowledgements.html",
+    "title": "Acknowledgments",
     "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
   },
   {
-    "objectID": "content/customizing.html#quarto-documentation",
-    "href": "content/customizing.html#quarto-documentation",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
-  },
-  {
-    "objectID": "content/customizing.html#examples",
-    "href": "content/customizing.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
-  },
-  {
-    "objectID": "content/rendering.html",
-    "href": "content/rendering.html",
-    "title": "Rendering",
-    "section": "",
-    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
-  },
-  {
-    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "title": "Rendering",
-    "section": "Step 1. Make sure you have a recent RStudio",
-    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
-  },
-  {
-    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "title": "Rendering",
-    "section": "Step 2. Clone and create RStudio project",
-    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
-  },
-  {
-    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
-    "href": "content/rendering.html#step-3.-render-within-rstudio",
-    "title": "Rendering",
-    "section": "Step 3. Render within RStudio",
-    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
-  },
-  {
-    "objectID": "content/add-content.html",
-    "href": "content/add-content.html",
-    "title": "Customize",
-    "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
-  },
-  {
-    "objectID": "content/add-content.html#edit-and-add-your-pages",
-    "href": "content/add-content.html#edit-and-add-your-pages",
-    "title": "Customize",
-    "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
-  },
-  {
-    "objectID": "content/add-content.html#add-your-pages-the-project",
-    "href": "content/add-content.html#add-your-pages-the-project",
-    "title": "Customize",
-    "section": "Add your pages the project",
-    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
-  },
-  {
-    "objectID": "content/publishing.html",
-    "href": "content/publishing.html",
-    "title": "Publishing",
-    "section": "",
-    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
-  },
-  {
-    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "title": "Publishing",
-    "section": "Turn on GitHub Pages for your repo",
-    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
-  },
-  {
-    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "title": "Publishing",
-    "section": "Do your first publish to gh-pages",
-    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
-  },
-  {
-    "objectID": "content/publishing.html#dont-like-using-gh-pages",
-    "href": "content/publishing.html#dont-like-using-gh-pages",
-    "title": "Publishing",
-    "section": "Don’t like using gh-pages?",
-    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
-  },
-  {
-    "objectID": "content/ch02.html",
-    "href": "content/ch02.html",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html",
+    "href": "content/ch03.html",
+    "title": "The General Environment & Industry Analysis",
     "section": "",
     "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#learning-objectives",
-    "href": "content/ch02.html#learning-objectives",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html#learning-objectives",
+    "href": "content/ch03.html#learning-objectives",
+    "title": "The General Environment & Industry Analysis",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nExplain the V-P-C framework (Value, Price, Cost) and use it to decompose a firm’s profitability into consumer surplus, firm profit, and cost structure.\nDistinguish between value proposition, value creation, value appropriation, and value sustaining — the four pillars of any business model.\nMap a real company’s business model onto the Business Model Canvas (BMC) and critique its internal coherence.\nApply three standards of firm performance measurement — economic value (NPV), accounting profitability (DuPont Identity), and shareholder value — and recognize their respective drawbacks.\nRecognize when a firm is pursuing strategic innovation (new rules of competition) versus product or process innovation (better execution of old rules).",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDistinguish between the macro environment (general environment) and the industry environment, and explain why both matter to firm strategy.\nApply the PESTEL framework to identify external forces shaping an industry’s future.\nApply Porter’s Five Forces model to assess the structural attractiveness of an industry.\nDetermine which forces dominate in a given industry and translate that diagnosis into strategic implications for V (value) and P (price).\nUse public databases in Taiwan — MOPS, the TPEX Industry Value Chain Platform, and government open data — to gather the empirical evidence required for credible industry analysis.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#why-business-models-matter",
-    "href": "content/ch02.html#why-business-models-matter",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.1 Why Business Models Matter",
-    "text": "2.1 Why Business Models Matter\nA strategy without a viable business model (商業模式) is a wish list. A business model without a clear strategy is a checklist. The two must fit together.\nIn Chapter 1 we argued that strategy is a unifying theme directing a firm’s actions toward survival, success, superior performance, and sustainability. But how do we translate that abstract theme into concrete choices about what to sell, to whom, at what price, and through what activities? That is the job of a business model — a deliberate configuration of four decisions:\n\nValue Proposition (價值主張) — what problem we solve, for whom\nValue Creation (價值創造) — how we produce the value\nValue Appropriation (價值獲取) — how we capture a fair share\nValue Sustaining (價值維繫) — how we defend the model over time\n\nThese four decisions are not independent. A premium value proposition (V↑) delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions coherent.",
+    "objectID": "content/ch03.html#two-layers-of-external-environment",
+    "href": "content/ch03.html#two-layers-of-external-environment",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.1 Two Layers of External Environment",
+    "text": "3.1 Two Layers of External Environment\nIn Chapter 1 we noted that ~20% of firm performance variance is explained by industry effects. To unpack that 20%, we need to look at two concentric layers of the firm’s external environment.\n\n\n\n\n\nflowchart TB\n    subgraph MACRO[\"MACRO ENVIRONMENT — PESTEL\"]\n        direction LR\n        P[\"Political\"] \n        E[\"Economic\"]\n        S[\"Social\"]\n        T[\"Technological\"]\n        EN[\"Environmental\"]\n        L[\"Legal\"]\n    end\n    subgraph IND[\"INDUSTRY ENVIRONMENT — Five Forces\"]\n        direction LR\n        SUP[\"Suppliers\"]\n        BUY[\"Buyers\"]\n        NEW[\"New Entrants\"]\n        SUB[\"Substitutes\"]\n        RIV[\"Rivalry\"]\n    end\n    FIRM[\"&lt;b&gt;The Firm&lt;/b&gt;&lt;br/&gt;Resources & Capabilities\"]\n    \n    MACRO --&gt; IND\n    IND --&gt; FIRM\n    \n    style MACRO fill:#EFE4D2,stroke:#004030,color:#2C2C2C\n    style IND fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF\n\n\n\n\n\n\nThe macro environment sets the broad context — political stability, economic cycles, demographic trends, technological revolutions. The industry environment sets the immediate competitive context — who supplies you, who buys from you, who could replace you.\nA common analytical mistake is to stop at PESTEL. PESTEL identifies forces; it does not tell you whether those forces are good or bad for your industry. That requires the second layer — the Five Forces — which translates macro shifts into concrete profit pressure.\n\n\n\n\n\n\nTipTP1 implication\n\n\n\nIn TP1 — External Analysis (Week 10), your group must produce both a PESTEL analysis (critical factors only) and a Five Forces analysis. Don’t analyze them in isolation: use PESTEL to identify which forces are changing, and use the Five Forces to assess how those changes affect industry profitability.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#the-v-p-c-framework",
-    "href": "content/ch02.html#the-v-p-c-framework",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.2 The V-P-C Framework",
-    "text": "2.2 The V-P-C Framework\nThe V-P-C framework decomposes every transaction into three layers and, from them, four strategic quantities.\n\n\n\n\n\nflowchart TB\n    V[\"&lt;b&gt;V — Value&lt;/b&gt;&lt;br/&gt;Consumer's Maximum&lt;br/&gt;Willingness-To-Pay (WTP)\"]\n    P[\"&lt;b&gt;P — Price&lt;/b&gt;&lt;br/&gt;What the customer pays\"]\n    C[\"&lt;b&gt;C — Cost&lt;/b&gt;&lt;br/&gt;Firm's cost to deliver\"]\n    \n    V --&gt; VP[\"&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Consumer Surplus\"]\n    V --&gt; VC[\"&lt;b&gt;V − C&lt;/b&gt;&lt;br/&gt;Economic Value Created\"]\n    P --&gt; PC[\"&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Firm's Profit\"]\n    C --&gt; PC\n    \n    style V fill:#004030,stroke:#004030,color:#FFFFFF\n    style P fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style C fill:#EFE4D2,stroke:#004030,color:#2C2C2C\n    style VP fill:#FAF6F0,stroke:#6B6B6B\n    style VC fill:#FAF6F0,stroke:#6B6B6B\n    style PC fill:#FAF6F0,stroke:#6B6B6B\n\n\n\n\n\n\nThree terms deserve careful distinction:\n\n\n\n\n\n\nNoteKey Definitions\n\n\n\n\nPerceived Value (PV, 感知價值) — the customer’s subjective assessment of benefit before purchase.\nWillingness-To-Pay (WTP, 支付意願) — the maximum monetary amount a customer would rationally give up for the offering. In economic theory, \\(V = WTP\\).\nReservation Price (RP, 保留價格) — the price above which the customer walks away. Typically \\(RP \\leq WTP\\), because customers compare against alternatives.\n\n\n\n\n2.2.1 Sources of Superior Profitability\nWith the V-P-C lens, the perennial question — how does a firm earn superior profits? — reduces to three levers:\n\nRaise V (increase value perceived by customers) — differentiation, branding, premium features\nLower C (reduce cost of production and delivery) — scale, experience, process innovation\nExpand P − C (widen the margin between price and cost) — pricing power, market structure\n\nObserve that “raising P” is not an independent lever. Price is bounded above by V (customers will not pay more than WTP) and bounded below by C (firms will not sell at a loss for long). Strategic choices expand the spread by attacking V or C directly.\n\n\n2.2.2 Do Better or Do Different?\nA recurring choice for managers: should we pursue operational effectiveness (do the same things better) or strategic innovation (do different things altogether)?\n\n\n\n\n\n\n\n\nDimension\nOperational Effectiveness\nStrategic Innovation\n\n\n\n\nWhat changes\nHow activities are performed\nWhat activities are performed\n\n\nExamples\nSix Sigma, Lean Manufacturing, ERP, benchmarking\nRedefining the industry value chain, new business models\n\n\nCompetitive outcome\nNecessary but not sufficient for advantage\nCan create temporary monopoly rents\n\n\nImitability\nHigh — tools and techniques diffuse quickly\nLow — at least until competitors reconfigure\n\n\n\nMichael Porter’s classic warning: operational effectiveness is not strategy. If every firm in the industry adopts the same quality-management tools, the productivity frontier shifts outward but relative position does not change — and in the long run, the gains are competed away to customers via lower prices.",
+    "objectID": "content/ch03.html#the-pestel-framework",
+    "href": "content/ch03.html#the-pestel-framework",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.2 The PESTEL Framework",
+    "text": "3.2 The PESTEL Framework\nPESTEL (總體環境分析架構) is an acronym for six categories of macro-environmental factors. Originally proposed as PEST in the 1960s, it expanded as environmental and legal factors gained strategic weight.\n\n\n\n\n\n\n\n\nLetter\nFactor\nExamples\n\n\n\n\nP\nPolitical (政治)\nGovernment stability, trade policy, US-China tech war, semiconductor export controls, defense procurement\n\n\nE\nEconomic (經濟)\nGDP growth, interest rates, inflation, exchange rates, energy prices, supply-chain re-shoring\n\n\nS\nSocial (社會)\nDemographics (aging population), values shifts, ESG expectations, remote work culture\n\n\nT\nTechnological (科技)\nGenerative AI, EV battery chemistry, 5G/6G, biotech, automation, cybersecurity\n\n\nE\nEnvironmental (環境)\nClimate regulation, carbon tax, Net Zero 2050, water scarcity, circular economy\n\n\nL\nLegal (法律)\nAntitrust enforcement, IP protection, GDPR/PIPL data laws, labor regulations\n\n\n\n\n3.2.1 Doing PESTEL Well\nThree rules separate professional PESTEL analysis from undergraduate-level PESTEL analysis:\n\n\n\n\n\n\nImportantRules for credible PESTEL\n\n\n\n\nBe selective, not exhaustive. A 30-bullet list is not analysis — it is a research dump. Identify the three to five most critical factors and ignore the rest.\nBe specific, not generic. “AI is transforming everything” is meaningless. “Generative AI is shifting customer support headcount in financial services by ~30% annually since 2024” is analysis.\nBe directional. Each factor should answer: Does this raise or lower industry profitability? For whom? A trend that hurts incumbents may help new entrants.\n\n\n\n\n\n3.2.2 PESTEL in 2026 — A Few Critical Forces\nFor a Taiwan-headquartered MNC operating in 2026, the following macro forces are reshaping nearly every industry:\n\nGeopolitical bifurcation (P) — supply chains splitting between US-aligned and China-aligned ecosystems; “China + 1” sourcing strategies; CHIPS Act subsidies redirecting fab investment.\nPersistent rate environment (E) — central banks holding rates higher for longer; cost of capital up; capital-intensive expansion harder to justify.\nDemographic cliff (S) — Taiwan, Japan, Korea, China entering simultaneous workforce contraction; talent shortage in skilled trades and engineering.\nGenAI productivity wave (T) — large language models commoditizing white-collar tasks; software economics reshaped; new entrants undercutting incumbents in legal, financial, and creative services.\nNet Zero compliance (En) — Scope 3 emissions disclosure mandatory in EU, increasingly so in Asia; carbon pricing affecting cost structures.\nAI regulation (L) — EU AI Act in force; US patchwork emerging; cross-border data flows constrained.\n\nNote: this list is illustrative, not authoritative. Your TP analysis must use current data from the sources in Section 3.5.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#the-four-pillars-of-a-business-model",
-    "href": "content/ch02.html#the-four-pillars-of-a-business-model",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.3 The Four Pillars of a Business Model",
-    "text": "2.3 The Four Pillars of a Business Model\n\n2.3.1 Value Proposition — For Whom, What Problem\nThe first question every business must answer: who is the customer, and what problem are we solving for them?\nA disciplined value proposition answers four sub-questions:\n\nUnsatisfied or future demand — what problem is not yet adequately solved?\nSubstitution and complementarity — what else could the customer use instead, or alongside?\nMarket size, installed base, penetration rate — how large is the opportunity?\nPrice elasticity of demand — how sensitive is the customer to price?\n\nIn marketing terms, this involves STP (Segmentation, Targeting, Positioning, 區隔、目標、定位) and the classic 4P mix (Product, Price, Place, Promotion, 產品、價格、通路、推廣). Strategic management takes STP/4P as inputs and asks the higher-order question: does this positioning defensibly raise V relative to the cost structure required to deliver it?\n\n\n2.3.2 Value Creation — The Activity System\nCreating value means configuring an activity system (活動系統) that transforms inputs into an offering customers will pay for. Michael Porter’s Value Chain (價值鏈) distinguishes:\n\nPrimary activities: inbound logistics, operations, outbound logistics, marketing & sales, service\nSupport activities: firm infrastructure, HR, technology development, procurement\n\nWe will examine value-chain analysis in depth in Chapter 5. The key insight for now: value creation is not a single act but a network of interdependent activities, each of which can be a source of advantage or weakness.\n\n\n2.3.3 Value Appropriation — Keeping Your Fair Share\nCreating value and capturing value are different. A firm may create enormous economic value (V − C is large) yet capture very little of it if market structure (市場結構) forces it to share the gains with customers, suppliers, or complementors.\n\n\n\n\n\n\nTipMarket Structures and Profitability\n\n\n\nFrom fragmented to consolidated markets, the typical pattern:\n\nPerfect Competition — many small firms, commodity products, price takers → fragmented, low profitability\nMonopolistic Competition — many firms, differentiated products, some pricing power → medium profitability\nOligopoly — few large firms, differentiated products, high entry barriers → higher profitability\nMonopoly — one firm, unique product, very high entry barriers → consolidated, high profitability\n\n\n\nThe structural determinants of value appropriation — the “five forces” — will be the subject of Chapter 3.\n\n\n2.3.4 Value Sustaining — Defending the Model\nEven a well-configured business model is worthless if competitors can copy it overnight. Value sustaining asks: what makes this model hard to imitate, hard to substitute, over time?\nThree levels of barriers:\n\nInstitutional factors (制度因素) — regulation, patents, industry standards\nIndustry factors (產業因素) — economies of scale, network effects, switching costs\nFirm-specific factors (廠商因素) — proprietary resources, tacit know-how, culture, reputation\n\nFirm-specific factors — particularly hard-to-replicate capabilities — are the subject of the Resource-Based View (RBV) in Chapter 5.",
+    "objectID": "content/ch03.html#porters-five-forces",
+    "href": "content/ch03.html#porters-five-forces",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.3 Porter’s Five Forces",
+    "text": "3.3 Porter’s Five Forces\nMichael Porter’s Five Forces (五力分析) model, introduced in 1979 and refined since, remains the dominant framework for analyzing industry structure — the structural determinants of an industry’s average profitability.\n\n\n\n\n\nflowchart TB\n    NEW[\"&lt;b&gt;Threat of&lt;br/&gt;New Entrants&lt;/b&gt;\"]\n    SUP[\"&lt;b&gt;Bargaining Power&lt;br/&gt;of Suppliers&lt;/b&gt;\"]\n    SUB[\"&lt;b&gt;Threat of&lt;br/&gt;Substitutes&lt;/b&gt;\"]\n    BUY[\"&lt;b&gt;Bargaining Power&lt;br/&gt;of Buyers&lt;/b&gt;\"]\n    RIV[\"&lt;b&gt;Rivalry Among&lt;br/&gt;Existing Competitors&lt;/b&gt;\"]\n    \n    NEW --&gt; RIV\n    SUP --&gt; RIV\n    SUB --&gt; RIV\n    BUY --&gt; RIV\n    \n    style RIV fill:#004030,stroke:#004030,color:#FFFFFF\n    style NEW fill:#D8C3A5,stroke:#004030\n    style SUP fill:#D8C3A5,stroke:#004030\n    style SUB fill:#D8C3A5,stroke:#004030\n    style BUY fill:#D8C3A5,stroke:#004030\n\n\n\n\n\n\nEach force, when strong, depresses the average profitability of firms in the industry. Strategic decisions can be evaluated by their effect on the forces — actions that weaken unfavorable forces tend to be value-creating.\n\n3.3.1 The Five Forces in Detail\n1. Threat of New Entrants (新進者威脅)\nWhen entry is easy, incumbents face constant pressure to keep prices low. Entry barriers include:\n\nEconomies of scale — incumbents enjoy unit-cost advantages that newcomers cannot match.\nCapital requirements — high upfront investment (e.g., semiconductor fab &gt; USD 20B) deters most entrants.\nSwitching costs — customers locked into existing platforms (e.g., enterprise SAP) won’t easily migrate.\nNetwork effects — incumbent value rises with users (e.g., LINE in Taiwan, WeChat in China).\nRegulatory barriers — licenses, certifications, IP, government approvals.\nBrand and reputation — accumulated trust takes years or decades to build.\n\n2. Bargaining Power of Suppliers (供應商議價力)\nPowerful suppliers extract value by raising prices or limiting quality. Suppliers are powerful when:\n\nThe supplier industry is more concentrated than the buyer industry.\nThe supplier’s input is differentiated (no easy substitute).\nSwitching suppliers is costly.\nSuppliers can credibly threaten forward integration into the buyer’s industry.\nThe buyer is not an important customer for the supplier.\n\n3. Bargaining Power of Buyers (買方議價力)\nSymmetric to suppliers — powerful buyers extract value by demanding lower prices or higher quality. Buyers are powerful when:\n\nBuyers are concentrated or purchase in large volumes.\nProducts are standardized or undifferentiated.\nBuyers face low switching costs.\nBuyers can credibly threaten backward integration.\nBuyers have full information about costs.\n\n4. Threat of Substitutes (替代品威脅)\nSubstitutes are products from other industries that satisfy the same need. Streaming substitutes for cinema; video calls substitute for business travel; plant-based protein substitutes for beef. Substitutes cap the price ceiling — when they get cheaper or better, every firm in the industry suffers.\n5. Rivalry Among Existing Competitors (現有競爭者間競爭強度)\nThe intensity of rivalry depends on:\n\nNumber and relative size of competitors (concentrated vs. fragmented).\nIndustry growth rate (slow growth → zero-sum competition).\nFixed costs (high fixed costs push firms to fill capacity at any price).\nProduct differentiation (commodity-like products → price wars).\nExit barriers (specialized assets that can’t be redeployed).\n\n\n\n3.3.2 The Sixth Force — Complementors\nA common extension proposed by Brandenburger and Nalebuff (1996): complementors (互補者) — firms whose products increase the value of yours. App developers complement smartphone OS; charging-station networks complement EVs; gaming studios complement console hardware. The healthier the complementor ecosystem, the more valuable the focal industry. This is the foundation of co-opetitive dynamics discussed in Chapter 4.\n\n\n\n\n\n\nTipTP1 application — make it quantitative\n\n\n\nDon’t just say “rivalry is high.” Provide evidence:\n\nIndustry concentration: top-4 market share (CR4) or Herfindahl-Hirschman Index (HHI).\nRecent price-cutting episodes (cite news with dates and percentages).\nCapacity utilization rates from annual reports.\nNumber of competitors entering or exiting in the past 3 years.\n\nA Five Forces analysis without numbers is an opinion, not an analysis.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#the-business-model-canvas-bmc",
-    "href": "content/ch02.html#the-business-model-canvas-bmc",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.4 The Business Model Canvas (BMC)",
-    "text": "2.4 The Business Model Canvas (BMC)\nAlexander Osterwalder’s Business Model Canvas (BMC, 商業模式畫布) operationalizes the four pillars into nine building blocks. We overlay the V-P-C framework on top of it:\n\n⑦Key Partners重要夥伴Who are our key partners and suppliers?\n⑤Key Activities關鍵活動What activities does the value proposition require?\n①Value Proposition價值主張What problem are we solving? Which need are we satisfying?\n④Customer Relationships顧客關係How will we get, keep, and grow customers?\n②Customer Segments顧客區隔For whom are we creating value? Who are our customers?\n⑥Key Resources關鍵資源What key resources does the value proposition require?\n③Channels通路Through which channels do our customer segments want to be reached?\n⑨Cost Structure成本結構What are the most important costs? (Value Creation side)\n⑧Revenue Streams收入來源For what value are customers willing to pay? (Value Appropriation side)\n\nThe BMC is a diagnostic tool, not a strategy in itself. Its power lies in forcing the analyst to articulate every block and check whether they reinforce each other.\n\n\n\n\n\n\nImportantCoherence Test\n\n\n\nA business model is coherent when answers to the following three questions are all “yes”:\n\nDo the Key Activities and Resources (left side) actually produce the Value Proposition (center)?\nDoes the Value Proposition resonate with the Customer Segments through the chosen Channels and Relationships (right side)?\nDoes the Revenue Stream exceed the Cost Structure by a margin that justifies the capital employed?\n\nA “no” on any of these three is where strategy breaks.",
+    "objectID": "content/ch03.html#industry-lifecycle",
+    "href": "content/ch03.html#industry-lifecycle",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.4 Industry Lifecycle",
+    "text": "3.4 Industry Lifecycle\nIndustry profitability is not static — it evolves through predictable stages:\n\n\n\n\n\n\n\n\n\nStage\nDemand growth\nProfitability\nTypical strategy\n\n\n\n\nIntroduction (萌芽期)\nSlow, uncertain\nOften negative\nBuild the market, define standards, secure early adopters\n\n\nGrowth (成長期)\nRapid\nHigh and rising\nScale up, capture market share, build distribution\n\n\nMaturity (成熟期)\nSlow, saturating\nHigh but plateauing\nDifferentiate, defend share, optimize operations\n\n\nDecline (衰退期)\nNegative\nDeclining\nHarvest, divest, or reinvent (strategic innovation)\n\n\nRenewal (再生期)\nRe-accelerating\nVariable\nDisruption opens new sub-markets\n\n\n\nThe lifecycle stage strongly conditions which forces matter most. In the introduction stage, substitution risk (will the technology even win?) dominates. In maturity, rivalry intensity dominates as growth slows.\n\n\n\n\n\n\nNoteStrategic Inflection Points\n\n\n\nAndy Grove of Intel famously argued that industries face strategic inflection points — moments when “10x” forces (technology, regulation, customer behavior) reshape industry structure suddenly. Examples: smartphones reshaping mobile carriers (2007–2012); LLMs reshaping search and SaaS (2022–present); EV adoption reshaping automotive value chains (2020–present). Recognizing an inflection point early is itself a competitive advantage.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#measuring-what-you-manage",
-    "href": "content/ch02.html#measuring-what-you-manage",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.5 Measuring What You Manage",
-    "text": "2.5 Measuring What You Manage\n“What gets measured gets managed.” But profit maximization is a notoriously ambiguous goal:\n\nTotal profit vs. rate of profit?\nOver what time period?\nAccounting profit vs. economic profit?\n\nThree standards dominate practice, each with drawbacks.\n\n2.5.1 Economic Value (NPV)\nThe Net Present Value (NPV, 淨現值) approach:\n\\[\nV = \\sum_{t=0}^{T} \\frac{C_t}{(1 + R_{WACC})^t}\n\\]\nwhere \\(C_t\\) is the cash flow in period \\(t\\) and \\(R_{WACC}\\) is the weighted-average cost of capital. Free Cash Flow is typically calculated as \\(FCF = EBITDA - WC - CAPEX\\).\nDrawback: cash flows must be forecasted, and forecasts become increasingly unreliable as the horizon lengthens.\n\n\n2.5.2 Accounting Profitability — The DuPont Identity\nThe DuPont Identity (杜邦分析) decomposes Return on Equity (ROE) into three levers:\n\\[\nROE = \\underbrace{\\frac{\\text{Net Income}}{\\text{Sales}}}_{\\text{Return on Sales}} \\times \\underbrace{\\frac{\\text{Sales}}{\\text{Assets}}}_{\\text{Asset Turnover}} \\times \\underbrace{\\left(1 + \\frac{D}{E}\\right)}_{\\text{Financial Leverage}}\n\\]\nThis is powerful because it tells managers where returns come from: pricing (ROS), efficiency (turnover), or leverage. Two firms with identical ROE may pursue very different strategies.\n\n\n\n\n\n\nTipMini-case: UPS vs. FedEx (ROCE Decomposition)\n\n\n\nReturn on Capital Employed (ROCE) splits into Return on Sales × Sales/Capital Employed. In a historical comparison, UPS showed ROS of 11.9% against FedEx’s 6.1% — yet asset turnover was nearly identical (1.79 vs. 1.75). The gap was entirely on the margin side. Drilling deeper, UPS had dramatically lower fuel costs (6.0% vs. 10.6%) and maintenance (2.3% vs. 5.0%) relative to sales, reflecting the advantage of ground-network density over air-hub dependence. This is the DuPont logic in action: the same top-line performance indicator traces back to fundamentally different activity systems.\n\n\nDrawback: accounting profit ignores the cost of capital and can be manipulated through depreciation policy, inventory valuation, and other choices.\n\n\n2.5.3 Shareholder Value — EVA\nEconomic Value Added (EVA, 經濟附加價值), popularized by Stern Stewart & Co., corrects the accounting-profit problem by subtracting a capital charge:\n\\[\nEVA = NOPAT - WACC \\times K\n\\]\nwhere \\(NOPAT\\) is Net Operating Profit After Tax and \\(K\\) is the capital employed. A firm with positive EVA is earning more than the opportunity cost of its capital.\nDrawback: EVA — like NPV and accounting profit — focuses on tangible assets. Intangible assets (skilled people, specialized processes, brand, relationships) are typically the sources of sustained competitive advantage but rarely appear at full value on the balance sheet. In 1980, roughly 80% of S&P 500 market value was captured in book value; by 2010 only 30% was. 70% of what makes modern firms valuable is invisible to traditional accounting.",
+    "objectID": "content/ch03.html#where-to-find-industry-data-taiwan-resources",
+    "href": "content/ch03.html#where-to-find-industry-data-taiwan-resources",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.5 Where to Find Industry Data — Taiwan Resources",
+    "text": "3.5 Where to Find Industry Data — Taiwan Resources\nFor your Term Project, the credibility of your industry analysis depends on the credibility of your sources. Taiwan offers excellent free databases:\n\n\n\n\n\n\nNoteEssential Taiwan Industry Databases\n\n\n\n\n公開資訊觀測站 (MOPS) — mops.twse.com.tw — Annual reports (年報), financial statements, GDR/ADR filings, material announcements for all listed companies.\n產業價值鏈資訊平台 (Industry Value Chain Information Platform) — ic.tpex.org.tw — Visualized upstream–midstream–downstream industry maps for major Taiwan industries; identify suppliers, buyers, and competitors at a glance.\n政府資料開放平台 (Government Open Data) — data.gov.tw — National statistics, trade data, demographic data.\n104 人力銀行 — 104.com.tw — Reveals industry hiring patterns and skill demand; useful proxy for industry growth.\n\n\n\nFor global data, use:\n\nWorld Bank Open Data — data.worldbank.org\nOECD Statistics — stats.oecd.org\nStatista, IBISWorld, MarketLine — typically subscription-based; check NCNU library access first.\n\n\n\n\n\n\n\nTipUsing GenAI for industry research\n\n\n\nClaude and NotebookLM are exceptionally good at synthesizing unstructured industry sources — annual reports, news archives, analyst reports — into structured PESTEL and Five Forces tables. Workflow:\n\nDownload the focal company’s most recent 3 annual reports + top 2 competitors’ annual reports.\nUpload all PDFs into a NotebookLM notebook.\nPrompt: “Extract all references to PESTEL factors. Group them by P/E/S/T/En/L. Cite the source page for each.”\nCross-check the AI’s output against the original PDFs — always verify before quoting.\n\nThe AI does the synthesis; you do the judgment. Roles cannot be reversed.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#strategic-innovation-changing-the-rules",
-    "href": "content/ch02.html#strategic-innovation-changing-the-rules",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.6 Strategic Innovation — Changing the Rules",
-    "text": "2.6 Strategic Innovation — Changing the Rules\nInnovation (創新) is:\n\nmaking a change or a difference\na dis-equilibrium phenomenon\na recombination process rather than a discovery\na matter of degree, not zero-or-one\n\nWe can distinguish three levels:\n\nProduct innovation — a new or improved offering\nProcess innovation — a new or improved way of producing\nStrategic innovation (策略創新) — a new business model that includes but usually goes beyond product or process innovation, introducing a new rule of competition\n\n\n\n\n\n\n\nTipCase: TSMC and the Foundry Model\n\n\n\nBefore Morris Chang founded TSMC in 1987, the semiconductor industry operated on the Integrated Device Manufacturer (IDM) model: a single firm designed, fabricated, packaged, and sold its own chips. TSMC’s strategic innovation was to unbundle fabrication from design, declaring that it would only manufacture — never compete with its customers on design. This was not a product innovation (chips are chips) nor merely a process innovation (fabrication techniques existed). It was a redefinition of the industry value chain, creating the fabless design house as a viable business model and positioning TSMC as an indispensable partner rather than a potential rival. The result is one of the most durable competitive advantages in the history of manufacturing.\n\n\n\n\n\n\n\n\nTipCase: SWATCH and Redefining the Watch Market\n\n\n\nIn the 1970s, Swiss watchmakers dominated the high-end, hand-made mechanical segment and nearly went bankrupt when quartz technology commoditized timekeeping. The response — forming SMH (later Swatch Group) and launching the SWATCH brand — was not to compete on precision or craftsmanship but to redefine watches as fashion accessories. Multiple affordable watches per customer, seasonal collections, colorful designs. Demand was reframed, supply was reconfigured, and the Swiss industry was saved not by out-engineering the Japanese but by out-positioning them.\n\n\n\n\n\n\n\n\nTipCase: Southwest Airlines\n\n\n\nSouthwest Airlines was not the first discount carrier. Its strategic innovation was the coherent activity system: point-to-point routes instead of hub-and-spoke, standardized Boeing 737 fleet (lowering training and maintenance costs), secondary airports (lower landing fees, faster turnarounds), no assigned seats (faster boarding), and happy employees (lower attrition, higher productivity including pilots helping load luggage). No single element is revolutionary. The innovation is the configuration — and decades of competitor imitation attempts have failed because copying one or two elements without the others just creates cost without capturing the synergies.",
+    "objectID": "content/ch03.html#from-diagnosis-to-strategy",
+    "href": "content/ch03.html#from-diagnosis-to-strategy",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.6 From Diagnosis to Strategy",
+    "text": "3.6 From Diagnosis to Strategy\nIndustry analysis is not an end in itself — it is input to strategic decision-making. The diagnostic question for each force is: “Is this force currently weakening or strengthening, and does my firm benefit or suffer?”\n\n\n\n\n\n\n\nIf the force is…\nStrategic response\n\n\n\n\nStrong and worsening\nEither find ways to weaken it (e.g., differentiate to reduce buyer power) or exit / reposition.\n\n\nStrong but stable\nBuild defensive moats — switching costs, regulatory protection, network effects.\n\n\nWeak and stable\nPress the advantage — invest aggressively while structural protection lasts.\n\n\nWeak but worsening\nEarly warning — start building defenses before the structural environment deteriorates.\n\n\n\nThis diagnostic translation — from forces to actions — is what separates a Five Forces homework assignment from a Five Forces strategy memo.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#modern-tools-for-business-model-design",
-    "href": "content/ch02.html#modern-tools-for-business-model-design",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.7 Modern Tools for Business Model Design",
-    "text": "2.7 Modern Tools for Business Model Design\nThe 2026 edition of this course integrates Generative AI (GenAI) workflows into every phase of business model analysis:\n\n\n\n\n\n\nNoteHow GenAI Augments the BMC\n\n\n\n\nValue Proposition discovery — use Claude or ChatGPT to synthesize customer interviews, online reviews, and industry reports into candidate problem statements.\nCompetitive benchmarking — use NotebookLM to ingest competitor annual reports and extract comparable BMC blocks side-by-side.\nScenario stress-testing — prompt the model to act as a skeptical investor and attack each block for internal inconsistency.\nVisualization — use Gamma or Napkin to turn a completed BMC into a polished deck-ready diagram.\n\nThe AI is a thinking partner, not a replacement for analysis. Poor prompts produce plausible-but-shallow BMCs. See Appendix B for CRF (Context–Role–Format) prompting templates used in this course.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
-    ]
-  },
-  {
-    "objectID": "content/ch02.html#self-check-questions",
-    "href": "content/ch02.html#self-check-questions",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html#self-check-questions",
+    "href": "content/ch03.html#self-check-questions",
+    "title": "The General Environment & Industry Analysis",
     "section": "Self-Check Questions",
-    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — V-P-C Decomposition\n\n\n\n\n\nA specialty coffee chain sells a latte for NT$150. Customer surveys indicate the average customer would pay up to NT$220 before switching to a substitute. Ingredient and direct labor costs total NT$55 per cup; allocated overhead adds another NT$30.\n\nCalculate the consumer surplus, the firm’s gross profit per cup, and the total economic value created per cup.\nIf a competitor opens next door and forces the chain to drop prices to NT$130, which of the three quantities above is most affected? Explain.\nIf instead the chain invests in a new roasting process that lowers ingredient cost to NT$40 without changing perceived quality, which quantities shift and by how much?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — BMC Coherence Check\n\n\n\n\n\nSelect a Taiwan-listed company you know well (e.g., 台積電 TSMC, 統一超商 7-ELEVEN, 鼎泰豐 Din Tai Fung, 王品 Wowprime).\n\nFill in all nine blocks of the Business Model Canvas for that company.\nIdentify at least two pairs of blocks that visibly reinforce each other. Explain the reinforcement.\nIdentify at least one block that feels like a potential weakness or vulnerability. What would you change?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Strategic vs. Operational Innovation\n\n\n\n\n\nFor each of the following, classify as primarily operational effectiveness, product innovation, process innovation, or strategic innovation. Defend each classification in one to two sentences.\n\nToyota implementing the Toyota Production System (TPS) in its plants.\nNetflix shifting from DVD-by-mail to streaming.\nApple launching a faster iPhone each year.\nFoxconn offering contract-manufacturing services to branded electronics firms.\nDyson inventing the bagless vacuum cleaner.\nCostco’s membership-fee-based warehouse retail model.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Measurement Method Selection\n\n\n\n\n\nYou have been asked to evaluate the performance of three divisions within a multinational conglomerate:\n\nDivision A: a mature consumer goods business with stable cash flows and minimal reinvestment needs.\nDivision B: a growing cloud-software business with negative current cash flow but rapidly expanding subscriber base.\nDivision C: a pharmaceutical R&D unit with long development cycles and uncertain outcomes.\n\nWhich measurement standard (NPV, DuPont/ROE, or EVA) would you apply to each division, and why? What additional qualitative indicators would you add?",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — PESTEL for a Specific Industry\n\n\n\n\n\nChoose one of the following industries: (a) Taiwan craft beer, (b) global EV charging infrastructure, (c) Southeast Asia ride-hailing, (d) Taiwanese semiconductor IC design.\n\nIdentify the three most critical PESTEL factors affecting this industry in 2026. Justify why each is critical (avoid generic statements).\nFor each factor, indicate whether it raises or lowers industry profitability and explain the mechanism.\nCite at least one quantitative data point per factor (you may use placeholders during this exercise but flag where you would source the real number).\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Five Forces Diagnosis\n\n\n\n\n\nUsing the same industry from Question 1:\n\nScore each of the Five Forces (and the sixth force, Complementors) as Low, Medium, or High intensity in 2026.\nIdentify the single most threatening force to firms in this industry. Why?\nPropose two strategic actions a firm could take to weaken that force or insulate itself from it.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Industry Lifecycle Mapping\n\n\n\n\n\nFor each of the following, identify the lifecycle stage and justify with at least one piece of evidence:\n\nGenerative AI consumer applications.\nTraditional optical disc storage.\nTaiwanese contract beverage manufacturing.\nCommercial space launch services.\nRidesharing in Tier-1 Asian cities.\nOn-premise enterprise software.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — From Industry Map to Firm Strategy\n\n\n\n\n\nSuppose your TP focal company is a mid-size Taiwanese contract manufacturer in an industry where:\n\nTop 3 competitors hold 65% combined market share (CR3 = 65%).\nLargest customer accounts for 40% of revenue.\nTwo new low-cost competitors entered Vietnam in the past 18 months.\nIndustry growth has slowed from 12% (5 years ago) to 3% (last year).\n\n\nDiagnose the Five Forces situation in two paragraphs.\nRecommend two specific strategic moves for the focal firm — one defensive, one offensive.\nWhat additional data would you need to make these recommendations more confident?",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#further-readings",
-    "href": "content/ch02.html#further-readings",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html#further-readings",
+    "href": "content/ch03.html#further-readings",
+    "title": "The General Environment & Industry Analysis",
     "section": "Further Readings",
-    "text": "Further Readings\n\nOsterwalder, A. & Pigneur, Y. (2010). Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers. Wiley. — The canonical BMC reference.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 2 — “Goals, Values and Performance”. Wiley.\nPorter, M. E. (1996). “What Is Strategy?” Harvard Business Review, Nov–Dec. — The classic argument against confusing operational effectiveness with strategy.\nMagretta, J. (2002). “Why Business Models Matter.” Harvard Business Review, May. — Short, readable introduction to the concept.\nChesbrough, H. (2010). “Business Model Innovation: Opportunities and Barriers.” Long Range Planning, 43(2-3), 354-363.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — UPenn Wharton. Video 1.1–1.7 (business model foundations, ~84 min) directly complements this chapter.",
+    "text": "Further Readings\n\nPorter, M. E. (2008). “The Five Competitive Forces That Shape Strategy.” Harvard Business Review, January. — The 30-year retrospective and refinement of the original 1979 article.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapters 3 — “Industry Analysis: The Fundamentals”. Wiley.\nBrandenburger, A. M. & Nalebuff, B. J. (1996). Co-opetition. Currency Doubleday. — Source of the “sixth force” concept.\nGrove, A. (1996). Only the Paranoid Survive. Doubleday. — The classic on strategic inflection points.\nMcGahan, A. M. (2004). How Industries Evolve. Harvard Business School Press. — Detailed industry-lifecycle modeling.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — Video 2.1–2.6 (Opportunity Analysis, ~63 min) walks through industry-level opportunity assessment from an entrepreneur’s perspective.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#looking-ahead",
-    "href": "content/ch02.html#looking-ahead",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html#looking-ahead",
+    "href": "content/ch03.html#looking-ahead",
+    "title": "The General Environment & Industry Analysis",
     "section": "Looking Ahead",
-    "text": "Looking Ahead\nChapter 2 has given us the V-P-C lens and the four pillars of a business model. Starting in Chapter 3, we take the outside-in perspective: how does the external environment — macro forces and industry structure — shape the Value and Price sides of our framework? Then in Chapter 5 we turn inside-out, asking how a firm’s resources and capabilities shape the Cost side and the ability to sustain whatever advantage it creates.\nEvery subsequent chapter is a refinement of the core question posed here: how does a firm create, deliver, appropriate, and sustain value?",
+    "text": "Looking Ahead\nChapter 3 has examined industry structure — relatively stable forces that condition average profitability. But industries are also dynamic: competitors take actions and respond to one another. Chapter 4 turns to competitive analysis and co-opetitive dynamics — the moves and counter-moves that determine which firms within an industry capture the available profit.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   }
 ]

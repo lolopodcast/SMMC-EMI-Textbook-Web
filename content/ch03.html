@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publishing – SMMC-EMI Course Textbook</title>
+<title>The General Environment &amp; Industry Analysis – SMMC-EMI Course Textbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/ch04.qmd" rel="next">
+<link href="../content/ch02.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -74,6 +76,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -249,9 +255,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      SMMC-EMI Course Textbook
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/ch01.html">Part I. Concepts &amp; Frameworks</a></li><li class="breadcrumb-item"><a href="../content/ch03.html">Ch 3. General Environment &amp; Industry Analysis</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -295,13 +299,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Part I. Concepts &amp; Frameworks</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/ch01.html" class="sidebar-item-text sidebar-link">
@@ -316,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/ch03.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/ch03.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Ch 3. General Environment &amp; Industry Analysis</span></a>
   </div>
 </li>
@@ -462,19 +466,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On This Page</h2>
    
   <ul>
-  <li><a href="#turn-on-github-pages-for-your-repo" id="toc-turn-on-github-pages-for-your-repo" class="nav-link active" data-scroll-target="#turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</a></li>
-  <li><a href="#do-your-first-publish-to-gh-pages" id="toc-do-your-first-publish-to-gh-pages" class="nav-link" data-scroll-target="#do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></a></li>
-  <li><a href="#dont-like-using-gh-pages" id="toc-dont-like-using-gh-pages" class="nav-link" data-scroll-target="#dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#two-layers-of-external-environment" id="toc-two-layers-of-external-environment" class="nav-link" data-scroll-target="#two-layers-of-external-environment">3.1 Two Layers of External Environment</a></li>
+  <li><a href="#the-pestel-framework" id="toc-the-pestel-framework" class="nav-link" data-scroll-target="#the-pestel-framework">3.2 The PESTEL Framework</a>
+  <ul class="collapse">
+  <li><a href="#doing-pestel-well" id="toc-doing-pestel-well" class="nav-link" data-scroll-target="#doing-pestel-well">3.2.1 Doing PESTEL Well</a></li>
+  <li><a href="#pestel-in-2026-a-few-critical-forces" id="toc-pestel-in-2026-a-few-critical-forces" class="nav-link" data-scroll-target="#pestel-in-2026-a-few-critical-forces">3.2.2 PESTEL in 2026 — A Few Critical Forces</a></li>
+  </ul></li>
+  <li><a href="#porters-five-forces" id="toc-porters-five-forces" class="nav-link" data-scroll-target="#porters-five-forces">3.3 Porter’s Five Forces</a>
+  <ul class="collapse">
+  <li><a href="#the-five-forces-in-detail" id="toc-the-five-forces-in-detail" class="nav-link" data-scroll-target="#the-five-forces-in-detail">3.3.1 The Five Forces in Detail</a></li>
+  <li><a href="#the-sixth-force-complementors" id="toc-the-sixth-force-complementors" class="nav-link" data-scroll-target="#the-sixth-force-complementors">3.3.2 The Sixth Force — Complementors</a></li>
+  </ul></li>
+  <li><a href="#industry-lifecycle" id="toc-industry-lifecycle" class="nav-link" data-scroll-target="#industry-lifecycle">3.4 Industry Lifecycle</a></li>
+  <li><a href="#where-to-find-industry-data-taiwan-resources" id="toc-where-to-find-industry-data-taiwan-resources" class="nav-link" data-scroll-target="#where-to-find-industry-data-taiwan-resources">3.5 Where to Find Industry Data — Taiwan Resources</a></li>
+  <li><a href="#from-diagnosis-to-strategy" id="toc-from-diagnosis-to-strategy" class="nav-link" data-scroll-target="#from-diagnosis-to-strategy">3.6 From Diagnosis to Strategy</a></li>
+  <li><a href="#self-check-questions" id="toc-self-check-questions" class="nav-link" data-scroll-target="#self-check-questions">Self-Check Questions</a></li>
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings">Further Readings</a></li>
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/publishing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch03.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch03.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/ch01.html">Part I. Concepts &amp; Frameworks</a></li><li class="breadcrumb-item"><a href="../content/ch03.html">Ch 3. General Environment &amp; Industry Analysis</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Publishing</h1>
+<h1 class="title">The General Environment &amp; Industry Analysis</h1>
+<p class="subtitle lead">Chapter 3 — Outside-In Perspective: PESTEL and the Five Forces</p>
 </div>
 
 
@@ -491,90 +511,542 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To get your Quarto webpage to show up with the url</p>
-<pre><code>yourname.github.io/yourrepo</code></pre>
-<p>you have a few steps.</p>
-<section id="turn-on-github-pages-for-your-repo" class="level2">
-<h2 class="anchored" data-anchor-id="turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</h2>
-<ul>
-<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.</li>
-<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
-</ul>
-<p>The GitHub Action will automatically recreate your website when you push to GitHub <strong>after</strong> you do the initial <code>gh-pages</code> set-up</p>
+<div class="tts-controls">
+<p><button onclick="TTS.speak('en')" title="Read in English">🔊 Read Aloud (EN)</button> <button onclick="TTS.speak('zh')" title="朗讀中文">🔊 朗讀 (中文)</button> <button onclick="TTS.pause()" title="Pause / Resume">⏸</button> <button onclick="TTS.stop()" title="Stop">⏹</button> <button onclick="TTS.setRate(-0.2)" title="Slower">🐢</button> <button onclick="TTS.setRate(0.2)" title="Faster">🐰</button> <span class="tts-status"></span></p>
+</div>
+<script src="../assets/tts-player.js"></script>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>After completing this chapter, students should be able to:</p>
+<ol type="1">
+<li>Distinguish between the <strong>macro environment</strong> (general environment) and the <strong>industry environment</strong>, and explain why both matter to firm strategy.</li>
+<li>Apply the <strong>PESTEL framework</strong> to identify external forces shaping an industry’s future.</li>
+<li>Apply <strong>Porter’s Five Forces</strong> model to assess the structural attractiveness of an industry.</li>
+<li>Determine which forces dominate in a given industry and translate that diagnosis into strategic implications for V (value) and P (price).</li>
+<li>Use <strong>public databases</strong> in Taiwan — MOPS, the TPEX Industry Value Chain Platform, and government open data — to gather the empirical evidence required for credible industry analysis.</li>
+</ol>
+<hr>
 </section>
-<section id="do-your-first-publish-to-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></h2>
-<p>The first time you publish to <code>gh-pages</code>, you need to do so locally.</p>
-<ul>
-<li>On your local computer, open a terminal window and <code>cd</code> to your repo directory. Here is what that <code>cd</code> command looks like for me. You command will look different because your local repo will be somewhere else on your computer.</li>
-</ul>
-<pre><code>cd ~/Documents/GitHub/NOAA-quarto-simple</code></pre>
-<ul>
-<li>Publish to the <code>gh-pages</code>. In the terminal type</li>
-</ul>
-<pre><code>quarto publish gh-pages</code></pre>
-<p>This is going to render your webpage and then push the <code>_site</code> contents to the <code>gh-pages</code> branch.</p>
+<section id="two-layers-of-external-environment" class="level2">
+<h2 class="anchored" data-anchor-id="two-layers-of-external-environment">3.1 Two Layers of External Environment</h2>
+<p>In Chapter 1 we noted that ~20% of firm performance variance is explained by <strong>industry effects</strong>. To unpack that 20%, we need to look at <strong>two concentric layers</strong> of the firm’s external environment.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    subgraph MACRO["MACRO ENVIRONMENT — PESTEL"]
+        direction LR
+        P["Political"] 
+        E["Economic"]
+        S["Social"]
+        T["Technological"]
+        EN["Environmental"]
+        L["Legal"]
+    end
+    subgraph IND["INDUSTRY ENVIRONMENT — Five Forces"]
+        direction LR
+        SUP["Suppliers"]
+        BUY["Buyers"]
+        NEW["New Entrants"]
+        SUB["Substitutes"]
+        RIV["Rivalry"]
+    end
+    FIRM["&lt;b&gt;The Firm&lt;/b&gt;&lt;br/&gt;Resources &amp; Capabilities"]
+    
+    MACRO --&gt; IND
+    IND --&gt; FIRM
+    
+    style MACRO fill:#EFE4D2,stroke:#004030,color:#2C2C2C
+    style IND fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>The <strong>macro environment</strong> sets the broad context — political stability, economic cycles, demographic trends, technological revolutions. The <strong>industry environment</strong> sets the immediate competitive context — who supplies you, who buys from you, who could replace you.</p>
+<p>A common analytical mistake is to <strong>stop at PESTEL</strong>. PESTEL identifies forces; it does not tell you whether those forces are good or bad for your industry. That requires the second layer — the Five Forces — which translates macro shifts into concrete profit pressure.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>TP1 implication
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In <strong>TP1 — External Analysis</strong> (Week 10), your group must produce both a PESTEL analysis (critical factors only) and a Five Forces analysis. Don’t analyze them in isolation: use PESTEL to identify <em>which</em> forces are changing, and use the Five Forces to assess <em>how those changes affect industry profitability.</em></p>
+</div>
+</div>
+<hr>
 </section>
-<section id="dont-like-using-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</h2>
-<p>In some cases, you don’t want your website on the <code>gh-pages</code> branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the <code>gh-pages</code> branch.</p>
-<p>Here are the changes you need to make if you to avoid <code>gh-pages</code> branch.</p>
+<section id="the-pestel-framework" class="level2">
+<h2 class="anchored" data-anchor-id="the-pestel-framework">3.2 The PESTEL Framework</h2>
+<p><strong>PESTEL (總體環境分析架構)</strong> is an acronym for six categories of macro-environmental factors. Originally proposed as PEST in the 1960s, it expanded as environmental and legal factors gained strategic weight.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Letter</th>
+<th>Factor</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>P</strong></td>
+<td>Political (政治)</td>
+<td>Government stability, trade policy, US-China tech war, semiconductor export controls, defense procurement</td>
+</tr>
+<tr class="even">
+<td><strong>E</strong></td>
+<td>Economic (經濟)</td>
+<td>GDP growth, interest rates, inflation, exchange rates, energy prices, supply-chain re-shoring</td>
+</tr>
+<tr class="odd">
+<td><strong>S</strong></td>
+<td>Social (社會)</td>
+<td>Demographics (aging population), values shifts, ESG expectations, remote work culture</td>
+</tr>
+<tr class="even">
+<td><strong>T</strong></td>
+<td>Technological (科技)</td>
+<td>Generative AI, EV battery chemistry, 5G/6G, biotech, automation, cybersecurity</td>
+</tr>
+<tr class="odd">
+<td><strong>E</strong></td>
+<td>Environmental (環境)</td>
+<td>Climate regulation, carbon tax, Net Zero 2050, water scarcity, circular economy</td>
+</tr>
+<tr class="even">
+<td><strong>L</strong></td>
+<td>Legal (法律)</td>
+<td>Antitrust enforcement, IP protection, GDPR/PIPL data laws, labor regulations</td>
+</tr>
+</tbody>
+</table>
+<section id="doing-pestel-well" class="level3">
+<h3 class="anchored" data-anchor-id="doing-pestel-well">3.2.1 Doing PESTEL Well</h3>
+<p>Three rules separate professional PESTEL analysis from undergraduate-level PESTEL analysis:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Rules for credible PESTEL
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Be selective, not exhaustive.</strong> A 30-bullet list is not analysis — it is a research dump. Identify the <strong>three to five most critical</strong> factors and ignore the rest.</li>
+<li><strong>Be specific, not generic.</strong> “AI is transforming everything” is meaningless. “Generative AI is shifting customer support headcount in financial services by ~30% annually since 2024” is analysis.</li>
+<li><strong>Be directional.</strong> Each factor should answer: <em>Does this raise or lower industry profitability? For whom?</em> A trend that hurts incumbents may help new entrants.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="pestel-in-2026-a-few-critical-forces" class="level3">
+<h3 class="anchored" data-anchor-id="pestel-in-2026-a-few-critical-forces">3.2.2 PESTEL in 2026 — A Few Critical Forces</h3>
+<p>For a Taiwan-headquartered MNC operating in 2026, the following macro forces are reshaping nearly every industry:</p>
 <ul>
-<li>At the top of <code>_quarto.yml</code> add the following:</li>
+<li><strong>Geopolitical bifurcation (P)</strong> — supply chains splitting between US-aligned and China-aligned ecosystems; “China + 1” sourcing strategies; CHIPS Act subsidies redirecting fab investment.</li>
+<li><strong>Persistent rate environment (E)</strong> — central banks holding rates higher for longer; cost of capital up; capital-intensive expansion harder to justify.</li>
+<li><strong>Demographic cliff (S)</strong> — Taiwan, Japan, Korea, China entering simultaneous workforce contraction; talent shortage in skilled trades and engineering.</li>
+<li><strong>GenAI productivity wave (T)</strong> — large language models commoditizing white-collar tasks; software economics reshaped; new entrants undercutting incumbents in legal, financial, and creative services.</li>
+<li><strong>Net Zero compliance (En)</strong> — Scope 3 emissions disclosure mandatory in EU, increasingly so in Asia; carbon pricing affecting cost structures.</li>
+<li><strong>AI regulation (L)</strong> — EU AI Act in force; US patchwork emerging; cross-border data flows constrained.</li>
 </ul>
-<pre><code>project: 
-  type: website
-  output-dir: docs</code></pre>
+<p>Note: this list is <strong>illustrative</strong>, not authoritative. Your TP analysis must use <strong>current</strong> data from the sources in Section 3.5.</p>
+<hr>
+</section>
+</section>
+<section id="porters-five-forces" class="level2">
+<h2 class="anchored" data-anchor-id="porters-five-forces">3.3 Porter’s Five Forces</h2>
+<p>Michael Porter’s <strong>Five Forces (五力分析)</strong> model, introduced in 1979 and refined since, remains the dominant framework for analyzing <strong>industry structure</strong> — the structural determinants of an industry’s average profitability.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    NEW["&lt;b&gt;Threat of&lt;br/&gt;New Entrants&lt;/b&gt;"]
+    SUP["&lt;b&gt;Bargaining Power&lt;br/&gt;of Suppliers&lt;/b&gt;"]
+    SUB["&lt;b&gt;Threat of&lt;br/&gt;Substitutes&lt;/b&gt;"]
+    BUY["&lt;b&gt;Bargaining Power&lt;br/&gt;of Buyers&lt;/b&gt;"]
+    RIV["&lt;b&gt;Rivalry Among&lt;br/&gt;Existing Competitors&lt;/b&gt;"]
+    
+    NEW --&gt; RIV
+    SUP --&gt; RIV
+    SUB --&gt; RIV
+    BUY --&gt; RIV
+    
+    style RIV fill:#004030,stroke:#004030,color:#FFFFFF
+    style NEW fill:#D8C3A5,stroke:#004030
+    style SUP fill:#D8C3A5,stroke:#004030
+    style SUB fill:#D8C3A5,stroke:#004030
+    style BUY fill:#D8C3A5,stroke:#004030
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Each force, when <strong>strong</strong>, depresses the average profitability of firms in the industry. Strategic decisions can be evaluated by their effect on the forces — actions that <strong>weaken</strong> unfavorable forces tend to be value-creating.</p>
+<section id="the-five-forces-in-detail" class="level3">
+<h3 class="anchored" data-anchor-id="the-five-forces-in-detail">3.3.1 The Five Forces in Detail</h3>
+<p><strong>1. Threat of New Entrants (新進者威脅)</strong></p>
+<p>When entry is easy, incumbents face constant pressure to keep prices low. Entry barriers include:</p>
 <ul>
-<li>On GitHub under Settings &gt; Pages set pages to be made from the <code>main</code> branch and the docs directory.</li>
-<li>Make sure <code>docs</code> is not listed in <code>.gitignore</code></li>
-<li>Publish the site the first time locally using <code>quarto publish</code> from the terminal</li>
-<li>Change the GitHub Action because you can’t use <code>quarto publish gh-pages</code>. You’ll need to push to the main branch yourself (in the GitHub Action)</li>
+<li><strong>Economies of scale</strong> — incumbents enjoy unit-cost advantages that newcomers cannot match.</li>
+<li><strong>Capital requirements</strong> — high upfront investment (e.g., semiconductor fab &gt; USD 20B) deters most entrants.</li>
+<li><strong>Switching costs</strong> — customers locked into existing platforms (e.g., enterprise SAP) won’t easily migrate.</li>
+<li><strong>Network effects</strong> — incumbent value rises with users (e.g., LINE in Taiwan, WeChat in China).</li>
+<li><strong>Regulatory barriers</strong> — licenses, certifications, IP, government approvals.</li>
+<li><strong>Brand and reputation</strong> — accumulated trust takes years or decades to build.</li>
 </ul>
-<pre><code>on:
-  push:
-    branches: main
-
-name: Render and Publish
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2 
-        
-      - name: Set up R (needed for Rmd)
-        uses: r-lib/actions/setup-r@v2
-
-      - name: Install packages (needed for Rmd)
-        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite"))'
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          # To install LaTeX to build PDF book 
-          # tinytex: true 
-          # uncomment below and fill to pin a version
-          # version: 0.9.600
-      
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-
-      - name: Set up Git
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-
-      - name: Commit all changes and push
-        run: |
-          git add -A &amp;&amp; git commit -m 'Build site' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"</code></pre>
+<p><strong>2. Bargaining Power of Suppliers (供應商議價力)</strong></p>
+<p>Powerful suppliers extract value by raising prices or limiting quality. Suppliers are powerful when:</p>
+<ul>
+<li>The supplier industry is more concentrated than the buyer industry.</li>
+<li>The supplier’s input is differentiated (no easy substitute).</li>
+<li>Switching suppliers is costly.</li>
+<li>Suppliers can credibly threaten <strong>forward integration</strong> into the buyer’s industry.</li>
+<li>The buyer is not an important customer for the supplier.</li>
+</ul>
+<p><strong>3. Bargaining Power of Buyers (買方議價力)</strong></p>
+<p>Symmetric to suppliers — powerful buyers extract value by demanding lower prices or higher quality. Buyers are powerful when:</p>
+<ul>
+<li>Buyers are concentrated or purchase in large volumes.</li>
+<li>Products are standardized or undifferentiated.</li>
+<li>Buyers face low switching costs.</li>
+<li>Buyers can credibly threaten <strong>backward integration</strong>.</li>
+<li>Buyers have full information about costs.</li>
+</ul>
+<p><strong>4. Threat of Substitutes (替代品威脅)</strong></p>
+<p>Substitutes are products from <strong>other industries</strong> that satisfy the same need. Streaming substitutes for cinema; video calls substitute for business travel; plant-based protein substitutes for beef. Substitutes cap the price ceiling — when they get cheaper or better, every firm in the industry suffers.</p>
+<p><strong>5. Rivalry Among Existing Competitors (現有競爭者間競爭強度)</strong></p>
+<p>The intensity of rivalry depends on:</p>
+<ul>
+<li>Number and relative size of competitors (concentrated vs.&nbsp;fragmented).</li>
+<li>Industry growth rate (slow growth → zero-sum competition).</li>
+<li>Fixed costs (high fixed costs push firms to fill capacity at any price).</li>
+<li>Product differentiation (commodity-like products → price wars).</li>
+<li>Exit barriers (specialized assets that can’t be redeployed).</li>
+</ul>
+</section>
+<section id="the-sixth-force-complementors" class="level3">
+<h3 class="anchored" data-anchor-id="the-sixth-force-complementors">3.3.2 The Sixth Force — Complementors</h3>
+<p>A common extension proposed by Brandenburger and Nalebuff (1996): <strong>complementors (互補者)</strong> — firms whose products increase the value of yours. App developers complement smartphone OS; charging-station networks complement EVs; gaming studios complement console hardware. The healthier the complementor ecosystem, the more valuable the focal industry. This is the foundation of <strong>co-opetitive dynamics</strong> discussed in Chapter 4.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>TP1 application — make it quantitative
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Don’t just say “rivalry is high.” Provide evidence:</p>
+<ul>
+<li>Industry concentration: top-4 market share (CR4) or <strong>Herfindahl-Hirschman Index (HHI)</strong>.</li>
+<li>Recent price-cutting episodes (cite news with dates and percentages).</li>
+<li>Capacity utilization rates from annual reports.</li>
+<li>Number of competitors entering or exiting in the past 3 years.</li>
+</ul>
+<p>A Five Forces analysis without numbers is an opinion, not an analysis.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="industry-lifecycle" class="level2">
+<h2 class="anchored" data-anchor-id="industry-lifecycle">3.4 Industry Lifecycle</h2>
+<p>Industry profitability is not static — it evolves through predictable stages:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Demand growth</th>
+<th>Profitability</th>
+<th>Typical strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Introduction</strong> (萌芽期)</td>
+<td>Slow, uncertain</td>
+<td>Often negative</td>
+<td>Build the market, define standards, secure early adopters</td>
+</tr>
+<tr class="even">
+<td><strong>Growth</strong> (成長期)</td>
+<td>Rapid</td>
+<td>High and rising</td>
+<td>Scale up, capture market share, build distribution</td>
+</tr>
+<tr class="odd">
+<td><strong>Maturity</strong> (成熟期)</td>
+<td>Slow, saturating</td>
+<td>High but plateauing</td>
+<td>Differentiate, defend share, optimize operations</td>
+</tr>
+<tr class="even">
+<td><strong>Decline</strong> (衰退期)</td>
+<td>Negative</td>
+<td>Declining</td>
+<td>Harvest, divest, or reinvent (strategic innovation)</td>
+</tr>
+<tr class="odd">
+<td><strong>Renewal</strong> (再生期)</td>
+<td>Re-accelerating</td>
+<td>Variable</td>
+<td>Disruption opens new sub-markets</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>lifecycle stage</strong> strongly conditions which forces matter most. In the introduction stage, <strong>substitution risk</strong> (will the technology even win?) dominates. In maturity, <strong>rivalry intensity</strong> dominates as growth slows.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Strategic Inflection Points
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Andy Grove of Intel famously argued that industries face <strong>strategic inflection points</strong> — moments when “10x” forces (technology, regulation, customer behavior) reshape industry structure suddenly. Examples: smartphones reshaping mobile carriers (2007–2012); LLMs reshaping search and SaaS (2022–present); EV adoption reshaping automotive value chains (2020–present). Recognizing an inflection point early is itself a competitive advantage.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="where-to-find-industry-data-taiwan-resources" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-find-industry-data-taiwan-resources">3.5 Where to Find Industry Data — Taiwan Resources</h2>
+<p>For your Term Project, the credibility of your industry analysis depends on the credibility of your sources. Taiwan offers excellent free databases:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Essential Taiwan Industry Databases
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>公開資訊觀測站 (MOPS)</strong> — <a href="https://mops.twse.com.tw/">mops.twse.com.tw</a> — Annual reports (年報), financial statements, GDR/ADR filings, material announcements for all listed companies.</li>
+<li><strong>產業價值鏈資訊平台 (Industry Value Chain Information Platform)</strong> — <a href="https://ic.tpex.org.tw/">ic.tpex.org.tw</a> — Visualized upstream–midstream–downstream industry maps for major Taiwan industries; identify suppliers, buyers, and competitors at a glance.</li>
+<li><strong>政府資料開放平台 (Government Open Data)</strong> — <a href="https://data.gov.tw/">data.gov.tw</a> — National statistics, trade data, demographic data.</li>
+<li><strong>104 人力銀行</strong> — <a href="https://www.104.com.tw/jobs/main/">104.com.tw</a> — Reveals industry hiring patterns and skill demand; useful proxy for industry growth.</li>
+</ul>
+</div>
+</div>
+<p>For <strong>global</strong> data, use:</p>
+<ul>
+<li><strong>World Bank Open Data</strong> — <a href="https://data.worldbank.org/">data.worldbank.org</a></li>
+<li><strong>OECD Statistics</strong> — <a href="https://stats.oecd.org/">stats.oecd.org</a></li>
+<li><strong>Statista</strong>, <strong>IBISWorld</strong>, <strong>MarketLine</strong> — typically subscription-based; check NCNU library access first.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Using GenAI for industry research
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Claude</strong> and <strong>NotebookLM</strong> are exceptionally good at synthesizing <strong>unstructured industry sources</strong> — annual reports, news archives, analyst reports — into structured PESTEL and Five Forces tables. <strong>Workflow</strong>:</p>
+<ol type="1">
+<li>Download the focal company’s most recent 3 annual reports + top 2 competitors’ annual reports.</li>
+<li>Upload all PDFs into a NotebookLM notebook.</li>
+<li>Prompt: <em>“Extract all references to PESTEL factors. Group them by P/E/S/T/En/L. Cite the source page for each.”</em></li>
+<li>Cross-check the AI’s output against the original PDFs — <strong>always verify</strong> before quoting.</li>
+</ol>
+<p>The AI does the <strong>synthesis</strong>; you do the <strong>judgment</strong>. Roles cannot be reversed.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="from-diagnosis-to-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="from-diagnosis-to-strategy">3.6 From Diagnosis to Strategy</h2>
+<p>Industry analysis is not an end in itself — it is input to strategic decision-making. The diagnostic question for each force is: <em>“Is this force currently weakening or strengthening, and does my firm benefit or suffer?”</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>If the force is…</th>
+<th>Strategic response</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Strong and worsening</strong></td>
+<td>Either find ways to weaken it (e.g., differentiate to reduce buyer power) or exit / reposition.</td>
+</tr>
+<tr class="even">
+<td><strong>Strong but stable</strong></td>
+<td>Build defensive moats — switching costs, regulatory protection, network effects.</td>
+</tr>
+<tr class="odd">
+<td><strong>Weak and stable</strong></td>
+<td>Press the advantage — invest aggressively while structural protection lasts.</td>
+</tr>
+<tr class="even">
+<td><strong>Weak but worsening</strong></td>
+<td>Early warning — start building defenses <strong>before</strong> the structural environment deteriorates.</td>
+</tr>
+</tbody>
+</table>
+<p>This diagnostic translation — from forces to actions — is what separates a Five Forces <strong>homework assignment</strong> from a Five Forces <strong>strategy memo</strong>.</p>
+<hr>
+</section>
+<section id="self-check-questions" class="level2">
+<h2 class="anchored" data-anchor-id="self-check-questions">Self-Check Questions</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 1 — PESTEL for a Specific Industry
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Choose one of the following industries: (a) Taiwan craft beer, (b) global EV charging infrastructure, (c) Southeast Asia ride-hailing, (d) Taiwanese semiconductor IC design.</p>
+<ol type="a">
+<li>Identify the <strong>three most critical</strong> PESTEL factors affecting this industry in 2026. Justify why each is critical (avoid generic statements).</li>
+<li>For each factor, indicate whether it raises or lowers industry profitability and explain the mechanism.</li>
+<li>Cite at least one quantitative data point per factor (you may use placeholders during this exercise but flag where you would source the real number).</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 2 — Five Forces Diagnosis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Using the same industry from Question 1:</p>
+<ol type="a">
+<li>Score each of the Five Forces (and the sixth force, Complementors) as Low, Medium, or High intensity in 2026.</li>
+<li>Identify the <strong>single most threatening</strong> force to firms in this industry. Why?</li>
+<li>Propose <strong>two strategic actions</strong> a firm could take to weaken that force or insulate itself from it.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 3 — Industry Lifecycle Mapping
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For each of the following, identify the lifecycle stage and justify with at least one piece of evidence:</p>
+<ol type="a">
+<li>Generative AI consumer applications.</li>
+<li>Traditional optical disc storage.</li>
+<li>Taiwanese contract beverage manufacturing.</li>
+<li>Commercial space launch services.</li>
+<li>Ridesharing in Tier-1 Asian cities.</li>
+<li>On-premise enterprise software.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 4 — From Industry Map to Firm Strategy
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Suppose your TP focal company is a mid-size Taiwanese contract manufacturer in an industry where:</p>
+<ul>
+<li>Top 3 competitors hold 65% combined market share (CR3 = 65%).</li>
+<li>Largest customer accounts for 40% of revenue.</li>
+<li>Two new low-cost competitors entered Vietnam in the past 18 months.</li>
+<li>Industry growth has slowed from 12% (5 years ago) to 3% (last year).</li>
+</ul>
+<ol type="a">
+<li>Diagnose the Five Forces situation in two paragraphs.</li>
+<li>Recommend two specific strategic moves for the focal firm — one defensive, one offensive.</li>
+<li>What additional data would you need to make these recommendations more confident?</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="further-readings" class="level2">
+<h2 class="anchored" data-anchor-id="further-readings">Further Readings</h2>
+<ul>
+<li><strong>Porter, M. E. (2008)</strong>. “The Five Competitive Forces That Shape Strategy.” <em>Harvard Business Review</em>, January. — The 30-year retrospective and refinement of the original 1979 article.</li>
+<li><strong>Grant, R. M. (2016)</strong>. <em>Contemporary Strategy Analysis</em>, 9th ed., Chapters 3 — “Industry Analysis: The Fundamentals”. Wiley.</li>
+<li><strong>Brandenburger, A. M. &amp; Nalebuff, B. J. (1996)</strong>. <em>Co-opetition</em>. Currency Doubleday. — Source of the “sixth force” concept.</li>
+<li><strong>Grove, A. (1996)</strong>. <em>Only the Paranoid Survive</em>. Doubleday. — The classic on strategic inflection points.</li>
+<li><strong>McGahan, A. M. (2004)</strong>. <em>How Industries Evolve</em>. Harvard Business School Press. — Detailed industry-lifecycle modeling.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Coursera Companion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>[ENT] Entrepreneurship 1: Developing the Opportunity</strong> — Video 2.1–2.6 (Opportunity Analysis, ~63 min) walks through industry-level opportunity assessment from an entrepreneur’s perspective.</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>Chapter 3 has examined industry <strong>structure</strong> — relatively stable forces that condition average profitability. But industries are also <strong>dynamic</strong>: competitors take actions and respond to one another. Chapter 4 turns to <strong>competitive analysis and co-opetitive dynamics</strong> — the moves and counter-moves that determine which firms within an industry capture the available profit.</p>
 
 
 </section>
@@ -993,6 +1465,18 @@ jobs:
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/ch02.html" class="pagination-link" aria-label="Ch 2. Strategic Innovation &amp; Business Model">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Ch 2. Strategic Innovation &amp; Business Model</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/ch04.qmd" class="pagination-link" aria-label="Ch 4. Competitive Analysis &amp; Co-opetitive Dynamics">
+        <span class="nav-page-text">Ch 4. Competitive Analysis &amp; Co-opetitive Dynamics</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1001,7 +1485,7 @@ jobs:
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/publishing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch03.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch03.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
