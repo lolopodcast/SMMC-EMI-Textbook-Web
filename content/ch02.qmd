@@ -26,7 +26,7 @@ In Chapter 1 we argued that strategy is a *unifying theme* directing a firm's ac
 3. **Value Appropriation (價值獲取)** — how we capture a fair share
 4. **Value Sustaining (價值維繫)** — how we defend the model over time
 
-These four decisions are not independent. A premium value proposition (V↑) that is delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions **coherent**.
+These four decisions are not independent. A premium value proposition (V↑) delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions **coherent**.
 
 ---
 
@@ -35,3 +35,337 @@ These four decisions are not independent. A premium value proposition (V↑) tha
 The **V-P-C framework** decomposes every transaction into three layers and, from them, four strategic quantities.
 
 ```{mermaid}
+flowchart TB
+    V["<b>V — Value</b><br/>Consumer's Maximum<br/>Willingness-To-Pay (WTP)"]
+    P["<b>P — Price</b><br/>What the customer pays"]
+    C["<b>C — Cost</b><br/>Firm's cost to deliver"]
+    
+    V --> VP["<b>V − P</b><br/>Consumer Surplus"]
+    V --> VC["<b>V − C</b><br/>Economic Value Created"]
+    P --> PC["<b>P − C</b><br/>Firm's Profit"]
+    C --> PC
+    
+    style V fill:#004030,stroke:#004030,color:#FFFFFF
+    style P fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style C fill:#EFE4D2,stroke:#004030,color:#2C2C2C
+    style VP fill:#FAF6F0,stroke:#6B6B6B
+    style VC fill:#FAF6F0,stroke:#6B6B6B
+    style PC fill:#FAF6F0,stroke:#6B6B6B
+```
+
+Three terms deserve careful distinction:
+
+::: {.callout-note}
+## Key Definitions
+
+- **Perceived Value (PV, 感知價值)** — the customer's subjective assessment of benefit before purchase.
+- **Willingness-To-Pay (WTP, 支付意願)** — the maximum monetary amount a customer would rationally give up for the offering. In economic theory, $V = WTP$.
+- **Reservation Price (RP, 保留價格)** — the price above which the customer walks away. Typically $RP \leq WTP$, because customers compare against alternatives.
+:::
+
+### 2.2.1 Sources of Superior Profitability
+
+With the V-P-C lens, the perennial question — *how does a firm earn superior profits?* — reduces to three levers:
+
+1. **Raise V** (increase value perceived by customers) — differentiation, branding, premium features
+2. **Lower C** (reduce cost of production and delivery) — scale, experience, process innovation
+3. **Expand P − C** (widen the margin between price and cost) — pricing power, market structure
+
+Observe that "raising P" is **not** an independent lever. Price is bounded above by V (customers will not pay more than WTP) and bounded below by C (firms will not sell at a loss for long). Strategic choices expand the spread by attacking V or C directly.
+
+### 2.2.2 Do Better or Do Different?
+
+A recurring choice for managers: should we pursue **operational effectiveness** (do the same things better) or **strategic innovation** (do different things altogether)?
+
+| Dimension | Operational Effectiveness | Strategic Innovation |
+|---|---|---|
+| What changes | How activities are performed | What activities are performed |
+| Examples | Six Sigma, Lean Manufacturing, ERP, benchmarking | Redefining the industry value chain, new business models |
+| Competitive outcome | Necessary but not sufficient for advantage | Can create temporary monopoly rents |
+| Imitability | High — tools and techniques diffuse quickly | Low — at least until competitors reconfigure |
+
+Michael Porter's classic warning: *operational effectiveness is not strategy*. If every firm in the industry adopts the same quality-management tools, the productivity frontier shifts outward but **relative** position does not change — and in the long run, the gains are competed away to customers via lower prices.
+
+---
+
+## 2.3 The Four Pillars of a Business Model
+
+### 2.3.1 Value Proposition — For Whom, What Problem
+
+The first question every business must answer: **who is the customer, and what problem are we solving for them?**
+
+A disciplined value proposition answers four sub-questions:
+
+1. **Unsatisfied or future demand** — what problem is not yet adequately solved?
+2. **Substitution and complementarity** — what else could the customer use instead, or alongside?
+3. **Market size, installed base, penetration rate** — how large is the opportunity?
+4. **Price elasticity of demand** — how sensitive is the customer to price?
+
+In marketing terms, this involves **STP (Segmentation, Targeting, Positioning, 區隔、目標、定位)** and the classic **4P mix (Product, Price, Place, Promotion, 產品、價格、通路、推廣)**. Strategic management takes STP/4P as inputs and asks the higher-order question: *does this positioning defensibly raise V relative to the cost structure required to deliver it?*
+
+### 2.3.2 Value Creation — The Activity System
+
+Creating value means configuring an **activity system (活動系統)** that transforms inputs into an offering customers will pay for. Michael Porter's **Value Chain (價值鏈)** distinguishes:
+
+- **Primary activities**: inbound logistics, operations, outbound logistics, marketing & sales, service
+- **Support activities**: firm infrastructure, HR, technology development, procurement
+
+We will examine value-chain analysis in depth in Chapter 5. The key insight for now: value creation is not a single act but a **network** of interdependent activities, each of which can be a source of advantage or weakness.
+
+### 2.3.3 Value Appropriation — Keeping Your Fair Share
+
+Creating value and capturing value are different. A firm may create enormous economic value (V − C is large) yet capture very little of it if **market structure (市場結構)** forces it to share the gains with customers, suppliers, or complementors.
+
+::: {.callout-tip}
+## Market Structures and Profitability
+
+From fragmented to consolidated markets, the typical pattern:
+
+- **Perfect Competition** — many small firms, commodity products, price takers → fragmented, low profitability
+- **Monopolistic Competition** — many firms, differentiated products, some pricing power → medium profitability
+- **Oligopoly** — few large firms, differentiated products, high entry barriers → higher profitability
+- **Monopoly** — one firm, unique product, very high entry barriers → consolidated, high profitability
+:::
+
+The structural determinants of value appropriation — the "five forces" — will be the subject of Chapter 3.
+
+### 2.3.4 Value Sustaining — Defending the Model
+
+Even a well-configured business model is worthless if competitors can copy it overnight. **Value sustaining** asks: *what makes this model hard to imitate, hard to substitute, over time?*
+
+Three levels of barriers:
+
+- **Institutional factors (制度因素)** — regulation, patents, industry standards
+- **Industry factors (產業因素)** — economies of scale, network effects, switching costs
+- **Firm-specific factors (廠商因素)** — proprietary resources, tacit know-how, culture, reputation
+
+Firm-specific factors — particularly **hard-to-replicate capabilities** — are the subject of the Resource-Based View (RBV) in Chapter 5.
+
+---
+
+## 2.4 The Business Model Canvas (BMC)
+
+Alexander Osterwalder's **Business Model Canvas (BMC, 商業模式畫布)** operationalizes the four pillars into nine building blocks. We overlay the V-P-C framework on top of it:
+
+```{mermaid}
+flowchart TB
+    subgraph VP["① Value Proposition (V)"]
+        VP1["What problem are we solving?<br/>Which customer need are we satisfying?"]
+    end
+    
+    subgraph VC["② Value Creation (C-side)"]
+        KA["Key Activities"]
+        KR["Key Resources"]
+        KP["Key Partners"]
+    end
+    
+    subgraph VA["③ Value Appropriation (P-side)"]
+        CS["Customer Segments"]
+        CR["Customer Relationships"]
+        CH["Channels"]
+        RS["Revenue Streams"]
+    end
+    
+    subgraph VSus["④ Value Sustaining (underlying)"]
+        COST["Cost Structure"]
+    end
+    
+    VC --> VP
+    VP --> VA
+    COST -.supports.-> VC
+    COST -.constrains.-> VA
+    
+    style VP fill:#004030,stroke:#004030,color:#FFFFFF
+    style VC fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style VA fill:#EFE4D2,stroke:#004030,color:#2C2C2C
+    style VSus fill:#FAF6F0,stroke:#004030,color:#2C2C2C
+```
+
+The BMC is a diagnostic tool, not a strategy in itself. Its power lies in forcing the analyst to articulate **every** block and check whether they reinforce each other.
+
+::: {.callout-important}
+## Coherence Test
+
+A business model is coherent when answers to the following three questions are all "yes":
+
+1. Do the **Key Activities and Resources** (left side) actually produce the **Value Proposition** (center)?
+2. Does the **Value Proposition** resonate with the **Customer Segments** through the chosen **Channels and Relationships** (right side)?
+3. Does the **Revenue Stream** exceed the **Cost Structure** by a margin that justifies the capital employed?
+
+A "no" on any of these three is where strategy breaks.
+:::
+## 2.5 Measuring What You Manage
+
+"What gets measured gets managed." But profit maximization is a notoriously **ambiguous** goal:
+
+- Total profit vs. rate of profit?
+- Over what time period?
+- Accounting profit vs. economic profit?
+
+Three standards dominate practice, each with drawbacks.
+
+### 2.5.1 Economic Value (NPV)
+
+The **Net Present Value (NPV, 淨現值)** approach:
+
+$$
+V = \sum_{t=0}^{T} \frac{C_t}{(1 + R_{WACC})^t}
+$$
+
+where $C_t$ is the cash flow in period $t$ and $R_{WACC}$ is the weighted-average cost of capital. Free Cash Flow is typically calculated as $FCF = EBITDA - WC - CAPEX$.
+
+**Drawback**: cash flows must be forecasted, and forecasts become increasingly unreliable as the horizon lengthens.
+
+### 2.5.2 Accounting Profitability — The DuPont Identity
+
+The **DuPont Identity (杜邦分析)** decomposes Return on Equity (ROE) into three levers:
+
+$$
+ROE = \underbrace{\frac{\text{Net Income}}{\text{Sales}}}_{\text{Return on Sales}} \times \underbrace{\frac{\text{Sales}}{\text{Assets}}}_{\text{Asset Turnover}} \times \underbrace{\left(1 + \frac{D}{E}\right)}_{\text{Financial Leverage}}
+$$
+
+This is powerful because it tells managers **where** returns come from: pricing (ROS), efficiency (turnover), or leverage. Two firms with identical ROE may pursue very different strategies.
+
+::: {.callout-tip}
+## Mini-case: UPS vs. FedEx (ROCE Decomposition)
+
+Return on Capital Employed (ROCE) splits into Return on Sales × Sales/Capital Employed. In a historical comparison, UPS showed ROS of 11.9% against FedEx's 6.1% — yet asset turnover was nearly identical (1.79 vs. 1.75). The gap was entirely on the margin side. Drilling deeper, UPS had dramatically lower fuel costs (6.0% vs. 10.6%) and maintenance (2.3% vs. 5.0%) relative to sales, reflecting the advantage of ground-network density over air-hub dependence. This is the DuPont logic in action: the same top-line performance indicator traces back to fundamentally different activity systems.
+:::
+
+**Drawback**: accounting profit ignores the **cost of capital** and can be manipulated through depreciation policy, inventory valuation, and other choices.
+
+### 2.5.3 Shareholder Value — EVA
+
+**Economic Value Added (EVA, 經濟附加價值)**, popularized by Stern Stewart & Co., corrects the accounting-profit problem by subtracting a capital charge:
+
+$$
+EVA = NOPAT - WACC \times K
+$$
+
+where $NOPAT$ is Net Operating Profit After Tax and $K$ is the capital employed. A firm with positive EVA is earning more than the opportunity cost of its capital.
+
+**Drawback**: EVA — like NPV and accounting profit — focuses on **tangible** assets. Intangible assets (skilled people, specialized processes, brand, relationships) are typically the sources of sustained competitive advantage but rarely appear at full value on the balance sheet. In 1980, roughly 80% of S&P 500 market value was captured in book value; by 2010 only 30% was. **70% of what makes modern firms valuable is invisible to traditional accounting.**
+
+---
+
+## 2.6 Strategic Innovation — Changing the Rules
+
+**Innovation (創新)** is:
+
+- making a **change** or a **difference**
+- a **dis-equilibrium** phenomenon
+- a **recombination** process rather than a discovery
+- a matter of **degree**, not zero-or-one
+
+We can distinguish three levels:
+
+1. **Product innovation** — a new or improved offering
+2. **Process innovation** — a new or improved way of producing
+3. **Strategic innovation (策略創新)** — a new business model that includes but usually goes beyond product or process innovation, introducing a new **rule of competition**
+
+::: {.callout-tip}
+## Case: TSMC and the Foundry Model
+
+Before Morris Chang founded TSMC in 1987, the semiconductor industry operated on the **Integrated Device Manufacturer (IDM)** model: a single firm designed, fabricated, packaged, and sold its own chips. TSMC's strategic innovation was to **unbundle fabrication from design**, declaring that it would only manufacture — never compete with its customers on design. This was not a product innovation (chips are chips) nor merely a process innovation (fabrication techniques existed). It was a **redefinition of the industry value chain**, creating the fabless design house as a viable business model and positioning TSMC as an indispensable partner rather than a potential rival. The result is one of the most durable competitive advantages in the history of manufacturing.
+:::
+
+::: {.callout-tip}
+## Case: SWATCH and Redefining the Watch Market
+
+In the 1970s, Swiss watchmakers dominated the high-end, hand-made mechanical segment and nearly went bankrupt when quartz technology commoditized timekeeping. The response — forming SMH (later Swatch Group) and launching the SWATCH brand — was not to compete on precision or craftsmanship but to **redefine watches as fashion accessories**. Multiple affordable watches per customer, seasonal collections, colorful designs. Demand was reframed, supply was reconfigured, and the Swiss industry was saved not by out-engineering the Japanese but by out-positioning them.
+:::
+
+::: {.callout-tip}
+## Case: Southwest Airlines
+
+Southwest Airlines was not the first discount carrier. Its strategic innovation was the **coherent activity system**: point-to-point routes instead of hub-and-spoke, standardized Boeing 737 fleet (lowering training and maintenance costs), secondary airports (lower landing fees, faster turnarounds), no assigned seats (faster boarding), and happy employees (lower attrition, higher productivity including pilots helping load luggage). No single element is revolutionary. The innovation is the **configuration** — and decades of competitor imitation attempts have failed because copying one or two elements without the others just creates cost without capturing the synergies.
+:::
+
+---
+
+## 2.7 Modern Tools for Business Model Design
+
+The 2026 edition of this course integrates **Generative AI (GenAI)** workflows into every phase of business model analysis:
+
+::: {.callout-note}
+## How GenAI Augments the BMC
+
+- **Value Proposition discovery** — use Claude or ChatGPT to synthesize customer interviews, online reviews, and industry reports into candidate problem statements.
+- **Competitive benchmarking** — use NotebookLM to ingest competitor annual reports and extract comparable BMC blocks side-by-side.
+- **Scenario stress-testing** — prompt the model to act as a skeptical investor and attack each block for internal inconsistency.
+- **Visualization** — use Gamma or Napkin to turn a completed BMC into a polished deck-ready diagram.
+
+The AI is a **thinking partner**, not a replacement for analysis. Poor prompts produce plausible-but-shallow BMCs. See **Appendix B** for CRF (Context–Role–Format) prompting templates used in this course.
+:::
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — V-P-C Decomposition
+
+A specialty coffee chain sells a latte for NT$150. Customer surveys indicate the average customer would pay up to NT$220 before switching to a substitute. Ingredient and direct labor costs total NT$55 per cup; allocated overhead adds another NT$30.
+
+a) Calculate the consumer surplus, the firm's gross profit per cup, and the total economic value created per cup.
+b) If a competitor opens next door and forces the chain to drop prices to NT$130, which of the three quantities above is most affected? Explain.
+c) If instead the chain invests in a new roasting process that lowers ingredient cost to NT$40 without changing perceived quality, which quantities shift and by how much?
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — BMC Coherence Check
+
+Select a Taiwan-listed company you know well (e.g., 台積電 TSMC, 統一超商 7-ELEVEN, 鼎泰豐 Din Tai Fung, 王品 Wowprime).
+
+a) Fill in all nine blocks of the Business Model Canvas for that company.
+b) Identify at least two pairs of blocks that visibly reinforce each other. Explain the reinforcement.
+c) Identify at least one block that feels like a potential weakness or vulnerability. What would you change?
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Strategic vs. Operational Innovation
+
+For each of the following, classify as primarily operational effectiveness, product innovation, process innovation, or strategic innovation. Defend each classification in one to two sentences.
+
+a) Toyota implementing the Toyota Production System (TPS) in its plants.
+b) Netflix shifting from DVD-by-mail to streaming.
+c) Apple launching a faster iPhone each year.
+d) Foxconn offering contract-manufacturing services to branded electronics firms.
+e) Dyson inventing the bagless vacuum cleaner.
+f) Costco's membership-fee-based warehouse retail model.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Measurement Method Selection
+
+You have been asked to evaluate the performance of three divisions within a multinational conglomerate:
+
+- **Division A**: a mature consumer goods business with stable cash flows and minimal reinvestment needs.
+- **Division B**: a growing cloud-software business with negative current cash flow but rapidly expanding subscriber base.
+- **Division C**: a pharmaceutical R&D unit with long development cycles and uncertain outcomes.
+
+Which measurement standard (NPV, DuPont/ROE, or EVA) would you apply to each division, and why? What additional qualitative indicators would you add?
+:::
+
+---
+
+## Further Readings
+
+- **Osterwalder, A. & Pigneur, Y. (2010)**. *Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers*. Wiley. — The canonical BMC reference.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapter 2 — "Goals, Values and Performance". Wiley.
+- **Porter, M. E. (1996)**. "What Is Strategy?" *Harvard Business Review*, Nov–Dec. — The classic argument against confusing operational effectiveness with strategy.
+- **Magretta, J. (2002)**. "Why Business Models Matter." *Harvard Business Review*, May. — Short, readable introduction to the concept.
+- **Chesbrough, H. (2010)**. "Business Model Innovation: Opportunities and Barriers." *Long Range Planning*, 43(2-3), 354-363.
+
+::: {.callout-note}
+## Coursera Companion
+**[ENT] Entrepreneurship 1: Developing the Opportunity** — UPenn Wharton. Video 1.1–1.7 (business model foundations, ~84 min) directly complements this chapter.
+:::
+
+---
+
+## Looking Ahead
+
+Chapter 2 has given us the **V-P-C lens** and the **four pillars** of a business model. Starting in Chapter 3, we take the **outside-in** perspective: how does the external environment — macro forces and industry structure — shape the Value and Price sides of our framework? Then in Chapter 5 we turn **inside-out**, asking how a firm's **resources and capabilities** shape the Cost side and the ability to sustain whatever advantage it creates.
+
+Every subsequent chapter is a refinement of the core question posed here: **how does a firm create, deliver, appropriate, and sustain value?**
