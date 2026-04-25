@@ -28,6 +28,8 @@ website:
       - icon: house-door
         href: https://lolopodcast.github.io/SMMC-Executive-Hub/
         text: "SMMC Executive Hub (SPA)"
+      - icon: circle-half
+        text: "← Toggle Light/Dark Theme · 切換深淺主題（圖示在左邊）"
     style: "docked"
     search: true
     collapse-level: 1
