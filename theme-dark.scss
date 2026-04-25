@@ -1,46 +1,139 @@
 /*-- scss:defaults --*/
 
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+// BCG Dark Mode — Deep Green 反轉、暖金為主文字
+$bcg-green:      #004030;
+$bcg-green-light:#00604A;
+$bcg-gold:       #D8C3A5;
+$bcg-gold-bright:#E8D4B8;
+$bcg-bg-dark:    #1A1D1C;
+$bcg-bg-card:    #252827;
+$bcg-text-main:  #E8E4DC;
+$bcg-text-soft:  #A89E8E;
 
-$font-family: "Atkinson Hyperlegible", sans-serif;
+$primary:        $bcg-gold !default;
+$secondary:      $bcg-green-light !default;
+$body-bg:        $bcg-bg-dark !default;
+$body-color:     $bcg-text-main !default;
+$link-color:     $bcg-gold-bright !default;
+$link-hover-color: #FFFFFF !default;
 
-// Base document colors
-$body-bg: #181818;
-$body-color: white;
-$link-color: #75AADB;
+$font-family-sans-serif: 
+  "Noto Sans TC", "Helvetica Neue", "Segoe UI", Arial, sans-serif !default;
+$font-family-serif: 
+  "Noto Serif TC", Georgia, "Times New Roman", serif !default;
 
-$light: #525252;
+$headings-font-family: $font-family-serif !default;
+$headings-color: $bcg-gold-bright !default;
 
-// Navigation element colors
-$footer-bg: #181818;
-$navbar-bg: #303030;
-$sidebar-bg: #303030;
+/*-- scss:rules --*/
 
-// Code blocks
-$code-block-bg-alpha: -.8;
-
-// Bootstrap popovers
-$popover-bg: #242424;
-
-// Bootstrap inputs
-$input-bg: #242424;
-// TTS Controls - Dark Mode
-.tts-controls {
-  background: $bcg-bg-card;
-  border-left-color: $bcg-gold;
+.sidebar {
+  background-color: #000 !important;
   
-  button {
-    background: transparent;
-    border-color: $bcg-gold;
+  .sidebar-title, .sidebar-item-text, a {
+    color: $bcg-gold !important;
+  }
+  a:hover { color: #FFF !important; }
+  .sidebar-item.active > .sidebar-item-container > a {
+    color: #FFF !important;
+    font-weight: 600;
+  }
+  .sidebar-search input {
+    background-color: $bcg-bg-card;
     color: $bcg-gold;
-    
-    &:hover {
-      background: $bcg-gold;
-      color: $bcg-bg-dark;
-    }
+    border: 1px solid $bcg-gold;
   }
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  line-height: 1.75;
+  background-color: $bcg-bg-dark;
+  color: $bcg-text-main;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+  color: $bcg-gold-bright;
+}
+
+h1 {
+  border-bottom: 3px solid $bcg-gold;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  border-left: 4px solid $bcg-gold;
+  padding-left: 0.75rem;
+}
+
+.callout {
+  border-radius: 4px;
+  border-left-width: 5px;
+  background-color: $bcg-bg-card;
+}
+
+.callout-note    { border-left-color: $bcg-gold !important; }
+.callout-tip     { border-left-color: $bcg-gold-bright !important; }
+.callout-warning { border-left-color: #E0A020 !important; }
+.callout-caution { border-left-color: #C88060 !important; }
+.callout-important { border-left-color: $bcg-green-light !important; }
+
+pre {
+  background-color: #0F1212 !important;
+  border-left: 3px solid $bcg-gold;
+}
+
+code {
+  color: $bcg-gold-bright;
+  background-color: rgba(216, 195, 165, 0.15);
+}
+
+table {
+  border-top: 2px solid $bcg-gold;
+  border-bottom: 2px solid $bcg-gold;
+}
+
+thead {
+  background-color: rgba(216, 195, 165, 0.1);
+  th { color: $bcg-gold-bright !important; }
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted $bcg-gold;
+}
+
+a:hover {
+  border-bottom: 1px solid $bcg-gold-bright;
+  color: #FFF !important;
+}
+
+blockquote {
+  border-left: 4px solid $bcg-gold;
+  background-color: $bcg-bg-card;
+  padding: 1rem 1.25rem;
+  font-style: italic;
+  color: $bcg-text-soft;
+}
+
+// BMC dark mode
+.bmc-canvas .bmc-block {
+  background: $bcg-bg-card;
+  border: 2px solid $bcg-gold;
   
-  .tts-status {
-    color: $bcg-text-soft;
-  }
+  .bmc-num { color: $bcg-gold-bright; }
+  .bmc-title { color: $bcg-gold-bright; }
+  .bmc-desc { color: $bcg-text-main; }
+}
+
+.bmc-canvas .bmc-vp {
+  background: $bcg-green !important;
+  .bmc-title, .bmc-desc { color: #FFF !important; }
+}
+
+.bmc-canvas .bmc-cost,
+.bmc-canvas .bmc-rs {
+  background: rgba(216, 195, 165, 0.1) !important;
 }
