@@ -322,11 +322,3 @@ blockquote {
     }
   }
 }
-  
-  // Replace default icon: show moon in light mode (suggesting "switch to dark")
- i.bi {
-    color: $bcg-green !important;
-    font-size: 1.1rem !important;
-    font-weight: bold !important;
-  }
-}
