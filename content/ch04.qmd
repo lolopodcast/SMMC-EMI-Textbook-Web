@@ -1,0 +1,277 @@
+---
+title: "Competitive Analysis & Co-opetitive Dynamics"
+subtitle: "Chapter 4 — Beyond Structure: Moves, Responses, and Coexistence"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Distinguish between **industry structure** (Chapter 3) and **competitive dynamics** (this chapter), and explain why both matter.
+2. Define a firm's **competitor set** using **market commonality** and **resource similarity**.
+3. Map **competitive actions** (price moves, capacity expansions, product launches) and predict **competitive responses** using the awareness–motivation–capability framework.
+4. Apply **game-theoretic thinking** to multi-firm interactions, distinguishing zero-sum competition from positive-sum **co-opetition**.
+5. Recognize when **complementors** create more value than competitors destroy, and design strategies that exploit this asymmetry.
+
+---
+
+## 4.1 From Structure to Dynamics
+
+Chapter 3 treated the industry as a relatively stable structure. But in reality, **firms inside an industry are constantly moving**: cutting prices, launching products, opening factories, acquiring rivals, lobbying regulators. Industry structure tells you the **average** profitability available; competitive dynamics tells you **which firms** capture how much of it.
+
+The shift from structure to dynamics is the shift from a **static** to a **dynamic** lens:
+
+| Static (Structure) | Dynamic (Dynamics) |
+|---|---|
+| Five Forces | Action–Response sequences |
+| Industry concentration | Competitor identification |
+| Entry barriers | First-mover vs. fast-follower |
+| Average profitability | Firm-level differential profitability |
+| Long horizon | Short-to-medium horizon |
+
+A firm that masters only structural analysis will **misread the timing** of its environment. A firm that masters only dynamic analysis will **misread the deep currents** beneath the surface moves. Strategic management requires both.
+
+---
+
+## 4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity
+
+The first step in competitive analysis is deceptively hard: **who exactly are we competing with?**
+
+Two firms are competitors to the extent that they share:
+
+- **Market commonality (市場共同性)** — the degree to which they serve the same customers in the same segments and geographies.
+- **Resource similarity (資源相似性)** — the degree to which their resource and capability profiles overlap.
+
+```{mermaid}
+quadrantChart
+    title Competitor Identification Matrix
+    x-axis "Low Resource Similarity" --> "High Resource Similarity"
+    y-axis "Low Market Commonality" --> "High Market Commonality"
+    quadrant-1 "Direct Competitors"
+    quadrant-2 "Market Rivals"
+    quadrant-3 "Distant Players"
+    quadrant-4 "Resource Rivals"
+```
+
+- **Direct Competitors** (high commonality, high similarity) — the obvious rivals: Pepsi vs. Coca-Cola in beverages, McDonald's vs. Burger King in fast food. Highest mutual awareness, fastest response cycles.
+- **Market Rivals** (high commonality, low similarity) — competing for the same customer with very different resource bases: a traditional bookstore vs. Amazon, a taxi fleet vs. Uber. Often the source of **disruption**.
+- **Resource Rivals** (low commonality, high similarity) — similar capabilities but currently serving different markets. Latent competitors. Can become direct competitors quickly when they decide to enter.
+- **Distant Players** (low commonality, low similarity) — typically irrelevant, until a technological shift suddenly merges previously separate markets (e.g., smartphones merged camera, GPS, music player, and phone industries).
+
+::: {.callout-tip}
+## TP application
+In **TP2 — Internal Analysis**, when you identify your focal firm's competitors, don't just list the obvious direct competitors. Identify **at least one Market Rival** (different resources, same customer) — these are the firms most likely to disrupt your focal firm in the next 3–5 years.
+:::
+
+---
+
+## 4.3 Competitive Actions and Responses
+
+Once you know who the competitors are, the next question is: **what moves are they making, and how should we respond?**
+
+### 4.3.1 Types of Competitive Actions
+
+**Strategic actions (策略性行動)** — large, hard-to-reverse moves that significantly alter the firm's position:
+
+- Major capacity expansions (new fab, new factory)
+- Mergers and acquisitions
+- Entry into new geographic markets
+- Launch of a flagship product line
+- Major brand repositioning
+
+**Tactical actions (戰術性行動)** — smaller, easier-to-reverse moves intended to fine-tune position:
+
+- Price changes
+- Promotional campaigns
+- Distribution channel adjustments
+- Product feature updates
+
+The distinction matters because **strategic actions provoke strategic responses**, while tactical actions usually attract only tactical responses. Misjudging this can be expensive.
+
+### 4.3.2 The Awareness–Motivation–Capability Framework
+
+A competitor will respond to your action only when **all three** conditions are satisfied:
+
+::: {.callout-note}
+## Awareness · Motivation · Capability
+
+1. **Awareness (覺察)** — Does the competitor notice the action? In transparent markets (publicly listed firms, B2B with industry analysts), awareness is high. In opaque markets (private firms, niche regional plays), it can be surprisingly low.
+
+2. **Motivation (動機)** — Does the competitor have an incentive to respond? A market leader losing share has high motivation. A peripheral player whose core market is unaffected may rationally ignore the action.
+
+3. **Capability (能力)** — Can the competitor respond effectively? A response requires resources, organizational agility, and the right capabilities. A firm that lacks any one of these may be aware and motivated but unable to act.
+:::
+
+This framework is asymmetric: you can **deliberately** attack competitors who have low capability or low motivation while avoiding direct confrontation with strong rivals. **Aim where they cannot respond.**
+
+### 4.3.3 First-Mover, Fast-Follower, Late-Mover
+
+In any sequential game, position matters:
+
+| Position | Advantages | Risks |
+|---|---|---|
+| **First-Mover (先行者)** | Brand recognition, customer lock-in, learning curve, patents, preempted resources | Pioneer's burden — paying the cost of educating the market; technology bets that may fail |
+| **Fast-Follower (快速跟隨者)** | Learn from first-mover's mistakes, avoid market-development costs, leapfrog with newer technology | Must build differentiation rapidly; may be locked out if first-mover establishes network effects |
+| **Late-Mover (後進者)** | Mature technology, clear customer needs, established infrastructure | Limited differentiation room; high entry barriers; commoditized margins |
+
+The optimal position depends on **how the industry rewards experience vs. flexibility**. In industries with strong network effects (social media, payment platforms), first-mover advantage is decisive. In industries where technology evolves quickly (semiconductors, smartphones), fast-followers often outperform pioneers.
+
+---
+
+## 4.4 Co-opetition — When Competition Meets Cooperation
+
+The traditional view treats competition as **zero-sum** — for one firm to win, another must lose. But many real-world situations are **positive-sum**: firms can simultaneously compete and cooperate, and the total pie can grow.
+
+The seminal work by **Brandenburger and Nalebuff (1996)** in *Co-opetition* introduced game-theoretic thinking to strategy. Their **Value Net** extends Porter's Five Forces by adding **Complementors (互補者)** — players whose products increase the value of yours.
+
+```{mermaid}
+flowchart TB
+    FIRM["<b>Focal Firm</b>"]
+    CUST["Customers"]
+    SUPP["Suppliers"]
+    COMP["Competitors"]
+    COMPL["Complementors"]
+    
+    FIRM --- CUST
+    FIRM --- SUPP
+    FIRM --- COMP
+    FIRM --- COMPL
+    
+    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF
+    style CUST fill:#D8C3A5,stroke:#004030
+    style SUPP fill:#D8C3A5,stroke:#004030
+    style COMP fill:#EFE4D2,stroke:#004030
+    style COMPL fill:#EFE4D2,stroke:#004030
+```
+
+### 4.4.1 Recognizing Complementors
+
+A complementor is a player whose presence makes customers **value your product more**:
+
+| Focal industry | Competitors | Complementors |
+|---|---|---|
+| Console hardware (PlayStation, Xbox) | Each other | Game studios |
+| Smartphone OS (iOS, Android) | Each other | App developers |
+| Electric vehicles (Tesla, BYD) | Each other | Charging-station operators, battery suppliers |
+| Coffee shops (Starbucks, Louisa) | Each other | WiFi providers, food delivery platforms |
+| Cloud computing (AWS, Azure) | Each other | SaaS vendors built on the platform |
+
+The strategic implication: **a healthy ecosystem of complementors can be more valuable than weak competitors**. Ruthless competition that drives complementors out of business often hurts the "winner" more than the "loser."
+
+### 4.4.2 Co-opetitive Strategies
+
+Three common forms of co-opetition:
+
+1. **Standard-setting alliances** — competitors collaborate to establish a common technical standard (e.g., USB-C, HDMI, 5G specifications) that grows the total market. They then compete on implementation.
+
+2. **Supply-chain partnerships** — TSMC and its customers (AMD, NVIDIA, Apple) compete with each other's customers but cooperate intimately on process node roadmaps.
+
+3. **Pre-competitive R&D consortia** — pharmaceutical firms jointly fund early-stage research; auto manufacturers share charging infrastructure investment.
+
+::: {.callout-tip}
+## TSMC as the master co-opetitor
+
+TSMC's foundry model is a textbook case of strategic co-opetition. By **declaring it would never design its own chips**, TSMC removed itself from competition with its customers. This made it the trusted partner for Apple, NVIDIA, AMD, and Qualcomm — firms that compete fiercely with each other but all rely on TSMC. The result: TSMC captures a structural position no IDM can replicate. Strategy = redefining the relationship from "competitor" to "complementor."
+:::
+
+---
+
+## 4.5 The PARTS Framework — Changing the Game
+
+Brandenburger and Nalebuff identified five levers for **changing the game itself** rather than just playing it well:
+
+::: {.callout-important}
+## PARTS — Five levers for changing the game
+
+- **P — Players** — Add or remove players to shift bargaining power. Bringing in a new supplier weakens existing suppliers; recruiting a new customer segment dilutes large-buyer power.
+- **A — Added Value** — Increase the unique value you bring to others. The greater your added value, the more bargaining power you have.
+- **R — Rules** — Negotiate or design rules (contracts, standards, regulations) that shape competition in your favor.
+- **T — Tactics** — Manage perceptions. Signaling commitment (e.g., investing in dedicated capacity for one customer) can deter competitors.
+- **S — Scope** — Change where the game is played. Expand into adjacent industries; redefine your market boundary.
+:::
+
+This is a creative framework — its purpose is to remind strategists that **the rules of the game are not fixed**. Many of the most valuable strategic moves come from **rewriting the game**, not from out-playing competitors at a game whose rules they have set.
+
+---
+
+## 4.6 Competitive Dynamics in 2026 — A Few Patterns
+
+Several structural shifts are accelerating competitive dynamics in 2026:
+
+- **AI-accelerated imitation** — Generative AI compresses the cycle from observing a competitor's move to crafting a credible response. Competitive imitation is no longer an 18-month research project; it is a 2-week sprint.
+- **Geopolitical fragmentation** — Markets are bifurcating along US-aligned and China-aligned lines. A firm that wins in one bloc may be barred from the other. **Competitor sets are now bloc-specific**.
+- **Platform consolidation** — In many digital industries, two or three platforms capture 80%+ of value. New entrants face network-effect lockouts unless they can credibly redefine the category.
+- **Sustainability as competitive ground** — Carbon disclosure and ESG ratings increasingly affect customer and investor decisions. **Slow movers face capital-cost disadvantages** that compound annually.
+
+The implication: in 2026, **dynamic capability** (the ability to sense, seize, and reconfigure — see Chapter 6) matters more than static capability.
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — Identifying Competitors
+
+For Starbucks Taiwan, identify:
+
+a) Two **Direct Competitors** (high market commonality, high resource similarity).
+b) Two **Market Rivals** (same customer, different resources).
+c) One **Resource Rival** (similar resources, currently different market) — a firm that could plausibly enter Starbucks's market.
+d) For your Resource Rival, apply the awareness–motivation–capability test: which of the three is the bottleneck preventing entry?
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — Action and Response
+
+In 2024, BYD launched aggressive price cuts on its mid-range EVs in China, with some models reduced 15–20% in a single quarter.
+
+a) Classify this as a strategic or tactical action. Justify.
+b) For two of BYD's main competitors (e.g., Tesla China, Geely, Nio), apply the awareness–motivation–capability framework: which firms could/would respond, and how?
+c) What second-order effect might this price war have on **complementors** (battery makers, charging networks, dealerships)?
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Spotting Complementors
+
+For each focal firm below, identify one important complementor and explain how the focal firm could deepen the relationship:
+
+a) Nintendo Switch console.
+b) Tesla Supercharger network.
+c) LINE messaging platform in Taiwan.
+d) Microsoft Office 365.
+e) An MRT mass-transit system.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Applying PARTS
+
+Choose your TP focal company (or a Taiwan MNC of your choice). Identify **one PARTS lever** the firm has used in the past 5 years to change its competitive game, and **one PARTS lever it has not yet used** but could plausibly try.
+
+a) Describe the historical move using the PARTS taxonomy.
+b) Propose the new move and predict the likely competitive response.
+c) What awareness–motivation–capability conditions would your competitors need to meet in order to respond?
+:::
+
+---
+
+## Further Readings
+
+- **Brandenburger, A. M. & Nalebuff, B. J. (1996)**. *Co-opetition*. Currency Doubleday. — The foundational text; PARTS framework, Value Net.
+- **Chen, M. J. (1996)**. "Competitor Analysis and Interfirm Rivalry: Toward a Theoretical Integration." *Academy of Management Review*, 21(1), 100–134. — The original market-commonality / resource-similarity framework.
+- **D'Aveni, R. A. (1994)**. *Hypercompetition*. Free Press. — Influential treatment of fast-cycle competition.
+- **Smith, K. G., Ferrier, W. J., & Ndofor, H. (2001)**. "Competitive Dynamics Research: Critique and Future Directions." In Hitt, Freeman & Harrison (Eds.), *The Blackwell Handbook of Strategic Management*.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapter 4 — "Further Topics in Industry and Competitive Analysis".
+
+::: {.callout-note}
+## Coursera Companion
+- **[ENT] Entrepreneurship 1: Developing the Opportunity** — Video 2.6 covers competitor identification from an entrepreneur's vantage point.
+- **[CS] Corporate Strategy** — Module 2 introduces game-theoretic thinking applicable to co-opetitive dynamics.
+:::
+
+---
+
+## Looking Ahead
+
+Chapters 3 and 4 together completed the **outside-in** view: industry structure plus competitive dynamics. We now turn the lens inward. Chapter 5 introduces the **Resource-Based View (RBV)** and the **Value Chain** — the foundational frameworks for diagnosing what makes a firm distinctive from the inside, and how distinctiveness translates into sustainable competitive advantage.
