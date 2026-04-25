@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publishing – SMMC-EMI Course Textbook</title>
+<title>Competitive Analysis &amp; Co-opetitive Dynamics – SMMC-EMI Course Textbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/ch05.qmd" rel="next">
+<link href="../content/ch03.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -74,6 +76,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -249,9 +255,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      SMMC-EMI Course Textbook
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/ch01.html">Part I. Concepts &amp; Frameworks</a></li><li class="breadcrumb-item"><a href="../content/ch04.html">Ch 4. Competitive Analysis &amp; Co-opetitive Dynamics</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -295,13 +299,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Part I. Concepts &amp; Frameworks</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/ch01.html" class="sidebar-item-text sidebar-link">
@@ -322,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/ch04.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/ch04.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Ch 4. Competitive Analysis &amp; Co-opetitive Dynamics</span></a>
   </div>
 </li>
@@ -462,19 +466,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On This Page</h2>
    
   <ul>
-  <li><a href="#turn-on-github-pages-for-your-repo" id="toc-turn-on-github-pages-for-your-repo" class="nav-link active" data-scroll-target="#turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</a></li>
-  <li><a href="#do-your-first-publish-to-gh-pages" id="toc-do-your-first-publish-to-gh-pages" class="nav-link" data-scroll-target="#do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></a></li>
-  <li><a href="#dont-like-using-gh-pages" id="toc-dont-like-using-gh-pages" class="nav-link" data-scroll-target="#dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#from-structure-to-dynamics" id="toc-from-structure-to-dynamics" class="nav-link" data-scroll-target="#from-structure-to-dynamics">4.1 From Structure to Dynamics</a></li>
+  <li><a href="#who-are-your-competitors-market-commonality-and-resource-similarity" id="toc-who-are-your-competitors-market-commonality-and-resource-similarity" class="nav-link" data-scroll-target="#who-are-your-competitors-market-commonality-and-resource-similarity">4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity</a></li>
+  <li><a href="#competitive-actions-and-responses" id="toc-competitive-actions-and-responses" class="nav-link" data-scroll-target="#competitive-actions-and-responses">4.3 Competitive Actions and Responses</a>
+  <ul class="collapse">
+  <li><a href="#types-of-competitive-actions" id="toc-types-of-competitive-actions" class="nav-link" data-scroll-target="#types-of-competitive-actions">4.3.1 Types of Competitive Actions</a></li>
+  <li><a href="#the-awarenessmotivationcapability-framework" id="toc-the-awarenessmotivationcapability-framework" class="nav-link" data-scroll-target="#the-awarenessmotivationcapability-framework">4.3.2 The Awareness–Motivation–Capability Framework</a></li>
+  <li><a href="#first-mover-fast-follower-late-mover" id="toc-first-mover-fast-follower-late-mover" class="nav-link" data-scroll-target="#first-mover-fast-follower-late-mover">4.3.3 First-Mover, Fast-Follower, Late-Mover</a></li>
+  </ul></li>
+  <li><a href="#co-opetition-when-competition-meets-cooperation" id="toc-co-opetition-when-competition-meets-cooperation" class="nav-link" data-scroll-target="#co-opetition-when-competition-meets-cooperation">4.4 Co-opetition — When Competition Meets Cooperation</a>
+  <ul class="collapse">
+  <li><a href="#recognizing-complementors" id="toc-recognizing-complementors" class="nav-link" data-scroll-target="#recognizing-complementors">4.4.1 Recognizing Complementors</a></li>
+  <li><a href="#co-opetitive-strategies" id="toc-co-opetitive-strategies" class="nav-link" data-scroll-target="#co-opetitive-strategies">4.4.2 Co-opetitive Strategies</a></li>
+  </ul></li>
+  <li><a href="#the-parts-framework-changing-the-game" id="toc-the-parts-framework-changing-the-game" class="nav-link" data-scroll-target="#the-parts-framework-changing-the-game">4.5 The PARTS Framework — Changing the Game</a></li>
+  <li><a href="#competitive-dynamics-in-2026-a-few-patterns" id="toc-competitive-dynamics-in-2026-a-few-patterns" class="nav-link" data-scroll-target="#competitive-dynamics-in-2026-a-few-patterns">4.6 Competitive Dynamics in 2026 — A Few Patterns</a></li>
+  <li><a href="#self-check-questions" id="toc-self-check-questions" class="nav-link" data-scroll-target="#self-check-questions">Self-Check Questions</a></li>
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings">Further Readings</a></li>
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/publishing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch04.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/ch01.html">Part I. Concepts &amp; Frameworks</a></li><li class="breadcrumb-item"><a href="../content/ch04.html">Ch 4. Competitive Analysis &amp; Co-opetitive Dynamics</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Publishing</h1>
+<h1 class="title">Competitive Analysis &amp; Co-opetitive Dynamics</h1>
+<p class="subtitle lead">Chapter 4 — Beyond Structure: Moves, Responses, and Coexistence</p>
 </div>
 
 
@@ -491,90 +512,449 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To get your Quarto webpage to show up with the url</p>
-<pre><code>yourname.github.io/yourrepo</code></pre>
-<p>you have a few steps.</p>
-<section id="turn-on-github-pages-for-your-repo" class="level2">
-<h2 class="anchored" data-anchor-id="turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</h2>
-<ul>
-<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.</li>
-<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
-</ul>
-<p>The GitHub Action will automatically recreate your website when you push to GitHub <strong>after</strong> you do the initial <code>gh-pages</code> set-up</p>
+<div class="tts-controls">
+<p><button onclick="TTS.speak('en')" title="Read in English">🔊 Read Aloud (EN)</button> <button onclick="TTS.speak('zh')" title="朗讀中文">🔊 朗讀 (中文)</button> <button onclick="TTS.pause()" title="Pause / Resume">⏸</button> <button onclick="TTS.stop()" title="Stop">⏹</button> <button onclick="TTS.setRate(-0.2)" title="Slower">🐢</button> <button onclick="TTS.setRate(0.2)" title="Faster">🐰</button> <span class="tts-status"></span></p>
+</div>
+<script src="../assets/tts-player.js"></script>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>After completing this chapter, students should be able to:</p>
+<ol type="1">
+<li>Distinguish between <strong>industry structure</strong> (Chapter 3) and <strong>competitive dynamics</strong> (this chapter), and explain why both matter.</li>
+<li>Define a firm’s <strong>competitor set</strong> using <strong>market commonality</strong> and <strong>resource similarity</strong>.</li>
+<li>Map <strong>competitive actions</strong> (price moves, capacity expansions, product launches) and predict <strong>competitive responses</strong> using the awareness–motivation–capability framework.</li>
+<li>Apply <strong>game-theoretic thinking</strong> to multi-firm interactions, distinguishing zero-sum competition from positive-sum <strong>co-opetition</strong>.</li>
+<li>Recognize when <strong>complementors</strong> create more value than competitors destroy, and design strategies that exploit this asymmetry.</li>
+</ol>
+<hr>
 </section>
-<section id="do-your-first-publish-to-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></h2>
-<p>The first time you publish to <code>gh-pages</code>, you need to do so locally.</p>
-<ul>
-<li>On your local computer, open a terminal window and <code>cd</code> to your repo directory. Here is what that <code>cd</code> command looks like for me. You command will look different because your local repo will be somewhere else on your computer.</li>
-</ul>
-<pre><code>cd ~/Documents/GitHub/NOAA-quarto-simple</code></pre>
-<ul>
-<li>Publish to the <code>gh-pages</code>. In the terminal type</li>
-</ul>
-<pre><code>quarto publish gh-pages</code></pre>
-<p>This is going to render your webpage and then push the <code>_site</code> contents to the <code>gh-pages</code> branch.</p>
+<section id="from-structure-to-dynamics" class="level2">
+<h2 class="anchored" data-anchor-id="from-structure-to-dynamics">4.1 From Structure to Dynamics</h2>
+<p>Chapter 3 treated the industry as a relatively stable structure. But in reality, <strong>firms inside an industry are constantly moving</strong>: cutting prices, launching products, opening factories, acquiring rivals, lobbying regulators. Industry structure tells you the <strong>average</strong> profitability available; competitive dynamics tells you <strong>which firms</strong> capture how much of it.</p>
+<p>The shift from structure to dynamics is the shift from a <strong>static</strong> to a <strong>dynamic</strong> lens:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Static (Structure)</th>
+<th>Dynamic (Dynamics)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Five Forces</td>
+<td>Action–Response sequences</td>
+</tr>
+<tr class="even">
+<td>Industry concentration</td>
+<td>Competitor identification</td>
+</tr>
+<tr class="odd">
+<td>Entry barriers</td>
+<td>First-mover vs.&nbsp;fast-follower</td>
+</tr>
+<tr class="even">
+<td>Average profitability</td>
+<td>Firm-level differential profitability</td>
+</tr>
+<tr class="odd">
+<td>Long horizon</td>
+<td>Short-to-medium horizon</td>
+</tr>
+</tbody>
+</table>
+<p>A firm that masters only structural analysis will <strong>misread the timing</strong> of its environment. A firm that masters only dynamic analysis will <strong>misread the deep currents</strong> beneath the surface moves. Strategic management requires both.</p>
+<hr>
 </section>
-<section id="dont-like-using-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</h2>
-<p>In some cases, you don’t want your website on the <code>gh-pages</code> branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the <code>gh-pages</code> branch.</p>
-<p>Here are the changes you need to make if you to avoid <code>gh-pages</code> branch.</p>
+<section id="who-are-your-competitors-market-commonality-and-resource-similarity" class="level2">
+<h2 class="anchored" data-anchor-id="who-are-your-competitors-market-commonality-and-resource-similarity">4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity</h2>
+<p>The first step in competitive analysis is deceptively hard: <strong>who exactly are we competing with?</strong></p>
+<p>Two firms are competitors to the extent that they share:</p>
 <ul>
-<li>At the top of <code>_quarto.yml</code> add the following:</li>
+<li><strong>Market commonality (市場共同性)</strong> — the degree to which they serve the same customers in the same segments and geographies.</li>
+<li><strong>Resource similarity (資源相似性)</strong> — the degree to which their resource and capability profiles overlap.</li>
 </ul>
-<pre><code>project: 
-  type: website
-  output-dir: docs</code></pre>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">quadrantChart
+    title Competitor Identification Matrix
+    x-axis "Low Resource Similarity" --&gt; "High Resource Similarity"
+    y-axis "Low Market Commonality" --&gt; "High Market Commonality"
+    quadrant-1 "Direct Competitors"
+    quadrant-2 "Market Rivals"
+    quadrant-3 "Distant Players"
+    quadrant-4 "Resource Rivals"
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <ul>
-<li>On GitHub under Settings &gt; Pages set pages to be made from the <code>main</code> branch and the docs directory.</li>
-<li>Make sure <code>docs</code> is not listed in <code>.gitignore</code></li>
-<li>Publish the site the first time locally using <code>quarto publish</code> from the terminal</li>
-<li>Change the GitHub Action because you can’t use <code>quarto publish gh-pages</code>. You’ll need to push to the main branch yourself (in the GitHub Action)</li>
+<li><strong>Direct Competitors</strong> (high commonality, high similarity) — the obvious rivals: Pepsi vs.&nbsp;Coca-Cola in beverages, McDonald’s vs.&nbsp;Burger King in fast food. Highest mutual awareness, fastest response cycles.</li>
+<li><strong>Market Rivals</strong> (high commonality, low similarity) — competing for the same customer with very different resource bases: a traditional bookstore vs.&nbsp;Amazon, a taxi fleet vs.&nbsp;Uber. Often the source of <strong>disruption</strong>.</li>
+<li><strong>Resource Rivals</strong> (low commonality, high similarity) — similar capabilities but currently serving different markets. Latent competitors. Can become direct competitors quickly when they decide to enter.</li>
+<li><strong>Distant Players</strong> (low commonality, low similarity) — typically irrelevant, until a technological shift suddenly merges previously separate markets (e.g., smartphones merged camera, GPS, music player, and phone industries).</li>
 </ul>
-<pre><code>on:
-  push:
-    branches: main
-
-name: Render and Publish
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2 
-        
-      - name: Set up R (needed for Rmd)
-        uses: r-lib/actions/setup-r@v2
-
-      - name: Install packages (needed for Rmd)
-        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite"))'
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          # To install LaTeX to build PDF book 
-          # tinytex: true 
-          # uncomment below and fill to pin a version
-          # version: 0.9.600
-      
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-
-      - name: Set up Git
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-
-      - name: Commit all changes and push
-        run: |
-          git add -A &amp;&amp; git commit -m 'Build site' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"</code></pre>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>TP application
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In <strong>TP2 — Internal Analysis</strong>, when you identify your focal firm’s competitors, don’t just list the obvious direct competitors. Identify <strong>at least one Market Rival</strong> (different resources, same customer) — these are the firms most likely to disrupt your focal firm in the next 3–5 years.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="competitive-actions-and-responses" class="level2">
+<h2 class="anchored" data-anchor-id="competitive-actions-and-responses">4.3 Competitive Actions and Responses</h2>
+<p>Once you know who the competitors are, the next question is: <strong>what moves are they making, and how should we respond?</strong></p>
+<section id="types-of-competitive-actions" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-competitive-actions">4.3.1 Types of Competitive Actions</h3>
+<p><strong>Strategic actions (策略性行動)</strong> — large, hard-to-reverse moves that significantly alter the firm’s position:</p>
+<ul>
+<li>Major capacity expansions (new fab, new factory)</li>
+<li>Mergers and acquisitions</li>
+<li>Entry into new geographic markets</li>
+<li>Launch of a flagship product line</li>
+<li>Major brand repositioning</li>
+</ul>
+<p><strong>Tactical actions (戰術性行動)</strong> — smaller, easier-to-reverse moves intended to fine-tune position:</p>
+<ul>
+<li>Price changes</li>
+<li>Promotional campaigns</li>
+<li>Distribution channel adjustments</li>
+<li>Product feature updates</li>
+</ul>
+<p>The distinction matters because <strong>strategic actions provoke strategic responses</strong>, while tactical actions usually attract only tactical responses. Misjudging this can be expensive.</p>
+</section>
+<section id="the-awarenessmotivationcapability-framework" class="level3">
+<h3 class="anchored" data-anchor-id="the-awarenessmotivationcapability-framework">4.3.2 The Awareness–Motivation–Capability Framework</h3>
+<p>A competitor will respond to your action only when <strong>all three</strong> conditions are satisfied:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Awareness · Motivation · Capability
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>Awareness (覺察)</strong> — Does the competitor notice the action? In transparent markets (publicly listed firms, B2B with industry analysts), awareness is high. In opaque markets (private firms, niche regional plays), it can be surprisingly low.</p></li>
+<li><p><strong>Motivation (動機)</strong> — Does the competitor have an incentive to respond? A market leader losing share has high motivation. A peripheral player whose core market is unaffected may rationally ignore the action.</p></li>
+<li><p><strong>Capability (能力)</strong> — Can the competitor respond effectively? A response requires resources, organizational agility, and the right capabilities. A firm that lacks any one of these may be aware and motivated but unable to act.</p></li>
+</ol>
+</div>
+</div>
+<p>This framework is asymmetric: you can <strong>deliberately</strong> attack competitors who have low capability or low motivation while avoiding direct confrontation with strong rivals. <strong>Aim where they cannot respond.</strong></p>
+</section>
+<section id="first-mover-fast-follower-late-mover" class="level3">
+<h3 class="anchored" data-anchor-id="first-mover-fast-follower-late-mover">4.3.3 First-Mover, Fast-Follower, Late-Mover</h3>
+<p>In any sequential game, position matters:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Position</th>
+<th>Advantages</th>
+<th>Risks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>First-Mover (先行者)</strong></td>
+<td>Brand recognition, customer lock-in, learning curve, patents, preempted resources</td>
+<td>Pioneer’s burden — paying the cost of educating the market; technology bets that may fail</td>
+</tr>
+<tr class="even">
+<td><strong>Fast-Follower (快速跟隨者)</strong></td>
+<td>Learn from first-mover’s mistakes, avoid market-development costs, leapfrog with newer technology</td>
+<td>Must build differentiation rapidly; may be locked out if first-mover establishes network effects</td>
+</tr>
+<tr class="odd">
+<td><strong>Late-Mover (後進者)</strong></td>
+<td>Mature technology, clear customer needs, established infrastructure</td>
+<td>Limited differentiation room; high entry barriers; commoditized margins</td>
+</tr>
+</tbody>
+</table>
+<p>The optimal position depends on <strong>how the industry rewards experience vs.&nbsp;flexibility</strong>. In industries with strong network effects (social media, payment platforms), first-mover advantage is decisive. In industries where technology evolves quickly (semiconductors, smartphones), fast-followers often outperform pioneers.</p>
+<hr>
+</section>
+</section>
+<section id="co-opetition-when-competition-meets-cooperation" class="level2">
+<h2 class="anchored" data-anchor-id="co-opetition-when-competition-meets-cooperation">4.4 Co-opetition — When Competition Meets Cooperation</h2>
+<p>The traditional view treats competition as <strong>zero-sum</strong> — for one firm to win, another must lose. But many real-world situations are <strong>positive-sum</strong>: firms can simultaneously compete and cooperate, and the total pie can grow.</p>
+<p>The seminal work by <strong>Brandenburger and Nalebuff (1996)</strong> in <em>Co-opetition</em> introduced game-theoretic thinking to strategy. Their <strong>Value Net</strong> extends Porter’s Five Forces by adding <strong>Complementors (互補者)</strong> — players whose products increase the value of yours.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    FIRM["&lt;b&gt;Focal Firm&lt;/b&gt;"]
+    CUST["Customers"]
+    SUPP["Suppliers"]
+    COMP["Competitors"]
+    COMPL["Complementors"]
+    
+    FIRM --- CUST
+    FIRM --- SUPP
+    FIRM --- COMP
+    FIRM --- COMPL
+    
+    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF
+    style CUST fill:#D8C3A5,stroke:#004030
+    style SUPP fill:#D8C3A5,stroke:#004030
+    style COMP fill:#EFE4D2,stroke:#004030
+    style COMPL fill:#EFE4D2,stroke:#004030
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="recognizing-complementors" class="level3">
+<h3 class="anchored" data-anchor-id="recognizing-complementors">4.4.1 Recognizing Complementors</h3>
+<p>A complementor is a player whose presence makes customers <strong>value your product more</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Focal industry</th>
+<th>Competitors</th>
+<th>Complementors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Console hardware (PlayStation, Xbox)</td>
+<td>Each other</td>
+<td>Game studios</td>
+</tr>
+<tr class="even">
+<td>Smartphone OS (iOS, Android)</td>
+<td>Each other</td>
+<td>App developers</td>
+</tr>
+<tr class="odd">
+<td>Electric vehicles (Tesla, BYD)</td>
+<td>Each other</td>
+<td>Charging-station operators, battery suppliers</td>
+</tr>
+<tr class="even">
+<td>Coffee shops (Starbucks, Louisa)</td>
+<td>Each other</td>
+<td>WiFi providers, food delivery platforms</td>
+</tr>
+<tr class="odd">
+<td>Cloud computing (AWS, Azure)</td>
+<td>Each other</td>
+<td>SaaS vendors built on the platform</td>
+</tr>
+</tbody>
+</table>
+<p>The strategic implication: <strong>a healthy ecosystem of complementors can be more valuable than weak competitors</strong>. Ruthless competition that drives complementors out of business often hurts the “winner” more than the “loser.”</p>
+</section>
+<section id="co-opetitive-strategies" class="level3">
+<h3 class="anchored" data-anchor-id="co-opetitive-strategies">4.4.2 Co-opetitive Strategies</h3>
+<p>Three common forms of co-opetition:</p>
+<ol type="1">
+<li><p><strong>Standard-setting alliances</strong> — competitors collaborate to establish a common technical standard (e.g., USB-C, HDMI, 5G specifications) that grows the total market. They then compete on implementation.</p></li>
+<li><p><strong>Supply-chain partnerships</strong> — TSMC and its customers (AMD, NVIDIA, Apple) compete with each other’s customers but cooperate intimately on process node roadmaps.</p></li>
+<li><p><strong>Pre-competitive R&amp;D consortia</strong> — pharmaceutical firms jointly fund early-stage research; auto manufacturers share charging infrastructure investment.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>TSMC as the master co-opetitor
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>TSMC’s foundry model is a textbook case of strategic co-opetition. By <strong>declaring it would never design its own chips</strong>, TSMC removed itself from competition with its customers. This made it the trusted partner for Apple, NVIDIA, AMD, and Qualcomm — firms that compete fiercely with each other but all rely on TSMC. The result: TSMC captures a structural position no IDM can replicate. Strategy = redefining the relationship from “competitor” to “complementor.”</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="the-parts-framework-changing-the-game" class="level2">
+<h2 class="anchored" data-anchor-id="the-parts-framework-changing-the-game">4.5 The PARTS Framework — Changing the Game</h2>
+<p>Brandenburger and Nalebuff identified five levers for <strong>changing the game itself</strong> rather than just playing it well:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>PARTS — Five levers for changing the game
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>P — Players</strong> — Add or remove players to shift bargaining power. Bringing in a new supplier weakens existing suppliers; recruiting a new customer segment dilutes large-buyer power.</li>
+<li><strong>A — Added Value</strong> — Increase the unique value you bring to others. The greater your added value, the more bargaining power you have.</li>
+<li><strong>R — Rules</strong> — Negotiate or design rules (contracts, standards, regulations) that shape competition in your favor.</li>
+<li><strong>T — Tactics</strong> — Manage perceptions. Signaling commitment (e.g., investing in dedicated capacity for one customer) can deter competitors.</li>
+<li><strong>S — Scope</strong> — Change where the game is played. Expand into adjacent industries; redefine your market boundary.</li>
+</ul>
+</div>
+</div>
+<p>This is a creative framework — its purpose is to remind strategists that <strong>the rules of the game are not fixed</strong>. Many of the most valuable strategic moves come from <strong>rewriting the game</strong>, not from out-playing competitors at a game whose rules they have set.</p>
+<hr>
+</section>
+<section id="competitive-dynamics-in-2026-a-few-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="competitive-dynamics-in-2026-a-few-patterns">4.6 Competitive Dynamics in 2026 — A Few Patterns</h2>
+<p>Several structural shifts are accelerating competitive dynamics in 2026:</p>
+<ul>
+<li><strong>AI-accelerated imitation</strong> — Generative AI compresses the cycle from observing a competitor’s move to crafting a credible response. Competitive imitation is no longer an 18-month research project; it is a 2-week sprint.</li>
+<li><strong>Geopolitical fragmentation</strong> — Markets are bifurcating along US-aligned and China-aligned lines. A firm that wins in one bloc may be barred from the other. <strong>Competitor sets are now bloc-specific</strong>.</li>
+<li><strong>Platform consolidation</strong> — In many digital industries, two or three platforms capture 80%+ of value. New entrants face network-effect lockouts unless they can credibly redefine the category.</li>
+<li><strong>Sustainability as competitive ground</strong> — Carbon disclosure and ESG ratings increasingly affect customer and investor decisions. <strong>Slow movers face capital-cost disadvantages</strong> that compound annually.</li>
+</ul>
+<p>The implication: in 2026, <strong>dynamic capability</strong> (the ability to sense, seize, and reconfigure — see Chapter 6) matters more than static capability.</p>
+<hr>
+</section>
+<section id="self-check-questions" class="level2">
+<h2 class="anchored" data-anchor-id="self-check-questions">Self-Check Questions</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 1 — Identifying Competitors
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For Starbucks Taiwan, identify:</p>
+<ol type="a">
+<li>Two <strong>Direct Competitors</strong> (high market commonality, high resource similarity).</li>
+<li>Two <strong>Market Rivals</strong> (same customer, different resources).</li>
+<li>One <strong>Resource Rival</strong> (similar resources, currently different market) — a firm that could plausibly enter Starbucks’s market.</li>
+<li>For your Resource Rival, apply the awareness–motivation–capability test: which of the three is the bottleneck preventing entry?</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 2 — Action and Response
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In 2024, BYD launched aggressive price cuts on its mid-range EVs in China, with some models reduced 15–20% in a single quarter.</p>
+<ol type="a">
+<li>Classify this as a strategic or tactical action. Justify.</li>
+<li>For two of BYD’s main competitors (e.g., Tesla China, Geely, Nio), apply the awareness–motivation–capability framework: which firms could/would respond, and how?</li>
+<li>What second-order effect might this price war have on <strong>complementors</strong> (battery makers, charging networks, dealerships)?</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 3 — Spotting Complementors
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For each focal firm below, identify one important complementor and explain how the focal firm could deepen the relationship:</p>
+<ol type="a">
+<li>Nintendo Switch console.</li>
+<li>Tesla Supercharger network.</li>
+<li>LINE messaging platform in Taiwan.</li>
+<li>Microsoft Office 365.</li>
+<li>An MRT mass-transit system.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 4 — Applying PARTS
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Choose your TP focal company (or a Taiwan MNC of your choice). Identify <strong>one PARTS lever</strong> the firm has used in the past 5 years to change its competitive game, and <strong>one PARTS lever it has not yet used</strong> but could plausibly try.</p>
+<ol type="a">
+<li>Describe the historical move using the PARTS taxonomy.</li>
+<li>Propose the new move and predict the likely competitive response.</li>
+<li>What awareness–motivation–capability conditions would your competitors need to meet in order to respond?</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="further-readings" class="level2">
+<h2 class="anchored" data-anchor-id="further-readings">Further Readings</h2>
+<ul>
+<li><strong>Brandenburger, A. M. &amp; Nalebuff, B. J. (1996)</strong>. <em>Co-opetition</em>. Currency Doubleday. — The foundational text; PARTS framework, Value Net.</li>
+<li><strong>Chen, M. J. (1996)</strong>. “Competitor Analysis and Interfirm Rivalry: Toward a Theoretical Integration.” <em>Academy of Management Review</em>, 21(1), 100–134. — The original market-commonality / resource-similarity framework.</li>
+<li><strong>D’Aveni, R. A. (1994)</strong>. <em>Hypercompetition</em>. Free Press. — Influential treatment of fast-cycle competition.</li>
+<li><strong>Smith, K. G., Ferrier, W. J., &amp; Ndofor, H. (2001)</strong>. “Competitive Dynamics Research: Critique and Future Directions.” In Hitt, Freeman &amp; Harrison (Eds.), <em>The Blackwell Handbook of Strategic Management</em>.</li>
+<li><strong>Grant, R. M. (2016)</strong>. <em>Contemporary Strategy Analysis</em>, 9th ed., Chapter 4 — “Further Topics in Industry and Competitive Analysis”.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Coursera Companion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>[ENT] Entrepreneurship 1: Developing the Opportunity</strong> — Video 2.6 covers competitor identification from an entrepreneur’s vantage point.</li>
+<li><strong>[CS] Corporate Strategy</strong> — Module 2 introduces game-theoretic thinking applicable to co-opetitive dynamics.</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>Chapters 3 and 4 together completed the <strong>outside-in</strong> view: industry structure plus competitive dynamics. We now turn the lens inward. Chapter 5 introduces the <strong>Resource-Based View (RBV)</strong> and the <strong>Value Chain</strong> — the foundational frameworks for diagnosing what makes a firm distinctive from the inside, and how distinctiveness translates into sustainable competitive advantage.</p>
 
 
 </section>
@@ -993,6 +1373,18 @@ jobs:
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/ch03.html" class="pagination-link" aria-label="Ch 3. General Environment &amp; Industry Analysis">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Ch 3. General Environment &amp; Industry Analysis</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/ch05.qmd" class="pagination-link" aria-label="Ch 5. Resource-Based View &amp; Value Chain">
+        <span class="nav-page-text">Ch 5. Resource-Based View &amp; Value Chain</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1001,7 +1393,7 @@ jobs:
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/publishing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch04.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
