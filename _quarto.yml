@@ -3,6 +3,7 @@ project:
   
 website: 
   page-navigation: true
+  reader-mode: true
   title: "SMMC-EMI Course Textbook" 
   description: "Strategic Management of Multinational Corporations — An EMI Capstone Course at NCNU"
   site-url: "https://lolopodcast.github.io/SMMC-EMI-Textbook-Web" 
