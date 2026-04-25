@@ -255,3 +255,70 @@ blockquote {
     .tts-status { width: 100%; margin-left: 0; margin-top: 0.3rem; }
   }
 }
+// Business Model Canvas grid
+.bmc-canvas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 6px;
+  margin: 2rem 0;
+  
+  .bmc-block {
+    background: #FAF6F0;
+    border: 2px solid $bcg-green;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    
+    .bmc-num {
+      font-weight: 700;
+      color: $bcg-gold;
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .bmc-title {
+      font-weight: 600;
+      color: $bcg-green;
+      margin-bottom: 0.4rem;
+      
+      small {
+        color: $bcg-gray-soft;
+        font-size: 0.75rem;
+        font-weight: 400;
+      }
+    }
+    
+    .bmc-desc {
+      color: $bcg-gray-text;
+      font-size: 0.8rem;
+    }
+  }
+  
+  .bmc-kp   { grid-column: 1; grid-row: 1 / 3; }
+  .bmc-ka   { grid-column: 2; grid-row: 1; }
+  .bmc-kr   { grid-column: 2; grid-row: 2; }
+  .bmc-vp   { grid-column: 3; grid-row: 1 / 3; background: $bcg-green; color: white; 
+              .bmc-title, .bmc-desc { color: white; } 
+              .bmc-title small { color: $bcg-gold; } }
+  .bmc-cr   { grid-column: 4; grid-row: 1; }
+  .bmc-ch   { grid-column: 4; grid-row: 2; }
+  .bmc-cs   { grid-column: 5; grid-row: 1 / 3; }
+  .bmc-cost { grid-column: 1 / 4; grid-row: 3; background: rgba(216, 195, 165, 0.3); }
+  .bmc-rs   { grid-column: 4 / 6; grid-row: 3; background: rgba(216, 195, 165, 0.3); }
+}
+
+// RWD: 手機上改成單欄堆疊
+@media (max-width: 768px) {
+  .bmc-canvas {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    
+    .bmc-kp, .bmc-ka, .bmc-kr, .bmc-vp, 
+    .bmc-cr, .bmc-ch, .bmc-cs, .bmc-cost, .bmc-rs {
+      grid-column: 1;
+      grid-row: auto;
+    }
+  }
+}
