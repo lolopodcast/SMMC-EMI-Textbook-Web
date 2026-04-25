@@ -137,23 +137,6 @@ blockquote {
 .bmc-canvas .bmc-rs {
   background: rgba(216, 195, 165, 0.1) !important;
 }
-// Theme toggle button — Dark mode
-.quarto-color-scheme-toggle {
-  margin-left: 0.4rem !important;
-  padding: 0.3rem !important;
-  border: 1.5px solid $bcg-gold !important;
-  border-radius: 50% !important;
-  background-color: rgba(216, 195, 165, 0.1) !important;
-  transition: all 0.2s ease !important;
-  position: relative;
-  
-  &:hover {
-    background-color: $bcg-gold !important;
-    transform: rotate(-15deg);
-    
-    i.bi {
-      color: $bcg-bg-dark !important;
-    }
     
     &::after {
       content: "Switch theme · 切換主題";
