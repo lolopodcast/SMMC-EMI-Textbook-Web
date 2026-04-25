@@ -147,39 +147,53 @@ Firm-specific factors — particularly **hard-to-replicate capabilities** — ar
 
 Alexander Osterwalder's **Business Model Canvas (BMC, 商業模式畫布)** operationalizes the four pillars into nine building blocks. We overlay the V-P-C framework on top of it:
 
-```{mermaid}
-flowchart TB
-    subgraph VP["① Value Proposition (V)"]
-        VP1["What problem are we solving?<br/>Which customer need are we satisfying?"]
-    end
-    
-    subgraph VC["② Value Creation (C-side)"]
-        KA["Key Activities"]
-        KR["Key Resources"]
-        KP["Key Partners"]
-    end
-    
-    subgraph VA["③ Value Appropriation (P-side)"]
-        CS["Customer Segments"]
-        CR["Customer Relationships"]
-        CH["Channels"]
-        RS["Revenue Streams"]
-    end
-    
-    subgraph VSus["④ Value Sustaining (underlying)"]
-        COST["Cost Structure"]
-    end
-    
-    VC --> VP
-    VP --> VA
-    COST -.supports.-> VC
-    COST -.constrains.-> VA
-    
-    style VP fill:#004030,stroke:#004030,color:#FFFFFF
-    style VC fill:#D8C3A5,stroke:#004030,color:#2C2C2C
-    style VA fill:#EFE4D2,stroke:#004030,color:#2C2C2C
-    style VSus fill:#FAF6F0,stroke:#004030,color:#2C2C2C
-```
+<div class="bmc-canvas">
+  <div class="bmc-block bmc-kp">
+    <div class="bmc-num">⑦</div>
+    <div class="bmc-title">Key Partners<br/><small>重要夥伴</small></div>
+    <div class="bmc-desc">Who are our key partners and suppliers?</div>
+  </div>
+  <div class="bmc-block bmc-ka">
+    <div class="bmc-num">⑤</div>
+    <div class="bmc-title">Key Activities<br/><small>關鍵活動</small></div>
+    <div class="bmc-desc">What activities does the value proposition require?</div>
+  </div>
+  <div class="bmc-block bmc-vp">
+    <div class="bmc-num">①</div>
+    <div class="bmc-title">Value Proposition<br/><small>價值主張</small></div>
+    <div class="bmc-desc">What problem are we solving? Which need are we satisfying?</div>
+  </div>
+  <div class="bmc-block bmc-cr">
+    <div class="bmc-num">④</div>
+    <div class="bmc-title">Customer Relationships<br/><small>顧客關係</small></div>
+    <div class="bmc-desc">How will we get, keep, and grow customers?</div>
+  </div>
+  <div class="bmc-block bmc-cs">
+    <div class="bmc-num">②</div>
+    <div class="bmc-title">Customer Segments<br/><small>顧客區隔</small></div>
+    <div class="bmc-desc">For whom are we creating value? Who are our customers?</div>
+  </div>
+  <div class="bmc-block bmc-kr">
+    <div class="bmc-num">⑥</div>
+    <div class="bmc-title">Key Resources<br/><small>關鍵資源</small></div>
+    <div class="bmc-desc">What key resources does the value proposition require?</div>
+  </div>
+  <div class="bmc-block bmc-ch">
+    <div class="bmc-num">③</div>
+    <div class="bmc-title">Channels<br/><small>通路</small></div>
+    <div class="bmc-desc">Through which channels do our customer segments want to be reached?</div>
+  </div>
+  <div class="bmc-block bmc-cost">
+    <div class="bmc-num">⑨</div>
+    <div class="bmc-title">Cost Structure<br/><small>成本結構</small></div>
+    <div class="bmc-desc">What are the most important costs? (Value Creation side)</div>
+  </div>
+  <div class="bmc-block bmc-rs">
+    <div class="bmc-num">⑧</div>
+    <div class="bmc-title">Revenue Streams<br/><small>收入來源</small></div>
+    <div class="bmc-desc">For what value are customers willing to pay? (Value Appropriation side)</div>
+  </div>
+</div>
 
 The BMC is a diagnostic tool, not a strategy in itself. Its power lies in forcing the analyst to articulate **every** block and check whether they reinforce each other.
 
