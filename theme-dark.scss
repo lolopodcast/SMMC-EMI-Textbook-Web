@@ -24,3 +24,23 @@ $popover-bg: #242424;
 
 // Bootstrap inputs
 $input-bg: #242424;
+// TTS Controls - Dark Mode
+.tts-controls {
+  background: $bcg-bg-card;
+  border-left-color: $bcg-gold;
+  
+  button {
+    background: transparent;
+    border-color: $bcg-gold;
+    color: $bcg-gold;
+    
+    &:hover {
+      background: $bcg-gold;
+      color: $bcg-bg-dark;
+    }
+  }
+  
+  .tts-status {
+    color: $bcg-text-soft;
+  }
+}
