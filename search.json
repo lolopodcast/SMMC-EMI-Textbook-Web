@@ -107,25 +107,168 @@
     "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
   },
   {
-    "objectID": "content/add-content.html",
-    "href": "content/add-content.html",
-    "title": "Customize",
+    "objectID": "content/ch01.html",
+    "href": "content/ch01.html",
+    "title": "Superior Performance & Strategy",
     "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
   },
   {
-    "objectID": "content/add-content.html#edit-and-add-your-pages",
-    "href": "content/add-content.html#edit-and-add-your-pages",
-    "title": "Customize",
-    "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+    "objectID": "content/ch01.html#learning-objectives",
+    "href": "content/ch01.html#learning-objectives",
+    "title": "Superior Performance & Strategy",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDefine strategy and distinguish it from operational tactics, plans, and detailed instructions.\nIdentify the three sources of variance in firm performance — industry effects, firm-specific effects, and other effects — and explain why firm-level decisions matter.\nDifferentiate between corporate strategy (Where to compete?) and business strategy (How to compete?), and place functional strategy in the implementation hierarchy.\nApply the Inside-out vs. Outside-in lens to analyze the link between a firm and its environment.\nRecognize that realized strategy is the result of both deliberate planning and emergent adaptation.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
   },
   {
-    "objectID": "content/add-content.html#add-your-pages-the-project",
-    "href": "content/add-content.html#add-your-pages-the-project",
-    "title": "Customize",
-    "section": "Add your pages the project",
-    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
+    "objectID": "content/ch01.html#what-is-superior-performance",
+    "href": "content/ch01.html#what-is-superior-performance",
+    "title": "Superior Performance & Strategy",
+    "section": "1.1 What Is Superior Performance?",
+    "text": "1.1 What Is Superior Performance?\nStrategic management exists to answer one practical question: why do some firms persistently outperform others?\nTake three U.S. retailers — Walmart, Costco, and Target — over a typical 15-year window. Their Return on Invested Capital (ROIC, 投入資本報酬率) trajectories are not random. Walmart consistently maintained ROIC around 14–15%, while Target hovered around 10% and Costco around 11–12%, with periods of crossover. These differences are not noise. They are the cumulative outcome of decades of strategic choices about supply chain, store format, customer segment, and operating philosophy.\nNow zoom out from a single industry to across industries. The Software industry sustains ROIC near 24%; Drug companies around 15%; Telecommunications services around 8%; Air transport hovers near 0%, occasionally negative. Where you compete matters at least as much as how you compete.\nThis chapter introduces the basic vocabulary and frameworks needed to ask both questions in a structured way.\n\n\n\n\n\n\nNoteKey Definition — Superior Performance\n\n\n\nSuperior performance (卓越績效) in strategic management refers to a firm’s ability to earn a rate of return above the average of its industry over a sustained period — measured by accounting metrics (ROIC, ROA, ROE), economic metrics (EVA, NPV), or shareholder value (stock returns).",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#where-does-performance-come-from",
+    "href": "content/ch01.html#where-does-performance-come-from",
+    "title": "Superior Performance & Strategy",
+    "section": "1.2 Where Does Performance Come From?",
+    "text": "1.2 Where Does Performance Come From?\nEmpirical research on firm performance variance has produced a remarkably consistent finding across decades of studies (Schmalensee, 1985; Rumelt, 1991; McGahan & Porter, 1997; Hawawini et al., 2003):\n\n\n\n\n\npie title Sources of Performance Variance\n    \"Industry Effects (~20%)\" : 20\n    \"Firm-Specific Effects (~30-45%)\" : 38\n    \"Other Effects (corporate parent, year, unexplained) (~35-50%)\" : 42\n\n\n\n\n\n\nThree takeaways:\n\nIndustry attractiveness matters — about one-fifth of why firms make money is explained by which industry they’re in. This justifies external analysis (Chapters 3–4).\nFirm-specific factors matter more — roughly 30–45% of variance traces to what the firm itself does: its resources, capabilities, organizational design, and execution. This justifies internal analysis (Chapters 5–8).\nSome things remain unexplained — corporate parent effects, year-specific shocks, and pure luck account for the rest. This is a humbling reminder that strategy is not deterministic. Even Steve Jobs needed timing.\n\n\n\n\n\n\n\nTipImplication for Term Project (TP) analysis\n\n\n\nWhen you analyze your chosen multinational corporation in TP1 and TP2, you need both an industry lens (PESTEL, Five Forces, Industry Lifecycle) and a firm-level lens (Value Chain, RBV, Dynamic Capabilities). Skipping either side will leave 20–45% of the performance story unexplained.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#what-is-strategy",
+    "href": "content/ch01.html#what-is-strategy",
+    "title": "Superior Performance & Strategy",
+    "section": "1.3 What Is Strategy?",
+    "text": "1.3 What Is Strategy?\nThe word strategy (策略) comes from the Greek strategia — “the art of the general.” Sun Tzu’s Art of War (孫子兵法, ~500 BC) opens its first chapter with the proposition that strategy is the great work of organizations, the path between survival and extinction. Modern strategic management retains this gravitas while making the concept operational.\n\n1.3.1 Three Influential Definitions\nChandler (1962):\n\nStrategy is the determination of the basic long-term goals of an enterprise, and the adoption of courses of action and the allocation of resources necessary for carrying out these goals.\n\nAndrews (1971) distinguished two levels:\n\nCorporate strategy (公司策略) — the pattern of decisions that determines the firm’s goals, the range of business it pursues, the kind of organization it is, and the contribution it makes to its stakeholders.\nBusiness strategy (事業策略) — the choice of product/service and market for individual businesses, and how the firm will compete and position itself.\n\nA modern synthesis:\n\nStrategy is a firm’s theory about how to compete and grow successfully — a unifying theme that gives coherence and direction to its actions and decisions.\n\n\n\n1.3.2 What Strategy Is NOT\nEqually important is what strategy is not:\n\n\n\n\n\n\n\nCommon confusion\nWhy it’s not strategy\n\n\n\n\nMaximizing every penny of profit\nProfit is a consequence of good strategy, not the main goal. Short-term profit maximization often destroys long-term value.\n\n\nOperational effectiveness\nTools like ERP, Six Sigma, Lean Manufacturing, and benchmarking are necessary but not sufficient. They shift the productivity frontier outward but do not change relative position.\n\n\nA detailed plan or instruction manual\nStrategy is a unifying theme, not a 200-page document. Detailed plans are tactics.\n\n\nDoing things better\nStrategy is about doing things differently — the shift from incremental improvement to repositioning.\n\n\n\n\n\n\n\n\n\nWarningPorter’s classic warning\n\n\n\n“Operational effectiveness is not strategy.” If every firm in an industry adopts the same quality-management toolkit, they all become more efficient — but the gains are competed away to customers via lower prices. Relative position does not change. Strategic innovation, by contrast, redefines the rules of the game.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#strategies-across-levels",
+    "href": "content/ch01.html#strategies-across-levels",
+    "title": "Superior Performance & Strategy",
+    "section": "1.4 Strategies Across Levels",
+    "text": "1.4 Strategies Across Levels\nWithin any large organization, strategy operates at three nested levels:\n\n\n\n\n\nflowchart TB\n    HQ[\"&lt;b&gt;Headquarters&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Corporate Strategy&lt;/i&gt;&lt;br/&gt;WHERE to Compete?\"]\n    SBU1[\"SBU 1&lt;br/&gt;&lt;i&gt;Business Strategy&lt;/i&gt;&lt;br/&gt;HOW to compete?\"]\n    SBU2[\"SBU 2&lt;br/&gt;&lt;i&gt;Business Strategy&lt;/i&gt;&lt;br/&gt;HOW to compete?\"]\n    SBU3[\"SBU 3&lt;br/&gt;&lt;i&gt;Business Strategy&lt;/i&gt;&lt;br/&gt;HOW to compete?\"]\n    F1[\"Function 1&lt;br/&gt;&lt;i&gt;Functional Strategy&lt;/i&gt;&lt;br/&gt;HOW to implement?\"]\n    F2[\"Function 2&lt;br/&gt;&lt;i&gt;Functional Strategy&lt;/i&gt;&lt;br/&gt;HOW to implement?\"]\n    F3[\"Function 3&lt;br/&gt;&lt;i&gt;Functional Strategy&lt;/i&gt;&lt;br/&gt;HOW to implement?\"]\n    \n    HQ --&gt; SBU1\n    HQ --&gt; SBU2\n    HQ --&gt; SBU3\n    SBU3 --&gt; F1\n    SBU3 --&gt; F2\n    SBU3 --&gt; F3\n    \n    style HQ fill:#004030,stroke:#004030,color:#FFFFFF\n    style SBU1 fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style SBU2 fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style SBU3 fill:#004030,stroke:#004030,color:#FFFFFF\n    style F1 fill:#EFE4D2,stroke:#004030\n    style F2 fill:#EFE4D2,stroke:#004030\n    style F3 fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\n\nCorporate strategy asks WHERE the firm should compete — which industries, which geographies, which value-chain stages. This is the subject of Chapters 9–12.\nBusiness strategy asks HOW to win in a chosen arena — cost leadership, differentiation, focus. This is the subject of Chapter 7.\nFunctional strategy (功能策略) asks HOW to implement the business strategy through marketing, operations, R&D, finance, and HR.\n\nA common failure mode in MNCs is misalignment between levels — for example, a corporate strategy emphasizing premium positioning combined with a marketing function pursuing aggressive volume promotions. Strategic coherence requires consistency vertically across levels as well as horizontally across functions.\n\n\n\n\n\n\nTipAmbidextrous organizations\n\n\n\nSome firms — Amazon, Apple, Samsung — successfully run multiple business strategies in parallel: a low-cost commodity arm and a premium-innovation arm under the same corporate roof. This is called an ambidextrous organization (雙元組織) and requires sophisticated structural separation. We will revisit this in Chapter 8.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#the-components-of-successful-strategy",
+    "href": "content/ch01.html#the-components-of-successful-strategy",
+    "title": "Superior Performance & Strategy",
+    "section": "1.5 The Components of Successful Strategy",
+    "text": "1.5 The Components of Successful Strategy\nA successful strategy combines four ingredients:\n\n\n\n\n\n\nNoteFour ingredients of successful strategy\n\n\n\n\nLong-term, simple, and agreed objectives — Vision (to be), Mission (to do), Values (to guide), Goals (to achieve).\nProfound understanding of the competitive environment — external O–T analysis (Chapters 3–4).\nObjective appraisal of resources and capabilities — internal S–W analysis (Chapters 5–6).\nEffective implementation — the management functions of Planning, Organizing, Leading, and Controlling.\n\n\n\nThe interaction of these four ingredients is what generates competitive advantage — defined as above-average return (also called rent, 租值) — which in turn produces the four Ss of strategic success: Survival, Success, Superior performance, and Sustainability.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#inside-out-vs.-outside-in",
+    "href": "content/ch01.html#inside-out-vs.-outside-in",
+    "title": "Superior Performance & Strategy",
+    "section": "1.6 Inside-out vs. Outside-in",
+    "text": "1.6 Inside-out vs. Outside-in\nThe link between a firm and its environment can be analyzed from two complementary directions:\n\nOutside-in (從外向內)\nStarts with the environment and asks what opportunities and threats does it present? Then matches the firm’s resources to those opportunities. The dominant lens of the Industrial Organization (I/O) school, championed by Michael Porter and discussed in Chapter 3.\n\n\nInside-out (從內向外)\nStarts with the firm’s resources and capabilities and asks what unique value can we deliver? Then identifies environments where those capabilities pay off. The dominant lens of the Resource-Based View (RBV) school, championed by Wernerfelt, Barney, and discussed in Chapter 5.\n\n\n\n\n\n\nImportantStrategic Fit (策略契合)\n\n\n\nNeither lens alone is sufficient. Effective strategy requires three kinds of fit:\n\nInternal fit (coherence) — the firm’s resources, structure, and processes reinforce each other.\nExternal fit — the firm’s offering matches the demands of its chosen environment.\nDynamic fit (time & interaction) — the firm adapts as the environment evolves.\n\nThe SWOT framework (Strengths–Weaknesses–Opportunities–Threats) is the simplest articulation of this dual perspective.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#how-is-strategy-made-deliberate-or-emergent",
+    "href": "content/ch01.html#how-is-strategy-made-deliberate-or-emergent",
+    "title": "Superior Performance & Strategy",
+    "section": "1.7 How Is Strategy Made? Deliberate or Emergent?",
+    "text": "1.7 How Is Strategy Made? Deliberate or Emergent?\nHenry Mintzberg’s classic insight: the strategy a firm intends is rarely the strategy it actually realizes.\n\n\n\n\n\nflowchart LR\n    A[\"Intended&lt;br/&gt;Strategy\"] --&gt;|Deliberate Strategy| B[\"Realized&lt;br/&gt;Strategy\"]\n    A -.Unrealized Strategy.-&gt; C[\"Discarded\"]\n    D[\"Emergent&lt;br/&gt;Strategy\"] --&gt;|Adaptation| B\n    \n    style A fill:#EFE4D2,stroke:#004030\n    style B fill:#004030,stroke:#004030,color:#FFFFFF\n    style C fill:#FAF6F0,stroke:#6B6B6B,color:#6B6B6B\n    style D fill:#D8C3A5,stroke:#004030\n\n\n\n\n\n\n\nIntended strategy is what executives plan in the boardroom.\nDeliberate strategy is the portion of the intended strategy that actually gets implemented.\nUnrealized strategy is the portion that was abandoned along the way — sometimes wisely, sometimes not.\nEmergent strategy is the part of the realized strategy that was never intended — it arises from middle-manager experiments, customer feedback, technological surprises, and competitive responses.\nRealized strategy is the actual pattern of decisions and actions, combining both deliberate and emergent components.\n\nThe implication for managers is profound: planning is necessary but insufficient. A strategy proven successful in one context during one time period does not necessarily mean it will succeed elsewhere or for other firms. Strategy formulation and strategy implementation are not sequential phases — they interact continuously.\n\n\n\n\n\n\nTipHow GenAI changes strategy formation\n\n\n\nIn 2026, the deliberate-emergent dynamic accelerates. AI tools like ChatGPT, Claude, and Gemini allow strategists to run rapid scenario analyses, simulate competitive responses, and synthesize unstructured data (customer reviews, social media, news) faster than ever. Emergent strategy can now be detected and formalized in weeks rather than years — but only if the organization is structured to listen.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#strategic-management-today",
+    "href": "content/ch01.html#strategic-management-today",
+    "title": "Superior Performance & Strategy",
+    "section": "1.8 Strategic Management Today",
+    "text": "1.8 Strategic Management Today\nThe discipline we now call strategic management evolved from a course called Business Policy, taught at Harvard Business School (HBS) since 1912.\n\nThe case method was used to present students with realistic business problems.\nA policy was a statement designed to guide how action should be carried out.\nThe course followed a sequence: problem → analysis → policy → action.\nThe viewpoint was that of top management, where company-wide objectives are set and departmental policies coordinated.\nIn 1960, the AACSB (Association to Advance Collegiate Schools of Business) listed Business Policy as a capstone course at both undergraduate and graduate levels.\n\nThis is exactly the role SMMC-EMI plays in your degree: a capstone course that integrates what you have learned in finance, marketing, operations, organizational behavior, and economics into a coherent decision-making framework.\nBy the end of this course, you should not just know the frameworks — you should be able to apply them to a real multinational corporation in your Term Project, communicate your analysis in English, collaborate effectively with peers, and use modern AI tools to accelerate your work without becoming dependent on them.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#self-check-questions",
+    "href": "content/ch01.html#self-check-questions",
+    "title": "Superior Performance & Strategy",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Decomposing Performance Variance\n\n\n\n\n\nA senior partner at a consulting firm tells a junior analyst: “This client is in trouble because their industry is dying — there’s nothing the firm itself can do.”\n\nDrawing on the empirical research summarized in Section 1.2, evaluate the partner’s claim. What percentage of performance variance is typically explained by industry effects?\nIdentify two types of strategic actions the firm could still take despite unfavorable industry conditions.\nGive a real-world example of a firm that thrived in a “dying” industry by repositioning itself.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Strategy vs. Operational Effectiveness\n\n\n\n\n\nFor each of the following actions, classify it as primarily strategic or operational and justify your choice:\n\nA coffee chain implements a new POS system that reduces transaction time by 20%.\nA coffee chain repositions itself as a “third place” between home and office, redesigning store interiors and removing time limits on Wi-Fi use.\nA semiconductor firm achieves 5nm process technology six months ahead of competitors.\nA semiconductor firm announces it will only manufacture chips, never compete with its customers on chip design.\nAn airline standardizes its fleet to a single aircraft model.\nAn airline adopts ICAO-recommended fuel-efficiency procedures across all routes.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Levels of Strategy\n\n\n\n\n\nA multinational consumer-electronics conglomerate has three SBUs: smartphones, home appliances, and electric vehicles.\n\nFor each SBU, give a plausible business strategy and the functional strategies that would support it.\nIdentify one corporate-level decision the headquarters might make that affects all three SBUs simultaneously.\nIdentify a potential conflict between the SBUs’ business strategies and the corporate-level decision in (b). How would you resolve it?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Realized vs. Intended Strategy\n\n\n\n\n\nChoose a Taiwanese MNC whose recent strategy you have followed (e.g., 鴻海 Foxconn, 華碩 ASUS, 聯發科 MediaTek, 國泰金 Cathay Financial).\n\nReconstruct what you believe was their intended strategy from 5 years ago, based on annual reports or news coverage at that time.\nDescribe the firm’s realized strategy today.\nIdentify at least one emergent element — something that became part of the firm’s strategy without having been originally planned. What triggered it?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#further-readings",
+    "href": "content/ch01.html#further-readings",
+    "title": "Superior Performance & Strategy",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 1 — “The Concept of Strategy”. Wiley.\nMintzberg, H. (1987). “The Strategy Concept I: Five Ps for Strategy.” California Management Review, 30(1), 11–24. — The classic essay defining strategy as Plan, Ploy, Pattern, Position, and Perspective.\nPorter, M. E. (1996). “What Is Strategy?” Harvard Business Review, Nov–Dec. — Revisit alongside Chapter 2.\nRumelt, R. P. (2011). Good Strategy / Bad Strategy: The Difference and Why It Matters. Crown Business. — Highly readable; contrasts coherent strategy with “bad strategy” filled with platitudes.\nSun Tzu. The Art of War (孫子兵法). — Required cultural literacy for any strategist; multiple modern translations available.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — UPenn Wharton, Video 0.1–0.3 (~19 min) — introduction to strategic thinking for entrepreneurs.\n[CS] Corporate Strategy — UIUC Gies, Module 1 — sets up the corporate-vs-business strategy distinction in detail.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/ch01.html#looking-ahead",
+    "href": "content/ch01.html#looking-ahead",
+    "title": "Superior Performance & Strategy",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapter 1 has framed the what and why of strategy. Chapter 2 introduced the V-P-C lens — our north star throughout the book. Starting in Chapter 3, we begin the outside-in journey: how do macro forces (PESTEL) and industry structure (Five Forces) shape the V (value) and P (price) sides of every firm’s V-P-C equation?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 1. Superior Performance & Strategy"
+    ]
+  },
+  {
+    "objectID": "content/customizing.html",
+    "href": "content/customizing.html",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#quarto-documentation",
+    "href": "content/customizing.html#quarto-documentation",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#examples",
+    "href": "content/customizing.html#examples",
+    "title": "Customization",
+    "section": "Examples",
+    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
   },
   {
     "objectID": "content/rendering.html",
@@ -156,25 +299,25 @@
     "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
   },
   {
-    "objectID": "content/customizing.html",
-    "href": "content/customizing.html",
-    "title": "Customization",
+    "objectID": "content/add-content.html",
+    "href": "content/add-content.html",
+    "title": "Customize",
     "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
   },
   {
-    "objectID": "content/customizing.html#quarto-documentation",
-    "href": "content/customizing.html#quarto-documentation",
-    "title": "Customization",
+    "objectID": "content/add-content.html#edit-and-add-your-pages",
+    "href": "content/add-content.html#edit-and-add-your-pages",
+    "title": "Customize",
     "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
   },
   {
-    "objectID": "content/customizing.html#examples",
-    "href": "content/customizing.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
+    "objectID": "content/add-content.html#add-your-pages-the-project",
+    "href": "content/add-content.html#add-your-pages-the-project",
+    "title": "Customize",
+    "section": "Add your pages the project",
+    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
   },
   {
     "objectID": "content/publishing.html",
