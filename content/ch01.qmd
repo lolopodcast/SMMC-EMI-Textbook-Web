@@ -1,0 +1,301 @@
+---
+title: "Superior Performance & Strategy"
+subtitle: "Chapter 1 — Foundations of Strategic Management"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Define **strategy** and distinguish it from operational tactics, plans, and detailed instructions.
+2. Identify the three sources of variance in firm performance — **industry effects**, **firm-specific effects**, and **other effects** — and explain why firm-level decisions matter.
+3. Differentiate between **corporate strategy** (Where to compete?) and **business strategy** (How to compete?), and place **functional strategy** in the implementation hierarchy.
+4. Apply the **Inside-out vs. Outside-in** lens to analyze the link between a firm and its environment.
+5. Recognize that **realized strategy** is the result of both **deliberate** planning and **emergent** adaptation.
+
+---
+
+## 1.1 What Is Superior Performance?
+
+Strategic management exists to answer one practical question: **why do some firms persistently outperform others?**
+
+Take three U.S. retailers — Walmart, Costco, and Target — over a typical 15-year window. Their **Return on Invested Capital (ROIC, 投入資本報酬率)** trajectories are not random. Walmart consistently maintained ROIC around 14–15%, while Target hovered around 10% and Costco around 11–12%, with periods of crossover. These differences are not noise. They are the cumulative outcome of decades of strategic choices about supply chain, store format, customer segment, and operating philosophy.
+
+Now zoom out from a single industry to **across industries**. The Software industry sustains ROIC near 24%; Drug companies around 15%; Telecommunications services around 8%; Air transport hovers near 0%, occasionally negative. **Where you compete matters at least as much as how you compete.**
+
+This chapter introduces the basic vocabulary and frameworks needed to ask **both** questions in a structured way.
+
+::: {.callout-note}
+## Key Definition — Superior Performance
+
+**Superior performance (卓越績效)** in strategic management refers to a firm's ability to earn a rate of return **above the average of its industry** over a sustained period — measured by accounting metrics (ROIC, ROA, ROE), economic metrics (EVA, NPV), or shareholder value (stock returns).
+:::
+
+---
+
+## 1.2 Where Does Performance Come From?
+
+Empirical research on firm performance variance has produced a remarkably consistent finding across decades of studies (Schmalensee, 1985; Rumelt, 1991; McGahan & Porter, 1997; Hawawini et al., 2003):
+
+```{mermaid}
+pie title Sources of Performance Variance
+    "Industry Effects (~20%)" : 20
+    "Firm-Specific Effects (~30-45%)" : 38
+    "Other Effects (corporate parent, year, unexplained) (~35-50%)" : 42
+```
+
+Three takeaways:
+
+1. **Industry attractiveness matters** — about one-fifth of why firms make money is explained by **which industry** they're in. This justifies external analysis (Chapters 3–4).
+2. **Firm-specific factors matter more** — roughly 30–45% of variance traces to what the firm itself does: its resources, capabilities, organizational design, and execution. This justifies internal analysis (Chapters 5–8).
+3. **Some things remain unexplained** — corporate parent effects, year-specific shocks, and pure luck account for the rest. This is a humbling reminder that strategy is not deterministic. *Even Steve Jobs needed timing.*
+
+::: {.callout-tip}
+## Implication for Term Project (TP) analysis
+
+When you analyze your chosen multinational corporation in TP1 and TP2, you need **both** an industry lens (PESTEL, Five Forces, Industry Lifecycle) **and** a firm-level lens (Value Chain, RBV, Dynamic Capabilities). Skipping either side will leave 20–45% of the performance story unexplained.
+:::
+
+---
+
+## 1.3 What Is Strategy?
+
+The word **strategy (策略)** comes from the Greek *strategia* — "the art of the general." Sun Tzu's *Art of War* (孫子兵法, ~500 BC) opens its first chapter with the proposition that strategy is the great work of organizations, the path between survival and extinction. Modern strategic management retains this gravitas while making the concept operational.
+
+### 1.3.1 Three Influential Definitions
+
+**Chandler (1962)**:
+
+> Strategy is the determination of the basic **long-term goals** of an enterprise, and the adoption of **courses of action** and the **allocation of resources** necessary for carrying out these goals.
+
+**Andrews (1971)** distinguished two levels:
+
+- **Corporate strategy (公司策略)** — the pattern of decisions that determines the firm's goals, the **range of business** it pursues, the kind of organization it is, and the contribution it makes to its stakeholders.
+- **Business strategy (事業策略)** — the choice of **product/service and market** for individual businesses, and how the firm will **compete and position** itself.
+
+**A modern synthesis**:
+
+> Strategy is a firm's *theory* about **how to compete and grow successfully** — a unifying theme that gives coherence and direction to its actions and decisions.
+
+### 1.3.2 What Strategy Is NOT
+
+Equally important is what strategy is **not**:
+
+| Common confusion | Why it's not strategy |
+|---|---|
+| **Maximizing every penny of profit** | Profit is a *consequence* of good strategy, not the main goal. Short-term profit maximization often destroys long-term value. |
+| **Operational effectiveness** | Tools like ERP, Six Sigma, Lean Manufacturing, and benchmarking are *necessary but not sufficient*. They shift the productivity frontier outward but do not change relative position. |
+| **A detailed plan or instruction manual** | Strategy is a *unifying theme*, not a 200-page document. Detailed plans are tactics. |
+| **Doing things better** | Strategy is about doing things **differently** — the shift from incremental improvement to repositioning. |
+
+::: {.callout-warning}
+## Porter's classic warning
+
+*"Operational effectiveness is not strategy."* If every firm in an industry adopts the same quality-management toolkit, they all become more efficient — but the gains are competed away to customers via lower prices. **Relative** position does not change. Strategic innovation, by contrast, redefines the rules of the game.
+:::
+
+---
+
+## 1.4 Strategies Across Levels
+
+Within any large organization, strategy operates at three nested levels:
+
+```{mermaid}
+flowchart TB
+    HQ["<b>Headquarters</b><br/><i>Corporate Strategy</i><br/>WHERE to Compete?"]
+    SBU1["SBU 1<br/><i>Business Strategy</i><br/>HOW to compete?"]
+    SBU2["SBU 2<br/><i>Business Strategy</i><br/>HOW to compete?"]
+    SBU3["SBU 3<br/><i>Business Strategy</i><br/>HOW to compete?"]
+    F1["Function 1<br/><i>Functional Strategy</i><br/>HOW to implement?"]
+    F2["Function 2<br/><i>Functional Strategy</i><br/>HOW to implement?"]
+    F3["Function 3<br/><i>Functional Strategy</i><br/>HOW to implement?"]
+    
+    HQ --> SBU1
+    HQ --> SBU2
+    HQ --> SBU3
+    SBU3 --> F1
+    SBU3 --> F2
+    SBU3 --> F3
+    
+    style HQ fill:#004030,stroke:#004030,color:#FFFFFF
+    style SBU1 fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style SBU2 fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style SBU3 fill:#004030,stroke:#004030,color:#FFFFFF
+    style F1 fill:#EFE4D2,stroke:#004030
+    style F2 fill:#EFE4D2,stroke:#004030
+    style F3 fill:#EFE4D2,stroke:#004030
+```
+
+- **Corporate strategy** asks **WHERE** the firm should compete — which industries, which geographies, which value-chain stages. This is the subject of Chapters 9–12.
+- **Business strategy** asks **HOW** to win in a chosen arena — cost leadership, differentiation, focus. This is the subject of Chapter 7.
+- **Functional strategy (功能策略)** asks **HOW to implement** the business strategy through marketing, operations, R&D, finance, and HR.
+
+A common failure mode in MNCs is **misalignment** between levels — for example, a corporate strategy emphasizing premium positioning combined with a marketing function pursuing aggressive volume promotions. Strategic coherence requires consistency **vertically across levels** as well as horizontally across functions.
+
+::: {.callout-tip}
+## Ambidextrous organizations
+
+Some firms — Amazon, Apple, Samsung — successfully run **multiple business strategies in parallel**: a low-cost commodity arm and a premium-innovation arm under the same corporate roof. This is called an **ambidextrous organization (雙元組織)** and requires sophisticated structural separation. We will revisit this in Chapter 8.
+:::
+
+---
+
+## 1.5 The Components of Successful Strategy
+
+A successful strategy combines four ingredients:
+
+::: {.callout-note}
+## Four ingredients of successful strategy
+
+1. **Long-term, simple, and agreed objectives** — Vision (to be), Mission (to do), Values (to guide), Goals (to achieve).
+2. **Profound understanding of the competitive environment** — external O–T analysis (Chapters 3–4).
+3. **Objective appraisal of resources and capabilities** — internal S–W analysis (Chapters 5–6).
+4. **Effective implementation** — the management functions of Planning, Organizing, Leading, and Controlling.
+:::
+
+The interaction of these four ingredients is what generates **competitive advantage** — defined as **above-average return** (also called **rent**, 租值) — which in turn produces the four Ss of strategic success: **Survival, Success, Superior performance, and Sustainability**.
+
+---
+
+## 1.6 Inside-out vs. Outside-in
+
+The link between a firm and its environment can be analyzed from two complementary directions:
+
+### Outside-in (從外向內)
+
+Starts with the environment and asks *what opportunities and threats does it present?* Then matches the firm's resources to those opportunities. The dominant lens of the **Industrial Organization (I/O)** school, championed by Michael Porter and discussed in Chapter 3.
+
+### Inside-out (從內向外)
+
+Starts with the firm's resources and capabilities and asks *what unique value can we deliver?* Then identifies environments where those capabilities pay off. The dominant lens of the **Resource-Based View (RBV)** school, championed by Wernerfelt, Barney, and discussed in Chapter 5.
+
+::: {.callout-important}
+## Strategic Fit (策略契合)
+
+Neither lens alone is sufficient. Effective strategy requires three kinds of **fit**:
+
+- **Internal fit (coherence)** — the firm's resources, structure, and processes reinforce each other.
+- **External fit** — the firm's offering matches the demands of its chosen environment.
+- **Dynamic fit (time & interaction)** — the firm adapts as the environment evolves.
+
+The SWOT framework (Strengths–Weaknesses–Opportunities–Threats) is the simplest articulation of this dual perspective.
+:::
+
+---
+
+## 1.7 How Is Strategy Made? Deliberate or Emergent?
+
+Henry Mintzberg's classic insight: the strategy a firm **intends** is rarely the strategy it actually **realizes**.
+
+```{mermaid}
+flowchart LR
+    A["Intended<br/>Strategy"] -->|Deliberate Strategy| B["Realized<br/>Strategy"]
+    A -.Unrealized Strategy.-> C["Discarded"]
+    D["Emergent<br/>Strategy"] -->|Adaptation| B
+    
+    style A fill:#EFE4D2,stroke:#004030
+    style B fill:#004030,stroke:#004030,color:#FFFFFF
+    style C fill:#FAF6F0,stroke:#6B6B6B,color:#6B6B6B
+    style D fill:#D8C3A5,stroke:#004030
+```
+
+- **Intended strategy** is what executives plan in the boardroom.
+- **Deliberate strategy** is the portion of the intended strategy that actually gets implemented.
+- **Unrealized strategy** is the portion that was abandoned along the way — sometimes wisely, sometimes not.
+- **Emergent strategy** is the part of the realized strategy that **was never intended** — it arises from middle-manager experiments, customer feedback, technological surprises, and competitive responses.
+- **Realized strategy** is the actual pattern of decisions and actions, combining both deliberate and emergent components.
+
+The implication for managers is profound: **planning is necessary but insufficient**. A strategy proven successful in one context during one time period does **not** necessarily mean it will succeed elsewhere or for other firms. Strategy formulation and strategy implementation are not sequential phases — they interact continuously.
+
+::: {.callout-tip}
+## How GenAI changes strategy formation
+
+In 2026, the deliberate-emergent dynamic accelerates. AI tools like **ChatGPT, Claude, and Gemini** allow strategists to run rapid scenario analyses, simulate competitive responses, and synthesize unstructured data (customer reviews, social media, news) faster than ever. **Emergent strategy** can now be detected and formalized in weeks rather than years — but only if the organization is structured to listen.
+:::
+
+---
+
+## 1.8 Strategic Management Today
+
+The discipline we now call strategic management evolved from a course called **Business Policy**, taught at Harvard Business School (HBS) since **1912**.
+
+- The **case method** was used to present students with realistic business problems.
+- A **policy** was a statement designed to guide how action should be carried out.
+- The course followed a sequence: **problem → analysis → policy → action**.
+- The viewpoint was that of **top management**, where company-wide objectives are set and departmental policies coordinated.
+- In **1960**, the AACSB (Association to Advance Collegiate Schools of Business) listed Business Policy as a **capstone course** at both undergraduate and graduate levels.
+
+This is exactly the role SMMC-EMI plays in your degree: a capstone course that **integrates** what you have learned in finance, marketing, operations, organizational behavior, and economics into a coherent decision-making framework.
+
+By the end of this course, you should not just *know* the frameworks — you should be able to *apply* them to a real multinational corporation in your Term Project, communicate your analysis in English, collaborate effectively with peers, and use modern AI tools to accelerate your work without becoming dependent on them.
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — Decomposing Performance Variance
+
+A senior partner at a consulting firm tells a junior analyst: *"This client is in trouble because their industry is dying — there's nothing the firm itself can do."*
+
+a) Drawing on the empirical research summarized in Section 1.2, evaluate the partner's claim. What percentage of performance variance is typically explained by industry effects?
+b) Identify two types of strategic actions the firm could still take *despite* unfavorable industry conditions.
+c) Give a real-world example of a firm that thrived in a "dying" industry by repositioning itself.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — Strategy vs. Operational Effectiveness
+
+For each of the following actions, classify it as primarily **strategic** or **operational** and justify your choice:
+
+a) A coffee chain implements a new POS system that reduces transaction time by 20%.
+b) A coffee chain repositions itself as a "third place" between home and office, redesigning store interiors and removing time limits on Wi-Fi use.
+c) A semiconductor firm achieves 5nm process technology six months ahead of competitors.
+d) A semiconductor firm announces it will only manufacture chips, never compete with its customers on chip design.
+e) An airline standardizes its fleet to a single aircraft model.
+f) An airline adopts ICAO-recommended fuel-efficiency procedures across all routes.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Levels of Strategy
+
+A multinational consumer-electronics conglomerate has three SBUs: smartphones, home appliances, and electric vehicles.
+
+a) For each SBU, give a plausible **business strategy** and the **functional strategies** that would support it.
+b) Identify one **corporate-level decision** the headquarters might make that affects all three SBUs simultaneously.
+c) Identify a potential conflict between the SBUs' business strategies and the corporate-level decision in (b). How would you resolve it?
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Realized vs. Intended Strategy
+
+Choose a Taiwanese MNC whose recent strategy you have followed (e.g., 鴻海 Foxconn, 華碩 ASUS, 聯發科 MediaTek, 國泰金 Cathay Financial).
+
+a) Reconstruct what you believe was their **intended strategy** from 5 years ago, based on annual reports or news coverage at that time.
+b) Describe the firm's **realized strategy** today.
+c) Identify at least one **emergent** element — something that became part of the firm's strategy without having been originally planned. What triggered it?
+:::
+
+---
+
+## Further Readings
+
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapter 1 — "The Concept of Strategy". Wiley.
+- **Mintzberg, H. (1987)**. "The Strategy Concept I: Five Ps for Strategy." *California Management Review*, 30(1), 11–24. — The classic essay defining strategy as Plan, Ploy, Pattern, Position, and Perspective.
+- **Porter, M. E. (1996)**. "What Is Strategy?" *Harvard Business Review*, Nov–Dec. — Revisit alongside Chapter 2.
+- **Rumelt, R. P. (2011)**. *Good Strategy / Bad Strategy: The Difference and Why It Matters*. Crown Business. — Highly readable; contrasts coherent strategy with "bad strategy" filled with platitudes.
+- **Sun Tzu**. *The Art of War* (孫子兵法). — Required cultural literacy for any strategist; multiple modern translations available.
+
+::: {.callout-note}
+## Coursera Companion
+- **[ENT] Entrepreneurship 1: Developing the Opportunity** — UPenn Wharton, Video 0.1–0.3 (~19 min) — introduction to strategic thinking for entrepreneurs.
+- **[CS] Corporate Strategy** — UIUC Gies, Module 1 — sets up the corporate-vs-business strategy distinction in detail.
+:::
+
+---
+
+## Looking Ahead
+
+Chapter 1 has framed the **what** and **why** of strategy. Chapter 2 introduced the **V-P-C lens** — our north star throughout the book. Starting in Chapter 3, we begin the **outside-in** journey: how do macro forces (PESTEL) and industry structure (Five Forces) shape the V (value) and P (price) sides of every firm's V-P-C equation?
