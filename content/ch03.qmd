@@ -1,0 +1,334 @@
+---
+title: "The General Environment & Industry Analysis"
+subtitle: "Chapter 3 — Outside-In Perspective: PESTEL and the Five Forces"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Distinguish between the **macro environment** (general environment) and the **industry environment**, and explain why both matter to firm strategy.
+2. Apply the **PESTEL framework** to identify external forces shaping an industry's future.
+3. Apply **Porter's Five Forces** model to assess the structural attractiveness of an industry.
+4. Determine which forces dominate in a given industry and translate that diagnosis into strategic implications for V (value) and P (price).
+5. Use **public databases** in Taiwan — MOPS, the TPEX Industry Value Chain Platform, and government open data — to gather the empirical evidence required for credible industry analysis.
+
+---
+
+## 3.1 Two Layers of External Environment
+
+In Chapter 1 we noted that ~20% of firm performance variance is explained by **industry effects**. To unpack that 20%, we need to look at **two concentric layers** of the firm's external environment.
+
+```{mermaid}
+flowchart TB
+    subgraph MACRO["MACRO ENVIRONMENT — PESTEL"]
+        direction LR
+        P["Political"] 
+        E["Economic"]
+        S["Social"]
+        T["Technological"]
+        EN["Environmental"]
+        L["Legal"]
+    end
+    subgraph IND["INDUSTRY ENVIRONMENT — Five Forces"]
+        direction LR
+        SUP["Suppliers"]
+        BUY["Buyers"]
+        NEW["New Entrants"]
+        SUB["Substitutes"]
+        RIV["Rivalry"]
+    end
+    FIRM["<b>The Firm</b><br/>Resources & Capabilities"]
+    
+    MACRO --> IND
+    IND --> FIRM
+    
+    style MACRO fill:#EFE4D2,stroke:#004030,color:#2C2C2C
+    style IND fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF
+```
+
+The **macro environment** sets the broad context — political stability, economic cycles, demographic trends, technological revolutions. The **industry environment** sets the immediate competitive context — who supplies you, who buys from you, who could replace you.
+
+A common analytical mistake is to **stop at PESTEL**. PESTEL identifies forces; it does not tell you whether those forces are good or bad for your industry. That requires the second layer — the Five Forces — which translates macro shifts into concrete profit pressure.
+
+::: {.callout-tip}
+## TP1 implication
+In **TP1 — External Analysis** (Week 10), your group must produce both a PESTEL analysis (critical factors only) and a Five Forces analysis. Don't analyze them in isolation: use PESTEL to identify *which* forces are changing, and use the Five Forces to assess *how those changes affect industry profitability.*
+:::
+
+---
+
+## 3.2 The PESTEL Framework
+
+**PESTEL (總體環境分析架構)** is an acronym for six categories of macro-environmental factors. Originally proposed as PEST in the 1960s, it expanded as environmental and legal factors gained strategic weight.
+
+| Letter | Factor | Examples |
+|---|---|---|
+| **P** | Political (政治) | Government stability, trade policy, US-China tech war, semiconductor export controls, defense procurement |
+| **E** | Economic (經濟) | GDP growth, interest rates, inflation, exchange rates, energy prices, supply-chain re-shoring |
+| **S** | Social (社會) | Demographics (aging population), values shifts, ESG expectations, remote work culture |
+| **T** | Technological (科技) | Generative AI, EV battery chemistry, 5G/6G, biotech, automation, cybersecurity |
+| **E** | Environmental (環境) | Climate regulation, carbon tax, Net Zero 2050, water scarcity, circular economy |
+| **L** | Legal (法律) | Antitrust enforcement, IP protection, GDPR/PIPL data laws, labor regulations |
+
+### 3.2.1 Doing PESTEL Well
+
+Three rules separate professional PESTEL analysis from undergraduate-level PESTEL analysis:
+
+::: {.callout-important}
+## Rules for credible PESTEL
+
+1. **Be selective, not exhaustive.** A 30-bullet list is not analysis — it is a research dump. Identify the **three to five most critical** factors and ignore the rest.
+2. **Be specific, not generic.** "AI is transforming everything" is meaningless. "Generative AI is shifting customer support headcount in financial services by ~30% annually since 2024" is analysis.
+3. **Be directional.** Each factor should answer: *Does this raise or lower industry profitability? For whom?* A trend that hurts incumbents may help new entrants.
+:::
+
+### 3.2.2 PESTEL in 2026 — A Few Critical Forces
+
+For a Taiwan-headquartered MNC operating in 2026, the following macro forces are reshaping nearly every industry:
+
+- **Geopolitical bifurcation (P)** — supply chains splitting between US-aligned and China-aligned ecosystems; "China + 1" sourcing strategies; CHIPS Act subsidies redirecting fab investment.
+- **Persistent rate environment (E)** — central banks holding rates higher for longer; cost of capital up; capital-intensive expansion harder to justify.
+- **Demographic cliff (S)** — Taiwan, Japan, Korea, China entering simultaneous workforce contraction; talent shortage in skilled trades and engineering.
+- **GenAI productivity wave (T)** — large language models commoditizing white-collar tasks; software economics reshaped; new entrants undercutting incumbents in legal, financial, and creative services.
+- **Net Zero compliance (En)** — Scope 3 emissions disclosure mandatory in EU, increasingly so in Asia; carbon pricing affecting cost structures.
+- **AI regulation (L)** — EU AI Act in force; US patchwork emerging; cross-border data flows constrained.
+
+Note: this list is **illustrative**, not authoritative. Your TP analysis must use **current** data from the sources in Section 3.5.
+
+---
+
+## 3.3 Porter's Five Forces
+
+Michael Porter's **Five Forces (五力分析)** model, introduced in 1979 and refined since, remains the dominant framework for analyzing **industry structure** — the structural determinants of an industry's average profitability.
+
+```{mermaid}
+flowchart TB
+    NEW["<b>Threat of<br/>New Entrants</b>"]
+    SUP["<b>Bargaining Power<br/>of Suppliers</b>"]
+    SUB["<b>Threat of<br/>Substitutes</b>"]
+    BUY["<b>Bargaining Power<br/>of Buyers</b>"]
+    RIV["<b>Rivalry Among<br/>Existing Competitors</b>"]
+    
+    NEW --> RIV
+    SUP --> RIV
+    SUB --> RIV
+    BUY --> RIV
+    
+    style RIV fill:#004030,stroke:#004030,color:#FFFFFF
+    style NEW fill:#D8C3A5,stroke:#004030
+    style SUP fill:#D8C3A5,stroke:#004030
+    style SUB fill:#D8C3A5,stroke:#004030
+    style BUY fill:#D8C3A5,stroke:#004030
+```
+
+Each force, when **strong**, depresses the average profitability of firms in the industry. Strategic decisions can be evaluated by their effect on the forces — actions that **weaken** unfavorable forces tend to be value-creating.
+
+### 3.3.1 The Five Forces in Detail
+
+**1. Threat of New Entrants (新進者威脅)**
+
+When entry is easy, incumbents face constant pressure to keep prices low. Entry barriers include:
+
+- **Economies of scale** — incumbents enjoy unit-cost advantages that newcomers cannot match.
+- **Capital requirements** — high upfront investment (e.g., semiconductor fab > USD 20B) deters most entrants.
+- **Switching costs** — customers locked into existing platforms (e.g., enterprise SAP) won't easily migrate.
+- **Network effects** — incumbent value rises with users (e.g., LINE in Taiwan, WeChat in China).
+- **Regulatory barriers** — licenses, certifications, IP, government approvals.
+- **Brand and reputation** — accumulated trust takes years or decades to build.
+
+**2. Bargaining Power of Suppliers (供應商議價力)**
+
+Powerful suppliers extract value by raising prices or limiting quality. Suppliers are powerful when:
+
+- The supplier industry is more concentrated than the buyer industry.
+- The supplier's input is differentiated (no easy substitute).
+- Switching suppliers is costly.
+- Suppliers can credibly threaten **forward integration** into the buyer's industry.
+- The buyer is not an important customer for the supplier.
+
+**3. Bargaining Power of Buyers (買方議價力)**
+
+Symmetric to suppliers — powerful buyers extract value by demanding lower prices or higher quality. Buyers are powerful when:
+
+- Buyers are concentrated or purchase in large volumes.
+- Products are standardized or undifferentiated.
+- Buyers face low switching costs.
+- Buyers can credibly threaten **backward integration**.
+- Buyers have full information about costs.
+
+**4. Threat of Substitutes (替代品威脅)**
+
+Substitutes are products from **other industries** that satisfy the same need. Streaming substitutes for cinema; video calls substitute for business travel; plant-based protein substitutes for beef. Substitutes cap the price ceiling — when they get cheaper or better, every firm in the industry suffers.
+
+**5. Rivalry Among Existing Competitors (現有競爭者間競爭強度)**
+
+The intensity of rivalry depends on:
+
+- Number and relative size of competitors (concentrated vs. fragmented).
+- Industry growth rate (slow growth → zero-sum competition).
+- Fixed costs (high fixed costs push firms to fill capacity at any price).
+- Product differentiation (commodity-like products → price wars).
+- Exit barriers (specialized assets that can't be redeployed).
+
+### 3.3.2 The Sixth Force — Complementors
+
+A common extension proposed by Brandenburger and Nalebuff (1996): **complementors (互補者)** — firms whose products increase the value of yours. App developers complement smartphone OS; charging-station networks complement EVs; gaming studios complement console hardware. The healthier the complementor ecosystem, the more valuable the focal industry. This is the foundation of **co-opetitive dynamics** discussed in Chapter 4.
+
+::: {.callout-tip}
+## TP1 application — make it quantitative
+Don't just say "rivalry is high." Provide evidence:
+
+- Industry concentration: top-4 market share (CR4) or **Herfindahl-Hirschman Index (HHI)**.
+- Recent price-cutting episodes (cite news with dates and percentages).
+- Capacity utilization rates from annual reports.
+- Number of competitors entering or exiting in the past 3 years.
+
+A Five Forces analysis without numbers is an opinion, not an analysis.
+:::
+
+---
+
+## 3.4 Industry Lifecycle
+
+Industry profitability is not static — it evolves through predictable stages:
+
+| Stage | Demand growth | Profitability | Typical strategy |
+|---|---|---|---|
+| **Introduction** (萌芽期) | Slow, uncertain | Often negative | Build the market, define standards, secure early adopters |
+| **Growth** (成長期) | Rapid | High and rising | Scale up, capture market share, build distribution |
+| **Maturity** (成熟期) | Slow, saturating | High but plateauing | Differentiate, defend share, optimize operations |
+| **Decline** (衰退期) | Negative | Declining | Harvest, divest, or reinvent (strategic innovation) |
+| **Renewal** (再生期) | Re-accelerating | Variable | Disruption opens new sub-markets |
+
+The **lifecycle stage** strongly conditions which forces matter most. In the introduction stage, **substitution risk** (will the technology even win?) dominates. In maturity, **rivalry intensity** dominates as growth slows.
+
+::: {.callout-note}
+## Strategic Inflection Points
+Andy Grove of Intel famously argued that industries face **strategic inflection points** — moments when "10x" forces (technology, regulation, customer behavior) reshape industry structure suddenly. Examples: smartphones reshaping mobile carriers (2007–2012); LLMs reshaping search and SaaS (2022–present); EV adoption reshaping automotive value chains (2020–present). Recognizing an inflection point early is itself a competitive advantage.
+:::
+
+---
+
+## 3.5 Where to Find Industry Data — Taiwan Resources
+
+For your Term Project, the credibility of your industry analysis depends on the credibility of your sources. Taiwan offers excellent free databases:
+
+::: {.callout-note}
+## Essential Taiwan Industry Databases
+
+- **公開資訊觀測站 (MOPS)** — [mops.twse.com.tw](https://mops.twse.com.tw/) — Annual reports (年報), financial statements, GDR/ADR filings, material announcements for all listed companies.
+- **產業價值鏈資訊平台 (Industry Value Chain Information Platform)** — [ic.tpex.org.tw](https://ic.tpex.org.tw/) — Visualized upstream–midstream–downstream industry maps for major Taiwan industries; identify suppliers, buyers, and competitors at a glance.
+- **政府資料開放平台 (Government Open Data)** — [data.gov.tw](https://data.gov.tw/) — National statistics, trade data, demographic data.
+- **104 人力銀行** — [104.com.tw](https://www.104.com.tw/jobs/main/) — Reveals industry hiring patterns and skill demand; useful proxy for industry growth.
+:::
+
+For **global** data, use:
+
+- **World Bank Open Data** — [data.worldbank.org](https://data.worldbank.org/)
+- **OECD Statistics** — [stats.oecd.org](https://stats.oecd.org/)
+- **Statista**, **IBISWorld**, **MarketLine** — typically subscription-based; check NCNU library access first.
+
+::: {.callout-tip}
+## Using GenAI for industry research
+
+**Claude** and **NotebookLM** are exceptionally good at synthesizing **unstructured industry sources** — annual reports, news archives, analyst reports — into structured PESTEL and Five Forces tables. **Workflow**:
+
+1. Download the focal company's most recent 3 annual reports + top 2 competitors' annual reports.
+2. Upload all PDFs into a NotebookLM notebook.
+3. Prompt: *"Extract all references to PESTEL factors. Group them by P/E/S/T/En/L. Cite the source page for each."*
+4. Cross-check the AI's output against the original PDFs — **always verify** before quoting.
+
+The AI does the **synthesis**; you do the **judgment**. Roles cannot be reversed.
+:::
+
+---
+
+## 3.6 From Diagnosis to Strategy
+
+Industry analysis is not an end in itself — it is input to strategic decision-making. The diagnostic question for each force is: *"Is this force currently weakening or strengthening, and does my firm benefit or suffer?"*
+
+| If the force is... | Strategic response |
+|---|---|
+| **Strong and worsening** | Either find ways to weaken it (e.g., differentiate to reduce buyer power) or exit / reposition. |
+| **Strong but stable** | Build defensive moats — switching costs, regulatory protection, network effects. |
+| **Weak and stable** | Press the advantage — invest aggressively while structural protection lasts. |
+| **Weak but worsening** | Early warning — start building defenses **before** the structural environment deteriorates. |
+
+This diagnostic translation — from forces to actions — is what separates a Five Forces **homework assignment** from a Five Forces **strategy memo**.
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — PESTEL for a Specific Industry
+
+Choose one of the following industries: (a) Taiwan craft beer, (b) global EV charging infrastructure, (c) Southeast Asia ride-hailing, (d) Taiwanese semiconductor IC design.
+
+a) Identify the **three most critical** PESTEL factors affecting this industry in 2026. Justify why each is critical (avoid generic statements).
+b) For each factor, indicate whether it raises or lowers industry profitability and explain the mechanism.
+c) Cite at least one quantitative data point per factor (you may use placeholders during this exercise but flag where you would source the real number).
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — Five Forces Diagnosis
+
+Using the same industry from Question 1:
+
+a) Score each of the Five Forces (and the sixth force, Complementors) as Low, Medium, or High intensity in 2026.
+b) Identify the **single most threatening** force to firms in this industry. Why?
+c) Propose **two strategic actions** a firm could take to weaken that force or insulate itself from it.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Industry Lifecycle Mapping
+
+For each of the following, identify the lifecycle stage and justify with at least one piece of evidence:
+
+a) Generative AI consumer applications.
+b) Traditional optical disc storage.
+c) Taiwanese contract beverage manufacturing.
+d) Commercial space launch services.
+e) Ridesharing in Tier-1 Asian cities.
+f) On-premise enterprise software.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — From Industry Map to Firm Strategy
+
+Suppose your TP focal company is a mid-size Taiwanese contract manufacturer in an industry where:
+
+- Top 3 competitors hold 65% combined market share (CR3 = 65%).
+- Largest customer accounts for 40% of revenue.
+- Two new low-cost competitors entered Vietnam in the past 18 months.
+- Industry growth has slowed from 12% (5 years ago) to 3% (last year).
+
+a) Diagnose the Five Forces situation in two paragraphs.
+b) Recommend two specific strategic moves for the focal firm — one defensive, one offensive.
+c) What additional data would you need to make these recommendations more confident?
+:::
+
+---
+
+## Further Readings
+
+- **Porter, M. E. (2008)**. "The Five Competitive Forces That Shape Strategy." *Harvard Business Review*, January. — The 30-year retrospective and refinement of the original 1979 article.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapters 3 — "Industry Analysis: The Fundamentals". Wiley.
+- **Brandenburger, A. M. & Nalebuff, B. J. (1996)**. *Co-opetition*. Currency Doubleday. — Source of the "sixth force" concept.
+- **Grove, A. (1996)**. *Only the Paranoid Survive*. Doubleday. — The classic on strategic inflection points.
+- **McGahan, A. M. (2004)**. *How Industries Evolve*. Harvard Business School Press. — Detailed industry-lifecycle modeling.
+
+::: {.callout-note}
+## Coursera Companion
+- **[ENT] Entrepreneurship 1: Developing the Opportunity** — Video 2.1–2.6 (Opportunity Analysis, ~63 min) walks through industry-level opportunity assessment from an entrepreneur's perspective.
+:::
+
+---
+
+## Looking Ahead
+
+Chapter 3 has examined industry **structure** — relatively stable forces that condition average profitability. But industries are also **dynamic**: competitors take actions and respond to one another. Chapter 4 turns to **competitive analysis and co-opetitive dynamics** — the moves and counter-moves that determine which firms within an industry capture the available profit.
