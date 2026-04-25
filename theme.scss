@@ -321,39 +321,7 @@ blockquote {
       grid-row: auto;
     }
   }
-}// Theme toggle button — make it more visible
-.quarto-color-scheme-toggle {
-  margin-left: 0.4rem !important;
-  padding: 0.3rem !important;
-  border: 1.5px solid $bcg-gold !important;
-  border-radius: 50% !important;
-  background-color: rgba(216, 195, 165, 0.15) !important;
-  transition: all 0.2s ease !important;
-  position: relative;
-  
-  &:hover {
-    background-color: $bcg-gold !important;
-    transform: rotate(15deg);
-    
-    i.bi {
-      color: $bcg-green !important;
-    }
-    
-    &::after {
-      content: "Switch theme · 切換主題";
-      position: absolute;
-      bottom: -2.2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: $bcg-green;
-      color: $bcg-gold;
-      padding: 0.25rem 0.6rem;
-      border-radius: 3px;
-      font-size: 0.75rem;
-      white-space: nowrap;
-      z-index: 999;
-    }
-  }
+}
   
   // Replace default icon: show moon in light mode (suggesting "switch to dark")
  i.bi {
