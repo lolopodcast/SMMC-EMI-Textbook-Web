@@ -335,6 +335,10 @@ blockquote {
     background-color: $bcg-gold !important;
     transform: rotate(15deg);
     
+    i.bi {
+      color: $bcg-green !important;
+    }
+    
     &::after {
       content: "Switch theme · 切換主題";
       position: absolute;
