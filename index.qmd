@@ -5,7 +5,9 @@ author: "Prof. Shihmin Lo, Ph.D."
 date: "Spring 2026 (1142)"
 page-layout: full
 ---
+
 {{< include _includes/tts-player.html >}}
+
 ## Welcome
 
 Welcome to the course textbook for **Strategic Management of Multinational Corporations (SMMC-EMI)**, a capstone, English-as-a-Medium-of-Instruction (EMI) course offered by the **Department of International Business Studies (國際企業學系)** at **National Chi Nan University (國立暨南國際大學, NCNU)**.
