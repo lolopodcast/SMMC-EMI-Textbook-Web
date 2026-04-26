@@ -49,3 +49,243 @@ The most powerful firms innovate on **all three** simultaneously. TSMC delivers 
 The **degree** of innovation also matters:
 
 ```{mermaid}
+flowchart LR
+    INC["Incremental: Small improvements to existing offerings"]
+    RAD["Radical: Major leap in performance or capability"]
+    DISR["Disruptive: Reframes what customers buy and how"]
+    INC --> RAD
+    RAD --> DISR
+    style INC fill:#FAF6F0,stroke:#004030
+    style RAD fill:#D8C3A5,stroke:#004030
+    style DISR fill:#004030,stroke:#004030,color:#FFFFFF
+```
+
+- **Incremental innovation** dominates day-to-day R&D — faster chips, better batteries, refined formulas. Cumulative effect over decades is enormous, but each individual step is small.
+- **Radical innovation** introduces significantly new technologies — synthetic biology, quantum computing, fusion energy. Often takes decades to reach commercial impact.
+- **Disruptive innovation** (a specific concept introduced by Clayton Christensen — see Section 8.4) is **not** the same as "radical." Disruptive innovations often start as **inferior** in mainstream metrics but win because they redefine which metrics matter.
+
+---
+
+## 8.3 The S-Curve of Technology
+
+Most technologies follow an **S-shaped performance curve** over time:
+
+```{mermaid}
+flowchart LR
+    A["Early phase: Slow improvement"]
+    B["Mid phase: Rapid improvement"]
+    C["Mature phase: Diminishing returns"]
+    D["Limit reached"]
+    A --> B
+    B --> C
+    C --> D
+    style A fill:#FAF6F0,stroke:#004030
+    style B fill:#D8C3A5,stroke:#004030
+    style C fill:#EFE4D2,stroke:#004030
+    style D fill:#FAF6F0,stroke:#6B6B6B
+```
+
+In the **early phase**, the technology is immature and improvements come slowly. In the **growth phase**, rapid advances generate competitive turbulence. In the **mature phase**, returns to R&D diminish — the technology approaches its physical or economic limits.
+
+The strategic insight: **two S-curves rarely overlap smoothly**. As one technology matures, a new technology emerges along its own S-curve — initially performing **worse** than the mature one in most dimensions but improving rapidly. The firms that dominate the old curve usually struggle to make the leap.
+
+::: {.callout-tip}
+## Examples of S-curve transitions
+- **Vacuum tubes → Transistors** (1950s) — RCA, the vacuum-tube leader, never dominated transistor radios.
+- **Photographic film → Digital sensors** (1990s–2000s) — Kodak invented the digital sensor but couldn't pivot.
+- **Internal-combustion → Electric drivetrains** (2010s–present) — Tesla, founded 2003, is the leading EV brand; Toyota, the world's most efficient ICE manufacturer, is a follower.
+- **Search → Generative AI** (2022–present) — Google had the technology earlier but OpenAI shipped first; the competitive game is still unfolding.
+
+In each case, incumbent dominance on the **old** curve was a partial **handicap** in pivoting to the new curve.
+:::
+
+---
+
+## 8.4 Christensen's Disruptive Innovation Theory
+
+Clayton Christensen's *The Innovator's Dilemma* (1997) is one of the most influential strategy books of the past 30 years. His core argument:
+
+::: {.callout-important}
+## The Innovator's Dilemma in two paragraphs
+
+**Sustaining innovations** improve performance along the dimensions that mainstream customers already value. Incumbents typically lead sustaining innovation — they have the resources, customer relationships, and incentives to do so.
+
+**Disruptive innovations** start out as **inferior** on mainstream performance dimensions but offer a new value proposition — often simpler, cheaper, more convenient. They first take root in **low-end** or **non-consumption** markets that incumbents rationally ignore. Over time, the disruptive technology improves until it can serve mainstream customers — and now the incumbents are too late.
+
+The dilemma: **incumbents are punished, not rewarded, for paying attention to disruptive entrants in the early stages**. Listening to current customers, allocating resources to high-margin segments, and rejecting low-margin opportunities is "good management" — and exactly what causes incumbents to lose.
+:::
+
+### 8.4.1 Classic Examples
+
+- **Steel mini-mills** (Nucor) disrupted integrated steel mills (US Steel) by starting at the low-end (rebar) and moving upmarket.
+- **Personal computers** disrupted minicomputers and mainframes by starting in homes and small offices.
+- **Smartphones** disrupted PCs for many use cases by being "good enough" while always-on and pocket-sized.
+- **Tesla** disrupted luxury cars first (Roadster, Model S) and is moving downmarket — an **inverted disruption pattern** debated among scholars but recognizably Christensen-shaped.
+
+### 8.4.2 Avoiding Disruption — What Incumbents Can Do
+
+The escape strategies are difficult but known:
+
+1. **Run separate organizations** for the disruptive technology, with separate metrics, customers, and culture (the **ambidextrous organization** from Chapter 6).
+2. **Acquire** the disruptive entrants early, before market-cap divergence makes acquisition prohibitive.
+3. **Cannibalize own products deliberately** — better to disrupt yourself than be disrupted by others.
+4. **Maintain optionality** through investments in adjacent technologies that may become disruptive.
+
+---
+
+## 8.5 Who Captures the Value? — Teece's Complementary Assets
+
+A firm that creates an innovation does not automatically profit from it. Why? Because creating value is different from capturing value.
+
+David Teece's classic 1986 framework identifies **two factors** that determine whether innovators or imitators win:
+
+- **Appropriability regime** — How well can the innovation be protected? Patents, trade secrets, tacit know-how, network effects all increase appropriability.
+- **Complementary assets** — What other resources are needed to commercialize the innovation? Manufacturing, distribution, brand, after-sales service?
+
+```{mermaid}
+flowchart TB
+    INV["Innovation invented"]
+    Q1["Strong appropriability + Complementary assets owned by innovator"]
+    Q2["Weak appropriability + Complementary assets owned by others"]
+    O1["Innovator captures most value"]
+    O2["Owners of complementary assets capture value"]
+    INV --> Q1
+    INV --> Q2
+    Q1 --> O1
+    Q2 --> O2
+    style O1 fill:#004030,stroke:#004030,color:#FFFFFF
+    style O2 fill:#EFE4D2,stroke:#004030
+```
+
+Examples:
+
+- **EMI invented the CT scanner** but lacked medical-equipment distribution. **GE captured most of the value** through its complementary assets in healthcare distribution and service.
+- **Xerox PARC invented the GUI** but Apple commercialized it; Microsoft then dominated through its complementary asset of OEM PC distribution.
+- **OpenAI created ChatGPT** but the long-run value capture depends on whether they can build complementary assets (compute, distribution, enterprise relationships) before competitors with stronger existing assets (Microsoft, Google, Amazon) replicate the core technology.
+
+The strategic implication: **before pursuing an innovation, map who owns the complementary assets**. If you don't own them, plan how to acquire, build, or partner for them — or expect to capture only a small share of the value you create.
+
+---
+
+## 8.6 The Entrepreneurial Lens — Opportunity Recognition
+
+For new ventures and corporate innovators alike, the central skill is **opportunity recognition (機會辨識)**: seeing patterns in customer needs, technology shifts, and resource availability that others have not yet integrated.
+
+Two influential modern frameworks:
+
+### 8.6.1 The Lean Startup (Ries, 2011)
+
+Eric Ries's framework treats startups as **experiments** rather than execution plans. Key concepts:
+
+- **Minimum Viable Product (MVP, 最小可行產品)** — the smallest offering that lets you learn whether customers want what you're building.
+- **Validated learning** — replacing opinions with data through deliberate customer experiments.
+- **Build–Measure–Learn cycle** — short iterations that update strategy based on real-world feedback.
+- **Pivot vs. Persevere** — disciplined decision points about whether to change direction.
+
+The Lean Startup philosophy is powerful **inside large firms too** — corporate innovation initiatives that adopt MVP discipline outperform those that build comprehensive products before testing demand.
+
+### 8.6.2 Effectuation (Sarasvathy, 2008)
+
+Saras Sarasvathy's research on expert entrepreneurs revealed they think differently from textbook strategists:
+
+| Causal logic (textbook) | Effectual logic (expert entrepreneurs) |
+|---|---|
+| Start with the goal; find means to achieve it | Start with the means available; explore goals achievable |
+| Predict the future; choose the best plan | Take action; let the future emerge from action |
+| Compete to capture market share | Co-create with stakeholders who self-select in |
+| Avoid surprises | Leverage surprises as opportunities |
+| Maximize expected returns | Manage downside (affordable loss) |
+
+Effectuation explains why many successful entrepreneurs built businesses very different from their initial plans — they responded to opportunities and constraints as they emerged. This is the entrepreneurial counterpart to Mintzberg's **emergent strategy** (Chapter 1).
+
+---
+
+## 8.7 Innovation in 2026 — The GenAI Acceleration
+
+Three patterns dominate innovation strategy in 2026:
+
+- **Time-to-market collapse** — AI-assisted development compresses prototyping cycles. Solo founders can ship products that previously required teams of ten.
+- **Differentiation moves up the stack** — When everyone has access to similar AI capabilities, advantage shifts to **proprietary data, distribution, and trust**. Models commoditize; user relationships become the moat.
+- **Continuous launch culture** — Software products iterate weekly; even hardware products use OTA updates to ship new value post-launch (Tesla's autopilot, smartphone camera improvements).
+
+The strategic implication for incumbents: **the pace of disruption has accelerated, but so has the pace at which incumbents can respond — if they have built dynamic capabilities**. Christensen's framework is more relevant, not less.
+
+For entrepreneurs: **opportunity windows are shorter**. Lean Startup discipline matters more, not less, when AI lets competitors clone your MVP in weeks.
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — Innovation Type Diagnosis
+
+For each innovation, classify it as primarily **product, process, business model**, or a combination. Then place it on the **incremental–radical–disruptive** spectrum:
+
+a) Tesla's over-the-air software updates that change vehicle behavior.
+b) Foxconn's adoption of robotic assembly lines.
+c) Spotify's transition from à la carte downloads to subscription streaming.
+d) Apple's introduction of the M-series silicon chip.
+e) Shopify's enabling small merchants to launch online stores.
+f) Generative-AI-assisted code review tools used in software development.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — S-Curve Diagnosis
+
+For one of the following industries, sketch the S-curve trajectory and identify the next-generation technology threatening to displace the current curve:
+
+a) Internal-combustion automotive engines.
+b) Traditional broadcast television.
+c) Conventional banking branch infrastructure.
+d) Silicon-based semiconductor process technology.
+e) Petroleum-based plastics.
+
+For your chosen industry, which incumbent firm seems best positioned to make the transition, and which is most at risk of being left behind?
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Disruption or Sustaining?
+
+For each pair below, identify which is the disruptive innovation and which is sustaining. Justify by reference to Christensen's definition (initial customer base, performance dimension, trajectory):
+
+a) Conventional taxi services vs. Uber.
+b) Traditional banking vs. mobile-only neobanks (e.g., Revolut, LINE Bank).
+c) Hollywood theatrical releases vs. Netflix originals.
+d) Traditional retail vs. Costco's warehouse model.
+e) Symbian smartphones (Nokia, 2005) vs. early iPhone (2007).
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Complementary Assets Mapping
+
+Pick a recent innovation from a Taiwan firm (e.g., a TSMC process generation, a Garmin product line, a 美安 Mei An biotech innovation, a Largan optics breakthrough).
+
+a) Identify the complementary assets needed to commercialize the innovation (manufacturing, distribution, brand, regulatory approvals, etc.).
+b) Are these complementary assets owned by the focal firm, by partners, or by potential competitors?
+c) Predict who will capture the most value from this innovation, and explain why.
+d) What strategic moves could the firm make now to strengthen its position on complementary assets?
+:::
+
+---
+
+## Further Readings
+
+- **Christensen, C. M. (1997)**. *The Innovator's Dilemma*. Harvard Business School Press. — The foundational text on disruptive innovation.
+- **Christensen, C. M., Raynor, M. E., & McDonald, R. (2015)**. "What Is Disruptive Innovation?" *Harvard Business Review*, December. — Christensen's clarification of common misuses of "disruption."
+- **Teece, D. J. (1986)**. "Profiting from Technological Innovation." *Research Policy*, 15(6), 285–305. — The complementary-assets framework.
+- **Ries, E. (2011)**. *The Lean Startup*. Crown Business. — MVP, validated learning, pivot/persevere.
+- **Sarasvathy, S. D. (2008)**. *Effectuation: Elements of Entrepreneurial Expertise*. Edward Elgar. — The effectuation framework.
+- **Anthony, S. D. (2014)**. *The First Mile: A Launch Manual for Getting Great Ideas into the Market*. Harvard Business Review Press.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapter 11 — "Technology-based Industries and the Management of Innovation".
+
+::: {.callout-note}
+## Coursera Companion
+- **[ENT] Entrepreneurship 1: Developing the Opportunity** — UPenn Wharton, Modules 1 and 3 (~2 hours) directly extend this chapter, especially on opportunity recognition and lean validation.
+- **[CS] Corporate Strategy** — UIUC Gies, modules on corporate venturing and innovation portfolios.
+:::
+
+---
+
+## Looking Ahead
+
+Chapters 1–8 have built the **business strategy** core: how a firm competes within a defined arena. Starting in Chapter 9, we shift focus to **corporate strategy** — the higher-level question of *which arenas* a firm should compete in. We begin with **vertical integration**: should a firm make or buy each step of its value chain? This question, deceptively simple, drives some of the largest strategic decisions multinational corporations make.
