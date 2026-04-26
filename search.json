@@ -100,355 +100,132 @@
     ]
   },
   {
-    "objectID": "content/ch02.html",
-    "href": "content/ch02.html",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html",
+    "href": "content/ch03.html",
+    "title": "The General Environment & Industry Analysis",
     "section": "",
     "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#learning-objectives",
-    "href": "content/ch02.html#learning-objectives",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html#learning-objectives",
+    "href": "content/ch03.html#learning-objectives",
+    "title": "The General Environment & Industry Analysis",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nExplain the V-P-C framework (Value, Price, Cost) and use it to decompose a firm’s profitability into consumer surplus, firm profit, and cost structure.\nDistinguish between value proposition, value creation, value appropriation, and value sustaining — the four pillars of any business model.\nMap a real company’s business model onto the Business Model Canvas (BMC) and critique its internal coherence.\nApply three standards of firm performance measurement — economic value (NPV), accounting profitability (DuPont Identity), and shareholder value — and recognize their respective drawbacks.\nRecognize when a firm is pursuing strategic innovation (new rules of competition) versus product or process innovation (better execution of old rules).",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDistinguish between the macro environment (general environment) and the industry environment, and explain why both matter to firm strategy.\nApply the PESTEL framework to identify external forces shaping an industry’s future.\nApply Porter’s Five Forces model to assess the structural attractiveness of an industry.\nDetermine which forces dominate in a given industry and translate that diagnosis into strategic implications for V (value) and P (price).\nUse public databases in Taiwan — MOPS, the TPEX Industry Value Chain Platform, and government open data — to gather the empirical evidence required for credible industry analysis.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#why-business-models-matter",
-    "href": "content/ch02.html#why-business-models-matter",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.1 Why Business Models Matter",
-    "text": "2.1 Why Business Models Matter\nA strategy without a viable business model (商業模式) is a wish list. A business model without a clear strategy is a checklist. The two must fit together.\nIn Chapter 1 we argued that strategy is a unifying theme directing a firm’s actions toward survival, success, superior performance, and sustainability. But how do we translate that abstract theme into concrete choices about what to sell, to whom, at what price, and through what activities? That is the job of a business model — a deliberate configuration of four decisions:\n\nValue Proposition (價值主張) — what problem we solve, for whom\nValue Creation (價值創造) — how we produce the value\nValue Appropriation (價值獲取) — how we capture a fair share\nValue Sustaining (價值維繫) — how we defend the model over time\n\nThese four decisions are not independent. A premium value proposition (V↑) delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions coherent.",
+    "objectID": "content/ch03.html#two-layers-of-external-environment",
+    "href": "content/ch03.html#two-layers-of-external-environment",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.1 Two Layers of External Environment",
+    "text": "3.1 Two Layers of External Environment\nIn Chapter 1 we noted that ~20% of firm performance variance is explained by industry effects. To unpack that 20%, we need to look at two concentric layers of the firm’s external environment.\n\n\n\n\n\nflowchart TB\n    subgraph MACRO[\"MACRO ENVIRONMENT — PESTEL\"]\n        direction LR\n        P[\"Political\"] \n        E[\"Economic\"]\n        S[\"Social\"]\n        T[\"Technological\"]\n        EN[\"Environmental\"]\n        L[\"Legal\"]\n    end\n    subgraph IND[\"INDUSTRY ENVIRONMENT — Five Forces\"]\n        direction LR\n        SUP[\"Suppliers\"]\n        BUY[\"Buyers\"]\n        NEW[\"New Entrants\"]\n        SUB[\"Substitutes\"]\n        RIV[\"Rivalry\"]\n    end\n    FIRM[\"&lt;b&gt;The Firm&lt;/b&gt;&lt;br/&gt;Resources & Capabilities\"]\n    \n    MACRO --&gt; IND\n    IND --&gt; FIRM\n    \n    style MACRO fill:#EFE4D2,stroke:#004030,color:#2C2C2C\n    style IND fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF\n\n\n\n\n\n\nThe macro environment sets the broad context — political stability, economic cycles, demographic trends, technological revolutions. The industry environment sets the immediate competitive context — who supplies you, who buys from you, who could replace you.\nA common analytical mistake is to stop at PESTEL. PESTEL identifies forces; it does not tell you whether those forces are good or bad for your industry. That requires the second layer — the Five Forces — which translates macro shifts into concrete profit pressure.\n\n\n\n\n\n\nTipTP1 implication\n\n\n\nIn TP1 — External Analysis (Week 10), your group must produce both a PESTEL analysis (critical factors only) and a Five Forces analysis. Don’t analyze them in isolation: use PESTEL to identify which forces are changing, and use the Five Forces to assess how those changes affect industry profitability.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#the-v-p-c-framework",
-    "href": "content/ch02.html#the-v-p-c-framework",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.2 The V-P-C Framework",
-    "text": "2.2 The V-P-C Framework\nThe V-P-C framework decomposes every transaction into three layers and, from them, four strategic quantities.\n\n\n\n\n\nflowchart TB\n    V[\"&lt;b&gt;V — Value&lt;/b&gt;&lt;br/&gt;Consumer's Maximum&lt;br/&gt;Willingness-To-Pay (WTP)\"]\n    P[\"&lt;b&gt;P — Price&lt;/b&gt;&lt;br/&gt;What the customer pays\"]\n    C[\"&lt;b&gt;C — Cost&lt;/b&gt;&lt;br/&gt;Firm's cost to deliver\"]\n    \n    V --&gt; VP[\"&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Consumer Surplus\"]\n    V --&gt; VC[\"&lt;b&gt;V − C&lt;/b&gt;&lt;br/&gt;Economic Value Created\"]\n    P --&gt; PC[\"&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Firm's Profit\"]\n    C --&gt; PC\n    \n    style V fill:#004030,stroke:#004030,color:#FFFFFF\n    style P fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style C fill:#EFE4D2,stroke:#004030,color:#2C2C2C\n    style VP fill:#FAF6F0,stroke:#6B6B6B\n    style VC fill:#FAF6F0,stroke:#6B6B6B\n    style PC fill:#FAF6F0,stroke:#6B6B6B\n\n\n\n\n\n\nThree terms deserve careful distinction:\n\n\n\n\n\n\nNoteKey Definitions\n\n\n\n\nPerceived Value (PV, 感知價值) — the customer’s subjective assessment of benefit before purchase.\nWillingness-To-Pay (WTP, 支付意願) — the maximum monetary amount a customer would rationally give up for the offering. In economic theory, \\(V = WTP\\).\nReservation Price (RP, 保留價格) — the price above which the customer walks away. Typically \\(RP \\leq WTP\\), because customers compare against alternatives.\n\n\n\n\n2.2.1 Sources of Superior Profitability\nWith the V-P-C lens, the perennial question — how does a firm earn superior profits? — reduces to three levers:\n\nRaise V (increase value perceived by customers) — differentiation, branding, premium features\nLower C (reduce cost of production and delivery) — scale, experience, process innovation\nExpand P − C (widen the margin between price and cost) — pricing power, market structure\n\nObserve that “raising P” is not an independent lever. Price is bounded above by V (customers will not pay more than WTP) and bounded below by C (firms will not sell at a loss for long). Strategic choices expand the spread by attacking V or C directly.\n\n\n2.2.2 Do Better or Do Different?\nA recurring choice for managers: should we pursue operational effectiveness (do the same things better) or strategic innovation (do different things altogether)?\n\n\n\n\n\n\n\n\nDimension\nOperational Effectiveness\nStrategic Innovation\n\n\n\n\nWhat changes\nHow activities are performed\nWhat activities are performed\n\n\nExamples\nSix Sigma, Lean Manufacturing, ERP, benchmarking\nRedefining the industry value chain, new business models\n\n\nCompetitive outcome\nNecessary but not sufficient for advantage\nCan create temporary monopoly rents\n\n\nImitability\nHigh — tools and techniques diffuse quickly\nLow — at least until competitors reconfigure\n\n\n\nMichael Porter’s classic warning: operational effectiveness is not strategy. If every firm in the industry adopts the same quality-management tools, the productivity frontier shifts outward but relative position does not change — and in the long run, the gains are competed away to customers via lower prices.",
+    "objectID": "content/ch03.html#the-pestel-framework",
+    "href": "content/ch03.html#the-pestel-framework",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.2 The PESTEL Framework",
+    "text": "3.2 The PESTEL Framework\nPESTEL (總體環境分析架構) is an acronym for six categories of macro-environmental factors. Originally proposed as PEST in the 1960s, it expanded as environmental and legal factors gained strategic weight.\n\n\n\n\n\n\n\n\nLetter\nFactor\nExamples\n\n\n\n\nP\nPolitical (政治)\nGovernment stability, trade policy, US-China tech war, semiconductor export controls, defense procurement\n\n\nE\nEconomic (經濟)\nGDP growth, interest rates, inflation, exchange rates, energy prices, supply-chain re-shoring\n\n\nS\nSocial (社會)\nDemographics (aging population), values shifts, ESG expectations, remote work culture\n\n\nT\nTechnological (科技)\nGenerative AI, EV battery chemistry, 5G/6G, biotech, automation, cybersecurity\n\n\nE\nEnvironmental (環境)\nClimate regulation, carbon tax, Net Zero 2050, water scarcity, circular economy\n\n\nL\nLegal (法律)\nAntitrust enforcement, IP protection, GDPR/PIPL data laws, labor regulations\n\n\n\n\n3.2.1 Doing PESTEL Well\nThree rules separate professional PESTEL analysis from undergraduate-level PESTEL analysis:\n\n\n\n\n\n\nImportantRules for credible PESTEL\n\n\n\n\nBe selective, not exhaustive. A 30-bullet list is not analysis — it is a research dump. Identify the three to five most critical factors and ignore the rest.\nBe specific, not generic. “AI is transforming everything” is meaningless. “Generative AI is shifting customer support headcount in financial services by ~30% annually since 2024” is analysis.\nBe directional. Each factor should answer: Does this raise or lower industry profitability? For whom? A trend that hurts incumbents may help new entrants.\n\n\n\n\n\n3.2.2 PESTEL in 2026 — A Few Critical Forces\nFor a Taiwan-headquartered MNC operating in 2026, the following macro forces are reshaping nearly every industry:\n\nGeopolitical bifurcation (P) — supply chains splitting between US-aligned and China-aligned ecosystems; “China + 1” sourcing strategies; CHIPS Act subsidies redirecting fab investment.\nPersistent rate environment (E) — central banks holding rates higher for longer; cost of capital up; capital-intensive expansion harder to justify.\nDemographic cliff (S) — Taiwan, Japan, Korea, China entering simultaneous workforce contraction; talent shortage in skilled trades and engineering.\nGenAI productivity wave (T) — large language models commoditizing white-collar tasks; software economics reshaped; new entrants undercutting incumbents in legal, financial, and creative services.\nNet Zero compliance (En) — Scope 3 emissions disclosure mandatory in EU, increasingly so in Asia; carbon pricing affecting cost structures.\nAI regulation (L) — EU AI Act in force; US patchwork emerging; cross-border data flows constrained.\n\nNote: this list is illustrative, not authoritative. Your TP analysis must use current data from the sources in Section 3.5.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#the-four-pillars-of-a-business-model",
-    "href": "content/ch02.html#the-four-pillars-of-a-business-model",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.3 The Four Pillars of a Business Model",
-    "text": "2.3 The Four Pillars of a Business Model\n\n2.3.1 Value Proposition — For Whom, What Problem\nThe first question every business must answer: who is the customer, and what problem are we solving for them?\nA disciplined value proposition answers four sub-questions:\n\nUnsatisfied or future demand — what problem is not yet adequately solved?\nSubstitution and complementarity — what else could the customer use instead, or alongside?\nMarket size, installed base, penetration rate — how large is the opportunity?\nPrice elasticity of demand — how sensitive is the customer to price?\n\nIn marketing terms, this involves STP (Segmentation, Targeting, Positioning, 區隔、目標、定位) and the classic 4P mix (Product, Price, Place, Promotion, 產品、價格、通路、推廣). Strategic management takes STP/4P as inputs and asks the higher-order question: does this positioning defensibly raise V relative to the cost structure required to deliver it?\n\n\n2.3.2 Value Creation — The Activity System\nCreating value means configuring an activity system (活動系統) that transforms inputs into an offering customers will pay for. Michael Porter’s Value Chain (價值鏈) distinguishes:\n\nPrimary activities: inbound logistics, operations, outbound logistics, marketing & sales, service\nSupport activities: firm infrastructure, HR, technology development, procurement\n\nWe will examine value-chain analysis in depth in Chapter 5. The key insight for now: value creation is not a single act but a network of interdependent activities, each of which can be a source of advantage or weakness.\n\n\n2.3.3 Value Appropriation — Keeping Your Fair Share\nCreating value and capturing value are different. A firm may create enormous economic value (V − C is large) yet capture very little of it if market structure (市場結構) forces it to share the gains with customers, suppliers, or complementors.\n\n\n\n\n\n\nTipMarket Structures and Profitability\n\n\n\nFrom fragmented to consolidated markets, the typical pattern:\n\nPerfect Competition — many small firms, commodity products, price takers → fragmented, low profitability\nMonopolistic Competition — many firms, differentiated products, some pricing power → medium profitability\nOligopoly — few large firms, differentiated products, high entry barriers → higher profitability\nMonopoly — one firm, unique product, very high entry barriers → consolidated, high profitability\n\n\n\nThe structural determinants of value appropriation — the “five forces” — will be the subject of Chapter 3.\n\n\n2.3.4 Value Sustaining — Defending the Model\nEven a well-configured business model is worthless if competitors can copy it overnight. Value sustaining asks: what makes this model hard to imitate, hard to substitute, over time?\nThree levels of barriers:\n\nInstitutional factors (制度因素) — regulation, patents, industry standards\nIndustry factors (產業因素) — economies of scale, network effects, switching costs\nFirm-specific factors (廠商因素) — proprietary resources, tacit know-how, culture, reputation\n\nFirm-specific factors — particularly hard-to-replicate capabilities — are the subject of the Resource-Based View (RBV) in Chapter 5.",
+    "objectID": "content/ch03.html#porters-five-forces",
+    "href": "content/ch03.html#porters-five-forces",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.3 Porter’s Five Forces",
+    "text": "3.3 Porter’s Five Forces\nMichael Porter’s Five Forces (五力分析) model, introduced in 1979 and refined since, remains the dominant framework for analyzing industry structure — the structural determinants of an industry’s average profitability.\n\n\n\n\n\nflowchart TB\n    NEW[\"&lt;b&gt;Threat of&lt;br/&gt;New Entrants&lt;/b&gt;\"]\n    SUP[\"&lt;b&gt;Bargaining Power&lt;br/&gt;of Suppliers&lt;/b&gt;\"]\n    SUB[\"&lt;b&gt;Threat of&lt;br/&gt;Substitutes&lt;/b&gt;\"]\n    BUY[\"&lt;b&gt;Bargaining Power&lt;br/&gt;of Buyers&lt;/b&gt;\"]\n    RIV[\"&lt;b&gt;Rivalry Among&lt;br/&gt;Existing Competitors&lt;/b&gt;\"]\n    \n    NEW --&gt; RIV\n    SUP --&gt; RIV\n    SUB --&gt; RIV\n    BUY --&gt; RIV\n    \n    style RIV fill:#004030,stroke:#004030,color:#FFFFFF\n    style NEW fill:#D8C3A5,stroke:#004030\n    style SUP fill:#D8C3A5,stroke:#004030\n    style SUB fill:#D8C3A5,stroke:#004030\n    style BUY fill:#D8C3A5,stroke:#004030\n\n\n\n\n\n\nEach force, when strong, depresses the average profitability of firms in the industry. Strategic decisions can be evaluated by their effect on the forces — actions that weaken unfavorable forces tend to be value-creating.\n\n3.3.1 The Five Forces in Detail\n1. Threat of New Entrants (新進者威脅)\nWhen entry is easy, incumbents face constant pressure to keep prices low. Entry barriers include:\n\nEconomies of scale — incumbents enjoy unit-cost advantages that newcomers cannot match.\nCapital requirements — high upfront investment (e.g., semiconductor fab &gt; USD 20B) deters most entrants.\nSwitching costs — customers locked into existing platforms (e.g., enterprise SAP) won’t easily migrate.\nNetwork effects — incumbent value rises with users (e.g., LINE in Taiwan, WeChat in China).\nRegulatory barriers — licenses, certifications, IP, government approvals.\nBrand and reputation — accumulated trust takes years or decades to build.\n\n2. Bargaining Power of Suppliers (供應商議價力)\nPowerful suppliers extract value by raising prices or limiting quality. Suppliers are powerful when:\n\nThe supplier industry is more concentrated than the buyer industry.\nThe supplier’s input is differentiated (no easy substitute).\nSwitching suppliers is costly.\nSuppliers can credibly threaten forward integration into the buyer’s industry.\nThe buyer is not an important customer for the supplier.\n\n3. Bargaining Power of Buyers (買方議價力)\nSymmetric to suppliers — powerful buyers extract value by demanding lower prices or higher quality. Buyers are powerful when:\n\nBuyers are concentrated or purchase in large volumes.\nProducts are standardized or undifferentiated.\nBuyers face low switching costs.\nBuyers can credibly threaten backward integration.\nBuyers have full information about costs.\n\n4. Threat of Substitutes (替代品威脅)\nSubstitutes are products from other industries that satisfy the same need. Streaming substitutes for cinema; video calls substitute for business travel; plant-based protein substitutes for beef. Substitutes cap the price ceiling — when they get cheaper or better, every firm in the industry suffers.\n5. Rivalry Among Existing Competitors (現有競爭者間競爭強度)\nThe intensity of rivalry depends on:\n\nNumber and relative size of competitors (concentrated vs. fragmented).\nIndustry growth rate (slow growth → zero-sum competition).\nFixed costs (high fixed costs push firms to fill capacity at any price).\nProduct differentiation (commodity-like products → price wars).\nExit barriers (specialized assets that can’t be redeployed).\n\n\n\n3.3.2 The Sixth Force — Complementors\nA common extension proposed by Brandenburger and Nalebuff (1996): complementors (互補者) — firms whose products increase the value of yours. App developers complement smartphone OS; charging-station networks complement EVs; gaming studios complement console hardware. The healthier the complementor ecosystem, the more valuable the focal industry. This is the foundation of co-opetitive dynamics discussed in Chapter 4.\n\n\n\n\n\n\nTipTP1 application — make it quantitative\n\n\n\nDon’t just say “rivalry is high.” Provide evidence:\n\nIndustry concentration: top-4 market share (CR4) or Herfindahl-Hirschman Index (HHI).\nRecent price-cutting episodes (cite news with dates and percentages).\nCapacity utilization rates from annual reports.\nNumber of competitors entering or exiting in the past 3 years.\n\nA Five Forces analysis without numbers is an opinion, not an analysis.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#the-business-model-canvas-bmc",
-    "href": "content/ch02.html#the-business-model-canvas-bmc",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.4 The Business Model Canvas (BMC)",
-    "text": "2.4 The Business Model Canvas (BMC)\nAlexander Osterwalder’s Business Model Canvas (BMC, 商業模式畫布) operationalizes the four pillars into nine building blocks. We overlay the V-P-C framework on top of it:\n\n⑦Key Partners重要夥伴Who are our key partners and suppliers?\n⑤Key Activities關鍵活動What activities does the value proposition require?\n①Value Proposition價值主張What problem are we solving? Which need are we satisfying?\n④Customer Relationships顧客關係How will we get, keep, and grow customers?\n②Customer Segments顧客區隔For whom are we creating value? Who are our customers?\n⑥Key Resources關鍵資源What key resources does the value proposition require?\n③Channels通路Through which channels do our customer segments want to be reached?\n⑨Cost Structure成本結構What are the most important costs? (Value Creation side)\n⑧Revenue Streams收入來源For what value are customers willing to pay? (Value Appropriation side)\n\nThe BMC is a diagnostic tool, not a strategy in itself. Its power lies in forcing the analyst to articulate every block and check whether they reinforce each other.\n\n\n\n\n\n\nImportantCoherence Test\n\n\n\nA business model is coherent when answers to the following three questions are all “yes”:\n\nDo the Key Activities and Resources (left side) actually produce the Value Proposition (center)?\nDoes the Value Proposition resonate with the Customer Segments through the chosen Channels and Relationships (right side)?\nDoes the Revenue Stream exceed the Cost Structure by a margin that justifies the capital employed?\n\nA “no” on any of these three is where strategy breaks.",
+    "objectID": "content/ch03.html#industry-lifecycle",
+    "href": "content/ch03.html#industry-lifecycle",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.4 Industry Lifecycle",
+    "text": "3.4 Industry Lifecycle\nIndustry profitability is not static — it evolves through predictable stages:\n\n\n\n\n\n\n\n\n\nStage\nDemand growth\nProfitability\nTypical strategy\n\n\n\n\nIntroduction (萌芽期)\nSlow, uncertain\nOften negative\nBuild the market, define standards, secure early adopters\n\n\nGrowth (成長期)\nRapid\nHigh and rising\nScale up, capture market share, build distribution\n\n\nMaturity (成熟期)\nSlow, saturating\nHigh but plateauing\nDifferentiate, defend share, optimize operations\n\n\nDecline (衰退期)\nNegative\nDeclining\nHarvest, divest, or reinvent (strategic innovation)\n\n\nRenewal (再生期)\nRe-accelerating\nVariable\nDisruption opens new sub-markets\n\n\n\nThe lifecycle stage strongly conditions which forces matter most. In the introduction stage, substitution risk (will the technology even win?) dominates. In maturity, rivalry intensity dominates as growth slows.\n\n\n\n\n\n\nNoteStrategic Inflection Points\n\n\n\nAndy Grove of Intel famously argued that industries face strategic inflection points — moments when “10x” forces (technology, regulation, customer behavior) reshape industry structure suddenly. Examples: smartphones reshaping mobile carriers (2007–2012); LLMs reshaping search and SaaS (2022–present); EV adoption reshaping automotive value chains (2020–present). Recognizing an inflection point early is itself a competitive advantage.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#measuring-what-you-manage",
-    "href": "content/ch02.html#measuring-what-you-manage",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.5 Measuring What You Manage",
-    "text": "2.5 Measuring What You Manage\n“What gets measured gets managed.” But profit maximization is a notoriously ambiguous goal:\n\nTotal profit vs. rate of profit?\nOver what time period?\nAccounting profit vs. economic profit?\n\nThree standards dominate practice, each with drawbacks.\n\n2.5.1 Economic Value (NPV)\nThe Net Present Value (NPV, 淨現值) approach:\n\\[\nV = \\sum_{t=0}^{T} \\frac{C_t}{(1 + R_{WACC})^t}\n\\]\nwhere \\(C_t\\) is the cash flow in period \\(t\\) and \\(R_{WACC}\\) is the weighted-average cost of capital. Free Cash Flow is typically calculated as \\(FCF = EBITDA - WC - CAPEX\\).\nDrawback: cash flows must be forecasted, and forecasts become increasingly unreliable as the horizon lengthens.\n\n\n2.5.2 Accounting Profitability — The DuPont Identity\nThe DuPont Identity (杜邦分析) decomposes Return on Equity (ROE) into three levers:\n\\[\nROE = \\underbrace{\\frac{\\text{Net Income}}{\\text{Sales}}}_{\\text{Return on Sales}} \\times \\underbrace{\\frac{\\text{Sales}}{\\text{Assets}}}_{\\text{Asset Turnover}} \\times \\underbrace{\\left(1 + \\frac{D}{E}\\right)}_{\\text{Financial Leverage}}\n\\]\nThis is powerful because it tells managers where returns come from: pricing (ROS), efficiency (turnover), or leverage. Two firms with identical ROE may pursue very different strategies.\n\n\n\n\n\n\nTipMini-case: UPS vs. FedEx (ROCE Decomposition)\n\n\n\nReturn on Capital Employed (ROCE) splits into Return on Sales × Sales/Capital Employed. In a historical comparison, UPS showed ROS of 11.9% against FedEx’s 6.1% — yet asset turnover was nearly identical (1.79 vs. 1.75). The gap was entirely on the margin side. Drilling deeper, UPS had dramatically lower fuel costs (6.0% vs. 10.6%) and maintenance (2.3% vs. 5.0%) relative to sales, reflecting the advantage of ground-network density over air-hub dependence. This is the DuPont logic in action: the same top-line performance indicator traces back to fundamentally different activity systems.\n\n\nDrawback: accounting profit ignores the cost of capital and can be manipulated through depreciation policy, inventory valuation, and other choices.\n\n\n2.5.3 Shareholder Value — EVA\nEconomic Value Added (EVA, 經濟附加價值), popularized by Stern Stewart & Co., corrects the accounting-profit problem by subtracting a capital charge:\n\\[\nEVA = NOPAT - WACC \\times K\n\\]\nwhere \\(NOPAT\\) is Net Operating Profit After Tax and \\(K\\) is the capital employed. A firm with positive EVA is earning more than the opportunity cost of its capital.\nDrawback: EVA — like NPV and accounting profit — focuses on tangible assets. Intangible assets (skilled people, specialized processes, brand, relationships) are typically the sources of sustained competitive advantage but rarely appear at full value on the balance sheet. In 1980, roughly 80% of S&P 500 market value was captured in book value; by 2010 only 30% was. 70% of what makes modern firms valuable is invisible to traditional accounting.",
+    "objectID": "content/ch03.html#where-to-find-industry-data-taiwan-resources",
+    "href": "content/ch03.html#where-to-find-industry-data-taiwan-resources",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.5 Where to Find Industry Data — Taiwan Resources",
+    "text": "3.5 Where to Find Industry Data — Taiwan Resources\nFor your Term Project, the credibility of your industry analysis depends on the credibility of your sources. Taiwan offers excellent free databases:\n\n\n\n\n\n\nNoteEssential Taiwan Industry Databases\n\n\n\n\n公開資訊觀測站 (MOPS) — mops.twse.com.tw — Annual reports (年報), financial statements, GDR/ADR filings, material announcements for all listed companies.\n產業價值鏈資訊平台 (Industry Value Chain Information Platform) — ic.tpex.org.tw — Visualized upstream–midstream–downstream industry maps for major Taiwan industries; identify suppliers, buyers, and competitors at a glance.\n政府資料開放平台 (Government Open Data) — data.gov.tw — National statistics, trade data, demographic data.\n104 人力銀行 — 104.com.tw — Reveals industry hiring patterns and skill demand; useful proxy for industry growth.\n\n\n\nFor global data, use:\n\nWorld Bank Open Data — data.worldbank.org\nOECD Statistics — stats.oecd.org\nStatista, IBISWorld, MarketLine — typically subscription-based; check NCNU library access first.\n\n\n\n\n\n\n\nTipUsing GenAI for industry research\n\n\n\nClaude and NotebookLM are exceptionally good at synthesizing unstructured industry sources — annual reports, news archives, analyst reports — into structured PESTEL and Five Forces tables. Workflow:\n\nDownload the focal company’s most recent 3 annual reports + top 2 competitors’ annual reports.\nUpload all PDFs into a NotebookLM notebook.\nPrompt: “Extract all references to PESTEL factors. Group them by P/E/S/T/En/L. Cite the source page for each.”\nCross-check the AI’s output against the original PDFs — always verify before quoting.\n\nThe AI does the synthesis; you do the judgment. Roles cannot be reversed.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#strategic-innovation-changing-the-rules",
-    "href": "content/ch02.html#strategic-innovation-changing-the-rules",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.6 Strategic Innovation — Changing the Rules",
-    "text": "2.6 Strategic Innovation — Changing the Rules\nInnovation (創新) is:\n\nmaking a change or a difference\na dis-equilibrium phenomenon\na recombination process rather than a discovery\na matter of degree, not zero-or-one\n\nWe can distinguish three levels:\n\nProduct innovation — a new or improved offering\nProcess innovation — a new or improved way of producing\nStrategic innovation (策略創新) — a new business model that includes but usually goes beyond product or process innovation, introducing a new rule of competition\n\n\n\n\n\n\n\nTipCase: TSMC and the Foundry Model\n\n\n\nBefore Morris Chang founded TSMC in 1987, the semiconductor industry operated on the Integrated Device Manufacturer (IDM) model: a single firm designed, fabricated, packaged, and sold its own chips. TSMC’s strategic innovation was to unbundle fabrication from design, declaring that it would only manufacture — never compete with its customers on design. This was not a product innovation (chips are chips) nor merely a process innovation (fabrication techniques existed). It was a redefinition of the industry value chain, creating the fabless design house as a viable business model and positioning TSMC as an indispensable partner rather than a potential rival. The result is one of the most durable competitive advantages in the history of manufacturing.\n\n\n\n\n\n\n\n\nTipCase: SWATCH and Redefining the Watch Market\n\n\n\nIn the 1970s, Swiss watchmakers dominated the high-end, hand-made mechanical segment and nearly went bankrupt when quartz technology commoditized timekeeping. The response — forming SMH (later Swatch Group) and launching the SWATCH brand — was not to compete on precision or craftsmanship but to redefine watches as fashion accessories. Multiple affordable watches per customer, seasonal collections, colorful designs. Demand was reframed, supply was reconfigured, and the Swiss industry was saved not by out-engineering the Japanese but by out-positioning them.\n\n\n\n\n\n\n\n\nTipCase: Southwest Airlines\n\n\n\nSouthwest Airlines was not the first discount carrier. Its strategic innovation was the coherent activity system: point-to-point routes instead of hub-and-spoke, standardized Boeing 737 fleet (lowering training and maintenance costs), secondary airports (lower landing fees, faster turnarounds), no assigned seats (faster boarding), and happy employees (lower attrition, higher productivity including pilots helping load luggage). No single element is revolutionary. The innovation is the configuration — and decades of competitor imitation attempts have failed because copying one or two elements without the others just creates cost without capturing the synergies.",
+    "objectID": "content/ch03.html#from-diagnosis-to-strategy",
+    "href": "content/ch03.html#from-diagnosis-to-strategy",
+    "title": "The General Environment & Industry Analysis",
+    "section": "3.6 From Diagnosis to Strategy",
+    "text": "3.6 From Diagnosis to Strategy\nIndustry analysis is not an end in itself — it is input to strategic decision-making. The diagnostic question for each force is: “Is this force currently weakening or strengthening, and does my firm benefit or suffer?”\n\n\n\n\n\n\n\nIf the force is…\nStrategic response\n\n\n\n\nStrong and worsening\nEither find ways to weaken it (e.g., differentiate to reduce buyer power) or exit / reposition.\n\n\nStrong but stable\nBuild defensive moats — switching costs, regulatory protection, network effects.\n\n\nWeak and stable\nPress the advantage — invest aggressively while structural protection lasts.\n\n\nWeak but worsening\nEarly warning — start building defenses before the structural environment deteriorates.\n\n\n\nThis diagnostic translation — from forces to actions — is what separates a Five Forces homework assignment from a Five Forces strategy memo.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#modern-tools-for-business-model-design",
-    "href": "content/ch02.html#modern-tools-for-business-model-design",
-    "title": "Strategic Innovation & Business Model",
-    "section": "2.7 Modern Tools for Business Model Design",
-    "text": "2.7 Modern Tools for Business Model Design\nThe 2026 edition of this course integrates Generative AI (GenAI) workflows into every phase of business model analysis:\n\n\n\n\n\n\nNoteHow GenAI Augments the BMC\n\n\n\n\nValue Proposition discovery — use Claude or ChatGPT to synthesize customer interviews, online reviews, and industry reports into candidate problem statements.\nCompetitive benchmarking — use NotebookLM to ingest competitor annual reports and extract comparable BMC blocks side-by-side.\nScenario stress-testing — prompt the model to act as a skeptical investor and attack each block for internal inconsistency.\nVisualization — use Gamma or Napkin to turn a completed BMC into a polished deck-ready diagram.\n\nThe AI is a thinking partner, not a replacement for analysis. Poor prompts produce plausible-but-shallow BMCs. See Appendix B for CRF (Context–Role–Format) prompting templates used in this course.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
-    ]
-  },
-  {
-    "objectID": "content/ch02.html#self-check-questions",
-    "href": "content/ch02.html#self-check-questions",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html#self-check-questions",
+    "href": "content/ch03.html#self-check-questions",
+    "title": "The General Environment & Industry Analysis",
     "section": "Self-Check Questions",
-    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — V-P-C Decomposition\n\n\n\n\n\nA specialty coffee chain sells a latte for NT$150. Customer surveys indicate the average customer would pay up to NT$220 before switching to a substitute. Ingredient and direct labor costs total NT$55 per cup; allocated overhead adds another NT$30.\n\nCalculate the consumer surplus, the firm’s gross profit per cup, and the total economic value created per cup.\nIf a competitor opens next door and forces the chain to drop prices to NT$130, which of the three quantities above is most affected? Explain.\nIf instead the chain invests in a new roasting process that lowers ingredient cost to NT$40 without changing perceived quality, which quantities shift and by how much?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — BMC Coherence Check\n\n\n\n\n\nSelect a Taiwan-listed company you know well (e.g., 台積電 TSMC, 統一超商 7-ELEVEN, 鼎泰豐 Din Tai Fung, 王品 Wowprime).\n\nFill in all nine blocks of the Business Model Canvas for that company.\nIdentify at least two pairs of blocks that visibly reinforce each other. Explain the reinforcement.\nIdentify at least one block that feels like a potential weakness or vulnerability. What would you change?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Strategic vs. Operational Innovation\n\n\n\n\n\nFor each of the following, classify as primarily operational effectiveness, product innovation, process innovation, or strategic innovation. Defend each classification in one to two sentences.\n\nToyota implementing the Toyota Production System (TPS) in its plants.\nNetflix shifting from DVD-by-mail to streaming.\nApple launching a faster iPhone each year.\nFoxconn offering contract-manufacturing services to branded electronics firms.\nDyson inventing the bagless vacuum cleaner.\nCostco’s membership-fee-based warehouse retail model.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Measurement Method Selection\n\n\n\n\n\nYou have been asked to evaluate the performance of three divisions within a multinational conglomerate:\n\nDivision A: a mature consumer goods business with stable cash flows and minimal reinvestment needs.\nDivision B: a growing cloud-software business with negative current cash flow but rapidly expanding subscriber base.\nDivision C: a pharmaceutical R&D unit with long development cycles and uncertain outcomes.\n\nWhich measurement standard (NPV, DuPont/ROE, or EVA) would you apply to each division, and why? What additional qualitative indicators would you add?",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — PESTEL for a Specific Industry\n\n\n\n\n\nChoose one of the following industries: (a) Taiwan craft beer, (b) global EV charging infrastructure, (c) Southeast Asia ride-hailing, (d) Taiwanese semiconductor IC design.\n\nIdentify the three most critical PESTEL factors affecting this industry in 2026. Justify why each is critical (avoid generic statements).\nFor each factor, indicate whether it raises or lowers industry profitability and explain the mechanism.\nCite at least one quantitative data point per factor (you may use placeholders during this exercise but flag where you would source the real number).\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Five Forces Diagnosis\n\n\n\n\n\nUsing the same industry from Question 1:\n\nScore each of the Five Forces (and the sixth force, Complementors) as Low, Medium, or High intensity in 2026.\nIdentify the single most threatening force to firms in this industry. Why?\nPropose two strategic actions a firm could take to weaken that force or insulate itself from it.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Industry Lifecycle Mapping\n\n\n\n\n\nFor each of the following, identify the lifecycle stage and justify with at least one piece of evidence:\n\nGenerative AI consumer applications.\nTraditional optical disc storage.\nTaiwanese contract beverage manufacturing.\nCommercial space launch services.\nRidesharing in Tier-1 Asian cities.\nOn-premise enterprise software.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — From Industry Map to Firm Strategy\n\n\n\n\n\nSuppose your TP focal company is a mid-size Taiwanese contract manufacturer in an industry where:\n\nTop 3 competitors hold 65% combined market share (CR3 = 65%).\nLargest customer accounts for 40% of revenue.\nTwo new low-cost competitors entered Vietnam in the past 18 months.\nIndustry growth has slowed from 12% (5 years ago) to 3% (last year).\n\n\nDiagnose the Five Forces situation in two paragraphs.\nRecommend two specific strategic moves for the focal firm — one defensive, one offensive.\nWhat additional data would you need to make these recommendations more confident?",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#further-readings",
-    "href": "content/ch02.html#further-readings",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html#further-readings",
+    "href": "content/ch03.html#further-readings",
+    "title": "The General Environment & Industry Analysis",
     "section": "Further Readings",
-    "text": "Further Readings\n\nOsterwalder, A. & Pigneur, Y. (2010). Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers. Wiley. — The canonical BMC reference.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 2 — “Goals, Values and Performance”. Wiley.\nPorter, M. E. (1996). “What Is Strategy?” Harvard Business Review, Nov–Dec. — The classic argument against confusing operational effectiveness with strategy.\nMagretta, J. (2002). “Why Business Models Matter.” Harvard Business Review, May. — Short, readable introduction to the concept.\nChesbrough, H. (2010). “Business Model Innovation: Opportunities and Barriers.” Long Range Planning, 43(2-3), 354-363.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — UPenn Wharton. Video 1.1–1.7 (business model foundations, ~84 min) directly complements this chapter.",
+    "text": "Further Readings\n\nPorter, M. E. (2008). “The Five Competitive Forces That Shape Strategy.” Harvard Business Review, January. — The 30-year retrospective and refinement of the original 1979 article.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapters 3 — “Industry Analysis: The Fundamentals”. Wiley.\nBrandenburger, A. M. & Nalebuff, B. J. (1996). Co-opetition. Currency Doubleday. — Source of the “sixth force” concept.\nGrove, A. (1996). Only the Paranoid Survive. Doubleday. — The classic on strategic inflection points.\nMcGahan, A. M. (2004). How Industries Evolve. Harvard Business School Press. — Detailed industry-lifecycle modeling.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — Video 2.1–2.6 (Opportunity Analysis, ~63 min) walks through industry-level opportunity assessment from an entrepreneur’s perspective.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/ch02.html#looking-ahead",
-    "href": "content/ch02.html#looking-ahead",
-    "title": "Strategic Innovation & Business Model",
+    "objectID": "content/ch03.html#looking-ahead",
+    "href": "content/ch03.html#looking-ahead",
+    "title": "The General Environment & Industry Analysis",
     "section": "Looking Ahead",
-    "text": "Looking Ahead\nChapter 2 has given us the V-P-C lens and the four pillars of a business model. Starting in Chapter 3, we take the outside-in perspective: how does the external environment — macro forces and industry structure — shape the Value and Price sides of our framework? Then in Chapter 5 we turn inside-out, asking how a firm’s resources and capabilities shape the Cost side and the ability to sustain whatever advantage it creates.\nEvery subsequent chapter is a refinement of the core question posed here: how does a firm create, deliver, appropriate, and sustain value?",
+    "text": "Looking Ahead\nChapter 3 has examined industry structure — relatively stable forces that condition average profitability. But industries are also dynamic: competitors take actions and respond to one another. Chapter 4 turns to competitive analysis and co-opetitive dynamics — the moves and counter-moves that determine which firms within an industry capture the available profit.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 2. Strategic Innovation & Business Model"
+      "Ch 3. General Environment & Industry Analysis"
     ]
   },
   {
-    "objectID": "content/publishing.html",
-    "href": "content/publishing.html",
-    "title": "Publishing",
+    "objectID": "content/acknowledgements.html",
+    "href": "content/acknowledgements.html",
+    "title": "Acknowledgments",
     "section": "",
-    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
-  },
-  {
-    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "title": "Publishing",
-    "section": "Turn on GitHub Pages for your repo",
-    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
-  },
-  {
-    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "title": "Publishing",
-    "section": "Do your first publish to gh-pages",
-    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
-  },
-  {
-    "objectID": "content/publishing.html#dont-like-using-gh-pages",
-    "href": "content/publishing.html#dont-like-using-gh-pages",
-    "title": "Publishing",
-    "section": "Don’t like using gh-pages?",
-    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
-  },
-  {
-    "objectID": "content/add-content.html",
-    "href": "content/add-content.html",
-    "title": "Customize",
-    "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
-  },
-  {
-    "objectID": "content/add-content.html#edit-and-add-your-pages",
-    "href": "content/add-content.html#edit-and-add-your-pages",
-    "title": "Customize",
-    "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
-  },
-  {
-    "objectID": "content/add-content.html#add-your-pages-the-project",
-    "href": "content/add-content.html#add-your-pages-the-project",
-    "title": "Customize",
-    "section": "Add your pages the project",
-    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
-  },
-  {
-    "objectID": "content/rendering.html",
-    "href": "content/rendering.html",
-    "title": "Rendering",
-    "section": "",
-    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
-  },
-  {
-    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "title": "Rendering",
-    "section": "Step 1. Make sure you have a recent RStudio",
-    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
-  },
-  {
-    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "title": "Rendering",
-    "section": "Step 2. Clone and create RStudio project",
-    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
-  },
-  {
-    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
-    "href": "content/rendering.html#step-3.-render-within-rstudio",
-    "title": "Rendering",
-    "section": "Step 3. Render within RStudio",
-    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
-  },
-  {
-    "objectID": "content/ch04.html",
-    "href": "content/ch04.html",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "",
-    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#learning-objectives",
-    "href": "content/ch04.html#learning-objectives",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDistinguish between industry structure (Chapter 3) and competitive dynamics (this chapter), and explain why both matter.\nDefine a firm’s competitor set using market commonality and resource similarity.\nMap competitive actions (price moves, capacity expansions, product launches) and predict competitive responses using the awareness–motivation–capability framework.\nApply game-theoretic thinking to multi-firm interactions, distinguishing zero-sum competition from positive-sum co-opetition.\nRecognize when complementors create more value than competitors destroy, and design strategies that exploit this asymmetry.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#from-structure-to-dynamics",
-    "href": "content/ch04.html#from-structure-to-dynamics",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.1 From Structure to Dynamics",
-    "text": "4.1 From Structure to Dynamics\nChapter 3 treated the industry as a relatively stable structure. But in reality, firms inside an industry are constantly moving: cutting prices, launching products, opening factories, acquiring rivals, lobbying regulators. Industry structure tells you the average profitability available; competitive dynamics tells you which firms capture how much of it.\nThe shift from structure to dynamics is the shift from a static to a dynamic lens:\n\n\n\nStatic (Structure)\nDynamic (Dynamics)\n\n\n\n\nFive Forces\nAction–Response sequences\n\n\nIndustry concentration\nCompetitor identification\n\n\nEntry barriers\nFirst-mover vs. fast-follower\n\n\nAverage profitability\nFirm-level differential profitability\n\n\nLong horizon\nShort-to-medium horizon\n\n\n\nA firm that masters only structural analysis will misread the timing of its environment. A firm that masters only dynamic analysis will misread the deep currents beneath the surface moves. Strategic management requires both.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#who-are-your-competitors-market-commonality-and-resource-similarity",
-    "href": "content/ch04.html#who-are-your-competitors-market-commonality-and-resource-similarity",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity",
-    "text": "4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity\nThe first step in competitive analysis is deceptively hard: who exactly are we competing with?\nTwo firms are competitors to the extent that they share:\n\nMarket commonality (市場共同性) — the degree to which they serve the same customers in the same segments and geographies.\nResource similarity (資源相似性) — the degree to which their resource and capability profiles overlap.\n\n\n\n\n\n\nquadrantChart\n    title Competitor Identification Matrix\n    x-axis \"Low Resource Similarity\" --&gt; \"High Resource Similarity\"\n    y-axis \"Low Market Commonality\" --&gt; \"High Market Commonality\"\n    quadrant-1 \"Direct Competitors\"\n    quadrant-2 \"Market Rivals\"\n    quadrant-3 \"Distant Players\"\n    quadrant-4 \"Resource Rivals\"\n\n\n\n\n\n\n\nDirect Competitors (high commonality, high similarity) — the obvious rivals: Pepsi vs. Coca-Cola in beverages, McDonald’s vs. Burger King in fast food. Highest mutual awareness, fastest response cycles.\nMarket Rivals (high commonality, low similarity) — competing for the same customer with very different resource bases: a traditional bookstore vs. Amazon, a taxi fleet vs. Uber. Often the source of disruption.\nResource Rivals (low commonality, high similarity) — similar capabilities but currently serving different markets. Latent competitors. Can become direct competitors quickly when they decide to enter.\nDistant Players (low commonality, low similarity) — typically irrelevant, until a technological shift suddenly merges previously separate markets (e.g., smartphones merged camera, GPS, music player, and phone industries).\n\n\n\n\n\n\n\nTipTP application\n\n\n\nIn TP2 — Internal Analysis, when you identify your focal firm’s competitors, don’t just list the obvious direct competitors. Identify at least one Market Rival (different resources, same customer) — these are the firms most likely to disrupt your focal firm in the next 3–5 years.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#competitive-actions-and-responses",
-    "href": "content/ch04.html#competitive-actions-and-responses",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.3 Competitive Actions and Responses",
-    "text": "4.3 Competitive Actions and Responses\nOnce you know who the competitors are, the next question is: what moves are they making, and how should we respond?\n\n4.3.1 Types of Competitive Actions\nStrategic actions (策略性行動) — large, hard-to-reverse moves that significantly alter the firm’s position:\n\nMajor capacity expansions (new fab, new factory)\nMergers and acquisitions\nEntry into new geographic markets\nLaunch of a flagship product line\nMajor brand repositioning\n\nTactical actions (戰術性行動) — smaller, easier-to-reverse moves intended to fine-tune position:\n\nPrice changes\nPromotional campaigns\nDistribution channel adjustments\nProduct feature updates\n\nThe distinction matters because strategic actions provoke strategic responses, while tactical actions usually attract only tactical responses. Misjudging this can be expensive.\n\n\n4.3.2 The Awareness–Motivation–Capability Framework\nA competitor will respond to your action only when all three conditions are satisfied:\n\n\n\n\n\n\nNoteAwareness · Motivation · Capability\n\n\n\n\nAwareness (覺察) — Does the competitor notice the action? In transparent markets (publicly listed firms, B2B with industry analysts), awareness is high. In opaque markets (private firms, niche regional plays), it can be surprisingly low.\nMotivation (動機) — Does the competitor have an incentive to respond? A market leader losing share has high motivation. A peripheral player whose core market is unaffected may rationally ignore the action.\nCapability (能力) — Can the competitor respond effectively? A response requires resources, organizational agility, and the right capabilities. A firm that lacks any one of these may be aware and motivated but unable to act.\n\n\n\nThis framework is asymmetric: you can deliberately attack competitors who have low capability or low motivation while avoiding direct confrontation with strong rivals. Aim where they cannot respond.\n\n\n4.3.3 First-Mover, Fast-Follower, Late-Mover\nIn any sequential game, position matters:\n\n\n\n\n\n\n\n\nPosition\nAdvantages\nRisks\n\n\n\n\nFirst-Mover (先行者)\nBrand recognition, customer lock-in, learning curve, patents, preempted resources\nPioneer’s burden — paying the cost of educating the market; technology bets that may fail\n\n\nFast-Follower (快速跟隨者)\nLearn from first-mover’s mistakes, avoid market-development costs, leapfrog with newer technology\nMust build differentiation rapidly; may be locked out if first-mover establishes network effects\n\n\nLate-Mover (後進者)\nMature technology, clear customer needs, established infrastructure\nLimited differentiation room; high entry barriers; commoditized margins\n\n\n\nThe optimal position depends on how the industry rewards experience vs. flexibility. In industries with strong network effects (social media, payment platforms), first-mover advantage is decisive. In industries where technology evolves quickly (semiconductors, smartphones), fast-followers often outperform pioneers.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#co-opetition-when-competition-meets-cooperation",
-    "href": "content/ch04.html#co-opetition-when-competition-meets-cooperation",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.4 Co-opetition — When Competition Meets Cooperation",
-    "text": "4.4 Co-opetition — When Competition Meets Cooperation\nThe traditional view treats competition as zero-sum — for one firm to win, another must lose. But many real-world situations are positive-sum: firms can simultaneously compete and cooperate, and the total pie can grow.\nThe seminal work by Brandenburger and Nalebuff (1996) in Co-opetition introduced game-theoretic thinking to strategy. Their Value Net extends Porter’s Five Forces by adding Complementors (互補者) — players whose products increase the value of yours.\n\n\n\n\n\nflowchart TB\n    FIRM[\"&lt;b&gt;Focal Firm&lt;/b&gt;\"]\n    CUST[\"Customers\"]\n    SUPP[\"Suppliers\"]\n    COMP[\"Competitors\"]\n    COMPL[\"Complementors\"]\n    \n    FIRM --- CUST\n    FIRM --- SUPP\n    FIRM --- COMP\n    FIRM --- COMPL\n    \n    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF\n    style CUST fill:#D8C3A5,stroke:#004030\n    style SUPP fill:#D8C3A5,stroke:#004030\n    style COMP fill:#EFE4D2,stroke:#004030\n    style COMPL fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\n\n4.4.1 Recognizing Complementors\nA complementor is a player whose presence makes customers value your product more:\n\n\n\n\n\n\n\n\nFocal industry\nCompetitors\nComplementors\n\n\n\n\nConsole hardware (PlayStation, Xbox)\nEach other\nGame studios\n\n\nSmartphone OS (iOS, Android)\nEach other\nApp developers\n\n\nElectric vehicles (Tesla, BYD)\nEach other\nCharging-station operators, battery suppliers\n\n\nCoffee shops (Starbucks, Louisa)\nEach other\nWiFi providers, food delivery platforms\n\n\nCloud computing (AWS, Azure)\nEach other\nSaaS vendors built on the platform\n\n\n\nThe strategic implication: a healthy ecosystem of complementors can be more valuable than weak competitors. Ruthless competition that drives complementors out of business often hurts the “winner” more than the “loser.”\n\n\n4.4.2 Co-opetitive Strategies\nThree common forms of co-opetition:\n\nStandard-setting alliances — competitors collaborate to establish a common technical standard (e.g., USB-C, HDMI, 5G specifications) that grows the total market. They then compete on implementation.\nSupply-chain partnerships — TSMC and its customers (AMD, NVIDIA, Apple) compete with each other’s customers but cooperate intimately on process node roadmaps.\nPre-competitive R&D consortia — pharmaceutical firms jointly fund early-stage research; auto manufacturers share charging infrastructure investment.\n\n\n\n\n\n\n\nTipTSMC as the master co-opetitor\n\n\n\nTSMC’s foundry model is a textbook case of strategic co-opetition. By declaring it would never design its own chips, TSMC removed itself from competition with its customers. This made it the trusted partner for Apple, NVIDIA, AMD, and Qualcomm — firms that compete fiercely with each other but all rely on TSMC. The result: TSMC captures a structural position no IDM can replicate. Strategy = redefining the relationship from “competitor” to “complementor.”",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#the-parts-framework-changing-the-game",
-    "href": "content/ch04.html#the-parts-framework-changing-the-game",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.5 The PARTS Framework — Changing the Game",
-    "text": "4.5 The PARTS Framework — Changing the Game\nBrandenburger and Nalebuff identified five levers for changing the game itself rather than just playing it well:\n\n\n\n\n\n\nImportantPARTS — Five levers for changing the game\n\n\n\n\nP — Players — Add or remove players to shift bargaining power. Bringing in a new supplier weakens existing suppliers; recruiting a new customer segment dilutes large-buyer power.\nA — Added Value — Increase the unique value you bring to others. The greater your added value, the more bargaining power you have.\nR — Rules — Negotiate or design rules (contracts, standards, regulations) that shape competition in your favor.\nT — Tactics — Manage perceptions. Signaling commitment (e.g., investing in dedicated capacity for one customer) can deter competitors.\nS — Scope — Change where the game is played. Expand into adjacent industries; redefine your market boundary.\n\n\n\nThis is a creative framework — its purpose is to remind strategists that the rules of the game are not fixed. Many of the most valuable strategic moves come from rewriting the game, not from out-playing competitors at a game whose rules they have set.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#competitive-dynamics-in-2026-a-few-patterns",
-    "href": "content/ch04.html#competitive-dynamics-in-2026-a-few-patterns",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.6 Competitive Dynamics in 2026 — A Few Patterns",
-    "text": "4.6 Competitive Dynamics in 2026 — A Few Patterns\nSeveral structural shifts are accelerating competitive dynamics in 2026:\n\nAI-accelerated imitation — Generative AI compresses the cycle from observing a competitor’s move to crafting a credible response. Competitive imitation is no longer an 18-month research project; it is a 2-week sprint.\nGeopolitical fragmentation — Markets are bifurcating along US-aligned and China-aligned lines. A firm that wins in one bloc may be barred from the other. Competitor sets are now bloc-specific.\nPlatform consolidation — In many digital industries, two or three platforms capture 80%+ of value. New entrants face network-effect lockouts unless they can credibly redefine the category.\nSustainability as competitive ground — Carbon disclosure and ESG ratings increasingly affect customer and investor decisions. Slow movers face capital-cost disadvantages that compound annually.\n\nThe implication: in 2026, dynamic capability (the ability to sense, seize, and reconfigure — see Chapter 6) matters more than static capability.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#self-check-questions",
-    "href": "content/ch04.html#self-check-questions",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "Self-Check Questions",
-    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Identifying Competitors\n\n\n\n\n\nFor Starbucks Taiwan, identify:\n\nTwo Direct Competitors (high market commonality, high resource similarity).\nTwo Market Rivals (same customer, different resources).\nOne Resource Rival (similar resources, currently different market) — a firm that could plausibly enter Starbucks’s market.\nFor your Resource Rival, apply the awareness–motivation–capability test: which of the three is the bottleneck preventing entry?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Action and Response\n\n\n\n\n\nIn 2024, BYD launched aggressive price cuts on its mid-range EVs in China, with some models reduced 15–20% in a single quarter.\n\nClassify this as a strategic or tactical action. Justify.\nFor two of BYD’s main competitors (e.g., Tesla China, Geely, Nio), apply the awareness–motivation–capability framework: which firms could/would respond, and how?\nWhat second-order effect might this price war have on complementors (battery makers, charging networks, dealerships)?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Spotting Complementors\n\n\n\n\n\nFor each focal firm below, identify one important complementor and explain how the focal firm could deepen the relationship:\n\nNintendo Switch console.\nTesla Supercharger network.\nLINE messaging platform in Taiwan.\nMicrosoft Office 365.\nAn MRT mass-transit system.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Applying PARTS\n\n\n\n\n\nChoose your TP focal company (or a Taiwan MNC of your choice). Identify one PARTS lever the firm has used in the past 5 years to change its competitive game, and one PARTS lever it has not yet used but could plausibly try.\n\nDescribe the historical move using the PARTS taxonomy.\nPropose the new move and predict the likely competitive response.\nWhat awareness–motivation–capability conditions would your competitors need to meet in order to respond?",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#further-readings",
-    "href": "content/ch04.html#further-readings",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "Further Readings",
-    "text": "Further Readings\n\nBrandenburger, A. M. & Nalebuff, B. J. (1996). Co-opetition. Currency Doubleday. — The foundational text; PARTS framework, Value Net.\nChen, M. J. (1996). “Competitor Analysis and Interfirm Rivalry: Toward a Theoretical Integration.” Academy of Management Review, 21(1), 100–134. — The original market-commonality / resource-similarity framework.\nD’Aveni, R. A. (1994). Hypercompetition. Free Press. — Influential treatment of fast-cycle competition.\nSmith, K. G., Ferrier, W. J., & Ndofor, H. (2001). “Competitive Dynamics Research: Critique and Future Directions.” In Hitt, Freeman & Harrison (Eds.), The Blackwell Handbook of Strategic Management.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 4 — “Further Topics in Industry and Competitive Analysis”.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — Video 2.6 covers competitor identification from an entrepreneur’s vantage point.\n[CS] Corporate Strategy — Module 2 introduces game-theoretic thinking applicable to co-opetitive dynamics.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#looking-ahead",
-    "href": "content/ch04.html#looking-ahead",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "Looking Ahead",
-    "text": "Looking Ahead\nChapters 3 and 4 together completed the outside-in view: industry structure plus competitive dynamics. We now turn the lens inward. Chapter 5 introduces the Resource-Based View (RBV) and the Value Chain — the foundational frameworks for diagnosing what makes a firm distinctive from the inside, and how distinctiveness translates into sustainable competitive advantage.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/customizing.html",
-    "href": "content/customizing.html",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
-  },
-  {
-    "objectID": "content/customizing.html#quarto-documentation",
-    "href": "content/customizing.html#quarto-documentation",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
-  },
-  {
-    "objectID": "content/customizing.html#examples",
-    "href": "content/customizing.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
+    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
   },
   {
     "objectID": "content/ch01.html",
@@ -594,131 +371,497 @@
     ]
   },
   {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
+    "objectID": "content/customizing.html",
+    "href": "content/customizing.html",
+    "title": "Customization",
     "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
   },
   {
-    "objectID": "content/ch03.html",
-    "href": "content/ch03.html",
-    "title": "The General Environment & Industry Analysis",
+    "objectID": "content/customizing.html#quarto-documentation",
+    "href": "content/customizing.html#quarto-documentation",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#examples",
+    "href": "content/customizing.html#examples",
+    "title": "Customization",
+    "section": "Examples",
+    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
+  },
+  {
+    "objectID": "content/ch04.html",
+    "href": "content/ch04.html",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
     "section": "",
     "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#learning-objectives",
-    "href": "content/ch03.html#learning-objectives",
-    "title": "The General Environment & Industry Analysis",
+    "objectID": "content/ch04.html#learning-objectives",
+    "href": "content/ch04.html#learning-objectives",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDistinguish between the macro environment (general environment) and the industry environment, and explain why both matter to firm strategy.\nApply the PESTEL framework to identify external forces shaping an industry’s future.\nApply Porter’s Five Forces model to assess the structural attractiveness of an industry.\nDetermine which forces dominate in a given industry and translate that diagnosis into strategic implications for V (value) and P (price).\nUse public databases in Taiwan — MOPS, the TPEX Industry Value Chain Platform, and government open data — to gather the empirical evidence required for credible industry analysis.",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDistinguish between industry structure (Chapter 3) and competitive dynamics (this chapter), and explain why both matter.\nDefine a firm’s competitor set using market commonality and resource similarity.\nMap competitive actions (price moves, capacity expansions, product launches) and predict competitive responses using the awareness–motivation–capability framework.\nApply game-theoretic thinking to multi-firm interactions, distinguishing zero-sum competition from positive-sum co-opetition.\nRecognize when complementors create more value than competitors destroy, and design strategies that exploit this asymmetry.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#two-layers-of-external-environment",
-    "href": "content/ch03.html#two-layers-of-external-environment",
-    "title": "The General Environment & Industry Analysis",
-    "section": "3.1 Two Layers of External Environment",
-    "text": "3.1 Two Layers of External Environment\nIn Chapter 1 we noted that ~20% of firm performance variance is explained by industry effects. To unpack that 20%, we need to look at two concentric layers of the firm’s external environment.\n\n\n\n\n\nflowchart TB\n    subgraph MACRO[\"MACRO ENVIRONMENT — PESTEL\"]\n        direction LR\n        P[\"Political\"] \n        E[\"Economic\"]\n        S[\"Social\"]\n        T[\"Technological\"]\n        EN[\"Environmental\"]\n        L[\"Legal\"]\n    end\n    subgraph IND[\"INDUSTRY ENVIRONMENT — Five Forces\"]\n        direction LR\n        SUP[\"Suppliers\"]\n        BUY[\"Buyers\"]\n        NEW[\"New Entrants\"]\n        SUB[\"Substitutes\"]\n        RIV[\"Rivalry\"]\n    end\n    FIRM[\"&lt;b&gt;The Firm&lt;/b&gt;&lt;br/&gt;Resources & Capabilities\"]\n    \n    MACRO --&gt; IND\n    IND --&gt; FIRM\n    \n    style MACRO fill:#EFE4D2,stroke:#004030,color:#2C2C2C\n    style IND fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF\n\n\n\n\n\n\nThe macro environment sets the broad context — political stability, economic cycles, demographic trends, technological revolutions. The industry environment sets the immediate competitive context — who supplies you, who buys from you, who could replace you.\nA common analytical mistake is to stop at PESTEL. PESTEL identifies forces; it does not tell you whether those forces are good or bad for your industry. That requires the second layer — the Five Forces — which translates macro shifts into concrete profit pressure.\n\n\n\n\n\n\nTipTP1 implication\n\n\n\nIn TP1 — External Analysis (Week 10), your group must produce both a PESTEL analysis (critical factors only) and a Five Forces analysis. Don’t analyze them in isolation: use PESTEL to identify which forces are changing, and use the Five Forces to assess how those changes affect industry profitability.",
+    "objectID": "content/ch04.html#from-structure-to-dynamics",
+    "href": "content/ch04.html#from-structure-to-dynamics",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.1 From Structure to Dynamics",
+    "text": "4.1 From Structure to Dynamics\nChapter 3 treated the industry as a relatively stable structure. But in reality, firms inside an industry are constantly moving: cutting prices, launching products, opening factories, acquiring rivals, lobbying regulators. Industry structure tells you the average profitability available; competitive dynamics tells you which firms capture how much of it.\nThe shift from structure to dynamics is the shift from a static to a dynamic lens:\n\n\n\nStatic (Structure)\nDynamic (Dynamics)\n\n\n\n\nFive Forces\nAction–Response sequences\n\n\nIndustry concentration\nCompetitor identification\n\n\nEntry barriers\nFirst-mover vs. fast-follower\n\n\nAverage profitability\nFirm-level differential profitability\n\n\nLong horizon\nShort-to-medium horizon\n\n\n\nA firm that masters only structural analysis will misread the timing of its environment. A firm that masters only dynamic analysis will misread the deep currents beneath the surface moves. Strategic management requires both.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#the-pestel-framework",
-    "href": "content/ch03.html#the-pestel-framework",
-    "title": "The General Environment & Industry Analysis",
-    "section": "3.2 The PESTEL Framework",
-    "text": "3.2 The PESTEL Framework\nPESTEL (總體環境分析架構) is an acronym for six categories of macro-environmental factors. Originally proposed as PEST in the 1960s, it expanded as environmental and legal factors gained strategic weight.\n\n\n\n\n\n\n\n\nLetter\nFactor\nExamples\n\n\n\n\nP\nPolitical (政治)\nGovernment stability, trade policy, US-China tech war, semiconductor export controls, defense procurement\n\n\nE\nEconomic (經濟)\nGDP growth, interest rates, inflation, exchange rates, energy prices, supply-chain re-shoring\n\n\nS\nSocial (社會)\nDemographics (aging population), values shifts, ESG expectations, remote work culture\n\n\nT\nTechnological (科技)\nGenerative AI, EV battery chemistry, 5G/6G, biotech, automation, cybersecurity\n\n\nE\nEnvironmental (環境)\nClimate regulation, carbon tax, Net Zero 2050, water scarcity, circular economy\n\n\nL\nLegal (法律)\nAntitrust enforcement, IP protection, GDPR/PIPL data laws, labor regulations\n\n\n\n\n3.2.1 Doing PESTEL Well\nThree rules separate professional PESTEL analysis from undergraduate-level PESTEL analysis:\n\n\n\n\n\n\nImportantRules for credible PESTEL\n\n\n\n\nBe selective, not exhaustive. A 30-bullet list is not analysis — it is a research dump. Identify the three to five most critical factors and ignore the rest.\nBe specific, not generic. “AI is transforming everything” is meaningless. “Generative AI is shifting customer support headcount in financial services by ~30% annually since 2024” is analysis.\nBe directional. Each factor should answer: Does this raise or lower industry profitability? For whom? A trend that hurts incumbents may help new entrants.\n\n\n\n\n\n3.2.2 PESTEL in 2026 — A Few Critical Forces\nFor a Taiwan-headquartered MNC operating in 2026, the following macro forces are reshaping nearly every industry:\n\nGeopolitical bifurcation (P) — supply chains splitting between US-aligned and China-aligned ecosystems; “China + 1” sourcing strategies; CHIPS Act subsidies redirecting fab investment.\nPersistent rate environment (E) — central banks holding rates higher for longer; cost of capital up; capital-intensive expansion harder to justify.\nDemographic cliff (S) — Taiwan, Japan, Korea, China entering simultaneous workforce contraction; talent shortage in skilled trades and engineering.\nGenAI productivity wave (T) — large language models commoditizing white-collar tasks; software economics reshaped; new entrants undercutting incumbents in legal, financial, and creative services.\nNet Zero compliance (En) — Scope 3 emissions disclosure mandatory in EU, increasingly so in Asia; carbon pricing affecting cost structures.\nAI regulation (L) — EU AI Act in force; US patchwork emerging; cross-border data flows constrained.\n\nNote: this list is illustrative, not authoritative. Your TP analysis must use current data from the sources in Section 3.5.",
+    "objectID": "content/ch04.html#who-are-your-competitors-market-commonality-and-resource-similarity",
+    "href": "content/ch04.html#who-are-your-competitors-market-commonality-and-resource-similarity",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity",
+    "text": "4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity\nThe first step in competitive analysis is deceptively hard: who exactly are we competing with?\nTwo firms are competitors to the extent that they share:\n\nMarket commonality (市場共同性) — the degree to which they serve the same customers in the same segments and geographies.\nResource similarity (資源相似性) — the degree to which their resource and capability profiles overlap.\n\n\n\n\n\n\nquadrantChart\n    title Competitor Identification Matrix\n    x-axis \"Low Resource Similarity\" --&gt; \"High Resource Similarity\"\n    y-axis \"Low Market Commonality\" --&gt; \"High Market Commonality\"\n    quadrant-1 \"Direct Competitors\"\n    quadrant-2 \"Market Rivals\"\n    quadrant-3 \"Distant Players\"\n    quadrant-4 \"Resource Rivals\"\n\n\n\n\n\n\n\nDirect Competitors (high commonality, high similarity) — the obvious rivals: Pepsi vs. Coca-Cola in beverages, McDonald’s vs. Burger King in fast food. Highest mutual awareness, fastest response cycles.\nMarket Rivals (high commonality, low similarity) — competing for the same customer with very different resource bases: a traditional bookstore vs. Amazon, a taxi fleet vs. Uber. Often the source of disruption.\nResource Rivals (low commonality, high similarity) — similar capabilities but currently serving different markets. Latent competitors. Can become direct competitors quickly when they decide to enter.\nDistant Players (low commonality, low similarity) — typically irrelevant, until a technological shift suddenly merges previously separate markets (e.g., smartphones merged camera, GPS, music player, and phone industries).\n\n\n\n\n\n\n\nTipTP application\n\n\n\nIn TP2 — Internal Analysis, when you identify your focal firm’s competitors, don’t just list the obvious direct competitors. Identify at least one Market Rival (different resources, same customer) — these are the firms most likely to disrupt your focal firm in the next 3–5 years.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#porters-five-forces",
-    "href": "content/ch03.html#porters-five-forces",
-    "title": "The General Environment & Industry Analysis",
-    "section": "3.3 Porter’s Five Forces",
-    "text": "3.3 Porter’s Five Forces\nMichael Porter’s Five Forces (五力分析) model, introduced in 1979 and refined since, remains the dominant framework for analyzing industry structure — the structural determinants of an industry’s average profitability.\n\n\n\n\n\nflowchart TB\n    NEW[\"&lt;b&gt;Threat of&lt;br/&gt;New Entrants&lt;/b&gt;\"]\n    SUP[\"&lt;b&gt;Bargaining Power&lt;br/&gt;of Suppliers&lt;/b&gt;\"]\n    SUB[\"&lt;b&gt;Threat of&lt;br/&gt;Substitutes&lt;/b&gt;\"]\n    BUY[\"&lt;b&gt;Bargaining Power&lt;br/&gt;of Buyers&lt;/b&gt;\"]\n    RIV[\"&lt;b&gt;Rivalry Among&lt;br/&gt;Existing Competitors&lt;/b&gt;\"]\n    \n    NEW --&gt; RIV\n    SUP --&gt; RIV\n    SUB --&gt; RIV\n    BUY --&gt; RIV\n    \n    style RIV fill:#004030,stroke:#004030,color:#FFFFFF\n    style NEW fill:#D8C3A5,stroke:#004030\n    style SUP fill:#D8C3A5,stroke:#004030\n    style SUB fill:#D8C3A5,stroke:#004030\n    style BUY fill:#D8C3A5,stroke:#004030\n\n\n\n\n\n\nEach force, when strong, depresses the average profitability of firms in the industry. Strategic decisions can be evaluated by their effect on the forces — actions that weaken unfavorable forces tend to be value-creating.\n\n3.3.1 The Five Forces in Detail\n1. Threat of New Entrants (新進者威脅)\nWhen entry is easy, incumbents face constant pressure to keep prices low. Entry barriers include:\n\nEconomies of scale — incumbents enjoy unit-cost advantages that newcomers cannot match.\nCapital requirements — high upfront investment (e.g., semiconductor fab &gt; USD 20B) deters most entrants.\nSwitching costs — customers locked into existing platforms (e.g., enterprise SAP) won’t easily migrate.\nNetwork effects — incumbent value rises with users (e.g., LINE in Taiwan, WeChat in China).\nRegulatory barriers — licenses, certifications, IP, government approvals.\nBrand and reputation — accumulated trust takes years or decades to build.\n\n2. Bargaining Power of Suppliers (供應商議價力)\nPowerful suppliers extract value by raising prices or limiting quality. Suppliers are powerful when:\n\nThe supplier industry is more concentrated than the buyer industry.\nThe supplier’s input is differentiated (no easy substitute).\nSwitching suppliers is costly.\nSuppliers can credibly threaten forward integration into the buyer’s industry.\nThe buyer is not an important customer for the supplier.\n\n3. Bargaining Power of Buyers (買方議價力)\nSymmetric to suppliers — powerful buyers extract value by demanding lower prices or higher quality. Buyers are powerful when:\n\nBuyers are concentrated or purchase in large volumes.\nProducts are standardized or undifferentiated.\nBuyers face low switching costs.\nBuyers can credibly threaten backward integration.\nBuyers have full information about costs.\n\n4. Threat of Substitutes (替代品威脅)\nSubstitutes are products from other industries that satisfy the same need. Streaming substitutes for cinema; video calls substitute for business travel; plant-based protein substitutes for beef. Substitutes cap the price ceiling — when they get cheaper or better, every firm in the industry suffers.\n5. Rivalry Among Existing Competitors (現有競爭者間競爭強度)\nThe intensity of rivalry depends on:\n\nNumber and relative size of competitors (concentrated vs. fragmented).\nIndustry growth rate (slow growth → zero-sum competition).\nFixed costs (high fixed costs push firms to fill capacity at any price).\nProduct differentiation (commodity-like products → price wars).\nExit barriers (specialized assets that can’t be redeployed).\n\n\n\n3.3.2 The Sixth Force — Complementors\nA common extension proposed by Brandenburger and Nalebuff (1996): complementors (互補者) — firms whose products increase the value of yours. App developers complement smartphone OS; charging-station networks complement EVs; gaming studios complement console hardware. The healthier the complementor ecosystem, the more valuable the focal industry. This is the foundation of co-opetitive dynamics discussed in Chapter 4.\n\n\n\n\n\n\nTipTP1 application — make it quantitative\n\n\n\nDon’t just say “rivalry is high.” Provide evidence:\n\nIndustry concentration: top-4 market share (CR4) or Herfindahl-Hirschman Index (HHI).\nRecent price-cutting episodes (cite news with dates and percentages).\nCapacity utilization rates from annual reports.\nNumber of competitors entering or exiting in the past 3 years.\n\nA Five Forces analysis without numbers is an opinion, not an analysis.",
+    "objectID": "content/ch04.html#competitive-actions-and-responses",
+    "href": "content/ch04.html#competitive-actions-and-responses",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.3 Competitive Actions and Responses",
+    "text": "4.3 Competitive Actions and Responses\nOnce you know who the competitors are, the next question is: what moves are they making, and how should we respond?\n\n4.3.1 Types of Competitive Actions\nStrategic actions (策略性行動) — large, hard-to-reverse moves that significantly alter the firm’s position:\n\nMajor capacity expansions (new fab, new factory)\nMergers and acquisitions\nEntry into new geographic markets\nLaunch of a flagship product line\nMajor brand repositioning\n\nTactical actions (戰術性行動) — smaller, easier-to-reverse moves intended to fine-tune position:\n\nPrice changes\nPromotional campaigns\nDistribution channel adjustments\nProduct feature updates\n\nThe distinction matters because strategic actions provoke strategic responses, while tactical actions usually attract only tactical responses. Misjudging this can be expensive.\n\n\n4.3.2 The Awareness–Motivation–Capability Framework\nA competitor will respond to your action only when all three conditions are satisfied:\n\n\n\n\n\n\nNoteAwareness · Motivation · Capability\n\n\n\n\nAwareness (覺察) — Does the competitor notice the action? In transparent markets (publicly listed firms, B2B with industry analysts), awareness is high. In opaque markets (private firms, niche regional plays), it can be surprisingly low.\nMotivation (動機) — Does the competitor have an incentive to respond? A market leader losing share has high motivation. A peripheral player whose core market is unaffected may rationally ignore the action.\nCapability (能力) — Can the competitor respond effectively? A response requires resources, organizational agility, and the right capabilities. A firm that lacks any one of these may be aware and motivated but unable to act.\n\n\n\nThis framework is asymmetric: you can deliberately attack competitors who have low capability or low motivation while avoiding direct confrontation with strong rivals. Aim where they cannot respond.\n\n\n4.3.3 First-Mover, Fast-Follower, Late-Mover\nIn any sequential game, position matters:\n\n\n\n\n\n\n\n\nPosition\nAdvantages\nRisks\n\n\n\n\nFirst-Mover (先行者)\nBrand recognition, customer lock-in, learning curve, patents, preempted resources\nPioneer’s burden — paying the cost of educating the market; technology bets that may fail\n\n\nFast-Follower (快速跟隨者)\nLearn from first-mover’s mistakes, avoid market-development costs, leapfrog with newer technology\nMust build differentiation rapidly; may be locked out if first-mover establishes network effects\n\n\nLate-Mover (後進者)\nMature technology, clear customer needs, established infrastructure\nLimited differentiation room; high entry barriers; commoditized margins\n\n\n\nThe optimal position depends on how the industry rewards experience vs. flexibility. In industries with strong network effects (social media, payment platforms), first-mover advantage is decisive. In industries where technology evolves quickly (semiconductors, smartphones), fast-followers often outperform pioneers.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#industry-lifecycle",
-    "href": "content/ch03.html#industry-lifecycle",
-    "title": "The General Environment & Industry Analysis",
-    "section": "3.4 Industry Lifecycle",
-    "text": "3.4 Industry Lifecycle\nIndustry profitability is not static — it evolves through predictable stages:\n\n\n\n\n\n\n\n\n\nStage\nDemand growth\nProfitability\nTypical strategy\n\n\n\n\nIntroduction (萌芽期)\nSlow, uncertain\nOften negative\nBuild the market, define standards, secure early adopters\n\n\nGrowth (成長期)\nRapid\nHigh and rising\nScale up, capture market share, build distribution\n\n\nMaturity (成熟期)\nSlow, saturating\nHigh but plateauing\nDifferentiate, defend share, optimize operations\n\n\nDecline (衰退期)\nNegative\nDeclining\nHarvest, divest, or reinvent (strategic innovation)\n\n\nRenewal (再生期)\nRe-accelerating\nVariable\nDisruption opens new sub-markets\n\n\n\nThe lifecycle stage strongly conditions which forces matter most. In the introduction stage, substitution risk (will the technology even win?) dominates. In maturity, rivalry intensity dominates as growth slows.\n\n\n\n\n\n\nNoteStrategic Inflection Points\n\n\n\nAndy Grove of Intel famously argued that industries face strategic inflection points — moments when “10x” forces (technology, regulation, customer behavior) reshape industry structure suddenly. Examples: smartphones reshaping mobile carriers (2007–2012); LLMs reshaping search and SaaS (2022–present); EV adoption reshaping automotive value chains (2020–present). Recognizing an inflection point early is itself a competitive advantage.",
+    "objectID": "content/ch04.html#co-opetition-when-competition-meets-cooperation",
+    "href": "content/ch04.html#co-opetition-when-competition-meets-cooperation",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.4 Co-opetition — When Competition Meets Cooperation",
+    "text": "4.4 Co-opetition — When Competition Meets Cooperation\nThe traditional view treats competition as zero-sum — for one firm to win, another must lose. But many real-world situations are positive-sum: firms can simultaneously compete and cooperate, and the total pie can grow.\nThe seminal work by Brandenburger and Nalebuff (1996) in Co-opetition introduced game-theoretic thinking to strategy. Their Value Net extends Porter’s Five Forces by adding Complementors (互補者) — players whose products increase the value of yours.\n\n\n\n\n\nflowchart TB\n    FIRM[\"&lt;b&gt;Focal Firm&lt;/b&gt;\"]\n    CUST[\"Customers\"]\n    SUPP[\"Suppliers\"]\n    COMP[\"Competitors\"]\n    COMPL[\"Complementors\"]\n    \n    FIRM --- CUST\n    FIRM --- SUPP\n    FIRM --- COMP\n    FIRM --- COMPL\n    \n    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF\n    style CUST fill:#D8C3A5,stroke:#004030\n    style SUPP fill:#D8C3A5,stroke:#004030\n    style COMP fill:#EFE4D2,stroke:#004030\n    style COMPL fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\n\n4.4.1 Recognizing Complementors\nA complementor is a player whose presence makes customers value your product more:\n\n\n\n\n\n\n\n\nFocal industry\nCompetitors\nComplementors\n\n\n\n\nConsole hardware (PlayStation, Xbox)\nEach other\nGame studios\n\n\nSmartphone OS (iOS, Android)\nEach other\nApp developers\n\n\nElectric vehicles (Tesla, BYD)\nEach other\nCharging-station operators, battery suppliers\n\n\nCoffee shops (Starbucks, Louisa)\nEach other\nWiFi providers, food delivery platforms\n\n\nCloud computing (AWS, Azure)\nEach other\nSaaS vendors built on the platform\n\n\n\nThe strategic implication: a healthy ecosystem of complementors can be more valuable than weak competitors. Ruthless competition that drives complementors out of business often hurts the “winner” more than the “loser.”\n\n\n4.4.2 Co-opetitive Strategies\nThree common forms of co-opetition:\n\nStandard-setting alliances — competitors collaborate to establish a common technical standard (e.g., USB-C, HDMI, 5G specifications) that grows the total market. They then compete on implementation.\nSupply-chain partnerships — TSMC and its customers (AMD, NVIDIA, Apple) compete with each other’s customers but cooperate intimately on process node roadmaps.\nPre-competitive R&D consortia — pharmaceutical firms jointly fund early-stage research; auto manufacturers share charging infrastructure investment.\n\n\n\n\n\n\n\nTipTSMC as the master co-opetitor\n\n\n\nTSMC’s foundry model is a textbook case of strategic co-opetition. By declaring it would never design its own chips, TSMC removed itself from competition with its customers. This made it the trusted partner for Apple, NVIDIA, AMD, and Qualcomm — firms that compete fiercely with each other but all rely on TSMC. The result: TSMC captures a structural position no IDM can replicate. Strategy = redefining the relationship from “competitor” to “complementor.”",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#where-to-find-industry-data-taiwan-resources",
-    "href": "content/ch03.html#where-to-find-industry-data-taiwan-resources",
-    "title": "The General Environment & Industry Analysis",
-    "section": "3.5 Where to Find Industry Data — Taiwan Resources",
-    "text": "3.5 Where to Find Industry Data — Taiwan Resources\nFor your Term Project, the credibility of your industry analysis depends on the credibility of your sources. Taiwan offers excellent free databases:\n\n\n\n\n\n\nNoteEssential Taiwan Industry Databases\n\n\n\n\n公開資訊觀測站 (MOPS) — mops.twse.com.tw — Annual reports (年報), financial statements, GDR/ADR filings, material announcements for all listed companies.\n產業價值鏈資訊平台 (Industry Value Chain Information Platform) — ic.tpex.org.tw — Visualized upstream–midstream–downstream industry maps for major Taiwan industries; identify suppliers, buyers, and competitors at a glance.\n政府資料開放平台 (Government Open Data) — data.gov.tw — National statistics, trade data, demographic data.\n104 人力銀行 — 104.com.tw — Reveals industry hiring patterns and skill demand; useful proxy for industry growth.\n\n\n\nFor global data, use:\n\nWorld Bank Open Data — data.worldbank.org\nOECD Statistics — stats.oecd.org\nStatista, IBISWorld, MarketLine — typically subscription-based; check NCNU library access first.\n\n\n\n\n\n\n\nTipUsing GenAI for industry research\n\n\n\nClaude and NotebookLM are exceptionally good at synthesizing unstructured industry sources — annual reports, news archives, analyst reports — into structured PESTEL and Five Forces tables. Workflow:\n\nDownload the focal company’s most recent 3 annual reports + top 2 competitors’ annual reports.\nUpload all PDFs into a NotebookLM notebook.\nPrompt: “Extract all references to PESTEL factors. Group them by P/E/S/T/En/L. Cite the source page for each.”\nCross-check the AI’s output against the original PDFs — always verify before quoting.\n\nThe AI does the synthesis; you do the judgment. Roles cannot be reversed.",
+    "objectID": "content/ch04.html#the-parts-framework-changing-the-game",
+    "href": "content/ch04.html#the-parts-framework-changing-the-game",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.5 The PARTS Framework — Changing the Game",
+    "text": "4.5 The PARTS Framework — Changing the Game\nBrandenburger and Nalebuff identified five levers for changing the game itself rather than just playing it well:\n\n\n\n\n\n\nImportantPARTS — Five levers for changing the game\n\n\n\n\nP — Players — Add or remove players to shift bargaining power. Bringing in a new supplier weakens existing suppliers; recruiting a new customer segment dilutes large-buyer power.\nA — Added Value — Increase the unique value you bring to others. The greater your added value, the more bargaining power you have.\nR — Rules — Negotiate or design rules (contracts, standards, regulations) that shape competition in your favor.\nT — Tactics — Manage perceptions. Signaling commitment (e.g., investing in dedicated capacity for one customer) can deter competitors.\nS — Scope — Change where the game is played. Expand into adjacent industries; redefine your market boundary.\n\n\n\nThis is a creative framework — its purpose is to remind strategists that the rules of the game are not fixed. Many of the most valuable strategic moves come from rewriting the game, not from out-playing competitors at a game whose rules they have set.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#from-diagnosis-to-strategy",
-    "href": "content/ch03.html#from-diagnosis-to-strategy",
-    "title": "The General Environment & Industry Analysis",
-    "section": "3.6 From Diagnosis to Strategy",
-    "text": "3.6 From Diagnosis to Strategy\nIndustry analysis is not an end in itself — it is input to strategic decision-making. The diagnostic question for each force is: “Is this force currently weakening or strengthening, and does my firm benefit or suffer?”\n\n\n\n\n\n\n\nIf the force is…\nStrategic response\n\n\n\n\nStrong and worsening\nEither find ways to weaken it (e.g., differentiate to reduce buyer power) or exit / reposition.\n\n\nStrong but stable\nBuild defensive moats — switching costs, regulatory protection, network effects.\n\n\nWeak and stable\nPress the advantage — invest aggressively while structural protection lasts.\n\n\nWeak but worsening\nEarly warning — start building defenses before the structural environment deteriorates.\n\n\n\nThis diagnostic translation — from forces to actions — is what separates a Five Forces homework assignment from a Five Forces strategy memo.",
+    "objectID": "content/ch04.html#competitive-dynamics-in-2026-a-few-patterns",
+    "href": "content/ch04.html#competitive-dynamics-in-2026-a-few-patterns",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.6 Competitive Dynamics in 2026 — A Few Patterns",
+    "text": "4.6 Competitive Dynamics in 2026 — A Few Patterns\nSeveral structural shifts are accelerating competitive dynamics in 2026:\n\nAI-accelerated imitation — Generative AI compresses the cycle from observing a competitor’s move to crafting a credible response. Competitive imitation is no longer an 18-month research project; it is a 2-week sprint.\nGeopolitical fragmentation — Markets are bifurcating along US-aligned and China-aligned lines. A firm that wins in one bloc may be barred from the other. Competitor sets are now bloc-specific.\nPlatform consolidation — In many digital industries, two or three platforms capture 80%+ of value. New entrants face network-effect lockouts unless they can credibly redefine the category.\nSustainability as competitive ground — Carbon disclosure and ESG ratings increasingly affect customer and investor decisions. Slow movers face capital-cost disadvantages that compound annually.\n\nThe implication: in 2026, dynamic capability (the ability to sense, seize, and reconfigure — see Chapter 6) matters more than static capability.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#self-check-questions",
-    "href": "content/ch03.html#self-check-questions",
-    "title": "The General Environment & Industry Analysis",
+    "objectID": "content/ch04.html#self-check-questions",
+    "href": "content/ch04.html#self-check-questions",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
     "section": "Self-Check Questions",
-    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — PESTEL for a Specific Industry\n\n\n\n\n\nChoose one of the following industries: (a) Taiwan craft beer, (b) global EV charging infrastructure, (c) Southeast Asia ride-hailing, (d) Taiwanese semiconductor IC design.\n\nIdentify the three most critical PESTEL factors affecting this industry in 2026. Justify why each is critical (avoid generic statements).\nFor each factor, indicate whether it raises or lowers industry profitability and explain the mechanism.\nCite at least one quantitative data point per factor (you may use placeholders during this exercise but flag where you would source the real number).\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Five Forces Diagnosis\n\n\n\n\n\nUsing the same industry from Question 1:\n\nScore each of the Five Forces (and the sixth force, Complementors) as Low, Medium, or High intensity in 2026.\nIdentify the single most threatening force to firms in this industry. Why?\nPropose two strategic actions a firm could take to weaken that force or insulate itself from it.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Industry Lifecycle Mapping\n\n\n\n\n\nFor each of the following, identify the lifecycle stage and justify with at least one piece of evidence:\n\nGenerative AI consumer applications.\nTraditional optical disc storage.\nTaiwanese contract beverage manufacturing.\nCommercial space launch services.\nRidesharing in Tier-1 Asian cities.\nOn-premise enterprise software.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — From Industry Map to Firm Strategy\n\n\n\n\n\nSuppose your TP focal company is a mid-size Taiwanese contract manufacturer in an industry where:\n\nTop 3 competitors hold 65% combined market share (CR3 = 65%).\nLargest customer accounts for 40% of revenue.\nTwo new low-cost competitors entered Vietnam in the past 18 months.\nIndustry growth has slowed from 12% (5 years ago) to 3% (last year).\n\n\nDiagnose the Five Forces situation in two paragraphs.\nRecommend two specific strategic moves for the focal firm — one defensive, one offensive.\nWhat additional data would you need to make these recommendations more confident?",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Identifying Competitors\n\n\n\n\n\nFor Starbucks Taiwan, identify:\n\nTwo Direct Competitors (high market commonality, high resource similarity).\nTwo Market Rivals (same customer, different resources).\nOne Resource Rival (similar resources, currently different market) — a firm that could plausibly enter Starbucks’s market.\nFor your Resource Rival, apply the awareness–motivation–capability test: which of the three is the bottleneck preventing entry?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Action and Response\n\n\n\n\n\nIn 2024, BYD launched aggressive price cuts on its mid-range EVs in China, with some models reduced 15–20% in a single quarter.\n\nClassify this as a strategic or tactical action. Justify.\nFor two of BYD’s main competitors (e.g., Tesla China, Geely, Nio), apply the awareness–motivation–capability framework: which firms could/would respond, and how?\nWhat second-order effect might this price war have on complementors (battery makers, charging networks, dealerships)?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Spotting Complementors\n\n\n\n\n\nFor each focal firm below, identify one important complementor and explain how the focal firm could deepen the relationship:\n\nNintendo Switch console.\nTesla Supercharger network.\nLINE messaging platform in Taiwan.\nMicrosoft Office 365.\nAn MRT mass-transit system.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Applying PARTS\n\n\n\n\n\nChoose your TP focal company (or a Taiwan MNC of your choice). Identify one PARTS lever the firm has used in the past 5 years to change its competitive game, and one PARTS lever it has not yet used but could plausibly try.\n\nDescribe the historical move using the PARTS taxonomy.\nPropose the new move and predict the likely competitive response.\nWhat awareness–motivation–capability conditions would your competitors need to meet in order to respond?",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#further-readings",
-    "href": "content/ch03.html#further-readings",
-    "title": "The General Environment & Industry Analysis",
+    "objectID": "content/ch04.html#further-readings",
+    "href": "content/ch04.html#further-readings",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
     "section": "Further Readings",
-    "text": "Further Readings\n\nPorter, M. E. (2008). “The Five Competitive Forces That Shape Strategy.” Harvard Business Review, January. — The 30-year retrospective and refinement of the original 1979 article.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapters 3 — “Industry Analysis: The Fundamentals”. Wiley.\nBrandenburger, A. M. & Nalebuff, B. J. (1996). Co-opetition. Currency Doubleday. — Source of the “sixth force” concept.\nGrove, A. (1996). Only the Paranoid Survive. Doubleday. — The classic on strategic inflection points.\nMcGahan, A. M. (2004). How Industries Evolve. Harvard Business School Press. — Detailed industry-lifecycle modeling.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — Video 2.1–2.6 (Opportunity Analysis, ~63 min) walks through industry-level opportunity assessment from an entrepreneur’s perspective.",
+    "text": "Further Readings\n\nBrandenburger, A. M. & Nalebuff, B. J. (1996). Co-opetition. Currency Doubleday. — The foundational text; PARTS framework, Value Net.\nChen, M. J. (1996). “Competitor Analysis and Interfirm Rivalry: Toward a Theoretical Integration.” Academy of Management Review, 21(1), 100–134. — The original market-commonality / resource-similarity framework.\nD’Aveni, R. A. (1994). Hypercompetition. Free Press. — Influential treatment of fast-cycle competition.\nSmith, K. G., Ferrier, W. J., & Ndofor, H. (2001). “Competitive Dynamics Research: Critique and Future Directions.” In Hitt, Freeman & Harrison (Eds.), The Blackwell Handbook of Strategic Management.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 4 — “Further Topics in Industry and Competitive Analysis”.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — Video 2.6 covers competitor identification from an entrepreneur’s vantage point.\n[CS] Corporate Strategy — Module 2 introduces game-theoretic thinking applicable to co-opetitive dynamics.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
   },
   {
-    "objectID": "content/ch03.html#looking-ahead",
-    "href": "content/ch03.html#looking-ahead",
-    "title": "The General Environment & Industry Analysis",
+    "objectID": "content/ch04.html#looking-ahead",
+    "href": "content/ch04.html#looking-ahead",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
     "section": "Looking Ahead",
-    "text": "Looking Ahead\nChapter 3 has examined industry structure — relatively stable forces that condition average profitability. But industries are also dynamic: competitors take actions and respond to one another. Chapter 4 turns to competitive analysis and co-opetitive dynamics — the moves and counter-moves that determine which firms within an industry capture the available profit.",
+    "text": "Looking Ahead\nChapters 3 and 4 together completed the outside-in view: industry structure plus competitive dynamics. We now turn the lens inward. Chapter 5 introduces the Resource-Based View (RBV) and the Value Chain — the foundational frameworks for diagnosing what makes a firm distinctive from the inside, and how distinctiveness translates into sustainable competitive advantage.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
-      "Ch 3. General Environment & Industry Analysis"
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/rendering.html",
+    "href": "content/rendering.html",
+    "title": "Rendering",
+    "section": "",
+    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
+  },
+  {
+    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "title": "Rendering",
+    "section": "Step 1. Make sure you have a recent RStudio",
+    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
+  },
+  {
+    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "title": "Rendering",
+    "section": "Step 2. Clone and create RStudio project",
+    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
+  },
+  {
+    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
+    "href": "content/rendering.html#step-3.-render-within-rstudio",
+    "title": "Rendering",
+    "section": "Step 3. Render within RStudio",
+    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
+  },
+  {
+    "objectID": "content/add-content.html",
+    "href": "content/add-content.html",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/add-content.html#edit-and-add-your-pages",
+    "href": "content/add-content.html#edit-and-add-your-pages",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/add-content.html#add-your-pages-the-project",
+    "href": "content/add-content.html#add-your-pages-the-project",
+    "title": "Customize",
+    "section": "Add your pages the project",
+    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
+  },
+  {
+    "objectID": "content/publishing.html",
+    "href": "content/publishing.html",
+    "title": "Publishing",
+    "section": "",
+    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+  },
+  {
+    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "title": "Publishing",
+    "section": "Turn on GitHub Pages for your repo",
+    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
+  },
+  {
+    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "title": "Publishing",
+    "section": "Do your first publish to gh-pages",
+    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
+  },
+  {
+    "objectID": "content/publishing.html#dont-like-using-gh-pages",
+    "href": "content/publishing.html#dont-like-using-gh-pages",
+    "title": "Publishing",
+    "section": "Don’t like using gh-pages?",
+    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+  },
+  {
+    "objectID": "content/ch02.html",
+    "href": "content/ch02.html",
+    "title": "Strategic Innovation & Business Model",
+    "section": "",
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#learning-objectives",
+    "href": "content/ch02.html#learning-objectives",
+    "title": "Strategic Innovation & Business Model",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nExplain the V-P-C framework (Value, Price, Cost) and use it to decompose a firm’s profitability into consumer surplus, firm profit, and cost structure.\nDistinguish between value proposition, value creation, value appropriation, and value sustaining — the four pillars of any business model.\nMap a real company’s business model onto the Business Model Canvas (BMC) and critique its internal coherence.\nApply three standards of firm performance measurement — economic value (NPV), accounting profitability (DuPont Identity), and shareholder value — and recognize their respective drawbacks.\nRecognize when a firm is pursuing strategic innovation (new rules of competition) versus product or process innovation (better execution of old rules).",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#why-business-models-matter",
+    "href": "content/ch02.html#why-business-models-matter",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.1 Why Business Models Matter",
+    "text": "2.1 Why Business Models Matter\nA strategy without a viable business model (商業模式) is a wish list. A business model without a clear strategy is a checklist. The two must fit together.\nIn Chapter 1 we argued that strategy is a unifying theme directing a firm’s actions toward survival, success, superior performance, and sustainability. But how do we translate that abstract theme into concrete choices about what to sell, to whom, at what price, and through what activities? That is the job of a business model — a deliberate configuration of four decisions:\n\nValue Proposition (價值主張) — what problem we solve, for whom\nValue Creation (價值創造) — how we produce the value\nValue Appropriation (價值獲取) — how we capture a fair share\nValue Sustaining (價值維繫) — how we defend the model over time\n\nThese four decisions are not independent. A premium value proposition (V↑) delivered through a high-cost activity system (C↑) may still yield low profit (P−C) if competitive pressure forces price down. Strategy is the art of making these four decisions coherent.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#the-v-p-c-framework",
+    "href": "content/ch02.html#the-v-p-c-framework",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.2 The V-P-C Framework",
+    "text": "2.2 The V-P-C Framework\nThe V-P-C framework decomposes every transaction into three layers and, from them, four strategic quantities.\n\n\n\n\n\nflowchart TB\n    V[\"&lt;b&gt;V — Value&lt;/b&gt;&lt;br/&gt;Consumer's Maximum&lt;br/&gt;Willingness-To-Pay (WTP)\"]\n    P[\"&lt;b&gt;P — Price&lt;/b&gt;&lt;br/&gt;What the customer pays\"]\n    C[\"&lt;b&gt;C — Cost&lt;/b&gt;&lt;br/&gt;Firm's cost to deliver\"]\n    \n    V --&gt; VP[\"&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Consumer Surplus\"]\n    V --&gt; VC[\"&lt;b&gt;V − C&lt;/b&gt;&lt;br/&gt;Economic Value Created\"]\n    P --&gt; PC[\"&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Firm's Profit\"]\n    C --&gt; PC\n    \n    style V fill:#004030,stroke:#004030,color:#FFFFFF\n    style P fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style C fill:#EFE4D2,stroke:#004030,color:#2C2C2C\n    style VP fill:#FAF6F0,stroke:#6B6B6B\n    style VC fill:#FAF6F0,stroke:#6B6B6B\n    style PC fill:#FAF6F0,stroke:#6B6B6B\n\n\n\n\n\n\nThree terms deserve careful distinction:\n\n\n\n\n\n\nNoteKey Definitions\n\n\n\n\nPerceived Value (PV, 感知價值) — the customer’s subjective assessment of benefit before purchase.\nWillingness-To-Pay (WTP, 支付意願) — the maximum monetary amount a customer would rationally give up for the offering. In economic theory, \\(V = WTP\\).\nReservation Price (RP, 保留價格) — the price above which the customer walks away. Typically \\(RP \\leq WTP\\), because customers compare against alternatives.\n\n\n\n\n2.2.1 Sources of Superior Profitability\nWith the V-P-C lens, the perennial question — how does a firm earn superior profits? — reduces to three levers:\n\nRaise V (increase value perceived by customers) — differentiation, branding, premium features\nLower C (reduce cost of production and delivery) — scale, experience, process innovation\nExpand P − C (widen the margin between price and cost) — pricing power, market structure\n\nObserve that “raising P” is not an independent lever. Price is bounded above by V (customers will not pay more than WTP) and bounded below by C (firms will not sell at a loss for long). Strategic choices expand the spread by attacking V or C directly.\n\n\n2.2.2 Do Better or Do Different?\nA recurring choice for managers: should we pursue operational effectiveness (do the same things better) or strategic innovation (do different things altogether)?\n\n\n\n\n\n\n\n\nDimension\nOperational Effectiveness\nStrategic Innovation\n\n\n\n\nWhat changes\nHow activities are performed\nWhat activities are performed\n\n\nExamples\nSix Sigma, Lean Manufacturing, ERP, benchmarking\nRedefining the industry value chain, new business models\n\n\nCompetitive outcome\nNecessary but not sufficient for advantage\nCan create temporary monopoly rents\n\n\nImitability\nHigh — tools and techniques diffuse quickly\nLow — at least until competitors reconfigure\n\n\n\nMichael Porter’s classic warning: operational effectiveness is not strategy. If every firm in the industry adopts the same quality-management tools, the productivity frontier shifts outward but relative position does not change — and in the long run, the gains are competed away to customers via lower prices.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#the-four-pillars-of-a-business-model",
+    "href": "content/ch02.html#the-four-pillars-of-a-business-model",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.3 The Four Pillars of a Business Model",
+    "text": "2.3 The Four Pillars of a Business Model\n\n2.3.1 Value Proposition — For Whom, What Problem\nThe first question every business must answer: who is the customer, and what problem are we solving for them?\nA disciplined value proposition answers four sub-questions:\n\nUnsatisfied or future demand — what problem is not yet adequately solved?\nSubstitution and complementarity — what else could the customer use instead, or alongside?\nMarket size, installed base, penetration rate — how large is the opportunity?\nPrice elasticity of demand — how sensitive is the customer to price?\n\nIn marketing terms, this involves STP (Segmentation, Targeting, Positioning, 區隔、目標、定位) and the classic 4P mix (Product, Price, Place, Promotion, 產品、價格、通路、推廣). Strategic management takes STP/4P as inputs and asks the higher-order question: does this positioning defensibly raise V relative to the cost structure required to deliver it?\n\n\n2.3.2 Value Creation — The Activity System\nCreating value means configuring an activity system (活動系統) that transforms inputs into an offering customers will pay for. Michael Porter’s Value Chain (價值鏈) distinguishes:\n\nPrimary activities: inbound logistics, operations, outbound logistics, marketing & sales, service\nSupport activities: firm infrastructure, HR, technology development, procurement\n\nWe will examine value-chain analysis in depth in Chapter 5. The key insight for now: value creation is not a single act but a network of interdependent activities, each of which can be a source of advantage or weakness.\n\n\n2.3.3 Value Appropriation — Keeping Your Fair Share\nCreating value and capturing value are different. A firm may create enormous economic value (V − C is large) yet capture very little of it if market structure (市場結構) forces it to share the gains with customers, suppliers, or complementors.\n\n\n\n\n\n\nTipMarket Structures and Profitability\n\n\n\nFrom fragmented to consolidated markets, the typical pattern:\n\nPerfect Competition — many small firms, commodity products, price takers → fragmented, low profitability\nMonopolistic Competition — many firms, differentiated products, some pricing power → medium profitability\nOligopoly — few large firms, differentiated products, high entry barriers → higher profitability\nMonopoly — one firm, unique product, very high entry barriers → consolidated, high profitability\n\n\n\nThe structural determinants of value appropriation — the “five forces” — will be the subject of Chapter 3.\n\n\n2.3.4 Value Sustaining — Defending the Model\nEven a well-configured business model is worthless if competitors can copy it overnight. Value sustaining asks: what makes this model hard to imitate, hard to substitute, over time?\nThree levels of barriers:\n\nInstitutional factors (制度因素) — regulation, patents, industry standards\nIndustry factors (產業因素) — economies of scale, network effects, switching costs\nFirm-specific factors (廠商因素) — proprietary resources, tacit know-how, culture, reputation\n\nFirm-specific factors — particularly hard-to-replicate capabilities — are the subject of the Resource-Based View (RBV) in Chapter 5.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#the-business-model-canvas-bmc",
+    "href": "content/ch02.html#the-business-model-canvas-bmc",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.4 The Business Model Canvas (BMC)",
+    "text": "2.4 The Business Model Canvas (BMC)\nAlexander Osterwalder’s Business Model Canvas (BMC, 商業模式畫布) operationalizes the four pillars into nine building blocks. We overlay the V-P-C framework on top of it:\n\n⑦Key Partners重要夥伴Who are our key partners and suppliers?\n⑤Key Activities關鍵活動What activities does the value proposition require?\n①Value Proposition價值主張What problem are we solving? Which need are we satisfying?\n④Customer Relationships顧客關係How will we get, keep, and grow customers?\n②Customer Segments顧客區隔For whom are we creating value? Who are our customers?\n⑥Key Resources關鍵資源What key resources does the value proposition require?\n③Channels通路Through which channels do our customer segments want to be reached?\n⑨Cost Structure成本結構What are the most important costs? (Value Creation side)\n⑧Revenue Streams收入來源For what value are customers willing to pay? (Value Appropriation side)\n\nThe BMC is a diagnostic tool, not a strategy in itself. Its power lies in forcing the analyst to articulate every block and check whether they reinforce each other.\n\n\n\n\n\n\nImportantCoherence Test\n\n\n\nA business model is coherent when answers to the following three questions are all “yes”:\n\nDo the Key Activities and Resources (left side) actually produce the Value Proposition (center)?\nDoes the Value Proposition resonate with the Customer Segments through the chosen Channels and Relationships (right side)?\nDoes the Revenue Stream exceed the Cost Structure by a margin that justifies the capital employed?\n\nA “no” on any of these three is where strategy breaks.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#measuring-what-you-manage",
+    "href": "content/ch02.html#measuring-what-you-manage",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.5 Measuring What You Manage",
+    "text": "2.5 Measuring What You Manage\n“What gets measured gets managed.” But profit maximization is a notoriously ambiguous goal:\n\nTotal profit vs. rate of profit?\nOver what time period?\nAccounting profit vs. economic profit?\n\nThree standards dominate practice, each with drawbacks.\n\n2.5.1 Economic Value (NPV)\nThe Net Present Value (NPV, 淨現值) approach:\n\\[\nV = \\sum_{t=0}^{T} \\frac{C_t}{(1 + R_{WACC})^t}\n\\]\nwhere \\(C_t\\) is the cash flow in period \\(t\\) and \\(R_{WACC}\\) is the weighted-average cost of capital. Free Cash Flow is typically calculated as \\(FCF = EBITDA - WC - CAPEX\\).\nDrawback: cash flows must be forecasted, and forecasts become increasingly unreliable as the horizon lengthens.\n\n\n2.5.2 Accounting Profitability — The DuPont Identity\nThe DuPont Identity (杜邦分析) decomposes Return on Equity (ROE) into three levers:\n\\[\nROE = \\underbrace{\\frac{\\text{Net Income}}{\\text{Sales}}}_{\\text{Return on Sales}} \\times \\underbrace{\\frac{\\text{Sales}}{\\text{Assets}}}_{\\text{Asset Turnover}} \\times \\underbrace{\\left(1 + \\frac{D}{E}\\right)}_{\\text{Financial Leverage}}\n\\]\nThis is powerful because it tells managers where returns come from: pricing (ROS), efficiency (turnover), or leverage. Two firms with identical ROE may pursue very different strategies.\n\n\n\n\n\n\nTipMini-case: UPS vs. FedEx (ROCE Decomposition)\n\n\n\nReturn on Capital Employed (ROCE) splits into Return on Sales × Sales/Capital Employed. In a historical comparison, UPS showed ROS of 11.9% against FedEx’s 6.1% — yet asset turnover was nearly identical (1.79 vs. 1.75). The gap was entirely on the margin side. Drilling deeper, UPS had dramatically lower fuel costs (6.0% vs. 10.6%) and maintenance (2.3% vs. 5.0%) relative to sales, reflecting the advantage of ground-network density over air-hub dependence. This is the DuPont logic in action: the same top-line performance indicator traces back to fundamentally different activity systems.\n\n\nDrawback: accounting profit ignores the cost of capital and can be manipulated through depreciation policy, inventory valuation, and other choices.\n\n\n2.5.3 Shareholder Value — EVA\nEconomic Value Added (EVA, 經濟附加價值), popularized by Stern Stewart & Co., corrects the accounting-profit problem by subtracting a capital charge:\n\\[\nEVA = NOPAT - WACC \\times K\n\\]\nwhere \\(NOPAT\\) is Net Operating Profit After Tax and \\(K\\) is the capital employed. A firm with positive EVA is earning more than the opportunity cost of its capital.\nDrawback: EVA — like NPV and accounting profit — focuses on tangible assets. Intangible assets (skilled people, specialized processes, brand, relationships) are typically the sources of sustained competitive advantage but rarely appear at full value on the balance sheet. In 1980, roughly 80% of S&P 500 market value was captured in book value; by 2010 only 30% was. 70% of what makes modern firms valuable is invisible to traditional accounting.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#strategic-innovation-changing-the-rules",
+    "href": "content/ch02.html#strategic-innovation-changing-the-rules",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.6 Strategic Innovation — Changing the Rules",
+    "text": "2.6 Strategic Innovation — Changing the Rules\nInnovation (創新) is:\n\nmaking a change or a difference\na dis-equilibrium phenomenon\na recombination process rather than a discovery\na matter of degree, not zero-or-one\n\nWe can distinguish three levels:\n\nProduct innovation — a new or improved offering\nProcess innovation — a new or improved way of producing\nStrategic innovation (策略創新) — a new business model that includes but usually goes beyond product or process innovation, introducing a new rule of competition\n\n\n\n\n\n\n\nTipCase: TSMC and the Foundry Model\n\n\n\nBefore Morris Chang founded TSMC in 1987, the semiconductor industry operated on the Integrated Device Manufacturer (IDM) model: a single firm designed, fabricated, packaged, and sold its own chips. TSMC’s strategic innovation was to unbundle fabrication from design, declaring that it would only manufacture — never compete with its customers on design. This was not a product innovation (chips are chips) nor merely a process innovation (fabrication techniques existed). It was a redefinition of the industry value chain, creating the fabless design house as a viable business model and positioning TSMC as an indispensable partner rather than a potential rival. The result is one of the most durable competitive advantages in the history of manufacturing.\n\n\n\n\n\n\n\n\nTipCase: SWATCH and Redefining the Watch Market\n\n\n\nIn the 1970s, Swiss watchmakers dominated the high-end, hand-made mechanical segment and nearly went bankrupt when quartz technology commoditized timekeeping. The response — forming SMH (later Swatch Group) and launching the SWATCH brand — was not to compete on precision or craftsmanship but to redefine watches as fashion accessories. Multiple affordable watches per customer, seasonal collections, colorful designs. Demand was reframed, supply was reconfigured, and the Swiss industry was saved not by out-engineering the Japanese but by out-positioning them.\n\n\n\n\n\n\n\n\nTipCase: Southwest Airlines\n\n\n\nSouthwest Airlines was not the first discount carrier. Its strategic innovation was the coherent activity system: point-to-point routes instead of hub-and-spoke, standardized Boeing 737 fleet (lowering training and maintenance costs), secondary airports (lower landing fees, faster turnarounds), no assigned seats (faster boarding), and happy employees (lower attrition, higher productivity including pilots helping load luggage). No single element is revolutionary. The innovation is the configuration — and decades of competitor imitation attempts have failed because copying one or two elements without the others just creates cost without capturing the synergies.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#modern-tools-for-business-model-design",
+    "href": "content/ch02.html#modern-tools-for-business-model-design",
+    "title": "Strategic Innovation & Business Model",
+    "section": "2.7 Modern Tools for Business Model Design",
+    "text": "2.7 Modern Tools for Business Model Design\nThe 2026 edition of this course integrates Generative AI (GenAI) workflows into every phase of business model analysis:\n\n\n\n\n\n\nNoteHow GenAI Augments the BMC\n\n\n\n\nValue Proposition discovery — use Claude or ChatGPT to synthesize customer interviews, online reviews, and industry reports into candidate problem statements.\nCompetitive benchmarking — use NotebookLM to ingest competitor annual reports and extract comparable BMC blocks side-by-side.\nScenario stress-testing — prompt the model to act as a skeptical investor and attack each block for internal inconsistency.\nVisualization — use Gamma or Napkin to turn a completed BMC into a polished deck-ready diagram.\n\nThe AI is a thinking partner, not a replacement for analysis. Poor prompts produce plausible-but-shallow BMCs. See Appendix B for CRF (Context–Role–Format) prompting templates used in this course.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#self-check-questions",
+    "href": "content/ch02.html#self-check-questions",
+    "title": "Strategic Innovation & Business Model",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — V-P-C Decomposition\n\n\n\n\n\nA specialty coffee chain sells a latte for NT$150. Customer surveys indicate the average customer would pay up to NT$220 before switching to a substitute. Ingredient and direct labor costs total NT$55 per cup; allocated overhead adds another NT$30.\n\nCalculate the consumer surplus, the firm’s gross profit per cup, and the total economic value created per cup.\nIf a competitor opens next door and forces the chain to drop prices to NT$130, which of the three quantities above is most affected? Explain.\nIf instead the chain invests in a new roasting process that lowers ingredient cost to NT$40 without changing perceived quality, which quantities shift and by how much?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — BMC Coherence Check\n\n\n\n\n\nSelect a Taiwan-listed company you know well (e.g., 台積電 TSMC, 統一超商 7-ELEVEN, 鼎泰豐 Din Tai Fung, 王品 Wowprime).\n\nFill in all nine blocks of the Business Model Canvas for that company.\nIdentify at least two pairs of blocks that visibly reinforce each other. Explain the reinforcement.\nIdentify at least one block that feels like a potential weakness or vulnerability. What would you change?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Strategic vs. Operational Innovation\n\n\n\n\n\nFor each of the following, classify as primarily operational effectiveness, product innovation, process innovation, or strategic innovation. Defend each classification in one to two sentences.\n\nToyota implementing the Toyota Production System (TPS) in its plants.\nNetflix shifting from DVD-by-mail to streaming.\nApple launching a faster iPhone each year.\nFoxconn offering contract-manufacturing services to branded electronics firms.\nDyson inventing the bagless vacuum cleaner.\nCostco’s membership-fee-based warehouse retail model.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Measurement Method Selection\n\n\n\n\n\nYou have been asked to evaluate the performance of three divisions within a multinational conglomerate:\n\nDivision A: a mature consumer goods business with stable cash flows and minimal reinvestment needs.\nDivision B: a growing cloud-software business with negative current cash flow but rapidly expanding subscriber base.\nDivision C: a pharmaceutical R&D unit with long development cycles and uncertain outcomes.\n\nWhich measurement standard (NPV, DuPont/ROE, or EVA) would you apply to each division, and why? What additional qualitative indicators would you add?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#further-readings",
+    "href": "content/ch02.html#further-readings",
+    "title": "Strategic Innovation & Business Model",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nOsterwalder, A. & Pigneur, Y. (2010). Business Model Generation: A Handbook for Visionaries, Game Changers, and Challengers. Wiley. — The canonical BMC reference.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 2 — “Goals, Values and Performance”. Wiley.\nPorter, M. E. (1996). “What Is Strategy?” Harvard Business Review, Nov–Dec. — The classic argument against confusing operational effectiveness with strategy.\nMagretta, J. (2002). “Why Business Models Matter.” Harvard Business Review, May. — Short, readable introduction to the concept.\nChesbrough, H. (2010). “Business Model Innovation: Opportunities and Barriers.” Long Range Planning, 43(2-3), 354-363.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — UPenn Wharton. Video 1.1–1.7 (business model foundations, ~84 min) directly complements this chapter.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch02.html#looking-ahead",
+    "href": "content/ch02.html#looking-ahead",
+    "title": "Strategic Innovation & Business Model",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapter 2 has given us the V-P-C lens and the four pillars of a business model. Starting in Chapter 3, we take the outside-in perspective: how does the external environment — macro forces and industry structure — shape the Value and Price sides of our framework? Then in Chapter 5 we turn inside-out, asking how a firm’s resources and capabilities shape the Cost side and the ability to sustain whatever advantage it creates.\nEvery subsequent chapter is a refinement of the core question posed here: how does a firm create, deliver, appropriate, and sustain value?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 2. Strategic Innovation & Business Model"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html",
+    "href": "content/ch05.html",
+    "title": "Resource-Based View & Value Chain",
+    "section": "",
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#learning-objectives",
+    "href": "content/ch05.html#learning-objectives",
+    "title": "Resource-Based View & Value Chain",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nExplain why Inside-Out analysis (the Resource-Based View) becomes critical when external environments change rapidly.\nDistinguish between resources (what a firm has) and capabilities (what a firm can do), and classify resources as tangible or intangible.\nApply the VRIO/VRIN test to determine whether a resource provides competitive parity, temporary advantage, or sustained competitive advantage.\nMap a firm’s value chain and identify which primary and support activities are sources of differentiation or cost advantage.\nRecognize the role of knowledge conversion (Nonaka’s SECI model) in building hard-to-imitate capabilities.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#why-the-resource-based-view-becomes-critical",
+    "href": "content/ch05.html#why-the-resource-based-view-becomes-critical",
+    "title": "Resource-Based View & Value Chain",
+    "section": "5.1 Why the Resource-Based View Becomes Critical",
+    "text": "5.1 Why the Resource-Based View Becomes Critical\nChapter 3 examined external structure; Chapter 4 examined competitive dynamics. Both share a common assumption: the environment determines opportunity. But what happens when the environment itself becomes unpredictable?\nConsider a firm in 2020 trying to plan a 5-year strategy: COVID-19, supply-chain reshoring, the GenAI revolution, geopolitical bifurcation, and rate hikes were all either unforeseen or grossly mis-estimated. External-fit-based strategies built on stable assumptions failed catastrophically.\nThe Resource-Based View (RBV, 資源基礎觀點) offers a different anchor:\n\nWhen the external environment is subject to rapid change, internal resources and capabilities offer a more secure basis for strategy than market focus.\n\nThe logic is straightforward: customer needs evolve, technologies disrupt, competitors copy products — but a firm’s deeply embedded capabilities are slower to imitate and slower to obsolesce. They are the most durable foundation for competitive advantage.\n\n\n\n\n\n\nNoteKey Definition — RBV\n\n\n\nThe Resource-Based View holds that sustained competitive advantage derives from a firm’s heterogeneous bundle of resources and capabilities, especially those that are valuable, rare, costly to imitate, and effectively organized.\n\n\n\n5.1.1 Two Foundational Assumptions\nThe RBV rests on two assumptions that distinguish it from the Industrial Organization (I/O) view:\n\nResource Heterogeneity (資源異質性) — Bundles of resources and capabilities differ across firms within the same industry. Southwest Airlines and Alaska Airlines fly similar routes with similar aircraft, yet their resource bundles differ in ways that produce very different unit economics — including informal organizational culture, employee productivity, and operational philosophies.\nResource Immobility (資源不流動性) — Resources tend to be “sticky” — they don’t easily transfer between firms. Decades of failed attempts to imitate Southwest’s coherent activity system are evidence: even when competitors see the model, they cannot transplant it.\n\n\n\n5.1.2 How Much Do Firm-Specific Factors Explain?\nRecall the variance-decomposition findings from Chapter 1. Firm-specific effects consistently explain 30–45% of profitability variance — substantially more than industry effects (~20%):\n\n\n\nStudy\nIndustry Effects\nFirm-Specific Effects\nUnexplained\n\n\n\n\nSchmalensee (1985)\n19.6%\n0.6%\n80.4%\n\n\nRumelt (1991)\n4.0%\n44.2%\n44.8%\n\n\nMcGahan & Porter (1997)\n18.7%\n31.7%\n48.4%\n\n\nHawawini et al. (2003)\n8.1%\n35.8%\n52.0%\n\n\n\nThe pattern is clear: what the firm does matters more than where the firm is. RBV provides the analytical apparatus to study what a firm does and why it works.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#value-creation-compared-toyota-vs.-gm",
+    "href": "content/ch05.html#value-creation-compared-toyota-vs.-gm",
+    "title": "Resource-Based View & Value Chain",
+    "section": "5.2 Value Creation, Compared — Toyota vs. GM",
+    "text": "5.2 Value Creation, Compared — Toyota vs. GM\nTo make RBV concrete, consider the textbook V-P-C comparison between Toyota and General Motors during the 2000s:\n\n\n\n\n\nflowchart TB\n    subgraph GM[\"General Motors\"]\n        GM_C[\"&lt;b&gt;C&lt;/b&gt;&lt;br/&gt;Higher cost structure\"]\n        GM_PC[\"&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Thin profit margin\"]\n        GM_VP[\"&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Standard consumer surplus\"]\n    end\n    subgraph TO[\"Toyota\"]\n        TO_C[\"&lt;b&gt;C&lt;/b&gt;&lt;br/&gt;Lower cost structure\"]\n        TO_PC[\"&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Healthy profit margin\"]\n        TO_VP[\"&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Higher consumer surplus\"]\n    end\n    \n    GM -.&gt;|\"Same industry, same product category\"| TO\n    \n    style GM fill:#EFE4D2,stroke:#004030\n    style TO fill:#004030,stroke:#004030,color:#FFFFFF\n    style TO_C fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style TO_PC fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n    style TO_VP fill:#D8C3A5,stroke:#004030,color:#2C2C2C\n\n\n\n\n\n\nToyota simultaneously created more value (higher V — quality, reliability, fuel economy), charged higher prices for comparable models, and operated at lower costs. The result was both a higher consumer surplus (V−P) and a higher profit margin (P−C). Same industry, same regulations, same customer pool — radically different outcomes.\nThe structural explanation is incomplete. The RBV explanation — Toyota’s production system, supplier network, and continuous improvement culture — accounts for the persistent gap.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#resources-the-building-blocks",
+    "href": "content/ch05.html#resources-the-building-blocks",
+    "title": "Resource-Based View & Value Chain",
+    "section": "5.3 Resources — The Building Blocks",
+    "text": "5.3 Resources — The Building Blocks\nResources are the stocks a firm possesses. They divide into two broad categories:\n\n5.3.1 Tangible Resources\n\n\n\n\n\n\n\n\nType\nCharacteristics\nIndicators\n\n\n\n\nFinancial (財務資源)\nBorrowing capacity, internal funds generation\nDebt/Equity ratio, credit rating, net cash flow\n\n\nPhysical (實體資源)\nPlant and equipment, land, buildings, raw materials\nMarket value of fixed assets, scale of plants, alternative uses\n\n\n\n\n\n5.3.2 Intangible Resources\n\n\n\n\n\n\n\n\nType\nCharacteristics\nIndicators\n\n\n\n\nTechnology (技術資源)\nPatents, copyrights, know-how, R&D facilities\nNumber of patents, royalty income, R&D expenditure, R&D headcount\n\n\nReputation (聲譽資源)\nBrand, customer loyalty, supplier and government relations\nBrand equity, customer retention, supplier loyalty\n\n\nHuman Resources (人力資源)\nTraining, experience, adaptability, commitment, loyalty\nEmployee qualifications, pay rates, turnover\n\n\n\n\n\n\n\n\n\nTipA useful Chinese mnemonic — “產銷人發財資”\n\n\n\nA traditional Taiwanese MBA mnemonic for the firm’s functional resources, plus reputation:\n\n產 (Production) — operations, plants, capacity\n銷 (Sales/Marketing) — channels, customer base, brand\n人 (Human) — talent, training, culture\n發 (R&D) — patents, know-how, innovation pipeline\n財 (Finance) — capital, borrowing, cash flow\n資 (Information / Resources) — information systems, data assets\n\nTogether, these six categories cover most of what shows up on a firm’s balance sheet plus its critical intangibles. Use this to structure your TP2 internal analysis.\n\n\nIn 1980, roughly 80% of S&P 500 market value was captured in book value (tangible). By 2010, only 30% was — meaning 70% of modern firm value lies in intangibles that traditional accounting struggles to measure. This shift makes RBV more, not less, important over time.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#capabilities-putting-resources-to-work",
+    "href": "content/ch05.html#capabilities-putting-resources-to-work",
+    "title": "Resource-Based View & Value Chain",
+    "section": "5.4 Capabilities — Putting Resources to Work",
+    "text": "5.4 Capabilities — Putting Resources to Work\nResources alone do not create advantage — they must be transformed into effective uses by the firm’s capabilities (能耐).\n\nResources × Capabilities → Effective uses → Competitive advantage\n\nA bank with a vast deposit base (resource) creates no advantage if it cannot underwrite loans well (capability). A semiconductor firm with brilliant engineers (resource) creates no advantage if it cannot manage cross-functional product development (capability).\n\n5.4.1 Hierarchy of Capabilities\nCapabilities are organized in layers, from concrete tasks to abstract cross-functional integration:\n\n\n\n\n\nflowchart TB\n    L5[\"&lt;b&gt;Cross-Functional Capabilities&lt;/b&gt;&lt;br/&gt;e.g., New Product Development, Customer Support, Quality Management\"]\n    L4[\"&lt;b&gt;Broad Functional Capabilities&lt;/b&gt;&lt;br/&gt;e.g., Operations, R&D, Marketing, HR, MIS\"]\n    L3[\"&lt;b&gt;Activity-Related Capabilities&lt;/b&gt;&lt;br/&gt;e.g., Manufacturing, Materials Management, Process Engineering\"]\n    L2[\"&lt;b&gt;Specialized Capabilities&lt;/b&gt;&lt;br/&gt;e.g., PCB Assembly, Telset Assembly, System Assembly\"]\n    L1[\"&lt;b&gt;Single-Task Capabilities&lt;/b&gt;&lt;br/&gt;e.g., Through-hole Insertion, Wave Soldering, Surface Mounting\"]\n    L0[\"&lt;b&gt;Individuals' Specialized Knowledge&lt;/b&gt;\"]\n    \n    L0 --&gt; L1\n    L1 --&gt; L2\n    L2 --&gt; L3\n    L3 --&gt; L4\n    L4 --&gt; L5\n    \n    style L5 fill:#004030,stroke:#004030,color:#FFFFFF\n    style L4 fill:#D8C3A5,stroke:#004030\n    style L3 fill:#EFE4D2,stroke:#004030\n    style L2 fill:#FAF6F0,stroke:#004030\n    style L1 fill:#FAF6F0,stroke:#6B6B6B\n    style L0 fill:#FAF6F0,stroke:#6B6B6B,color:#6B6B6B\n\n\n\n\n\n\nThe higher in the hierarchy, the more integrative and harder to imitate. A competitor can poach an engineer (single-task capability) far more easily than it can replicate an entire new product development capability that integrates marketing, R&D, manufacturing, and customer support.\nThis is why cross-functional capabilities are the most strategically valuable — and the hardest to build, because they require organizational design choices, not just hiring.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#the-vrinvrio-test",
+    "href": "content/ch05.html#the-vrinvrio-test",
+    "title": "Resource-Based View & Value Chain",
+    "section": "5.5 The VRIN/VRIO Test",
+    "text": "5.5 The VRIN/VRIO Test\nNot every resource provides competitive advantage. The VRIN framework (or VRIO, depending on the textbook) asks four questions to assess strategic value:\n\n\n\n\n\n\nImportantVRIN — Four conditions for sustained competitive advantage\n\n\n\n\nV — Valuable (有價值) — Does the resource help the firm exploit opportunities or neutralize threats?\nR — Rare (稀有) — Is the resource possessed by only a few competitors?\nI — Inimitable (難以模仿) — Is the resource costly or difficult for competitors to imitate?\nN — Non-substitutable (難以替代) — Are there no strategic equivalents that achieve the same effect?\n\n\n\nA resource that is only Valuable provides competitive parity — necessary to play, insufficient to win. Adding Rarity produces temporary competitive advantage. Adding Inimitability and Non-substitutability produces sustained competitive advantage (SCA, 持續性競爭優勢).\n\n5.5.1 Sources of Inimitability\nWhy are some resources hard to imitate? Four mechanisms:\n\nPhysical uniqueness (實體獨特性) — Geographic location (a unique mining claim), patented molecule, exclusive distribution rights.\nPath dependency (路徑依賴) — The resource accumulated over years through specific historical events that cannot be re-run. Toyota’s supplier relationships took 50+ years to build.\nCausal ambiguity (因果模糊) — Even insiders cannot fully explain why the resource works. Firms can replicate the visible elements but miss the invisible ones.\nSocial complexity (社會複雜性) — Resources rooted in interpersonal trust, organizational culture, or community relationships that emerge from social processes, not deliberate design.\n\n\n\n\n\n\n\nTipWhy Southwest Airlines remained un-copiable\n\n\n\nMultiple US carriers — Continental Lite, Delta Song, United Ted — explicitly tried to replicate Southwest’s low-cost model. All failed. Southwest’s advantage rested on a socially complex activity system: pilots loading luggage, an informal organization, employees who genuinely identified with the company. These cannot be recreated by an executive memo. The activity system itself was visible, but the culture that made it function was not.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#mapping-the-value-chain",
+    "href": "content/ch05.html#mapping-the-value-chain",
+    "title": "Resource-Based View & Value Chain",
+    "section": "5.6 Mapping the Value Chain",
+    "text": "5.6 Mapping the Value Chain\nWhere do resources and capabilities live within a firm? They live in activities — and Michael Porter’s Value Chain (價值鏈) is the canonical map of those activities.\n\n\n\n\n\nflowchart LR\n    subgraph SUPPORT[\"Support Activities\"]\n        FI[\"Firm Infrastructure\"]\n        HR[\"Human Resource Management\"]\n        TD[\"Technology Development\"]\n        PR[\"Procurement\"]\n    end\n    subgraph PRIMARY[\"Primary Activities\"]\n        IL[\"Inbound&lt;br/&gt;Logistics\"] --&gt; OP[\"Operations\"]\n        OP --&gt; OL[\"Outbound&lt;br/&gt;Logistics\"]\n        OL --&gt; MS[\"Marketing&lt;br/&gt;& Sales\"]\n        MS --&gt; SV[\"Service\"]\n    end\n    SUPPORT -.supports.-&gt; PRIMARY\n    PRIMARY --&gt; MARGIN[\"&lt;b&gt;MARGIN&lt;/b&gt;&lt;br/&gt;Net Margin = Gross Margin − Expenses&lt;br/&gt;Gross Margin = Revenue − Cost\"]\n    \n    style PRIMARY fill:#D8C3A5,stroke:#004030\n    style SUPPORT fill:#EFE4D2,stroke:#004030\n    style MARGIN fill:#004030,stroke:#004030,color:#FFFFFF\n\n\n\n\n\n\n\n5.6.1 Primary vs. Support Activities\nPrimary activities directly contribute to creating, selling, and supporting the product:\n\nInbound Logistics (進料物流) — receiving, warehousing, inventory control of raw materials.\nOperations (生產營運) — transforming inputs into the final product.\nOutbound Logistics (出料物流) — finished-goods storage, order processing, distribution.\nMarketing & Sales (行銷與銷售) — customer-facing activities that drive purchase decisions.\nService (售後服務) — post-sale support, repair, customer success.\n\nSupport activities enable the primary activities:\n\nFirm Infrastructure (公司基礎) — general management, finance, accounting, legal, planning.\nHRM (人力資源管理) — recruiting, training, compensation, retention.\nTechnology Development (技術開發) — R&D, process engineering, IT systems.\nProcurement (採購) — sourcing inputs across the firm.\n\n\n\n5.6.2 The Value Chain Differs by Industry\nThe generic value chain is a template. Real value chains vary substantially:\n\n\n\n\n\nflowchart LR\n    subgraph RETAIL[\"Retail (e.g., 7-ELEVEN)\"]\n        R1[\"Partnering&lt;br/&gt;with vendors\"] --&gt; R2[\"Purchasing&lt;br/&gt;goods\"]\n        R2 --&gt; R3[\"Managing&lt;br/&gt;inventory\"]\n        R3 --&gt; R4[\"Operating&lt;br/&gt;stores\"]\n        R4 --&gt; R5[\"Marketing&lt;br/&gt;& selling\"]\n    end\n    subgraph ENG[\"Engineering Services\"]\n        E1[\"Research and&lt;br/&gt;development\"] --&gt; E2[\"Engineering\"]\n        E2 --&gt; E3[\"Designs and&lt;br/&gt;solutions\"]\n        E3 --&gt; E4[\"Marketing&lt;br/&gt;& selling\"]\n        E4 --&gt; E5[\"Service\"]\n    end\n    \n    style RETAIL fill:#EFE4D2,stroke:#004030\n    style ENG fill:#D8C3A5,stroke:#004030\n\n\n\n\n\n\n\n\n\n\n\n\nTipTP2 application\n\n\n\nIn TP2 — Internal Analysis, do not just paste Porter’s generic value chain into your slides. Customize it for your focal firm:\n\nList the firm’s actual primary activities by examining its 10-K, annual report, or website.\nIdentify which 1–2 activities are sources of differentiation — where the firm raises V relative to competitors.\nIdentify which 1–2 activities are sources of cost advantage — where the firm operates at a lower C.\nThe remaining activities are typically at parity — necessary but not distinctive.\n\nThis focused diagnosis is far more useful than a comprehensive but bland generic chain.\n\n\n\n\n5.6.3 Value Chain vs. Organizational Structure\nA subtle but critical point: a firm’s value chain and its organizational chart are not the same thing. The org chart shows reporting lines (董事會、總經理、各部門); the value chain shows how activities create value. A well-designed organization aligns the two; a poorly designed one creates structural friction in which the org chart obstructs the value chain.\nDiagnosing this misalignment is one of the most valuable contributions a strategist can make.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#knowledge-as-a-resource-nonakas-seci-model",
+    "href": "content/ch05.html#knowledge-as-a-resource-nonakas-seci-model",
+    "title": "Resource-Based View & Value Chain",
+    "section": "5.7 Knowledge as a Resource — Nonaka’s SECI Model",
+    "text": "5.7 Knowledge as a Resource — Nonaka’s SECI Model\nMany of the most strategically valuable resources are knowledge-based. Ikujiro Nonaka’s influential Knowledge Conversion model (the SECI cycle) explains how organizations create and convert knowledge:\n\n\n\n\n\nflowchart TB\n    subgraph TT[\"Tacit → Tacit\"]\n        S[\"&lt;b&gt;SOCIALIZATION&lt;/b&gt;&lt;br/&gt;Sharing tacit knowledge&lt;br/&gt;from individual to organization\"]\n    end\n    subgraph TE[\"Tacit → Explicit\"]\n        E[\"&lt;b&gt;EXTERNALIZATION&lt;/b&gt;&lt;br/&gt;Articulating tacit knowledge&lt;br/&gt;into systematic, sharable form\"]\n    end\n    subgraph EE[\"Explicit → Explicit\"]\n        C[\"&lt;b&gt;COMBINATION&lt;/b&gt;&lt;br/&gt;Combining different units&lt;br/&gt;of explicit knowledge\"]\n    end\n    subgraph ET[\"Explicit → Tacit\"]\n        I[\"&lt;b&gt;INTERNALIZATION&lt;/b&gt;&lt;br/&gt;Converting explicit principles&lt;br/&gt;into intuition and routines\"]\n    end\n    \n    S --&gt; E --&gt; C --&gt; I --&gt; S\n    \n    style S fill:#D8C3A5,stroke:#004030\n    style E fill:#004030,stroke:#004030,color:#FFFFFF\n    style C fill:#EFE4D2,stroke:#004030\n    style I fill:#FAF6F0,stroke:#004030\n\n\n\n\n\n\n\nTacit knowledge (內隱知識) — knowing-how, embedded in individual experience and intuition. Hard to articulate, hard to transfer.\nExplicit knowledge (外顯知識) — knowing-what, codified in documents, manuals, databases. Easy to copy, easy to lose strategic edge.\n\nThe strategic insight: firms that can convert tacit to explicit (Externalization) build durable knowledge assets. Firms that rely solely on tacit knowledge are vulnerable when key individuals leave. Firms that rely solely on explicit knowledge can be copied via document leakage.\n\n\n\n\n\n\nTipHow GenAI changes knowledge management\n\n\n\nIn 2026, AI tools are accelerating the Externalization step. Recording employee interviews and using LLMs to extract decision heuristics, naming the unspoken patterns in customer service transcripts, generating SOPs from observed behavior — all are now within reach. This compresses what used to take years of consulting engagements into weeks.\nBut beware: explicit knowledge is also more easily extracted by competitors — through employee transitions, AI-assisted competitive intelligence, or simple prompt engineering against public data. Knowledge advantages now decay faster.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#the-resources-capabilities-diagnostic-map",
+    "href": "content/ch05.html#the-resources-capabilities-diagnostic-map",
+    "title": "Resource-Based View & Value Chain",
+    "section": "5.8 The Resources & Capabilities Diagnostic Map",
+    "text": "5.8 The Resources & Capabilities Diagnostic Map\nOnce a firm has inventoried its resources and capabilities, the diagnostic question is: which ones actually matter? A useful tool plots each resource against two axes:\n\nStrategic Importance — How critical is this for industry success?\nRelative Strength — How does our position compare to competitors’?\n\nThe four quadrants:\n\n\n\n\n\n\n\n\nQuadrant\nMeaning\nAction\n\n\n\n\nKey Strengths (high importance, high strength)\nOur core competitive advantages\nDefend, leverage, extend\n\n\nKey Weaknesses (high importance, low strength)\nCritical gaps\nInvest aggressively, partner, or exit\n\n\nSuperfluous Strengths (low importance, high strength)\nWasted distinctiveness\nRedirect resources, or find a market that values them\n\n\nZone of Irrelevance (low importance, low strength)\nBackground noise\nIgnore, divest\n\n\n\n\n\n\n\n\n\nNoteDucati case (Grant, 2016)\n\n\n\nA classic illustration: Ducati Motor’s diagnostic map showed Brand, Design, New Product Development, and Engineering as key strengths; Distribution, Manufacturing, and Customer Service as key weaknesses; Location and Proprietary Technology as superfluous strengths. The strategic implication was clear: invest in distribution and manufacturing, not in further refining what was already exceptional. Many premium-brand turnarounds follow this pattern.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#self-check-questions",
+    "href": "content/ch05.html#self-check-questions",
+    "title": "Resource-Based View & Value Chain",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — VRIN Diagnosis\n\n\n\n\n\nChoose a Taiwan MNC (e.g., 台積電 TSMC, 大立光 Largan, 鴻海 Foxconn, 統一企業 Uni-President).\n\nIdentify three of the firm’s most important resources or capabilities.\nFor each, apply the VRIN test: Valuable? Rare? Inimitable? Non-substitutable?\nClassify each resource as competitive parity, temporary advantage, or sustained competitive advantage, and justify the classification.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Sources of Inimitability\n\n\n\n\n\nFor each of the following famously hard-to-copy resources, identify which inimitability mechanism (physical uniqueness, path dependency, causal ambiguity, or social complexity) is most likely the dominant source:\n\nToyota’s supplier network in central Japan.\nCoca-Cola’s brand in the global South.\nChick-fil-A’s customer-service culture.\nDe Beers’ historical control of diamond mines.\nPixar’s collaborative storytelling process.\nTSMC’s process-node yield rates.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Customizing the Value Chain\n\n\n\n\n\nFor your TP focal company, customize Porter’s generic value chain:\n\nReplace each generic primary activity with the firm’s actual primary activity (use the firm’s annual report or website).\nIdentify the two activities where the firm differentiates itself — what raises V?\nIdentify the two activities where the firm has cost advantages — what lowers C?\nIdentify one activity that may be a hidden weakness — currently at parity or below, but with rising strategic importance.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Knowledge Conversion in Practice\n\n\n\n\n\nPick a process at NCNU (e.g., new student orientation, course registration, faculty research collaboration).\n\nIdentify one piece of tacit knowledge essential to the process.\nPropose how to externalize it (convert to explicit form) using either traditional methods (interviews, manuals) or AI-assisted methods.\nWhat would be lost in the conversion? What would be gained?\nHow would you internalize the resulting explicit knowledge so that new staff develop the right intuitions?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#further-readings",
+    "href": "content/ch05.html#further-readings",
+    "title": "Resource-Based View & Value Chain",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nBarney, J. B. (1991). “Firm Resources and Sustained Competitive Advantage.” Journal of Management, 17(1), 99–120. — The foundational RBV paper.\nWernerfelt, B. (1984). “A Resource-Based View of the Firm.” Strategic Management Journal, 5(2), 171–180. — The article that named the field.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 5 — “Analyzing Resources and Capabilities”. Wiley.\nPorter, M. E. (1985). Competitive Advantage: Creating and Sustaining Superior Performance. Free Press. — The canonical value chain reference.\nNonaka, I. & Takeuchi, H. (1995). The Knowledge-Creating Company. Oxford University Press. — Source of the SECI model.\nCollis, D. J. & Montgomery, C. A. (2008). “Competing on Resources.” Harvard Business Review, July–August.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[CS] Corporate Strategy — Modules on resource-based competition and value-chain analysis directly complement this chapter.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
+    ]
+  },
+  {
+    "objectID": "content/ch05.html#looking-ahead",
+    "href": "content/ch05.html#looking-ahead",
+    "title": "Resource-Based View & Value Chain",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapter 5 has provided the foundational vocabulary of inside-out analysis: resources, capabilities, value chain, and the VRIN test for sustained advantage. But static resources are not enough in a fast-changing world. Chapter 6 introduces core competencies, complementary assets, and dynamic capabilities — the higher-order constructs that explain how firms renew their advantage as the environment evolves.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 5. Resource-Based View & Value Chain"
     ]
   }
 ]
