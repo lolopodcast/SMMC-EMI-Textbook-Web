@@ -1,0 +1,47 @@
+---
+title: "Corporate Strategy — Vertical Integration"
+subtitle: "Chapter 9 — Make or Buy Across the Value Chain"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Define **vertical integration** and distinguish **backward** integration (toward suppliers) from **forward** integration (toward customers).
+2. Apply **Transaction Cost Economics (TCE)** — Williamson's framework — to decide when a firm should **make** versus **buy**.
+3. Recognize the strategic costs of vertical integration — bureaucratic overhead, lost market discipline, capital lock-in — and weigh them against the benefits.
+4. Distinguish **full integration** from **tapered**, **quasi-integration**, and **outsourcing** arrangements.
+5. Evaluate vertical-integration moves in the context of **modern global supply chains**, **AI-enabled coordination**, and **geopolitical fragmentation**.
+
+---
+
+## 9.1 The Make-or-Buy Question
+
+Recall Chandler's definition from Chapter 1: corporate strategy determines **the range of business** the firm pursues. The first dimension of "range" is **vertical** — how many stages of the value chain does the firm operate in itself?
+
+A car manufacturer could:
+
+- **Buy** all components from suppliers and assemble them.
+- **Make** key components (engines, transmissions) and **buy** commodity parts.
+- **Make** almost everything in-house, including raw steel processing.
+
+Each option produces a different cost structure, capability profile, and strategic exposure. The choice between these options is the **make-or-buy** question — and it is one of the most consequential decisions corporate strategists make.
+
+::: {.callout-note}
+## Definition — Vertical Integration (垂直整合)
+
+**Vertical integration** is the extent to which a firm owns and operates **multiple stages** of its value chain — from upstream raw materials through midstream production to downstream distribution and customer interface.
+
+- **Backward integration (向上游整合)** — moving toward suppliers (e.g., Tesla acquiring battery materials suppliers).
+- **Forward integration (向下游整合)** — moving toward customers (e.g., a manufacturer opening its own retail stores).
+:::
+
+---
+
+## 9.2 The Spectrum of Integration
+
+Vertical integration is not binary. A useful spectrum:
+
+```{mermaid}
