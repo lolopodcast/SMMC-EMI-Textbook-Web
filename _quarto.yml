@@ -103,7 +103,11 @@ format:
     back-to-top-navigation: true
     mermaid:
       theme: neutral
-    
-filters:
-  - include-files.lua
-  - quarto
+    include-in-header:
+      - text: |
+          <meta name="referrer" content="strict-origin-when-cross-origin">
+          <meta name="robots" content="index, follow, max-snippet:200, max-image-preview:large">
+          <meta http-equiv="X-Content-Type-Options" content="nosniff">
+          <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+          <meta name="copyright" content="© 2026 Prof. Shihmin Lo, NCNU. CC BY-NC-SA 4.0">
+          <meta name="author" content="Prof. Shihmin Lo, National Chi Nan University, Taiwan">
