@@ -223,9 +223,64 @@
   {
     "objectID": "content/ch11.html",
     "href": "content/ch11.html",
-    "title": "SMMC-EMI Course Textbook",
+    "title": "Globalization & Geographical Expansion",
     "section": "",
-    "text": "Three principles guide the choice:\n\nHigher commitment when the asset is strategic — Core technology, key brand assets, and proprietary know-how favor wholly-owned operations to prevent leakage.\nLower commitment when uncertainty is high — In unfamiliar markets or volatile regulatory environments, lower-commitment modes preserve optionality.\nMatch the partner’s capability gap — When local market knowledge or regulatory access is needed, joint ventures with local partners can be powerful — but managing JV conflict is itself a capability.\n\n\n\n\n\n\n\nNoteThe classic JV trap\n\n\n\nJoint ventures are popular at entry but often unstable over time. The typical pattern: at year 1, both partners have complementary skills and need each other. By year 5, knowledge has flowed from the technology partner to the local partner; the local partner no longer needs the foreigner; the foreigner has not built local capability. Outcome: the foreigner exits at a disadvantage. Anti-pattern: relying on JVs without an explicit plan to absorb local knowledge.",
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 11. Globalization & Geographical Expansion"
+    ]
+  },
+  {
+    "objectID": "content/ch11.html#learning-objectives",
+    "href": "content/ch11.html#learning-objectives",
+    "title": "Globalization & Geographical Expansion",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nExplain why firms internationalize and identify the drivers (cost, market, government, competition) and barriers (cultural, regulatory, logistical) of cross-border expansion.\nDistinguish four classic international strategies — global standardization, multidomestic, transnational, international — using the integration–responsiveness framework.\nApply the CAGE Distance Framework (Ghemawat) to assess the difficulty of operating across specific country pairs.\nChoose appropriately among entry modes — exporting, licensing, joint venture, wholly-owned subsidiary, M&A — based on commitment, control, and risk trade-offs.\nEvaluate the impact of geopolitical bifurcation, supply-chain reshoring, and AI-enabled cross-border coordination on global strategy in 2026.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 11. Globalization & Geographical Expansion"
+    ]
+  },
+  {
+    "objectID": "content/ch11.html#why-firms-internationalize",
+    "href": "content/ch11.html#why-firms-internationalize",
+    "title": "Globalization & Geographical Expansion",
+    "section": "11.1 Why Firms Internationalize",
+    "text": "11.1 Why Firms Internationalize\nRecall the definition of globalization from Chapter 1:\n\nGlobalization is the closer integration of countries and peoples, brought about by reduced costs of transportation and communication and the breaking down of artificial barriers to flows of goods, services, capital, knowledge, and people across borders.\n\nFor a firm, internationalization is not the same as globalization — it is a strategic choice to participate in cross-border activity. The choice is driven by four broad motivations:\n\n\n\n\n\n\n\nDriver\nLogic\n\n\n\n\nMarket-seeking\nLarger total addressable market; growth where home market is saturated\n\n\nResource-seeking\nAccess to raw materials, skilled labor, lower-cost inputs\n\n\nEfficiency-seeking\nScale economies, location-based production cost advantages\n\n\nStrategic-asset-seeking\nAcquiring technology, brands, or capabilities that exist abroad\n\n\n\nMost multinationals have multiple motivations. TSMC’s investments in Arizona and Japan are simultaneously market-seeking (closer to US/Japanese customers), resource-seeking (skilled engineers), and strategic (geopolitical insurance against China-Taiwan tensions).\n\n\n\n\n\n\nNoteIs IBM still a “U.S. company”?\n\n\n\nA telling question: of IBM’s revenue, only ~36% came from the U.S. by the early 2010s — with 33% from Europe/Middle East/Africa, 24% from Asia Pacific, and 7% from the rest of the Americas. In what meaningful sense is IBM still a “U.S. company”? Its shareholders, customers, employees, and intellectual property are spread across the globe.\nThis is the deep question of MNC strategy: when the firm transcends its country of origin, what governs its identity, its tax base, and its strategic priorities?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 11. Globalization & Geographical Expansion"
+    ]
+  },
+  {
+    "objectID": "content/ch11.html#four-international-strategies",
+    "href": "content/ch11.html#four-international-strategies",
+    "title": "Globalization & Geographical Expansion",
+    "section": "11.2 Four International Strategies",
+    "text": "11.2 Four International Strategies\nThe most influential framework for international strategy is the integration–responsiveness (I-R) matrix developed by Bartlett and Ghoshal (1989). It places strategies on two axes:\n\nPressure for global integration — economies of scale, uniform customer needs, technology coordination, cost competition.\nPressure for local responsiveness — distinct customer preferences, host-government requirements, distribution-channel diversity.\n\n\n\n\n\n\nflowchart TB\n    G[\"GLOBAL: High integration, low responsiveness — standardized worldwide\"]\n    M[\"MULTIDOMESTIC: Low integration, high responsiveness — adapt to each country\"]\n    T[\"TRANSNATIONAL: High integration AND high responsiveness — both/and\"]\n    I[\"INTERNATIONAL: Low integration, low responsiveness — leverage home capabilities abroad\"]\n    style G fill:#004030,stroke:#004030,color:#FFFFFF\n    style M fill:#D8C3A5,stroke:#004030\n    style T fill:#EFE4D2,stroke:#004030\n    style I fill:#FAF6F0,stroke:#004030\n\n\n\n\n\n\n\n11.2.1 The Four Archetypes\n\nGlobal Strategy — Standardized products and processes worldwide; advantage from scale and consistency. Examples: Intel, Boeing, semiconductor foundries.\nMultidomestic Strategy — Each country operation is largely autonomous, adapting product and marketing to local preferences. Examples: Nestlé food brands, retail banking, broadcast media.\nTransnational Strategy — Attempts to combine global efficiency with local responsiveness; uses cross-border knowledge transfer. Examples: Unilever, P&G, Toyota’s regional design centers.\nInternational Strategy — Develops products at home and exports or replicates them abroad with minimal adaptation. Examples: many SMEs in their early international expansion; some technology firms before geographic maturity.\n\nThe choice depends on industry characteristics: in industries where global integration pressures are high (semiconductors, aerospace), global strategy dominates. In industries with high local responsiveness pressures (food retail, media), multidomestic prevails. The transnational is the hardest to execute but offers the best of both worlds when achievable.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 11. Globalization & Geographical Expansion"
+    ]
+  },
+  {
+    "objectID": "content/ch11.html#the-cage-distance-framework",
+    "href": "content/ch11.html#the-cage-distance-framework",
+    "title": "Globalization & Geographical Expansion",
+    "section": "11.3 The CAGE Distance Framework",
+    "text": "11.3 The CAGE Distance Framework\nPankaj Ghemawat’s CAGE framework (2001) challenges the “world is flat” rhetoric. Distance still matters — and not just geographic distance. Ghemawat identifies four dimensions of distance between countries:\n\n\n\n\n\n\n\nDimension\nExamples of distance\n\n\n\n\nC — Cultural\nDifferent languages, religions, social norms, ethnic groups, work attitudes\n\n\nA — Administrative/Political\nDifferent legal systems, regulatory regimes, currencies, political alliances, trade blocs\n\n\nG — Geographic\nPhysical distance, time zones, climate, infrastructure, transportation cost\n\n\nE — Economic\nDifferences in income levels, factor costs, infrastructure, financial-market depth\n\n\n\n\n\n\n\n\n\nTipCAGE in action\n\n\n\nTwo examples of CAGE diagnosing real strategic patterns:\n\nWhy Walmart struggled in Germany (2006 exit) — high administrative distance (employment law, anti-trust), high cultural distance (German consumer preferences for service style), high economic distance in retail formats (mature, fragmented).\nWhy Korean K-pop succeeds in Taiwan — low cultural distance (East Asian shared cultural elements), low geographic distance, comparable economic level. Same content struggles more in markets with high cultural distance from Korea.\n\nCAGE forces strategists to identify which dimensions matter most for their specific industry and country pair, not just geographic proximity.\n\n\n\n11.3.1 The Distance Asymmetry\nA subtle point: distance is not always symmetric. Cultural distance may be larger in one direction than the other (e.g., Korean firms entering Vietnam vs. vice versa, due to language and pop-culture flows). Trade barriers may be one-way. Brand-recognition flows may favor one direction. Strategists should map distance directionally for the specific entry decision.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 11. Globalization & Geographical Expansion"
+    ]
+  },
+  {
+    "objectID": "content/ch11.html#entry-mode-choice",
+    "href": "content/ch11.html#entry-mode-choice",
+    "title": "Globalization & Geographical Expansion",
+    "section": "11.4 Entry Mode Choice",
+    "text": "11.4 Entry Mode Choice\nOnce a firm has decided to enter a country, the mode of entry must be chosen. Entry modes vary along three trade-offs:\n\n\n\n\n\nflowchart LR\n    A[\"Exporting: Low commitment, low control, low risk\"]\n    B[\"Licensing: Royalty-based, low investment, limited control\"]\n    C[\"Franchising: Brand and system rented out, scalable\"]\n    D[\"Joint Venture: Shared equity, shared risk, shared control\"]\n    E[\"Wholly-owned: Full control, full risk, highest commitment\"]\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    style A fill:#FAF6F0,stroke:#004030\n    style B fill:#EFE4D2,stroke:#004030\n    style C fill:#EFE4D2,stroke:#004030\n    style D fill:#D8C3A5,stroke:#004030\n    style E fill:#004030,stroke:#004030,color:#FFFFFF\n\n\n\n\n\n\n\n11.4.1 Entry-Mode Selection Logic\nThree principles guide the choice:\n\nHigher commitment when the asset is strategic — Core technology, key brand assets, and proprietary know-how favor wholly-owned operations to prevent leakage.\nLower commitment when uncertainty is high — In unfamiliar markets or volatile regulatory environments, lower-commitment modes preserve optionality.\nMatch the partner’s capability gap — When local market knowledge or regulatory access is needed, joint ventures with local partners can be powerful — but managing JV conflict is itself a capability.\n\n\n\n\n\n\n\nNoteThe classic JV trap\n\n\n\nJoint ventures are popular at entry but often unstable over time. The typical pattern: at year 1, both partners have complementary skills and need each other. By year 5, knowledge has flowed from the technology partner to the local partner; the local partner no longer needs the foreigner; the foreigner has not built local capability. Outcome: the foreigner exits at a disadvantage. Anti-pattern: relying on JVs without an explicit plan to absorb local knowledge.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
       "Ch 11. Globalization & Geographical Expansion"
@@ -234,7 +289,7 @@
   {
     "objectID": "content/ch11.html#liability-of-foreignness-and-how-to-overcome-it",
     "href": "content/ch11.html#liability-of-foreignness-and-how-to-overcome-it",
-    "title": "SMMC-EMI Course Textbook",
+    "title": "Globalization & Geographical Expansion",
     "section": "11.5 Liability of Foreignness — and How to Overcome It",
     "text": "11.5 Liability of Foreignness — and How to Overcome It\nEvery international entrant faces the liability of foreignness (LOF, 外國者劣勢) — costs and disadvantages that local firms do not bear:\n\nCultural unfamiliarity — slower decision-making, mis-reading consumer signals.\nRegulatory complexity — relationships, licenses, compliance the firm does not have.\nDiscrimination — explicit (procurement preferences for local firms) or implicit (consumer skepticism).\nCommunication and coordination costs — across time zones, languages, distance.\n\nOvercoming LOF requires either building local capabilities (hiring local managers, partnering, acquiring), or offering value the local market cannot get from local firms (proprietary technology, premium brand, scale economies).\n\n11.5.1 The Born-Global Phenomenon\nSome firms — especially in software, gaming, and creative industries — are born global, operating across borders from day one. These firms minimize LOF by:\n\nDigital-first operations that don’t require physical presence.\nHighly portable products (software, content) that travel without adaptation.\nDistributed teams that already include the cultural and language diversity of target markets.\n\nBorn-global firms challenge the traditional staged-internationalization model (Uppsala model) in which firms gradually expand from psychically close to distant markets.",
     "crumbs": [
@@ -245,7 +300,7 @@
   {
     "objectID": "content/ch11.html#globalization-in-2026-slowbalization-bifurcation-and-ai",
     "href": "content/ch11.html#globalization-in-2026-slowbalization-bifurcation-and-ai",
-    "title": "SMMC-EMI Course Textbook",
+    "title": "Globalization & Geographical Expansion",
     "section": "11.6 Globalization in 2026 — Slowbalization, Bifurcation, and AI",
     "text": "11.6 Globalization in 2026 — Slowbalization, Bifurcation, and AI\nThe 1990–2008 era of accelerating globalization has given way to a more complex pattern often called slowbalization or regionalization:\n\nGeopolitical bifurcation — US-aligned and China-aligned ecosystems are diverging in technology standards, capital flows, and regulatory regimes. MNCs increasingly need bloc-specific strategies.\nSupply-chain reshoring and friend-shoring — Pandemic and geopolitical shocks have shifted firms toward shorter, more resilient supply chains, often within trusted political alliances rather than purely cost-optimal locations.\nAI-enabled cross-border coordination — Translation, cross-cultural communication, and remote management are dramatically easier in 2026 than they were in 2010. The administrative and cultural distance components of CAGE have partially eroded.\nSustainability standards diverging across blocs — EU Carbon Border Adjustment Mechanism, US Inflation Reduction Act, China’s own decarbonization roadmap create different compliance regimes that fracture global strategy.\n\nThe implication: the global standardization strategy has become harder, while transnational strategy — combining global integration where possible with bloc-specific responsiveness — is increasingly necessary.\n\n\n\n\n\n\nTipInternationalization in your TP analysis\n\n\n\nFor TP3 — Growth Strategy, ask:\n\nWhat is the focal firm’s current geographic footprint? Which countries account for &gt;10% of revenue?\nWhich I-R archetype best describes the current strategy — global, multidomestic, transnational, international?\nApply CAGE: what are the largest distances the firm faces in its main growth markets?\nAre there countries where the firm has under-invested due to liability of foreignness? What entry mode would minimize that liability?\nHow will geopolitical bifurcation affect the firm in the next 5 years? Which bloc(s) should it prioritize?",
     "crumbs": [
@@ -256,7 +311,7 @@
   {
     "objectID": "content/ch11.html#self-check-questions",
     "href": "content/ch11.html#self-check-questions",
-    "title": "SMMC-EMI Course Textbook",
+    "title": "Globalization & Geographical Expansion",
     "section": "Self-Check Questions",
     "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Identifying International Strategy\n\n\n\n\n\nFor each Taiwan-headquartered firm, classify the international strategy archetype (global, multidomestic, transnational, international) and justify with two pieces of evidence:\n\nTSMC — semiconductor foundry.\n王品集團 Wowprime — restaurant brands across Taiwan, China, Japan, Southeast Asia.\nHTC — smartphone and VR (historically and currently).\n誠品 Eslite — bookstore and lifestyle retail.\n長榮海運 Evergreen Marine — global container shipping.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — CAGE Distance Analysis\n\n\n\n\n\nChoose a Taiwan firm planning to enter a major foreign market (e.g., Foxconn entering Vietnam, Kuo Yang entering Saudi Arabia, Foxconn entering India, a Taiwan beverage firm entering France).\n\nFor each CAGE dimension, identify two specific distance factors between Taiwan and the target market.\nRank the CAGE dimensions by their likely impact on entry difficulty.\nRecommend two specific actions to mitigate the largest distance risks.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Entry Mode Recommendation\n\n\n\n\n\nA Taiwan-listed pharmaceutical firm wants to launch a proprietary biologic drug in Brazil. The drug requires complex regulatory approvals; the firm has no Brazilian operations; the local market is large but regulatorily complex.\n\nIdentify and evaluate three alternative entry modes (exporting, licensing, JV, wholly-owned subsidiary, acquisition).\nFor each mode, list two main advantages and two main risks.\nRecommend the preferred mode with clear justification, citing the trade-offs from Section 11.4.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Slowbalization Strategy\n\n\n\n\n\nSuppose your TP focal company currently runs a fully integrated global supply chain spanning Taiwan, China, Mexico, and Eastern Europe. Geopolitical pressures are rising.\n\nMap the current dependencies and identify which links carry the greatest geopolitical risk.\nPropose a friend-shoring restructuring — which production should move to which bloc?\nQuantify (with reasonable estimates) the cost increase the firm should expect from the restructuring.\nJustify whether the cost increase is acceptable given the risk reduction.",
     "crumbs": [
@@ -267,7 +322,7 @@
   {
     "objectID": "content/ch11.html#further-readings",
     "href": "content/ch11.html#further-readings",
-    "title": "SMMC-EMI Course Textbook",
+    "title": "Globalization & Geographical Expansion",
     "section": "Further Readings",
     "text": "Further Readings\n\nBartlett, C. A. & Ghoshal, S. (1989). Managing Across Borders: The Transnational Solution. Harvard Business School Press. — The I-R framework and transnational strategy.\nGhemawat, P. (2001). “Distance Still Matters: The Hard Reality of Global Expansion.” Harvard Business Review, September. — The CAGE framework.\nGhemawat, P. (2007). Redefining Global Strategy. Harvard Business School Press. — Extended treatment of semi-globalization.\nHill, C. W. L. (2021). International Business: Competing in the Global Marketplace, 13th ed. McGraw-Hill.\nPeng, M. W. (2009). Global Strategy, 2nd ed. South-Western. — Integrates strategy and IB perspectives.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 15 — “Implementing Corporate Strategy: Multinational Operations”.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[CS] Corporate Strategy — UIUC Gies, modules on internationalization and global strategy directly extend this chapter.\n[ENT] Entrepreneurship 1 — sections on born-global ventures.",
     "crumbs": [
@@ -278,9 +333,9 @@
   {
     "objectID": "content/ch11.html#looking-ahead",
     "href": "content/ch11.html#looking-ahead",
-    "title": "SMMC-EMI Course Textbook",
+    "title": "Globalization & Geographical Expansion",
     "section": "Looking Ahead",
-    "text": "Looking Ahead\nChapter 11 has examined the geographical scope of corporate strategy. Chapter 12 — the final chapter of Part I — addresses the organizational mode of corporate growth: when should a firm grow through strategic alliances with other firms, when through **merger",
+    "text": "Looking Ahead\nChapter 11 has examined the geographical scope of corporate strategy. Chapter 12 — the final chapter of Part I — addresses the organizational mode of corporate growth: when should a firm grow through strategic alliances with other firms, when through mergers and acquisitions, and when through internal development? These are the vehicles through which all the strategic moves discussed in Chapters 9–11 actually get implemented.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
       "Ch 11. Globalization & Geographical Expansion"
