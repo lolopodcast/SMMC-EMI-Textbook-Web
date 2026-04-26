@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publishing – SMMC-EMI Course Textbook</title>
+<title>ch11 – SMMC-EMI Course Textbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/ch12.qmd" rel="next">
+<link href="../content/ch10.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -249,9 +251,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      SMMC-EMI Course Textbook
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/ch01.html">Part I. Concepts &amp; Frameworks</a></li><li class="breadcrumb-item"><a href="../content/ch11.html">Ch 11. Globalization &amp; Geographical Expansion</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -295,13 +295,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Part I. Concepts &amp; Frameworks</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/ch01.html" class="sidebar-item-text sidebar-link">
@@ -364,7 +364,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/ch11.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/ch11.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Ch 11. Globalization &amp; Geographical Expansion</span></a>
   </div>
 </li>
@@ -462,119 +462,224 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On This Page</h2>
    
   <ul>
-  <li><a href="#turn-on-github-pages-for-your-repo" id="toc-turn-on-github-pages-for-your-repo" class="nav-link active" data-scroll-target="#turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</a></li>
-  <li><a href="#do-your-first-publish-to-gh-pages" id="toc-do-your-first-publish-to-gh-pages" class="nav-link" data-scroll-target="#do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></a></li>
-  <li><a href="#dont-like-using-gh-pages" id="toc-dont-like-using-gh-pages" class="nav-link" data-scroll-target="#dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</a></li>
+  <li><a href="#entry-mode-selection-logic" id="toc-entry-mode-selection-logic" class="nav-link active" data-scroll-target="#entry-mode-selection-logic">11.4.1 Entry-Mode Selection Logic</a></li>
+  <li><a href="#liability-of-foreignness-and-how-to-overcome-it" id="toc-liability-of-foreignness-and-how-to-overcome-it" class="nav-link" data-scroll-target="#liability-of-foreignness-and-how-to-overcome-it">11.5 Liability of Foreignness — and How to Overcome It</a>
+  <ul class="collapse">
+  <li><a href="#the-born-global-phenomenon" id="toc-the-born-global-phenomenon" class="nav-link" data-scroll-target="#the-born-global-phenomenon">11.5.1 The Born-Global Phenomenon</a></li>
+  </ul></li>
+  <li><a href="#globalization-in-2026-slowbalization-bifurcation-and-ai" id="toc-globalization-in-2026-slowbalization-bifurcation-and-ai" class="nav-link" data-scroll-target="#globalization-in-2026-slowbalization-bifurcation-and-ai">11.6 Globalization in 2026 — Slowbalization, Bifurcation, and AI</a></li>
+  <li><a href="#self-check-questions" id="toc-self-check-questions" class="nav-link" data-scroll-target="#self-check-questions">Self-Check Questions</a></li>
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings">Further Readings</a></li>
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/publishing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch11.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch11.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/ch01.html">Part I. Concepts &amp; Frameworks</a></li><li class="breadcrumb-item"><a href="../content/ch11.html">Ch 11. Globalization &amp; Geographical Expansion</a></li></ol></nav></header>
 
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Publishing</h1>
+
+
+
+<section id="entry-mode-selection-logic" class="level3">
+<h3 class="anchored" data-anchor-id="entry-mode-selection-logic">11.4.1 Entry-Mode Selection Logic</h3>
+<p>Three principles guide the choice:</p>
+<ol type="1">
+<li><strong>Higher commitment when the asset is strategic</strong> — Core technology, key brand assets, and proprietary know-how favor wholly-owned operations to prevent leakage.</li>
+<li><strong>Lower commitment when uncertainty is high</strong> — In unfamiliar markets or volatile regulatory environments, lower-commitment modes preserve optionality.</li>
+<li><strong>Match the partner’s capability gap</strong> — When local market knowledge or regulatory access is needed, joint ventures with local partners can be powerful — but managing JV conflict is itself a capability.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>To get your Quarto webpage to show up with the url</p>
-<pre><code>yourname.github.io/yourrepo</code></pre>
-<p>you have a few steps.</p>
-<section id="turn-on-github-pages-for-your-repo" class="level2">
-<h2 class="anchored" data-anchor-id="turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</h2>
-<ul>
-<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.</li>
-<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
-</ul>
-<p>The GitHub Action will automatically recreate your website when you push to GitHub <strong>after</strong> you do the initial <code>gh-pages</code> set-up</p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The classic JV trap
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Joint ventures are popular at entry but often unstable over time. The typical pattern: at year 1, both partners have complementary skills and need each other. By year 5, knowledge has flowed from the technology partner to the local partner; the local partner no longer needs the foreigner; the foreigner has not built local capability. Outcome: the foreigner exits at a disadvantage. <strong>Anti-pattern</strong>: relying on JVs without an explicit plan to absorb local knowledge.</p>
+</div>
+</div>
+<hr>
 </section>
-<section id="do-your-first-publish-to-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></h2>
-<p>The first time you publish to <code>gh-pages</code>, you need to do so locally.</p>
+<section id="liability-of-foreignness-and-how-to-overcome-it" class="level2">
+<h2 class="anchored" data-anchor-id="liability-of-foreignness-and-how-to-overcome-it">11.5 Liability of Foreignness — and How to Overcome It</h2>
+<p>Every international entrant faces the <strong>liability of foreignness (LOF, 外國者劣勢)</strong> — costs and disadvantages that local firms do not bear:</p>
 <ul>
-<li>On your local computer, open a terminal window and <code>cd</code> to your repo directory. Here is what that <code>cd</code> command looks like for me. You command will look different because your local repo will be somewhere else on your computer.</li>
+<li><strong>Cultural unfamiliarity</strong> — slower decision-making, mis-reading consumer signals.</li>
+<li><strong>Regulatory complexity</strong> — relationships, licenses, compliance the firm does not have.</li>
+<li><strong>Discrimination</strong> — explicit (procurement preferences for local firms) or implicit (consumer skepticism).</li>
+<li><strong>Communication and coordination costs</strong> — across time zones, languages, distance.</li>
 </ul>
-<pre><code>cd ~/Documents/GitHub/NOAA-quarto-simple</code></pre>
+<p>Overcoming LOF requires <strong>either</strong> building local capabilities (hiring local managers, partnering, acquiring), <strong>or</strong> offering value the local market cannot get from local firms (proprietary technology, premium brand, scale economies).</p>
+<section id="the-born-global-phenomenon" class="level3">
+<h3 class="anchored" data-anchor-id="the-born-global-phenomenon">11.5.1 The Born-Global Phenomenon</h3>
+<p>Some firms — especially in software, gaming, and creative industries — are <strong>born global</strong>, operating across borders from day one. These firms minimize LOF by:</p>
 <ul>
-<li>Publish to the <code>gh-pages</code>. In the terminal type</li>
+<li><strong>Digital-first operations</strong> that don’t require physical presence.</li>
+<li><strong>Highly portable products</strong> (software, content) that travel without adaptation.</li>
+<li><strong>Distributed teams</strong> that already include the cultural and language diversity of target markets.</li>
 </ul>
-<pre><code>quarto publish gh-pages</code></pre>
-<p>This is going to render your webpage and then push the <code>_site</code> contents to the <code>gh-pages</code> branch.</p>
+<p>Born-global firms challenge the traditional staged-internationalization model (Uppsala model) in which firms gradually expand from psychically close to distant markets.</p>
+<hr>
 </section>
-<section id="dont-like-using-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</h2>
-<p>In some cases, you don’t want your website on the <code>gh-pages</code> branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the <code>gh-pages</code> branch.</p>
-<p>Here are the changes you need to make if you to avoid <code>gh-pages</code> branch.</p>
+</section>
+<section id="globalization-in-2026-slowbalization-bifurcation-and-ai" class="level2">
+<h2 class="anchored" data-anchor-id="globalization-in-2026-slowbalization-bifurcation-and-ai">11.6 Globalization in 2026 — Slowbalization, Bifurcation, and AI</h2>
+<p>The 1990–2008 era of accelerating globalization has given way to a more complex pattern often called <strong>slowbalization</strong> or <strong>regionalization</strong>:</p>
 <ul>
-<li>At the top of <code>_quarto.yml</code> add the following:</li>
+<li><strong>Geopolitical bifurcation</strong> — US-aligned and China-aligned ecosystems are diverging in technology standards, capital flows, and regulatory regimes. MNCs increasingly need <strong>bloc-specific strategies</strong>.</li>
+<li><strong>Supply-chain reshoring and friend-shoring</strong> — Pandemic and geopolitical shocks have shifted firms toward shorter, more resilient supply chains, often within trusted political alliances rather than purely cost-optimal locations.</li>
+<li><strong>AI-enabled cross-border coordination</strong> — Translation, cross-cultural communication, and remote management are dramatically easier in 2026 than they were in 2010. The <strong>administrative and cultural distance</strong> components of CAGE have <strong>partially eroded</strong>.</li>
+<li><strong>Sustainability standards diverging across blocs</strong> — EU Carbon Border Adjustment Mechanism, US Inflation Reduction Act, China’s own decarbonization roadmap create different compliance regimes that fracture global strategy.</li>
 </ul>
-<pre><code>project: 
-  type: website
-  output-dir: docs</code></pre>
+<p>The implication: <strong>the global standardization strategy has become harder</strong>, while <strong>transnational strategy</strong> — combining global integration where possible with bloc-specific responsiveness — is increasingly necessary.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Internationalization in your TP analysis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For TP3 — Growth Strategy, ask:</p>
+<ol type="1">
+<li>What is the focal firm’s current geographic footprint? Which countries account for &gt;10% of revenue?</li>
+<li>Which I-R archetype best describes the current strategy — global, multidomestic, transnational, international?</li>
+<li>Apply CAGE: what are the largest distances the firm faces in its main growth markets?</li>
+<li>Are there countries where the firm has under-invested due to liability of foreignness? What entry mode would minimize that liability?</li>
+<li>How will geopolitical bifurcation affect the firm in the next 5 years? Which bloc(s) should it prioritize?</li>
+</ol>
+</div>
+</div>
+<hr>
+</section>
+<section id="self-check-questions" class="level2">
+<h2 class="anchored" data-anchor-id="self-check-questions">Self-Check Questions</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 1 — Identifying International Strategy
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For each Taiwan-headquartered firm, classify the international strategy archetype (global, multidomestic, transnational, international) and justify with two pieces of evidence:</p>
+<ol type="a">
+<li><strong>TSMC</strong> — semiconductor foundry.</li>
+<li><strong>王品集團 Wowprime</strong> — restaurant brands across Taiwan, China, Japan, Southeast Asia.</li>
+<li><strong>HTC</strong> — smartphone and VR (historically and currently).</li>
+<li><strong>誠品 Eslite</strong> — bookstore and lifestyle retail.</li>
+<li><strong>長榮海運 Evergreen Marine</strong> — global container shipping.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 2 — CAGE Distance Analysis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Choose a Taiwan firm planning to enter a major foreign market (e.g., Foxconn entering Vietnam, Kuo Yang entering Saudi Arabia, Foxconn entering India, a Taiwan beverage firm entering France).</p>
+<ol type="a">
+<li>For each CAGE dimension, identify two specific distance factors between Taiwan and the target market.</li>
+<li>Rank the CAGE dimensions by their likely impact on entry difficulty.</li>
+<li>Recommend two specific actions to mitigate the largest distance risks.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 3 — Entry Mode Recommendation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A Taiwan-listed pharmaceutical firm wants to launch a proprietary biologic drug in Brazil. The drug requires complex regulatory approvals; the firm has no Brazilian operations; the local market is large but regulatorily complex.</p>
+<ol type="a">
+<li>Identify and evaluate <strong>three</strong> alternative entry modes (exporting, licensing, JV, wholly-owned subsidiary, acquisition).</li>
+<li>For each mode, list two main advantages and two main risks.</li>
+<li>Recommend the preferred mode with clear justification, citing the trade-offs from Section 11.4.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 4 — Slowbalization Strategy
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Suppose your TP focal company currently runs a fully integrated global supply chain spanning Taiwan, China, Mexico, and Eastern Europe. Geopolitical pressures are rising.</p>
+<ol type="a">
+<li>Map the current dependencies and identify which links carry the greatest geopolitical risk.</li>
+<li>Propose a <strong>friend-shoring</strong> restructuring — which production should move to which bloc?</li>
+<li>Quantify (with reasonable estimates) the cost increase the firm should expect from the restructuring.</li>
+<li>Justify whether the cost increase is acceptable given the risk reduction.</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="further-readings" class="level2">
+<h2 class="anchored" data-anchor-id="further-readings">Further Readings</h2>
 <ul>
-<li>On GitHub under Settings &gt; Pages set pages to be made from the <code>main</code> branch and the docs directory.</li>
-<li>Make sure <code>docs</code> is not listed in <code>.gitignore</code></li>
-<li>Publish the site the first time locally using <code>quarto publish</code> from the terminal</li>
-<li>Change the GitHub Action because you can’t use <code>quarto publish gh-pages</code>. You’ll need to push to the main branch yourself (in the GitHub Action)</li>
+<li><strong>Bartlett, C. A. &amp; Ghoshal, S. (1989)</strong>. <em>Managing Across Borders: The Transnational Solution</em>. Harvard Business School Press. — The I-R framework and transnational strategy.</li>
+<li><strong>Ghemawat, P. (2001)</strong>. “Distance Still Matters: The Hard Reality of Global Expansion.” <em>Harvard Business Review</em>, September. — The CAGE framework.</li>
+<li><strong>Ghemawat, P. (2007)</strong>. <em>Redefining Global Strategy</em>. Harvard Business School Press. — Extended treatment of semi-globalization.</li>
+<li><strong>Hill, C. W. L. (2021)</strong>. <em>International Business: Competing in the Global Marketplace</em>, 13th ed.&nbsp;McGraw-Hill.</li>
+<li><strong>Peng, M. W. (2009)</strong>. <em>Global Strategy</em>, 2nd ed.&nbsp;South-Western. — Integrates strategy and IB perspectives.</li>
+<li><strong>Grant, R. M. (2016)</strong>. <em>Contemporary Strategy Analysis</em>, 9th ed., Chapter 15 — “Implementing Corporate Strategy: Multinational Operations”.</li>
 </ul>
-<pre><code>on:
-  push:
-    branches: main
-
-name: Render and Publish
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2 
-        
-      - name: Set up R (needed for Rmd)
-        uses: r-lib/actions/setup-r@v2
-
-      - name: Install packages (needed for Rmd)
-        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite"))'
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          # To install LaTeX to build PDF book 
-          # tinytex: true 
-          # uncomment below and fill to pin a version
-          # version: 0.9.600
-      
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-
-      - name: Set up Git
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-
-      - name: Commit all changes and push
-        run: |
-          git add -A &amp;&amp; git commit -m 'Build site' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"</code></pre>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Coursera Companion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>[CS] Corporate Strategy</strong> — UIUC Gies, modules on internationalization and global strategy directly extend this chapter.</li>
+<li><strong>[ENT] Entrepreneurship 1</strong> — sections on born-global ventures.</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>Chapter 11 has examined the <strong>geographical</strong> scope of corporate strategy. Chapter 12 — the final chapter of Part I — addresses the <strong>organizational mode</strong> of corporate growth: when should a firm grow through <strong>strategic alliances</strong> with other firms, when through **merger</p>
 
 
 </section>
@@ -993,6 +1098,18 @@ jobs:
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/ch10.html" class="pagination-link" aria-label="Ch 10. Corporate Strategy — Horizontal Diversification">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Ch 10. Corporate Strategy — Horizontal Diversification</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/ch12.qmd" class="pagination-link" aria-label="Ch 12. Strategic Alliances and M&amp;A">
+        <span class="nav-page-text">Ch 12. Strategic Alliances and M&amp;A</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1001,7 +1118,7 @@ jobs:
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/publishing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch11.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch11.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
