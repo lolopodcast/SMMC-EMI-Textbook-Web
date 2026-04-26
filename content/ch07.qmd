@@ -1,0 +1,274 @@
+---
+title: "Competitive Advantages & Generic Strategies"
+subtitle: "Chapter 7 — Choosing How to Compete"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Define **competitive advantage (CA)** in terms of the V-P-C framework, and distinguish between **temporary** and **sustainable** advantage.
+2. Apply **Porter's Generic Strategies** — cost leadership, differentiation, and focus — to classify a firm's positioning choice.
+3. Recognize the **"stuck in the middle"** problem and explain when hybrid strategies actually work.
+4. Evaluate strategic positioning using the **Strategy Canvas** (Kim & Mauborgne) to visualize differentiation.
+5. Connect generic strategies to the firm's **resources** (Chapter 5) and **dynamic capabilities** (Chapter 6) — strategy is positioning *plus* the capacity to deliver it.
+
+---
+
+## 7.1 What Is Competitive Advantage?
+
+Throughout Chapters 3–6 we have been circling a central concept without defining it precisely. Now we make it explicit.
+
+::: {.callout-note}
+## Definition — Competitive Advantage (競爭優勢)
+A firm has a **competitive advantage** when it consistently earns **above-average returns** relative to its industry rivals. In V-P-C terms, this means the firm achieves either a **higher (V−C)** — more economic value created per unit — or captures a **higher share of (V−C)** through pricing power.
+:::
+
+Competitive advantage is always **relative**. A firm cannot have an "absolute" advantage in isolation — it has an advantage *over specific competitors* in *specific markets*. This is why competitor identification (Chapter 4) is foundational: without knowing who you compete against, you cannot know whether you have an advantage.
+
+### 7.1.1 Temporary vs. Sustainable Advantage
+
+| Type | Duration | Driver | Example |
+|---|---|---|---|
+| **Temporary CA** | Months to ~3 years | Product novelty, first-mover position, regulatory window | Latest smartphone feature, early-mover in a new geography |
+| **Sustainable CA** | 5+ years | VRIN-passing resources, dynamic capabilities, structural positioning | TSMC foundry leadership, Costco membership model, LVMH brand portfolio |
+
+In **hypercompetitive industries** (D'Aveni, 1994) — software, consumer electronics, fashion — even "sustainable" advantage rarely lasts more than a decade. The ability to **chain together temporary advantages** through dynamic capabilities (Chapter 6) is itself a form of sustained advantage.
+
+---
+
+## 7.2 Porter's Generic Strategies
+
+Michael Porter's 1980 framework remains the most influential map of strategic positioning. It identifies the choice on **two dimensions**:
+
+```{mermaid}
+flowchart TB
+    title["Porter's Generic Strategies"]
+    CL["Cost Leadership: Broad market, lowest cost"]
+    DIFF["Differentiation: Broad market, unique offering"]
+    FC["Focused Cost: Narrow segment, lowest cost in segment"]
+    FD["Focused Differentiation: Narrow segment, unique to segment"]
+    style CL fill:#D8C3A5,stroke:#004030
+    style DIFF fill:#004030,stroke:#004030,color:#FFFFFF
+    style FC fill:#EFE4D2,stroke:#004030
+    style FD fill:#EFE4D2,stroke:#004030
+```
+
+The two dimensions are:
+
+- **Source of advantage**: lower cost vs. higher perceived value (differentiation)
+- **Competitive scope**: broad market vs. narrow segment (focus)
+
+### 7.2.1 Cost Leadership (成本領導)
+
+A cost-leadership strategy aims to be **the lowest-cost producer** in the industry, then either:
+
+- **Charge industry-average prices** and earn higher margins, **or**
+- **Charge below-industry-average prices** and gain market share.
+
+Sources of cost advantage typically include:
+
+- **Economies of scale** — fixed costs spread over high volume.
+- **Economies of learning** — unit costs decline predictably with cumulative experience.
+- **Process efficiency** — superior operational design (e.g., Toyota Production System).
+- **Input cost advantages** — preferential access to raw materials, energy, or labor.
+- **Vertical integration efficiencies** — reduced transaction costs across the value chain.
+
+::: {.callout-tip}
+## Cost leadership is not "cheap"
+A cost leader maintains **competitive product quality** while minimizing cost. Walmart, Costco, IKEA, and Toyota are all cost leaders — none of them sells obviously inferior products. The discipline is to deliver acceptable V at structurally lower C, not to race quality to the bottom.
+:::
+
+### 7.2.2 Differentiation (差異化)
+
+A differentiation strategy aims to be **uniquely valuable** to customers along dimensions they care about — features, design, brand, service, ecosystem — and charge a **premium** that exceeds the cost of providing the differentiation.
+
+Sources of differentiation typically include:
+
+- **Product features** — performance, reliability, design.
+- **Brand and reputation** — accumulated trust, status signaling.
+- **Customer service and relationships** — perceived value of the experience.
+- **Ecosystem and complementarity** — value derived from compatible products and services.
+- **Proprietary technology** — patents, trade secrets, network effects.
+
+The classic differentiators include Apple (design + ecosystem), BMW (engineering + brand), Starbucks (third-place experience), and Hermès (craftsmanship + scarcity).
+
+### 7.2.3 Focus (聚焦)
+
+A focus strategy targets a **narrow market segment** that is poorly served by broad-market competitors, and competes within that segment on either cost or differentiation. Examples:
+
+- **Focused cost**: Aldi (limited assortment, hard discount in groceries).
+- **Focused differentiation**: Ferrari (ultra-premium sports cars), Bloomberg Terminal (financial professionals).
+
+Focus works when the segment is large enough to support the firm but small enough that broad-market competitors cannot serve it efficiently.
+
+---
+
+## 7.3 The "Stuck in the Middle" Problem
+
+Porter's controversial argument: firms that try to **simultaneously pursue cost leadership and differentiation** often achieve neither — they are **"stuck in the middle"** (卡在中間), with cost structure too high to compete on price and offering too generic to command a premium.
+
+```{mermaid}
+flowchart LR
+    A["Trying to be all things to all customers"]
+    B["Costs creep up: customization, variety, complexity"]
+    C["Differentiation diluted: cannot focus on any one customer well"]
+    D["Margins squeezed from both ends"]
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+    style D fill:#EFE4D2,stroke:#004030
+```
+
+Classic examples include US legacy airlines (sandwiched between low-cost carriers and premium full-service), and middle-tier department stores (squeezed between fast fashion and luxury).
+
+### 7.3.1 When Hybrid Strategies Work
+
+The "stuck in the middle" warning is not absolute. Hybrid strategies can work when:
+
+- **Operational excellence reduces the trade-off** — Toyota achieves both quality and low cost; IKEA achieves both design and price; Costco achieves both broad assortment and low prices.
+- **Different segments are served by different parts of the firm** — Toyota's Lexus division differentiates while the Toyota brand pursues mass market.
+- **Industry structure changes** — digital platforms enable mass customization at low marginal cost (Amazon, Shopify-powered storefronts).
+
+The key insight: hybrid strategies require **organizational sophistication** — usually only large, mature firms can execute them. Younger or smaller firms generally must pick a clear position.
+
+---
+
+## 7.4 Strategy Canvas — Visualizing Differentiation
+
+W. Chan Kim and Renée Mauborgne's **Strategy Canvas** (from *Blue Ocean Strategy*, 2005) offers a powerful complement to Porter's framework. Instead of classifying strategies, it **visualizes** them.
+
+The canvas plots **competitive factors** on the x-axis and **investment level** on the y-axis. Each firm's strategy appears as a curve. Strong differentiation shows up as a curve that **diverges** from competitors'.
+
+For example, Cirque du Soleil's strategy curve in the circus industry diverged dramatically from traditional circuses:
+
+| Factor | Traditional Circus | Cirque du Soleil |
+|---|---|---|
+| Star performers | High | Eliminated |
+| Animal shows | High | Eliminated |
+| Aisle concession sales | High | Reduced |
+| Multiple show arenas | High | Reduced |
+| Unique venue | Low | High |
+| Theme | Low | High |
+| Refined environment | Low | High |
+| Multiple productions | Low | High |
+| Artistic music and dance | Low | High |
+
+Cirque didn't out-compete traditional circuses; it **redefined the category**. This is the **Blue Ocean** logic — create uncontested market space rather than fight for share in a "Red Ocean" of bloody competition.
+
+::: {.callout-tip}
+## The Four Actions Framework
+
+Kim & Mauborgne propose four questions to design a Blue Ocean strategy:
+
+1. **Eliminate** — Which factors taken for granted in the industry should be eliminated?
+2. **Reduce** — Which factors should be reduced well below industry standard?
+3. **Raise** — Which factors should be raised well above industry standard?
+4. **Create** — Which factors should be created that the industry has never offered?
+
+Apply these to your TP focal company in TP3 to identify potential repositioning moves.
+:::
+
+---
+
+## 7.5 Connecting Strategy to Capability
+
+A generic strategy is **a positioning choice** — but positioning without underlying capability is hollow. Chapter 5 (RBV) and Chapter 6 (dynamic capabilities) return here as essential complements:
+
+| Strategy | Required Resources | Required Capabilities |
+|---|---|---|
+| **Cost Leadership** | Scale, efficient assets, low-cost inputs | Operational excellence, supply-chain mastery, continuous cost engineering |
+| **Differentiation** | Brand, IP, design talent, ecosystem partners | Innovation pipeline, customer insight, premium service delivery |
+| **Focused Cost** | Niche operations, narrow asset base | Deep segment knowledge, lean operations |
+| **Focused Differentiation** | Niche brand, specialist talent | Expert-level customer intimacy, segment-specific innovation |
+
+::: {.callout-important}
+## The integration test
+Ask of any proposed strategy: *Does the firm's resource base and capability portfolio actually support this position?* A "differentiation" strategy without R&D capability is wishful thinking. A "cost leadership" strategy without operational discipline collapses on first cost shock. **Strategy = position × capability**, not just position.
+:::
+
+---
+
+## 7.6 Generic Strategies in 2026
+
+Three forces are reshaping how generic strategies play out:
+
+- **AI compresses differentiation lifecycles** — what once took 18 months to copy now takes 6 weeks. Differentiators must run faster, with shorter advantage windows but more frequent renewal.
+- **Sustainability becomes a differentiation axis** — carbon-neutral supply chains, circular product design, ESG-aligned sourcing are increasingly value drivers, not just compliance costs.
+- **Geopolitical bifurcation favors focus** — firms that try to be globally undifferentiated face mounting compliance complexity. Specializing in one bloc (US-aligned vs. China-aligned) is increasingly a viable focus strategy.
+
+The generic-strategies framework remains valid; the **clock speed** and the **available positioning axes** have changed.
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — Classifying Generic Strategies
+
+For each of the following Taiwan companies, identify the dominant generic strategy and justify with two pieces of evidence:
+
+a) 全聯福利中心 PX Mart.
+b) 鼎泰豐 Din Tai Fung.
+c) 微星科技 MSI (gaming PCs).
+d) 統一超商 7-ELEVEN Taiwan.
+e) 大同電鍋 TATUNG rice cookers.
+f) 誠品書店 Eslite Bookstore.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — Diagnosing Stuck-in-the-Middle
+
+Identify a firm (Taiwan or global) that you believe is currently **stuck in the middle**.
+
+a) Describe its current positioning ambiguity.
+b) Identify the cost-leader and differentiator competitors squeezing it.
+c) Recommend a clear repositioning — should it move toward cost leadership, differentiation, or focus? Justify with reference to its existing resources and capabilities.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Strategy Canvas
+
+For your TP focal company, build a simple Strategy Canvas:
+
+a) Identify 6–8 **competitive factors** that customers in this industry care about.
+b) Plot the focal firm's investment level (Low / Medium / High) for each factor.
+c) Plot two main competitors on the same axes.
+d) Identify one factor where the focal firm could **eliminate** investment, and one where it could **create** a new dimension of competition.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Strategy + Capability Integration
+
+Suppose a Taiwanese mid-sized contract manufacturer announces it will pursue a **branded differentiation strategy** in consumer electronics over the next 5 years.
+
+a) List the resources and capabilities such a strategy requires (cite Chapter 5 categories).
+b) Identify the gaps between current contract-manufacturing capabilities and required branded-business capabilities.
+c) Recommend whether the firm should build, buy, or partner to close each gap.
+d) What dynamic capabilities (Chapter 6) will be tested most heavily in this transition?
+:::
+
+---
+
+## Further Readings
+
+- **Porter, M. E. (1980)**. *Competitive Strategy: Techniques for Analyzing Industries and Competitors*. Free Press. — The foundational text on generic strategies.
+- **Porter, M. E. (1985)**. *Competitive Advantage: Creating and Sustaining Superior Performance*. Free Press. — The deeper treatment with value-chain integration.
+- **Kim, W. C. & Mauborgne, R. (2005)**. *Blue Ocean Strategy*. Harvard Business School Press. — Strategy Canvas and Four Actions Framework.
+- **Magretta, J. (2011)**. *Understanding Michael Porter: The Essential Guide to Competition and Strategy*. Harvard Business Review Press. — A clear, modern summary.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapters 7–9 — covers cost advantage, differentiation, and industry evolution.
+
+::: {.callout-note}
+## Coursera Companion
+- **[CS] Corporate Strategy** — UIUC Gies, modules on competitive positioning directly extend this chapter.
+- **[ENT] Entrepreneurship 1** — opportunity-segmentation modules complement the focus-strategy discussion.
+:::
+
+---
+
+## Looking Ahead
+
+Chapter 7 has provided the framework for **how to compete** in an established industry. But not every firm operates in an established industry — many are creating new markets, deploying disruptive technologies, or operating as entrepreneurial ventures. Chapter 8 turns to **technology, innovation, and entrepreneurship** — the strategic logic of building advantage where the rules of competition are still being written.
