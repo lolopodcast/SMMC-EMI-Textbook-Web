@@ -221,11 +221,509 @@
     ]
   },
   {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
+    "objectID": "content/ch08.html",
+    "href": "content/ch08.html",
+    "title": "Technology, Innovation & Entrepreneurship",
     "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 8. Technology, Innovation & Entrepreneurship"
+    ]
+  },
+  {
+    "objectID": "content/ch08.html#learning-objectives",
+    "href": "content/ch08.html#learning-objectives",
+    "title": "Technology, Innovation & Entrepreneurship",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDistinguish between product, process, and business-model innovation, and place each on the incremental–disruptive spectrum.\nApply the S-curve model to predict when a maturing technology will be displaced by an emerging one.\nDifferentiate between sustaining and disruptive innovations (Christensen) and identify the structural reasons incumbents typically lose to disruptors.\nRecognize the strategic role of complementary assets (Teece) in determining whether innovators or imitators capture the value created.\nApply opportunity-recognition thinking from entrepreneurship — the lens of the Lean Startup and Effectuation — to both new ventures and corporate innovation efforts.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 8. Technology, Innovation & Entrepreneurship"
+    ]
+  },
+  {
+    "objectID": "content/ch08.html#why-innovation-is-the-central-strategic-problem",
+    "href": "content/ch08.html#why-innovation-is-the-central-strategic-problem",
+    "title": "Technology, Innovation & Entrepreneurship",
+    "section": "8.1 Why Innovation Is the Central Strategic Problem",
+    "text": "8.1 Why Innovation Is the Central Strategic Problem\nStrategy in stable industries is mostly about positioning within a known game. Strategy in dynamic industries is mostly about innovation — changing the game itself.\nRecall the data on accelerating technological adoption: the telephone took 75 years to reach 50% of US households; the smartphone, 6 years; ChatGPT, less than 2 months to reach 100 million users. Industry stability is the exception, not the norm. Every firm — and every entrepreneur entering the market — must therefore answer two questions:\n\nWhat innovations are happening in our environment? (sensing — Chapter 6)\nAre we positioned to lead, follow, or be displaced by them?\n\nThis chapter provides the analytical apparatus to answer both.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 8. Technology, Innovation & Entrepreneurship"
+    ]
+  },
+  {
+    "objectID": "content/ch08.html#types-of-innovation",
+    "href": "content/ch08.html#types-of-innovation",
+    "title": "Technology, Innovation & Entrepreneurship",
+    "section": "8.2 Types of Innovation",
+    "text": "8.2 Types of Innovation\nInnovation is not one thing. A useful taxonomy distinguishes what is being innovated and how much it changes:\n\n8.2.1 Three Types: Product, Process, Business Model\n\n\n\n\n\n\n\n\nType\nDefinition\nExample\n\n\n\n\nProduct Innovation\nA new or significantly improved offering\niPhone, mRNA vaccines, electric vehicles\n\n\nProcess Innovation\nA new or significantly improved way of producing\nToyota Production System, TSMC EUV lithography, AI-assisted code generation\n\n\nBusiness Model Innovation\nA new way of creating, delivering, and capturing value\nNetflix subscription streaming, Uber on-demand transport, TSMC pure-play foundry\n\n\n\nThe most powerful firms innovate on all three simultaneously. TSMC delivers product innovation (advanced nodes), process innovation (yield rates), and business-model innovation (foundry-only positioning). Apple delivers product (iPhone), process (vertical hardware-software integration), and business model (App Store ecosystem).\n\n\n8.2.2 Incremental vs. Radical vs. Disruptive\nThe degree of innovation also matters:",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 8. Technology, Innovation & Entrepreneurship"
+    ]
+  },
+  {
+    "objectID": "content/publishing.html",
+    "href": "content/publishing.html",
+    "title": "Publishing",
+    "section": "",
+    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+  },
+  {
+    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "title": "Publishing",
+    "section": "Turn on GitHub Pages for your repo",
+    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
+  },
+  {
+    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "title": "Publishing",
+    "section": "Do your first publish to gh-pages",
+    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
+  },
+  {
+    "objectID": "content/publishing.html#dont-like-using-gh-pages",
+    "href": "content/publishing.html#dont-like-using-gh-pages",
+    "title": "Publishing",
+    "section": "Don’t like using gh-pages?",
+    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+  },
+  {
+    "objectID": "content/ch06.html",
+    "href": "content/ch06.html",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "",
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#learning-objectives",
+    "href": "content/ch06.html#learning-objectives",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDefine core competencies and distinguish them from ordinary capabilities and from products themselves.\nApply Teece’s dynamic capabilities framework — sensing, seizing, and reconfiguring — to firms operating in fast-changing environments.\nRecognize the strategic risk of core rigidities — the dark side of past success — and explain how organizational routines can become liabilities.\nDistinguish exploitation (deepening existing competencies) from exploration (building new ones), and understand why ambidextrous organizations can do both.\nConnect dynamic capabilities to the GenAI era — what does it mean to “sense, seize, and reconfigure” when AI accelerates every cycle?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#from-static-resources-to-dynamic-capabilities",
+    "href": "content/ch06.html#from-static-resources-to-dynamic-capabilities",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "6.1 From Static Resources to Dynamic Capabilities",
+    "text": "6.1 From Static Resources to Dynamic Capabilities\nChapter 5 introduced the Resource-Based View as a powerful explanation for why some firms persistently outperform others. Toyota’s production system, Apple’s design culture, TSMC’s process know-how — these are deeply embedded, hard to imitate, and visibly correlated with sustained advantage.\nBut Chapter 5 left an unanswered question: what happens when the environment changes?\nKodak owned arguably the strongest set of resources in 20th-century photography — film chemistry, distribution, brand. Within 15 years (1995–2010), digital photography rendered most of those resources obsolete. Nokia had unmatched mobile-phone manufacturing and supply-chain capability — and was destroyed by Apple’s redefinition of the smartphone. Static resources are not enough. What firms need is the capability to reconfigure their resources as the environment shifts.\nThis is the territory of core competencies (核心能力) and dynamic capabilities (動態能耐) — the higher-order constructs that explain not just why a firm has advantage today, but how it will renew that advantage tomorrow.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#core-competencies",
+    "href": "content/ch06.html#core-competencies",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "6.2 Core Competencies",
+    "text": "6.2 Core Competencies\nThe concept of core competence was introduced by C. K. Prahalad and Gary Hamel in their landmark 1990 Harvard Business Review article. Their argument: managers think too much about products and business units, and not enough about the underlying competencies that produce winning products.\n\n\n\n\n\n\nNoteThree tests of a core competence (Prahalad & Hamel, 1990)\n\n\n\nA capability qualifies as a core competence when it satisfies all three:\n\nProvides access to a wide variety of markets — it is not tied to a single product.\nMakes a significant contribution to perceived customer benefits of the end product.\nIs difficult for competitors to imitate — it integrates multiple technologies and organizational routines.\n\n\n\n\n6.2.1 Examples\n\nHonda — competence in small engines (originally for motorcycles) opened markets in lawnmowers, generators, marine outboards, automobiles, and jet engines.\nSony — competence in miniaturization enabled successive generations of portable products from transistor radios to Walkmans to PlayStations.\n3M — competence in coatings and adhesives spawned tens of thousands of products from Post-it notes to surgical drapes to LCD optical films.\nApple — competence in human-centered industrial design integrated with software transferred from Mac to iPod to iPhone to AirPods to Vision Pro.\n\nThe competence is the root; products are the fruit. Competitors who study Apple’s products often miss what makes Apple difficult to copy — the underlying integration of design, software, supply chain, and retail experience.\n\n\n6.2.2 Core Competence vs. Core Product vs. End Product\nPrahalad & Hamel proposed a three-level architecture:\n\n\n\n\n\n\n\n\nLevel\nExample (Honda)\nExample (Apple)\n\n\n\n\nCore Competence\nEngineering small, efficient engines\nIntegrated industrial design + software + ecosystem\n\n\nCore Product\nHonda engine modules\niOS / silicon (e.g., M-series chips)\n\n\nEnd Product\nCivic, Accord, Odyssey, generators\niPhone, iPad, MacBook, Apple Watch\n\n\n\nThe strategic implication: a firm that loses sight of its core competence and competes only on end products will eventually be out-innovated by a competitor who continues investing at the competence level.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#dynamic-capabilities-teeces-framework",
+    "href": "content/ch06.html#dynamic-capabilities-teeces-framework",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "6.3 Dynamic Capabilities — Teece’s Framework",
+    "text": "6.3 Dynamic Capabilities — Teece’s Framework\nDavid Teece formalized dynamic capabilities in a series of papers from the 1990s through the 2010s. His definition:\n\nDynamic capabilities are the firm’s ability to integrate, build, and reconfigure internal and external competencies to address rapidly changing environments.\n\nTeece organizes dynamic capabilities into three clusters:\n\n\n\n\n\nflowchart LR\n    SENSE[\"SENSING: Identifying opportunities and threats\"]\n    SEIZE[\"SEIZING: Mobilizing resources to capture opportunities\"]\n    RECONFIG[\"RECONFIGURING: Realigning assets and structures\"]\n    SENSE --&gt; SEIZE\n    SEIZE --&gt; RECONFIG\n    RECONFIG -.feedback.-&gt; SENSE\n    style SENSE fill:#D8C3A5,stroke:#004030\n    style SEIZE fill:#004030,stroke:#004030,color:#FFFFFF\n    style RECONFIG fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\n\n6.3.1 Sensing (感知)\nSensing is about scanning the environment for emerging opportunities and threats — customer-need shifts, technological trajectories, regulatory changes, competitor moves. It requires:\n\nOutward-facing organizational structures — close customer contact, supplier intimacy, ecosystem partnerships.\nCognitive diversity — teams that include people who see different futures.\nTolerance for weak signals — willingness to take seriously evidence that doesn’t fit current assumptions.\n\n\n\n6.3.2 Seizing (掌握)\nSeizing converts sensed opportunities into committed resource allocations: building factories, hiring teams, launching products, signing partnerships. It requires:\n\nDecision speed and quality — escaping analysis paralysis.\nBusiness-model design — choosing how to monetize the opportunity.\nInvestment discipline — committing meaningfully without over-committing.\n\nThe hardest part of seizing is timing. Move too early and the market isn’t ready (Apple’s 1993 Newton); move too late and competitors have locked you out (Microsoft in mobile, 2007–2015).\n\n\n6.3.3 Reconfiguring (重組)\nReconfiguring is the most demanding cluster — actually changing the firm’s existing structures, routines, and culture to align with new realities. It requires:\n\nAsset orchestration — moving resources from declining businesses to emerging ones.\nOrganizational change capability — managing fear, identity, and politics during transitions.\nDecoupling and re-coupling — separating units that no longer fit and integrating new ones.\n\n\n\n\n\n\n\nTipTSMC as a master of dynamic capabilities\n\n\n\nTSMC’s 35-year history is a textbook case of all three clusters in action:\n\nSensing — Morris Chang sensed in the 1980s that semiconductor design and manufacturing would decouple, decades before the trend was obvious.\nSeizing — TSMC committed to a pure-play foundry model when conventional wisdom said an IDM (integrated device manufacturer) was the only viable strategy.\nReconfiguring — TSMC has repeatedly transitioned through process generations (130nm → 90nm → 65nm → … → 3nm → 2nm), each requiring a near-total reorganization of fabs, suppliers, and customer interfaces.\n\nThe result is one of the most enduring competitive advantages in modern industrial history.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#core-rigidities-the-dark-side-of-past-success",
+    "href": "content/ch06.html#core-rigidities-the-dark-side-of-past-success",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "6.4 Core Rigidities — The Dark Side of Past Success",
+    "text": "6.4 Core Rigidities — The Dark Side of Past Success\nDorothy Leonard-Barton (1992) introduced a haunting counter-concept: core rigidities (核心僵化). The same routines, values, and capabilities that produce success in one era can become obstacles in the next.\n\n\n\n\n\n\n\n\nPhase\nWhat helped\nWhat now hurts\n\n\n\n\nYear 1–10\nEngineering-led culture wins markets\n\n\n\nYear 10–25\nRoutines codify, scale, and refine\nEngineering culture rejects design and UX as “soft”\n\n\nYear 25+\n\nCannot pivot to design-led products; loses to Apple\n\n\n\nThis is the Innovator’s Dilemma as posed by Clayton Christensen — incumbent firms struggle to embrace disruptive technologies precisely because they are so good at their existing technology. Customers reward what works today; processes optimize what worked yesterday; values reject what doesn’t fit.\nThe strategic implication: a competence and a rigidity are the same thing, viewed from different time horizons. The firms that escape this trap are those that deliberately maintain a portfolio of capabilities — including some that look unproductive today but may matter tomorrow.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#ambidextrous-organizations-doing-both-at-once",
+    "href": "content/ch06.html#ambidextrous-organizations-doing-both-at-once",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "6.5 Ambidextrous Organizations — Doing Both at Once",
+    "text": "6.5 Ambidextrous Organizations — Doing Both at Once\nHow does a firm avoid core rigidities while continuing to exploit current strengths? Charles O’Reilly and Michael Tushman’s answer is the ambidextrous organization (雙元組織) — a structure that simultaneously:\n\nExploits existing competencies for short-term efficiency and profit, and\nExplores new competencies for long-term renewal.\n\nThe key design principle is structural separation: the exploration unit operates with different processes, metrics, culture, and often physical location from the exploitation unit. The two are linked at the senior-leadership level but kept separate at the operating level.\n\n\n\n\n\n\nNoteExamples of ambidextrous design\n\n\n\n\nAmazon runs AWS (cloud, exploration → now exploitation) alongside the original e-commerce business; both are stewarded under one corporate structure but with distinct PnL accountability.\nIBM at multiple points in its history launched separate skunkworks (the original PC team in Boca Raton, the Watson AI unit) outside the mainframe culture.\nToyota maintains a hybrid-vehicle strategy (Prius, exploration in early years) alongside its core internal-combustion business.\n\n\n\nThe hard part is leadership. Senior executives must allocate resources across exploitation and exploration, defend exploration units from short-term pressure, and resist the gravity of “doing what we know works.”",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#dynamic-capabilities-in-the-genai-era",
+    "href": "content/ch06.html#dynamic-capabilities-in-the-genai-era",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "6.6 Dynamic Capabilities in the GenAI Era",
+    "text": "6.6 Dynamic Capabilities in the GenAI Era\nThe 2026 environment compresses every dynamic-capability cycle:\n\nSensing accelerates — LLMs can synthesize customer reviews, social media, news, and competitor filings in hours, not weeks. Firms with mature AI workflows detect weak signals their competitors miss.\nSeizing accelerates — Code generation, design generation, and rapid prototyping shrink the time from idea to MVP from quarters to weeks.\nReconfiguring accelerates — and disrupts — AI-driven restructuring decisions (workforce reallocation, automation rollouts) happen faster, but also create new core rigidities. Firms that build their identity around “AI-first processes” may find themselves rigid against the next paradigm shift.\n\n\n\n\n\n\n\nTipDynamic capabilities as a TP analytical lens\n\n\n\nWhen you analyze your TP focal company in TP3 — Growth Strategy, ask all three questions:\n\nSensing — Has the firm seen the major external shifts (tech, regulatory, geopolitical) coming? What is its scanning machinery?\nSeizing — When the firm has identified an opportunity, how fast does it move? Cite specific examples (acquisitions, product launches, capacity decisions) with dates.\nReconfiguring — Has the firm successfully restructured itself in the past 10 years? What did it preserve, what did it shed?\n\nA firm that scores well on sensing but poorly on reconfiguring is a future Kodak. A firm that scores well on reconfiguring but poorly on sensing is constantly catching up. The greatest firms score well on all three.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#self-check-questions",
+    "href": "content/ch06.html#self-check-questions",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Identifying Core Competencies\n\n\n\n\n\nFor two of the following firms, identify what you believe is the firm’s true core competence (the competence behind the products, not the products themselves). Apply Prahalad & Hamel’s three-test criteria.\n\nTesla.\n統一企業 Uni-President.\nSpotify.\n王品集團 Wowprime Restaurants.\nWalmart.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Sensing Failure\n\n\n\n\n\nPick a famous case where an incumbent firm failed to sense a major shift in time (e.g., Kodak/digital, Nokia/smartphone, Blockbuster/streaming, Sears/e-commerce).\n\nReconstruct the early signals the firm could have detected.\nIdentify what organizational features blocked sensing — was it culture, structure, incentives, or all three?\nWhat sensing mechanisms could a firm in a similar position install today using GenAI tools?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Core Rigidity Diagnosis\n\n\n\n\n\nChoose your TP focal company. Identify one capability that is currently a strength but has the potential to become a core rigidity within the next 5–10 years.\n\nDescribe the capability and why it is currently valuable.\nIdentify the future environmental shift that could turn this capability into a liability.\nPropose a strategy the firm could adopt now to preserve the strength while building optionality for the shift.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Designing Ambidexterity\n\n\n\n\n\nImagine you are advising a successful Taiwanese contract manufacturer that wants to build a brand-led consumer business while maintaining its OEM/ODM core. Apply ambidextrous-organization principles:\n\nWhat aspects should be separated between the two businesses (culture, location, metrics, talent)?\nWhat aspects should be shared (technology, supplier relationships, capital allocation)?\nIdentify two leadership challenges the CEO will face during the transition.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#further-readings",
+    "href": "content/ch06.html#further-readings",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nPrahalad, C. K. & Hamel, G. (1990). “The Core Competence of the Corporation.” Harvard Business Review, May–June. — The foundational article.\nTeece, D. J., Pisano, G., & Shuen, A. (1997). “Dynamic Capabilities and Strategic Management.” Strategic Management Journal, 18(7), 509–533.\nTeece, D. J. (2007). “Explicating Dynamic Capabilities: The Nature and Microfoundations of (Sustainable) Enterprise Performance.” Strategic Management Journal, 28(13), 1319–1350. — The mature framework with sensing/seizing/reconfiguring.\nLeonard-Barton, D. (1992). “Core Capabilities and Core Rigidities: A Paradox in Managing New Product Development.” Strategic Management Journal, 13(S1), 111–125.\nO’Reilly, C. A. & Tushman, M. L. (2013). “Organizational Ambidexterity: Past, Present, and Future.” Academy of Management Perspectives, 27(4), 324–338.\nChristensen, C. M. (1997). The Innovator’s Dilemma. Harvard Business School Press. — Companion reading on how core competencies become core rigidities.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[CS] Corporate Strategy — Modules on dynamic capabilities and corporate renewal directly extend this chapter’s content.\n[ENT] Entrepreneurship 1: Developing the Opportunity — Sections on opportunity recognition map onto Teece’s “sensing” cluster.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/ch06.html#looking-ahead",
+    "href": "content/ch06.html#looking-ahead",
+    "title": "Core Competencies & Dynamic Capabilities",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapters 5 and 6 together completed the inside-out view: static resources, value-chain activities, and the dynamic capabilities that allow firms to renew their advantage. We now have both lenses — outside-in (Chapters 3–4) and inside-out (Chapters 5–6) — and can begin synthesizing them.\nChapter 7 turns to the central question of business strategy: given an industry context and a resource base, how should a firm position itself to compete? We will introduce Porter’s Generic Strategies — cost leadership, differentiation, and focus — and the strategic decisions that shape competitive position.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 6. Core Competencies & Dynamic Capabilities"
+    ]
+  },
+  {
+    "objectID": "content/customizing.html",
+    "href": "content/customizing.html",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#quarto-documentation",
+    "href": "content/customizing.html#quarto-documentation",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#examples",
+    "href": "content/customizing.html#examples",
+    "title": "Customization",
+    "section": "Examples",
+    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
+  },
+  {
+    "objectID": "content/rendering.html",
+    "href": "content/rendering.html",
+    "title": "Rendering",
+    "section": "",
+    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
+  },
+  {
+    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "title": "Rendering",
+    "section": "Step 1. Make sure you have a recent RStudio",
+    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
+  },
+  {
+    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "title": "Rendering",
+    "section": "Step 2. Clone and create RStudio project",
+    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
+  },
+  {
+    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
+    "href": "content/rendering.html#step-3.-render-within-rstudio",
+    "title": "Rendering",
+    "section": "Step 3. Render within RStudio",
+    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
+  },
+  {
+    "objectID": "content/ch04.html",
+    "href": "content/ch04.html",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "",
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#learning-objectives",
+    "href": "content/ch04.html#learning-objectives",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDistinguish between industry structure (Chapter 3) and competitive dynamics (this chapter), and explain why both matter.\nDefine a firm’s competitor set using market commonality and resource similarity.\nMap competitive actions (price moves, capacity expansions, product launches) and predict competitive responses using the awareness–motivation–capability framework.\nApply game-theoretic thinking to multi-firm interactions, distinguishing zero-sum competition from positive-sum co-opetition.\nRecognize when complementors create more value than competitors destroy, and design strategies that exploit this asymmetry.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#from-structure-to-dynamics",
+    "href": "content/ch04.html#from-structure-to-dynamics",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.1 From Structure to Dynamics",
+    "text": "4.1 From Structure to Dynamics\nChapter 3 treated the industry as a relatively stable structure. But in reality, firms inside an industry are constantly moving: cutting prices, launching products, opening factories, acquiring rivals, lobbying regulators. Industry structure tells you the average profitability available; competitive dynamics tells you which firms capture how much of it.\nThe shift from structure to dynamics is the shift from a static to a dynamic lens:\n\n\n\nStatic (Structure)\nDynamic (Dynamics)\n\n\n\n\nFive Forces\nAction–Response sequences\n\n\nIndustry concentration\nCompetitor identification\n\n\nEntry barriers\nFirst-mover vs. fast-follower\n\n\nAverage profitability\nFirm-level differential profitability\n\n\nLong horizon\nShort-to-medium horizon\n\n\n\nA firm that masters only structural analysis will misread the timing of its environment. A firm that masters only dynamic analysis will misread the deep currents beneath the surface moves. Strategic management requires both.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#who-are-your-competitors-market-commonality-and-resource-similarity",
+    "href": "content/ch04.html#who-are-your-competitors-market-commonality-and-resource-similarity",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity",
+    "text": "4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity\nThe first step in competitive analysis is deceptively hard: who exactly are we competing with?\nTwo firms are competitors to the extent that they share:\n\nMarket commonality (市場共同性) — the degree to which they serve the same customers in the same segments and geographies.\nResource similarity (資源相似性) — the degree to which their resource and capability profiles overlap.\n\n\n\n\n\n\nquadrantChart\n    title Competitor Identification Matrix\n    x-axis \"Low Resource Similarity\" --&gt; \"High Resource Similarity\"\n    y-axis \"Low Market Commonality\" --&gt; \"High Market Commonality\"\n    quadrant-1 \"Direct Competitors\"\n    quadrant-2 \"Market Rivals\"\n    quadrant-3 \"Distant Players\"\n    quadrant-4 \"Resource Rivals\"\n\n\n\n\n\n\n\nDirect Competitors (high commonality, high similarity) — the obvious rivals: Pepsi vs. Coca-Cola in beverages, McDonald’s vs. Burger King in fast food. Highest mutual awareness, fastest response cycles.\nMarket Rivals (high commonality, low similarity) — competing for the same customer with very different resource bases: a traditional bookstore vs. Amazon, a taxi fleet vs. Uber. Often the source of disruption.\nResource Rivals (low commonality, high similarity) — similar capabilities but currently serving different markets. Latent competitors. Can become direct competitors quickly when they decide to enter.\nDistant Players (low commonality, low similarity) — typically irrelevant, until a technological shift suddenly merges previously separate markets (e.g., smartphones merged camera, GPS, music player, and phone industries).\n\n\n\n\n\n\n\nTipTP application\n\n\n\nIn TP2 — Internal Analysis, when you identify your focal firm’s competitors, don’t just list the obvious direct competitors. Identify at least one Market Rival (different resources, same customer) — these are the firms most likely to disrupt your focal firm in the next 3–5 years.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#competitive-actions-and-responses",
+    "href": "content/ch04.html#competitive-actions-and-responses",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.3 Competitive Actions and Responses",
+    "text": "4.3 Competitive Actions and Responses\nOnce you know who the competitors are, the next question is: what moves are they making, and how should we respond?\n\n4.3.1 Types of Competitive Actions\nStrategic actions (策略性行動) — large, hard-to-reverse moves that significantly alter the firm’s position:\n\nMajor capacity expansions (new fab, new factory)\nMergers and acquisitions\nEntry into new geographic markets\nLaunch of a flagship product line\nMajor brand repositioning\n\nTactical actions (戰術性行動) — smaller, easier-to-reverse moves intended to fine-tune position:\n\nPrice changes\nPromotional campaigns\nDistribution channel adjustments\nProduct feature updates\n\nThe distinction matters because strategic actions provoke strategic responses, while tactical actions usually attract only tactical responses. Misjudging this can be expensive.\n\n\n4.3.2 The Awareness–Motivation–Capability Framework\nA competitor will respond to your action only when all three conditions are satisfied:\n\n\n\n\n\n\nNoteAwareness · Motivation · Capability\n\n\n\n\nAwareness (覺察) — Does the competitor notice the action? In transparent markets (publicly listed firms, B2B with industry analysts), awareness is high. In opaque markets (private firms, niche regional plays), it can be surprisingly low.\nMotivation (動機) — Does the competitor have an incentive to respond? A market leader losing share has high motivation. A peripheral player whose core market is unaffected may rationally ignore the action.\nCapability (能力) — Can the competitor respond effectively? A response requires resources, organizational agility, and the right capabilities. A firm that lacks any one of these may be aware and motivated but unable to act.\n\n\n\nThis framework is asymmetric: you can deliberately attack competitors who have low capability or low motivation while avoiding direct confrontation with strong rivals. Aim where they cannot respond.\n\n\n4.3.3 First-Mover, Fast-Follower, Late-Mover\nIn any sequential game, position matters:\n\n\n\n\n\n\n\n\nPosition\nAdvantages\nRisks\n\n\n\n\nFirst-Mover (先行者)\nBrand recognition, customer lock-in, learning curve, patents, preempted resources\nPioneer’s burden — paying the cost of educating the market; technology bets that may fail\n\n\nFast-Follower (快速跟隨者)\nLearn from first-mover’s mistakes, avoid market-development costs, leapfrog with newer technology\nMust build differentiation rapidly; may be locked out if first-mover establishes network effects\n\n\nLate-Mover (後進者)\nMature technology, clear customer needs, established infrastructure\nLimited differentiation room; high entry barriers; commoditized margins\n\n\n\nThe optimal position depends on how the industry rewards experience vs. flexibility. In industries with strong network effects (social media, payment platforms), first-mover advantage is decisive. In industries where technology evolves quickly (semiconductors, smartphones), fast-followers often outperform pioneers.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#co-opetition-when-competition-meets-cooperation",
+    "href": "content/ch04.html#co-opetition-when-competition-meets-cooperation",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.4 Co-opetition — When Competition Meets Cooperation",
+    "text": "4.4 Co-opetition — When Competition Meets Cooperation\nThe traditional view treats competition as zero-sum — for one firm to win, another must lose. But many real-world situations are positive-sum: firms can simultaneously compete and cooperate, and the total pie can grow.\nThe seminal work by Brandenburger and Nalebuff (1996) in Co-opetition introduced game-theoretic thinking to strategy. Their Value Net extends Porter’s Five Forces by adding Complementors (互補者) — players whose products increase the value of yours.\n\n\n\n\n\nflowchart TB\n    FIRM[\"&lt;b&gt;Focal Firm&lt;/b&gt;\"]\n    CUST[\"Customers\"]\n    SUPP[\"Suppliers\"]\n    COMP[\"Competitors\"]\n    COMPL[\"Complementors\"]\n    \n    FIRM --- CUST\n    FIRM --- SUPP\n    FIRM --- COMP\n    FIRM --- COMPL\n    \n    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF\n    style CUST fill:#D8C3A5,stroke:#004030\n    style SUPP fill:#D8C3A5,stroke:#004030\n    style COMP fill:#EFE4D2,stroke:#004030\n    style COMPL fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\n\n4.4.1 Recognizing Complementors\nA complementor is a player whose presence makes customers value your product more:\n\n\n\n\n\n\n\n\nFocal industry\nCompetitors\nComplementors\n\n\n\n\nConsole hardware (PlayStation, Xbox)\nEach other\nGame studios\n\n\nSmartphone OS (iOS, Android)\nEach other\nApp developers\n\n\nElectric vehicles (Tesla, BYD)\nEach other\nCharging-station operators, battery suppliers\n\n\nCoffee shops (Starbucks, Louisa)\nEach other\nWiFi providers, food delivery platforms\n\n\nCloud computing (AWS, Azure)\nEach other\nSaaS vendors built on the platform\n\n\n\nThe strategic implication: a healthy ecosystem of complementors can be more valuable than weak competitors. Ruthless competition that drives complementors out of business often hurts the “winner” more than the “loser.”\n\n\n4.4.2 Co-opetitive Strategies\nThree common forms of co-opetition:\n\nStandard-setting alliances — competitors collaborate to establish a common technical standard (e.g., USB-C, HDMI, 5G specifications) that grows the total market. They then compete on implementation.\nSupply-chain partnerships — TSMC and its customers (AMD, NVIDIA, Apple) compete with each other’s customers but cooperate intimately on process node roadmaps.\nPre-competitive R&D consortia — pharmaceutical firms jointly fund early-stage research; auto manufacturers share charging infrastructure investment.\n\n\n\n\n\n\n\nTipTSMC as the master co-opetitor\n\n\n\nTSMC’s foundry model is a textbook case of strategic co-opetition. By declaring it would never design its own chips, TSMC removed itself from competition with its customers. This made it the trusted partner for Apple, NVIDIA, AMD, and Qualcomm — firms that compete fiercely with each other but all rely on TSMC. The result: TSMC captures a structural position no IDM can replicate. Strategy = redefining the relationship from “competitor” to “complementor.”",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#the-parts-framework-changing-the-game",
+    "href": "content/ch04.html#the-parts-framework-changing-the-game",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.5 The PARTS Framework — Changing the Game",
+    "text": "4.5 The PARTS Framework — Changing the Game\nBrandenburger and Nalebuff identified five levers for changing the game itself rather than just playing it well:\n\n\n\n\n\n\nImportantPARTS — Five levers for changing the game\n\n\n\n\nP — Players — Add or remove players to shift bargaining power. Bringing in a new supplier weakens existing suppliers; recruiting a new customer segment dilutes large-buyer power.\nA — Added Value — Increase the unique value you bring to others. The greater your added value, the more bargaining power you have.\nR — Rules — Negotiate or design rules (contracts, standards, regulations) that shape competition in your favor.\nT — Tactics — Manage perceptions. Signaling commitment (e.g., investing in dedicated capacity for one customer) can deter competitors.\nS — Scope — Change where the game is played. Expand into adjacent industries; redefine your market boundary.\n\n\n\nThis is a creative framework — its purpose is to remind strategists that the rules of the game are not fixed. Many of the most valuable strategic moves come from rewriting the game, not from out-playing competitors at a game whose rules they have set.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#competitive-dynamics-in-2026-a-few-patterns",
+    "href": "content/ch04.html#competitive-dynamics-in-2026-a-few-patterns",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "4.6 Competitive Dynamics in 2026 — A Few Patterns",
+    "text": "4.6 Competitive Dynamics in 2026 — A Few Patterns\nSeveral structural shifts are accelerating competitive dynamics in 2026:\n\nAI-accelerated imitation — Generative AI compresses the cycle from observing a competitor’s move to crafting a credible response. Competitive imitation is no longer an 18-month research project; it is a 2-week sprint.\nGeopolitical fragmentation — Markets are bifurcating along US-aligned and China-aligned lines. A firm that wins in one bloc may be barred from the other. Competitor sets are now bloc-specific.\nPlatform consolidation — In many digital industries, two or three platforms capture 80%+ of value. New entrants face network-effect lockouts unless they can credibly redefine the category.\nSustainability as competitive ground — Carbon disclosure and ESG ratings increasingly affect customer and investor decisions. Slow movers face capital-cost disadvantages that compound annually.\n\nThe implication: in 2026, dynamic capability (the ability to sense, seize, and reconfigure — see Chapter 6) matters more than static capability.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#self-check-questions",
+    "href": "content/ch04.html#self-check-questions",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Identifying Competitors\n\n\n\n\n\nFor Starbucks Taiwan, identify:\n\nTwo Direct Competitors (high market commonality, high resource similarity).\nTwo Market Rivals (same customer, different resources).\nOne Resource Rival (similar resources, currently different market) — a firm that could plausibly enter Starbucks’s market.\nFor your Resource Rival, apply the awareness–motivation–capability test: which of the three is the bottleneck preventing entry?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Action and Response\n\n\n\n\n\nIn 2024, BYD launched aggressive price cuts on its mid-range EVs in China, with some models reduced 15–20% in a single quarter.\n\nClassify this as a strategic or tactical action. Justify.\nFor two of BYD’s main competitors (e.g., Tesla China, Geely, Nio), apply the awareness–motivation–capability framework: which firms could/would respond, and how?\nWhat second-order effect might this price war have on complementors (battery makers, charging networks, dealerships)?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Spotting Complementors\n\n\n\n\n\nFor each focal firm below, identify one important complementor and explain how the focal firm could deepen the relationship:\n\nNintendo Switch console.\nTesla Supercharger network.\nLINE messaging platform in Taiwan.\nMicrosoft Office 365.\nAn MRT mass-transit system.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Applying PARTS\n\n\n\n\n\nChoose your TP focal company (or a Taiwan MNC of your choice). Identify one PARTS lever the firm has used in the past 5 years to change its competitive game, and one PARTS lever it has not yet used but could plausibly try.\n\nDescribe the historical move using the PARTS taxonomy.\nPropose the new move and predict the likely competitive response.\nWhat awareness–motivation–capability conditions would your competitors need to meet in order to respond?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#further-readings",
+    "href": "content/ch04.html#further-readings",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nBrandenburger, A. M. & Nalebuff, B. J. (1996). Co-opetition. Currency Doubleday. — The foundational text; PARTS framework, Value Net.\nChen, M. J. (1996). “Competitor Analysis and Interfirm Rivalry: Toward a Theoretical Integration.” Academy of Management Review, 21(1), 100–134. — The original market-commonality / resource-similarity framework.\nD’Aveni, R. A. (1994). Hypercompetition. Free Press. — Influential treatment of fast-cycle competition.\nSmith, K. G., Ferrier, W. J., & Ndofor, H. (2001). “Competitive Dynamics Research: Critique and Future Directions.” In Hitt, Freeman & Harrison (Eds.), The Blackwell Handbook of Strategic Management.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 4 — “Further Topics in Industry and Competitive Analysis”.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — Video 2.6 covers competitor identification from an entrepreneur’s vantage point.\n[CS] Corporate Strategy — Module 2 introduces game-theoretic thinking applicable to co-opetitive dynamics.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch04.html#looking-ahead",
+    "href": "content/ch04.html#looking-ahead",
+    "title": "Competitive Analysis & Co-opetitive Dynamics",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapters 3 and 4 together completed the outside-in view: industry structure plus competitive dynamics. We now turn the lens inward. Chapter 5 introduces the Resource-Based View (RBV) and the Value Chain — the foundational frameworks for diagnosing what makes a firm distinctive from the inside, and how distinctiveness translates into sustainable competitive advantage.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html",
+    "href": "content/ch07.html",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "",
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#learning-objectives",
+    "href": "content/ch07.html#learning-objectives",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDefine competitive advantage (CA) in terms of the V-P-C framework, and distinguish between temporary and sustainable advantage.\nApply Porter’s Generic Strategies — cost leadership, differentiation, and focus — to classify a firm’s positioning choice.\nRecognize the “stuck in the middle” problem and explain when hybrid strategies actually work.\nEvaluate strategic positioning using the Strategy Canvas (Kim & Mauborgne) to visualize differentiation.\nConnect generic strategies to the firm’s resources (Chapter 5) and dynamic capabilities (Chapter 6) — strategy is positioning plus the capacity to deliver it.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#what-is-competitive-advantage",
+    "href": "content/ch07.html#what-is-competitive-advantage",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.1 What Is Competitive Advantage?",
+    "text": "7.1 What Is Competitive Advantage?\nThroughout Chapters 3–6 we have been circling a central concept without defining it precisely. Now we make it explicit.\n\n\n\n\n\n\nNoteDefinition — Competitive Advantage (競爭優勢)\n\n\n\nA firm has a competitive advantage when it consistently earns above-average returns relative to its industry rivals. In V-P-C terms, this means the firm achieves either a higher (V−C) — more economic value created per unit — or captures a higher share of (V−C) through pricing power.\n\n\nCompetitive advantage is always relative. A firm cannot have an “absolute” advantage in isolation — it has an advantage over specific competitors in specific markets. This is why competitor identification (Chapter 4) is foundational: without knowing who you compete against, you cannot know whether you have an advantage.\n\n7.1.1 Temporary vs. Sustainable Advantage\n\n\n\n\n\n\n\n\n\nType\nDuration\nDriver\nExample\n\n\n\n\nTemporary CA\nMonths to ~3 years\nProduct novelty, first-mover position, regulatory window\nLatest smartphone feature, early-mover in a new geography\n\n\nSustainable CA\n5+ years\nVRIN-passing resources, dynamic capabilities, structural positioning\nTSMC foundry leadership, Costco membership model, LVMH brand portfolio\n\n\n\nIn hypercompetitive industries (D’Aveni, 1994) — software, consumer electronics, fashion — even “sustainable” advantage rarely lasts more than a decade. The ability to chain together temporary advantages through dynamic capabilities (Chapter 6) is itself a form of sustained advantage.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#porters-generic-strategies",
+    "href": "content/ch07.html#porters-generic-strategies",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.2 Porter’s Generic Strategies",
+    "text": "7.2 Porter’s Generic Strategies\nMichael Porter’s 1980 framework remains the most influential map of strategic positioning. It identifies the choice on two dimensions:\n\n\n\n\n\nflowchart TB\n    title[\"Porter's Generic Strategies\"]\n    CL[\"Cost Leadership: Broad market, lowest cost\"]\n    DIFF[\"Differentiation: Broad market, unique offering\"]\n    FC[\"Focused Cost: Narrow segment, lowest cost in segment\"]\n    FD[\"Focused Differentiation: Narrow segment, unique to segment\"]\n    style CL fill:#D8C3A5,stroke:#004030\n    style DIFF fill:#004030,stroke:#004030,color:#FFFFFF\n    style FC fill:#EFE4D2,stroke:#004030\n    style FD fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\nThe two dimensions are:\n\nSource of advantage: lower cost vs. higher perceived value (differentiation)\nCompetitive scope: broad market vs. narrow segment (focus)\n\n\n7.2.1 Cost Leadership (成本領導)\nA cost-leadership strategy aims to be the lowest-cost producer in the industry, then either:\n\nCharge industry-average prices and earn higher margins, or\nCharge below-industry-average prices and gain market share.\n\nSources of cost advantage typically include:\n\nEconomies of scale — fixed costs spread over high volume.\nEconomies of learning — unit costs decline predictably with cumulative experience.\nProcess efficiency — superior operational design (e.g., Toyota Production System).\nInput cost advantages — preferential access to raw materials, energy, or labor.\nVertical integration efficiencies — reduced transaction costs across the value chain.\n\n\n\n\n\n\n\nTipCost leadership is not “cheap”\n\n\n\nA cost leader maintains competitive product quality while minimizing cost. Walmart, Costco, IKEA, and Toyota are all cost leaders — none of them sells obviously inferior products. The discipline is to deliver acceptable V at structurally lower C, not to race quality to the bottom.\n\n\n\n\n7.2.2 Differentiation (差異化)\nA differentiation strategy aims to be uniquely valuable to customers along dimensions they care about — features, design, brand, service, ecosystem — and charge a premium that exceeds the cost of providing the differentiation.\nSources of differentiation typically include:\n\nProduct features — performance, reliability, design.\nBrand and reputation — accumulated trust, status signaling.\nCustomer service and relationships — perceived value of the experience.\nEcosystem and complementarity — value derived from compatible products and services.\nProprietary technology — patents, trade secrets, network effects.\n\nThe classic differentiators include Apple (design + ecosystem), BMW (engineering + brand), Starbucks (third-place experience), and Hermès (craftsmanship + scarcity).\n\n\n7.2.3 Focus (聚焦)\nA focus strategy targets a narrow market segment that is poorly served by broad-market competitors, and competes within that segment on either cost or differentiation. Examples:\n\nFocused cost: Aldi (limited assortment, hard discount in groceries).\nFocused differentiation: Ferrari (ultra-premium sports cars), Bloomberg Terminal (financial professionals).\n\nFocus works when the segment is large enough to support the firm but small enough that broad-market competitors cannot serve it efficiently.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#the-stuck-in-the-middle-problem",
+    "href": "content/ch07.html#the-stuck-in-the-middle-problem",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.3 The “Stuck in the Middle” Problem",
+    "text": "7.3 The “Stuck in the Middle” Problem\nPorter’s controversial argument: firms that try to simultaneously pursue cost leadership and differentiation often achieve neither — they are “stuck in the middle” (卡在中間), with cost structure too high to compete on price and offering too generic to command a premium.\n\n\n\n\n\nflowchart LR\n    A[\"Trying to be all things to all customers\"]\n    B[\"Costs creep up: customization, variety, complexity\"]\n    C[\"Differentiation diluted: cannot focus on any one customer well\"]\n    D[\"Margins squeezed from both ends\"]\n    A --&gt; B\n    A --&gt; C\n    B --&gt; D\n    C --&gt; D\n    style D fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\nClassic examples include US legacy airlines (sandwiched between low-cost carriers and premium full-service), and middle-tier department stores (squeezed between fast fashion and luxury).\n\n7.3.1 When Hybrid Strategies Work\nThe “stuck in the middle” warning is not absolute. Hybrid strategies can work when:\n\nOperational excellence reduces the trade-off — Toyota achieves both quality and low cost; IKEA achieves both design and price; Costco achieves both broad assortment and low prices.\nDifferent segments are served by different parts of the firm — Toyota’s Lexus division differentiates while the Toyota brand pursues mass market.\nIndustry structure changes — digital platforms enable mass customization at low marginal cost (Amazon, Shopify-powered storefronts).\n\nThe key insight: hybrid strategies require organizational sophistication — usually only large, mature firms can execute them. Younger or smaller firms generally must pick a clear position.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#strategy-canvas-visualizing-differentiation",
+    "href": "content/ch07.html#strategy-canvas-visualizing-differentiation",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.4 Strategy Canvas — Visualizing Differentiation",
+    "text": "7.4 Strategy Canvas — Visualizing Differentiation\nW. Chan Kim and Renée Mauborgne’s Strategy Canvas (from Blue Ocean Strategy, 2005) offers a powerful complement to Porter’s framework. Instead of classifying strategies, it visualizes them.\nThe canvas plots competitive factors on the x-axis and investment level on the y-axis. Each firm’s strategy appears as a curve. Strong differentiation shows up as a curve that diverges from competitors’.\nFor example, Cirque du Soleil’s strategy curve in the circus industry diverged dramatically from traditional circuses:\n\n\n\nFactor\nTraditional Circus\nCirque du Soleil\n\n\n\n\nStar performers\nHigh\nEliminated\n\n\nAnimal shows\nHigh\nEliminated\n\n\nAisle concession sales\nHigh\nReduced\n\n\nMultiple show arenas\nHigh\nReduced\n\n\nUnique venue\nLow\nHigh\n\n\nTheme\nLow\nHigh\n\n\nRefined environment\nLow\nHigh\n\n\nMultiple productions\nLow\nHigh\n\n\nArtistic music and dance\nLow\nHigh\n\n\n\nCirque didn’t out-compete traditional circuses; it redefined the category. This is the Blue Ocean logic — create uncontested market space rather than fight for share in a “Red Ocean” of bloody competition.\n\n\n\n\n\n\nTipThe Four Actions Framework\n\n\n\nKim & Mauborgne propose four questions to design a Blue Ocean strategy:\n\nEliminate — Which factors taken for granted in the industry should be eliminated?\nReduce — Which factors should be reduced well below industry standard?\nRaise — Which factors should be raised well above industry standard?\nCreate — Which factors should be created that the industry has never offered?\n\nApply these to your TP focal company in TP3 to identify potential repositioning moves.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#connecting-strategy-to-capability",
+    "href": "content/ch07.html#connecting-strategy-to-capability",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.5 Connecting Strategy to Capability",
+    "text": "7.5 Connecting Strategy to Capability\nA generic strategy is a positioning choice — but positioning without underlying capability is hollow. Chapter 5 (RBV) and Chapter 6 (dynamic capabilities) return here as essential complements:\n\n\n\n\n\n\n\n\nStrategy\nRequired Resources\nRequired Capabilities\n\n\n\n\nCost Leadership\nScale, efficient assets, low-cost inputs\nOperational excellence, supply-chain mastery, continuous cost engineering\n\n\nDifferentiation\nBrand, IP, design talent, ecosystem partners\nInnovation pipeline, customer insight, premium service delivery\n\n\nFocused Cost\nNiche operations, narrow asset base\nDeep segment knowledge, lean operations\n\n\nFocused Differentiation\nNiche brand, specialist talent\nExpert-level customer intimacy, segment-specific innovation\n\n\n\n\n\n\n\n\n\nImportantThe integration test\n\n\n\nAsk of any proposed strategy: Does the firm’s resource base and capability portfolio actually support this position? A “differentiation” strategy without R&D capability is wishful thinking. A “cost leadership” strategy without operational discipline collapses on first cost shock. Strategy = position × capability, not just position.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#generic-strategies-in-2026",
+    "href": "content/ch07.html#generic-strategies-in-2026",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.6 Generic Strategies in 2026",
+    "text": "7.6 Generic Strategies in 2026\nThree forces are reshaping how generic strategies play out:\n\nAI compresses differentiation lifecycles — what once took 18 months to copy now takes 6 weeks. Differentiators must run faster, with shorter advantage windows but more frequent renewal.\nSustainability becomes a differentiation axis — carbon-neutral supply chains, circular product design, ESG-aligned sourcing are increasingly value drivers, not just compliance costs.\nGeopolitical bifurcation favors focus — firms that try to be globally undifferentiated face mounting compliance complexity. Specializing in one bloc (US-aligned vs. China-aligned) is increasingly a viable focus strategy.\n\nThe generic-strategies framework remains valid; the clock speed and the available positioning axes have changed.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#self-check-questions",
+    "href": "content/ch07.html#self-check-questions",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Classifying Generic Strategies\n\n\n\n\n\nFor each of the following Taiwan companies, identify the dominant generic strategy and justify with two pieces of evidence:\n\n全聯福利中心 PX Mart.\n鼎泰豐 Din Tai Fung.\n微星科技 MSI (gaming PCs).\n統一超商 7-ELEVEN Taiwan.\n大同電鍋 TATUNG rice cookers.\n誠品書店 Eslite Bookstore.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Diagnosing Stuck-in-the-Middle\n\n\n\n\n\nIdentify a firm (Taiwan or global) that you believe is currently stuck in the middle.\n\nDescribe its current positioning ambiguity.\nIdentify the cost-leader and differentiator competitors squeezing it.\nRecommend a clear repositioning — should it move toward cost leadership, differentiation, or focus? Justify with reference to its existing resources and capabilities.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Strategy Canvas\n\n\n\n\n\nFor your TP focal company, build a simple Strategy Canvas:\n\nIdentify 6–8 competitive factors that customers in this industry care about.\nPlot the focal firm’s investment level (Low / Medium / High) for each factor.\nPlot two main competitors on the same axes.\nIdentify one factor where the focal firm could eliminate investment, and one where it could create a new dimension of competition.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Strategy + Capability Integration\n\n\n\n\n\nSuppose a Taiwanese mid-sized contract manufacturer announces it will pursue a branded differentiation strategy in consumer electronics over the next 5 years.\n\nList the resources and capabilities such a strategy requires (cite Chapter 5 categories).\nIdentify the gaps between current contract-manufacturing capabilities and required branded-business capabilities.\nRecommend whether the firm should build, buy, or partner to close each gap.\nWhat dynamic capabilities (Chapter 6) will be tested most heavily in this transition?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#further-readings",
+    "href": "content/ch07.html#further-readings",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nPorter, M. E. (1980). Competitive Strategy: Techniques for Analyzing Industries and Competitors. Free Press. — The foundational text on generic strategies.\nPorter, M. E. (1985). Competitive Advantage: Creating and Sustaining Superior Performance. Free Press. — The deeper treatment with value-chain integration.\nKim, W. C. & Mauborgne, R. (2005). Blue Ocean Strategy. Harvard Business School Press. — Strategy Canvas and Four Actions Framework.\nMagretta, J. (2011). Understanding Michael Porter: The Essential Guide to Competition and Strategy. Harvard Business Review Press. — A clear, modern summary.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapters 7–9 — covers cost advantage, differentiation, and industry evolution.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[CS] Corporate Strategy — UIUC Gies, modules on competitive positioning directly extend this chapter.\n[ENT] Entrepreneurship 1 — opportunity-segmentation modules complement the focus-strategy discussion.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#looking-ahead",
+    "href": "content/ch07.html#looking-ahead",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapter 7 has provided the framework for how to compete in an established industry. But not every firm operates in an established industry — many are creating new markets, deploying disruptive technologies, or operating as entrepreneurial ventures. Chapter 8 turns to technology, innovation, and entrepreneurship — the strategic logic of building advantage where the rules of competition are still being written.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/add-content.html",
+    "href": "content/add-content.html",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/add-content.html#edit-and-add-your-pages",
+    "href": "content/add-content.html#edit-and-add-your-pages",
+    "title": "Customize",
+    "section": "",
+    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
+  },
+  {
+    "objectID": "content/add-content.html#add-your-pages-the-project",
+    "href": "content/add-content.html#add-your-pages-the-project",
+    "title": "Customize",
+    "section": "Add your pages the project",
+    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
   },
   {
     "objectID": "content/ch01.html",
@@ -371,465 +869,11 @@
     ]
   },
   {
-    "objectID": "content/add-content.html",
-    "href": "content/add-content.html",
-    "title": "Customize",
+    "objectID": "content/acknowledgements.html",
+    "href": "content/acknowledgements.html",
+    "title": "Acknowledgments",
     "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
-  },
-  {
-    "objectID": "content/add-content.html#edit-and-add-your-pages",
-    "href": "content/add-content.html#edit-and-add-your-pages",
-    "title": "Customize",
-    "section": "",
-    "text": "Edit the qmd or md files in the content folder. qmd files can include code (R, Python, Julia) and lots of Quarto markdown bells and whistles (like call-outs, cross-references, auto-citations and much more).\nEach page should start with\n---\ntitle: your title\n---\nand the first header will be the 2nd level, so ##. Note, there are situations where you leave off\n---\ntitle: your title\n---\nand start the qmd file with a level header #, but if using the default title yaml (in the --- fence) is a good habit since it makes it easy for Quarto convert your qmd file to other formats (like into a presentation)."
-  },
-  {
-    "objectID": "content/add-content.html#add-your-pages-the-project",
-    "href": "content/add-content.html#add-your-pages-the-project",
-    "title": "Customize",
-    "section": "Add your pages the project",
-    "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
-  },
-  {
-    "objectID": "content/ch07.html",
-    "href": "content/ch07.html",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "",
-    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#learning-objectives",
-    "href": "content/ch07.html#learning-objectives",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDefine competitive advantage (CA) in terms of the V-P-C framework, and distinguish between temporary and sustainable advantage.\nApply Porter’s Generic Strategies — cost leadership, differentiation, and focus — to classify a firm’s positioning choice.\nRecognize the “stuck in the middle” problem and explain when hybrid strategies actually work.\nEvaluate strategic positioning using the Strategy Canvas (Kim & Mauborgne) to visualize differentiation.\nConnect generic strategies to the firm’s resources (Chapter 5) and dynamic capabilities (Chapter 6) — strategy is positioning plus the capacity to deliver it.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#what-is-competitive-advantage",
-    "href": "content/ch07.html#what-is-competitive-advantage",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "7.1 What Is Competitive Advantage?",
-    "text": "7.1 What Is Competitive Advantage?\nThroughout Chapters 3–6 we have been circling a central concept without defining it precisely. Now we make it explicit.\n\n\n\n\n\n\nNoteDefinition — Competitive Advantage (競爭優勢)\n\n\n\nA firm has a competitive advantage when it consistently earns above-average returns relative to its industry rivals. In V-P-C terms, this means the firm achieves either a higher (V−C) — more economic value created per unit — or captures a higher share of (V−C) through pricing power.\n\n\nCompetitive advantage is always relative. A firm cannot have an “absolute” advantage in isolation — it has an advantage over specific competitors in specific markets. This is why competitor identification (Chapter 4) is foundational: without knowing who you compete against, you cannot know whether you have an advantage.\n\n7.1.1 Temporary vs. Sustainable Advantage\n\n\n\n\n\n\n\n\n\nType\nDuration\nDriver\nExample\n\n\n\n\nTemporary CA\nMonths to ~3 years\nProduct novelty, first-mover position, regulatory window\nLatest smartphone feature, early-mover in a new geography\n\n\nSustainable CA\n5+ years\nVRIN-passing resources, dynamic capabilities, structural positioning\nTSMC foundry leadership, Costco membership model, LVMH brand portfolio\n\n\n\nIn hypercompetitive industries (D’Aveni, 1994) — software, consumer electronics, fashion — even “sustainable” advantage rarely lasts more than a decade. The ability to chain together temporary advantages through dynamic capabilities (Chapter 6) is itself a form of sustained advantage.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#porters-generic-strategies",
-    "href": "content/ch07.html#porters-generic-strategies",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "7.2 Porter’s Generic Strategies",
-    "text": "7.2 Porter’s Generic Strategies\nMichael Porter’s 1980 framework remains the most influential map of strategic positioning. It identifies the choice on two dimensions:\n\n\n\n\n\nflowchart TB\n    title[\"Porter's Generic Strategies\"]\n    CL[\"Cost Leadership: Broad market, lowest cost\"]\n    DIFF[\"Differentiation: Broad market, unique offering\"]\n    FC[\"Focused Cost: Narrow segment, lowest cost in segment\"]\n    FD[\"Focused Differentiation: Narrow segment, unique to segment\"]\n    style CL fill:#D8C3A5,stroke:#004030\n    style DIFF fill:#004030,stroke:#004030,color:#FFFFFF\n    style FC fill:#EFE4D2,stroke:#004030\n    style FD fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\nThe two dimensions are:\n\nSource of advantage: lower cost vs. higher perceived value (differentiation)\nCompetitive scope: broad market vs. narrow segment (focus)\n\n\n7.2.1 Cost Leadership (成本領導)\nA cost-leadership strategy aims to be the lowest-cost producer in the industry, then either:\n\nCharge industry-average prices and earn higher margins, or\nCharge below-industry-average prices and gain market share.\n\nSources of cost advantage typically include:\n\nEconomies of scale — fixed costs spread over high volume.\nEconomies of learning — unit costs decline predictably with cumulative experience.\nProcess efficiency — superior operational design (e.g., Toyota Production System).\nInput cost advantages — preferential access to raw materials, energy, or labor.\nVertical integration efficiencies — reduced transaction costs across the value chain.\n\n\n\n\n\n\n\nTipCost leadership is not “cheap”\n\n\n\nA cost leader maintains competitive product quality while minimizing cost. Walmart, Costco, IKEA, and Toyota are all cost leaders — none of them sells obviously inferior products. The discipline is to deliver acceptable V at structurally lower C, not to race quality to the bottom.\n\n\n\n\n7.2.2 Differentiation (差異化)\nA differentiation strategy aims to be uniquely valuable to customers along dimensions they care about — features, design, brand, service, ecosystem — and charge a premium that exceeds the cost of providing the differentiation.\nSources of differentiation typically include:\n\nProduct features — performance, reliability, design.\nBrand and reputation — accumulated trust, status signaling.\nCustomer service and relationships — perceived value of the experience.\nEcosystem and complementarity — value derived from compatible products and services.\nProprietary technology — patents, trade secrets, network effects.\n\nThe classic differentiators include Apple (design + ecosystem), BMW (engineering + brand), Starbucks (third-place experience), and Hermès (craftsmanship + scarcity).\n\n\n7.2.3 Focus (聚焦)\nA focus strategy targets a narrow market segment that is poorly served by broad-market competitors, and competes within that segment on either cost or differentiation. Examples:\n\nFocused cost: Aldi (limited assortment, hard discount in groceries).\nFocused differentiation: Ferrari (ultra-premium sports cars), Bloomberg Terminal (financial professionals).\n\nFocus works when the segment is large enough to support the firm but small enough that broad-market competitors cannot serve it efficiently.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#the-stuck-in-the-middle-problem",
-    "href": "content/ch07.html#the-stuck-in-the-middle-problem",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "7.3 The “Stuck in the Middle” Problem",
-    "text": "7.3 The “Stuck in the Middle” Problem\nPorter’s controversial argument: firms that try to simultaneously pursue cost leadership and differentiation often achieve neither — they are “stuck in the middle” (卡在中間), with cost structure too high to compete on price and offering too generic to command a premium.\n\n\n\n\n\nflowchart LR\n    A[\"Trying to be all things to all customers\"]\n    B[\"Costs creep up: customization, variety, complexity\"]\n    C[\"Differentiation diluted: cannot focus on any one customer well\"]\n    D[\"Margins squeezed from both ends\"]\n    A --&gt; B\n    A --&gt; C\n    B --&gt; D\n    C --&gt; D\n    style D fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\nClassic examples include US legacy airlines (sandwiched between low-cost carriers and premium full-service), and middle-tier department stores (squeezed between fast fashion and luxury).\n\n7.3.1 When Hybrid Strategies Work\nThe “stuck in the middle” warning is not absolute. Hybrid strategies can work when:\n\nOperational excellence reduces the trade-off — Toyota achieves both quality and low cost; IKEA achieves both design and price; Costco achieves both broad assortment and low prices.\nDifferent segments are served by different parts of the firm — Toyota’s Lexus division differentiates while the Toyota brand pursues mass market.\nIndustry structure changes — digital platforms enable mass customization at low marginal cost (Amazon, Shopify-powered storefronts).\n\nThe key insight: hybrid strategies require organizational sophistication — usually only large, mature firms can execute them. Younger or smaller firms generally must pick a clear position.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#strategy-canvas-visualizing-differentiation",
-    "href": "content/ch07.html#strategy-canvas-visualizing-differentiation",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "7.4 Strategy Canvas — Visualizing Differentiation",
-    "text": "7.4 Strategy Canvas — Visualizing Differentiation\nW. Chan Kim and Renée Mauborgne’s Strategy Canvas (from Blue Ocean Strategy, 2005) offers a powerful complement to Porter’s framework. Instead of classifying strategies, it visualizes them.\nThe canvas plots competitive factors on the x-axis and investment level on the y-axis. Each firm’s strategy appears as a curve. Strong differentiation shows up as a curve that diverges from competitors’.\nFor example, Cirque du Soleil’s strategy curve in the circus industry diverged dramatically from traditional circuses:\n\n\n\nFactor\nTraditional Circus\nCirque du Soleil\n\n\n\n\nStar performers\nHigh\nEliminated\n\n\nAnimal shows\nHigh\nEliminated\n\n\nAisle concession sales\nHigh\nReduced\n\n\nMultiple show arenas\nHigh\nReduced\n\n\nUnique venue\nLow\nHigh\n\n\nTheme\nLow\nHigh\n\n\nRefined environment\nLow\nHigh\n\n\nMultiple productions\nLow\nHigh\n\n\nArtistic music and dance\nLow\nHigh\n\n\n\nCirque didn’t out-compete traditional circuses; it redefined the category. This is the Blue Ocean logic — create uncontested market space rather than fight for share in a “Red Ocean” of bloody competition.\n\n\n\n\n\n\nTipThe Four Actions Framework\n\n\n\nKim & Mauborgne propose four questions to design a Blue Ocean strategy:\n\nEliminate — Which factors taken for granted in the industry should be eliminated?\nReduce — Which factors should be reduced well below industry standard?\nRaise — Which factors should be raised well above industry standard?\nCreate — Which factors should be created that the industry has never offered?\n\nApply these to your TP focal company in TP3 to identify potential repositioning moves.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#connecting-strategy-to-capability",
-    "href": "content/ch07.html#connecting-strategy-to-capability",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "7.5 Connecting Strategy to Capability",
-    "text": "7.5 Connecting Strategy to Capability\nA generic strategy is a positioning choice — but positioning without underlying capability is hollow. Chapter 5 (RBV) and Chapter 6 (dynamic capabilities) return here as essential complements:\n\n\n\n\n\n\n\n\nStrategy\nRequired Resources\nRequired Capabilities\n\n\n\n\nCost Leadership\nScale, efficient assets, low-cost inputs\nOperational excellence, supply-chain mastery, continuous cost engineering\n\n\nDifferentiation\nBrand, IP, design talent, ecosystem partners\nInnovation pipeline, customer insight, premium service delivery\n\n\nFocused Cost\nNiche operations, narrow asset base\nDeep segment knowledge, lean operations\n\n\nFocused Differentiation\nNiche brand, specialist talent\nExpert-level customer intimacy, segment-specific innovation\n\n\n\n\n\n\n\n\n\nImportantThe integration test\n\n\n\nAsk of any proposed strategy: Does the firm’s resource base and capability portfolio actually support this position? A “differentiation” strategy without R&D capability is wishful thinking. A “cost leadership” strategy without operational discipline collapses on first cost shock. Strategy = position × capability, not just position.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#generic-strategies-in-2026",
-    "href": "content/ch07.html#generic-strategies-in-2026",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "7.6 Generic Strategies in 2026",
-    "text": "7.6 Generic Strategies in 2026\nThree forces are reshaping how generic strategies play out:\n\nAI compresses differentiation lifecycles — what once took 18 months to copy now takes 6 weeks. Differentiators must run faster, with shorter advantage windows but more frequent renewal.\nSustainability becomes a differentiation axis — carbon-neutral supply chains, circular product design, ESG-aligned sourcing are increasingly value drivers, not just compliance costs.\nGeopolitical bifurcation favors focus — firms that try to be globally undifferentiated face mounting compliance complexity. Specializing in one bloc (US-aligned vs. China-aligned) is increasingly a viable focus strategy.\n\nThe generic-strategies framework remains valid; the clock speed and the available positioning axes have changed.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#self-check-questions",
-    "href": "content/ch07.html#self-check-questions",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "Self-Check Questions",
-    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Classifying Generic Strategies\n\n\n\n\n\nFor each of the following Taiwan companies, identify the dominant generic strategy and justify with two pieces of evidence:\n\n全聯福利中心 PX Mart.\n鼎泰豐 Din Tai Fung.\n微星科技 MSI (gaming PCs).\n統一超商 7-ELEVEN Taiwan.\n大同電鍋 TATUNG rice cookers.\n誠品書店 Eslite Bookstore.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Diagnosing Stuck-in-the-Middle\n\n\n\n\n\nIdentify a firm (Taiwan or global) that you believe is currently stuck in the middle.\n\nDescribe its current positioning ambiguity.\nIdentify the cost-leader and differentiator competitors squeezing it.\nRecommend a clear repositioning — should it move toward cost leadership, differentiation, or focus? Justify with reference to its existing resources and capabilities.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Strategy Canvas\n\n\n\n\n\nFor your TP focal company, build a simple Strategy Canvas:\n\nIdentify 6–8 competitive factors that customers in this industry care about.\nPlot the focal firm’s investment level (Low / Medium / High) for each factor.\nPlot two main competitors on the same axes.\nIdentify one factor where the focal firm could eliminate investment, and one where it could create a new dimension of competition.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Strategy + Capability Integration\n\n\n\n\n\nSuppose a Taiwanese mid-sized contract manufacturer announces it will pursue a branded differentiation strategy in consumer electronics over the next 5 years.\n\nList the resources and capabilities such a strategy requires (cite Chapter 5 categories).\nIdentify the gaps between current contract-manufacturing capabilities and required branded-business capabilities.\nRecommend whether the firm should build, buy, or partner to close each gap.\nWhat dynamic capabilities (Chapter 6) will be tested most heavily in this transition?",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#further-readings",
-    "href": "content/ch07.html#further-readings",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "Further Readings",
-    "text": "Further Readings\n\nPorter, M. E. (1980). Competitive Strategy: Techniques for Analyzing Industries and Competitors. Free Press. — The foundational text on generic strategies.\nPorter, M. E. (1985). Competitive Advantage: Creating and Sustaining Superior Performance. Free Press. — The deeper treatment with value-chain integration.\nKim, W. C. & Mauborgne, R. (2005). Blue Ocean Strategy. Harvard Business School Press. — Strategy Canvas and Four Actions Framework.\nMagretta, J. (2011). Understanding Michael Porter: The Essential Guide to Competition and Strategy. Harvard Business Review Press. — A clear, modern summary.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapters 7–9 — covers cost advantage, differentiation, and industry evolution.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[CS] Corporate Strategy — UIUC Gies, modules on competitive positioning directly extend this chapter.\n[ENT] Entrepreneurship 1 — opportunity-segmentation modules complement the focus-strategy discussion.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch07.html#looking-ahead",
-    "href": "content/ch07.html#looking-ahead",
-    "title": "Competitive Advantages & Generic Strategies",
-    "section": "Looking Ahead",
-    "text": "Looking Ahead\nChapter 7 has provided the framework for how to compete in an established industry. But not every firm operates in an established industry — many are creating new markets, deploying disruptive technologies, or operating as entrepreneurial ventures. Chapter 8 turns to technology, innovation, and entrepreneurship — the strategic logic of building advantage where the rules of competition are still being written.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 7. Competitive Advantages & Generic Strategies"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html",
-    "href": "content/ch04.html",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "",
-    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#learning-objectives",
-    "href": "content/ch04.html#learning-objectives",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDistinguish between industry structure (Chapter 3) and competitive dynamics (this chapter), and explain why both matter.\nDefine a firm’s competitor set using market commonality and resource similarity.\nMap competitive actions (price moves, capacity expansions, product launches) and predict competitive responses using the awareness–motivation–capability framework.\nApply game-theoretic thinking to multi-firm interactions, distinguishing zero-sum competition from positive-sum co-opetition.\nRecognize when complementors create more value than competitors destroy, and design strategies that exploit this asymmetry.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#from-structure-to-dynamics",
-    "href": "content/ch04.html#from-structure-to-dynamics",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.1 From Structure to Dynamics",
-    "text": "4.1 From Structure to Dynamics\nChapter 3 treated the industry as a relatively stable structure. But in reality, firms inside an industry are constantly moving: cutting prices, launching products, opening factories, acquiring rivals, lobbying regulators. Industry structure tells you the average profitability available; competitive dynamics tells you which firms capture how much of it.\nThe shift from structure to dynamics is the shift from a static to a dynamic lens:\n\n\n\nStatic (Structure)\nDynamic (Dynamics)\n\n\n\n\nFive Forces\nAction–Response sequences\n\n\nIndustry concentration\nCompetitor identification\n\n\nEntry barriers\nFirst-mover vs. fast-follower\n\n\nAverage profitability\nFirm-level differential profitability\n\n\nLong horizon\nShort-to-medium horizon\n\n\n\nA firm that masters only structural analysis will misread the timing of its environment. A firm that masters only dynamic analysis will misread the deep currents beneath the surface moves. Strategic management requires both.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#who-are-your-competitors-market-commonality-and-resource-similarity",
-    "href": "content/ch04.html#who-are-your-competitors-market-commonality-and-resource-similarity",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity",
-    "text": "4.2 Who Are Your Competitors? — Market Commonality and Resource Similarity\nThe first step in competitive analysis is deceptively hard: who exactly are we competing with?\nTwo firms are competitors to the extent that they share:\n\nMarket commonality (市場共同性) — the degree to which they serve the same customers in the same segments and geographies.\nResource similarity (資源相似性) — the degree to which their resource and capability profiles overlap.\n\n\n\n\n\n\nquadrantChart\n    title Competitor Identification Matrix\n    x-axis \"Low Resource Similarity\" --&gt; \"High Resource Similarity\"\n    y-axis \"Low Market Commonality\" --&gt; \"High Market Commonality\"\n    quadrant-1 \"Direct Competitors\"\n    quadrant-2 \"Market Rivals\"\n    quadrant-3 \"Distant Players\"\n    quadrant-4 \"Resource Rivals\"\n\n\n\n\n\n\n\nDirect Competitors (high commonality, high similarity) — the obvious rivals: Pepsi vs. Coca-Cola in beverages, McDonald’s vs. Burger King in fast food. Highest mutual awareness, fastest response cycles.\nMarket Rivals (high commonality, low similarity) — competing for the same customer with very different resource bases: a traditional bookstore vs. Amazon, a taxi fleet vs. Uber. Often the source of disruption.\nResource Rivals (low commonality, high similarity) — similar capabilities but currently serving different markets. Latent competitors. Can become direct competitors quickly when they decide to enter.\nDistant Players (low commonality, low similarity) — typically irrelevant, until a technological shift suddenly merges previously separate markets (e.g., smartphones merged camera, GPS, music player, and phone industries).\n\n\n\n\n\n\n\nTipTP application\n\n\n\nIn TP2 — Internal Analysis, when you identify your focal firm’s competitors, don’t just list the obvious direct competitors. Identify at least one Market Rival (different resources, same customer) — these are the firms most likely to disrupt your focal firm in the next 3–5 years.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#competitive-actions-and-responses",
-    "href": "content/ch04.html#competitive-actions-and-responses",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.3 Competitive Actions and Responses",
-    "text": "4.3 Competitive Actions and Responses\nOnce you know who the competitors are, the next question is: what moves are they making, and how should we respond?\n\n4.3.1 Types of Competitive Actions\nStrategic actions (策略性行動) — large, hard-to-reverse moves that significantly alter the firm’s position:\n\nMajor capacity expansions (new fab, new factory)\nMergers and acquisitions\nEntry into new geographic markets\nLaunch of a flagship product line\nMajor brand repositioning\n\nTactical actions (戰術性行動) — smaller, easier-to-reverse moves intended to fine-tune position:\n\nPrice changes\nPromotional campaigns\nDistribution channel adjustments\nProduct feature updates\n\nThe distinction matters because strategic actions provoke strategic responses, while tactical actions usually attract only tactical responses. Misjudging this can be expensive.\n\n\n4.3.2 The Awareness–Motivation–Capability Framework\nA competitor will respond to your action only when all three conditions are satisfied:\n\n\n\n\n\n\nNoteAwareness · Motivation · Capability\n\n\n\n\nAwareness (覺察) — Does the competitor notice the action? In transparent markets (publicly listed firms, B2B with industry analysts), awareness is high. In opaque markets (private firms, niche regional plays), it can be surprisingly low.\nMotivation (動機) — Does the competitor have an incentive to respond? A market leader losing share has high motivation. A peripheral player whose core market is unaffected may rationally ignore the action.\nCapability (能力) — Can the competitor respond effectively? A response requires resources, organizational agility, and the right capabilities. A firm that lacks any one of these may be aware and motivated but unable to act.\n\n\n\nThis framework is asymmetric: you can deliberately attack competitors who have low capability or low motivation while avoiding direct confrontation with strong rivals. Aim where they cannot respond.\n\n\n4.3.3 First-Mover, Fast-Follower, Late-Mover\nIn any sequential game, position matters:\n\n\n\n\n\n\n\n\nPosition\nAdvantages\nRisks\n\n\n\n\nFirst-Mover (先行者)\nBrand recognition, customer lock-in, learning curve, patents, preempted resources\nPioneer’s burden — paying the cost of educating the market; technology bets that may fail\n\n\nFast-Follower (快速跟隨者)\nLearn from first-mover’s mistakes, avoid market-development costs, leapfrog with newer technology\nMust build differentiation rapidly; may be locked out if first-mover establishes network effects\n\n\nLate-Mover (後進者)\nMature technology, clear customer needs, established infrastructure\nLimited differentiation room; high entry barriers; commoditized margins\n\n\n\nThe optimal position depends on how the industry rewards experience vs. flexibility. In industries with strong network effects (social media, payment platforms), first-mover advantage is decisive. In industries where technology evolves quickly (semiconductors, smartphones), fast-followers often outperform pioneers.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#co-opetition-when-competition-meets-cooperation",
-    "href": "content/ch04.html#co-opetition-when-competition-meets-cooperation",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.4 Co-opetition — When Competition Meets Cooperation",
-    "text": "4.4 Co-opetition — When Competition Meets Cooperation\nThe traditional view treats competition as zero-sum — for one firm to win, another must lose. But many real-world situations are positive-sum: firms can simultaneously compete and cooperate, and the total pie can grow.\nThe seminal work by Brandenburger and Nalebuff (1996) in Co-opetition introduced game-theoretic thinking to strategy. Their Value Net extends Porter’s Five Forces by adding Complementors (互補者) — players whose products increase the value of yours.\n\n\n\n\n\nflowchart TB\n    FIRM[\"&lt;b&gt;Focal Firm&lt;/b&gt;\"]\n    CUST[\"Customers\"]\n    SUPP[\"Suppliers\"]\n    COMP[\"Competitors\"]\n    COMPL[\"Complementors\"]\n    \n    FIRM --- CUST\n    FIRM --- SUPP\n    FIRM --- COMP\n    FIRM --- COMPL\n    \n    style FIRM fill:#004030,stroke:#004030,color:#FFFFFF\n    style CUST fill:#D8C3A5,stroke:#004030\n    style SUPP fill:#D8C3A5,stroke:#004030\n    style COMP fill:#EFE4D2,stroke:#004030\n    style COMPL fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\n\n4.4.1 Recognizing Complementors\nA complementor is a player whose presence makes customers value your product more:\n\n\n\n\n\n\n\n\nFocal industry\nCompetitors\nComplementors\n\n\n\n\nConsole hardware (PlayStation, Xbox)\nEach other\nGame studios\n\n\nSmartphone OS (iOS, Android)\nEach other\nApp developers\n\n\nElectric vehicles (Tesla, BYD)\nEach other\nCharging-station operators, battery suppliers\n\n\nCoffee shops (Starbucks, Louisa)\nEach other\nWiFi providers, food delivery platforms\n\n\nCloud computing (AWS, Azure)\nEach other\nSaaS vendors built on the platform\n\n\n\nThe strategic implication: a healthy ecosystem of complementors can be more valuable than weak competitors. Ruthless competition that drives complementors out of business often hurts the “winner” more than the “loser.”\n\n\n4.4.2 Co-opetitive Strategies\nThree common forms of co-opetition:\n\nStandard-setting alliances — competitors collaborate to establish a common technical standard (e.g., USB-C, HDMI, 5G specifications) that grows the total market. They then compete on implementation.\nSupply-chain partnerships — TSMC and its customers (AMD, NVIDIA, Apple) compete with each other’s customers but cooperate intimately on process node roadmaps.\nPre-competitive R&D consortia — pharmaceutical firms jointly fund early-stage research; auto manufacturers share charging infrastructure investment.\n\n\n\n\n\n\n\nTipTSMC as the master co-opetitor\n\n\n\nTSMC’s foundry model is a textbook case of strategic co-opetition. By declaring it would never design its own chips, TSMC removed itself from competition with its customers. This made it the trusted partner for Apple, NVIDIA, AMD, and Qualcomm — firms that compete fiercely with each other but all rely on TSMC. The result: TSMC captures a structural position no IDM can replicate. Strategy = redefining the relationship from “competitor” to “complementor.”",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#the-parts-framework-changing-the-game",
-    "href": "content/ch04.html#the-parts-framework-changing-the-game",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.5 The PARTS Framework — Changing the Game",
-    "text": "4.5 The PARTS Framework — Changing the Game\nBrandenburger and Nalebuff identified five levers for changing the game itself rather than just playing it well:\n\n\n\n\n\n\nImportantPARTS — Five levers for changing the game\n\n\n\n\nP — Players — Add or remove players to shift bargaining power. Bringing in a new supplier weakens existing suppliers; recruiting a new customer segment dilutes large-buyer power.\nA — Added Value — Increase the unique value you bring to others. The greater your added value, the more bargaining power you have.\nR — Rules — Negotiate or design rules (contracts, standards, regulations) that shape competition in your favor.\nT — Tactics — Manage perceptions. Signaling commitment (e.g., investing in dedicated capacity for one customer) can deter competitors.\nS — Scope — Change where the game is played. Expand into adjacent industries; redefine your market boundary.\n\n\n\nThis is a creative framework — its purpose is to remind strategists that the rules of the game are not fixed. Many of the most valuable strategic moves come from rewriting the game, not from out-playing competitors at a game whose rules they have set.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#competitive-dynamics-in-2026-a-few-patterns",
-    "href": "content/ch04.html#competitive-dynamics-in-2026-a-few-patterns",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "4.6 Competitive Dynamics in 2026 — A Few Patterns",
-    "text": "4.6 Competitive Dynamics in 2026 — A Few Patterns\nSeveral structural shifts are accelerating competitive dynamics in 2026:\n\nAI-accelerated imitation — Generative AI compresses the cycle from observing a competitor’s move to crafting a credible response. Competitive imitation is no longer an 18-month research project; it is a 2-week sprint.\nGeopolitical fragmentation — Markets are bifurcating along US-aligned and China-aligned lines. A firm that wins in one bloc may be barred from the other. Competitor sets are now bloc-specific.\nPlatform consolidation — In many digital industries, two or three platforms capture 80%+ of value. New entrants face network-effect lockouts unless they can credibly redefine the category.\nSustainability as competitive ground — Carbon disclosure and ESG ratings increasingly affect customer and investor decisions. Slow movers face capital-cost disadvantages that compound annually.\n\nThe implication: in 2026, dynamic capability (the ability to sense, seize, and reconfigure — see Chapter 6) matters more than static capability.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#self-check-questions",
-    "href": "content/ch04.html#self-check-questions",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "Self-Check Questions",
-    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Identifying Competitors\n\n\n\n\n\nFor Starbucks Taiwan, identify:\n\nTwo Direct Competitors (high market commonality, high resource similarity).\nTwo Market Rivals (same customer, different resources).\nOne Resource Rival (similar resources, currently different market) — a firm that could plausibly enter Starbucks’s market.\nFor your Resource Rival, apply the awareness–motivation–capability test: which of the three is the bottleneck preventing entry?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Action and Response\n\n\n\n\n\nIn 2024, BYD launched aggressive price cuts on its mid-range EVs in China, with some models reduced 15–20% in a single quarter.\n\nClassify this as a strategic or tactical action. Justify.\nFor two of BYD’s main competitors (e.g., Tesla China, Geely, Nio), apply the awareness–motivation–capability framework: which firms could/would respond, and how?\nWhat second-order effect might this price war have on complementors (battery makers, charging networks, dealerships)?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Spotting Complementors\n\n\n\n\n\nFor each focal firm below, identify one important complementor and explain how the focal firm could deepen the relationship:\n\nNintendo Switch console.\nTesla Supercharger network.\nLINE messaging platform in Taiwan.\nMicrosoft Office 365.\nAn MRT mass-transit system.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Applying PARTS\n\n\n\n\n\nChoose your TP focal company (or a Taiwan MNC of your choice). Identify one PARTS lever the firm has used in the past 5 years to change its competitive game, and one PARTS lever it has not yet used but could plausibly try.\n\nDescribe the historical move using the PARTS taxonomy.\nPropose the new move and predict the likely competitive response.\nWhat awareness–motivation–capability conditions would your competitors need to meet in order to respond?",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#further-readings",
-    "href": "content/ch04.html#further-readings",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "Further Readings",
-    "text": "Further Readings\n\nBrandenburger, A. M. & Nalebuff, B. J. (1996). Co-opetition. Currency Doubleday. — The foundational text; PARTS framework, Value Net.\nChen, M. J. (1996). “Competitor Analysis and Interfirm Rivalry: Toward a Theoretical Integration.” Academy of Management Review, 21(1), 100–134. — The original market-commonality / resource-similarity framework.\nD’Aveni, R. A. (1994). Hypercompetition. Free Press. — Influential treatment of fast-cycle competition.\nSmith, K. G., Ferrier, W. J., & Ndofor, H. (2001). “Competitive Dynamics Research: Critique and Future Directions.” In Hitt, Freeman & Harrison (Eds.), The Blackwell Handbook of Strategic Management.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 4 — “Further Topics in Industry and Competitive Analysis”.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[ENT] Entrepreneurship 1: Developing the Opportunity — Video 2.6 covers competitor identification from an entrepreneur’s vantage point.\n[CS] Corporate Strategy — Module 2 introduces game-theoretic thinking applicable to co-opetitive dynamics.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/ch04.html#looking-ahead",
-    "href": "content/ch04.html#looking-ahead",
-    "title": "Competitive Analysis & Co-opetitive Dynamics",
-    "section": "Looking Ahead",
-    "text": "Looking Ahead\nChapters 3 and 4 together completed the outside-in view: industry structure plus competitive dynamics. We now turn the lens inward. Chapter 5 introduces the Resource-Based View (RBV) and the Value Chain — the foundational frameworks for diagnosing what makes a firm distinctive from the inside, and how distinctiveness translates into sustainable competitive advantage.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
-    ]
-  },
-  {
-    "objectID": "content/rendering.html",
-    "href": "content/rendering.html",
-    "title": "Rendering",
-    "section": "",
-    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
-  },
-  {
-    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "title": "Rendering",
-    "section": "Step 1. Make sure you have a recent RStudio",
-    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
-  },
-  {
-    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "title": "Rendering",
-    "section": "Step 2. Clone and create RStudio project",
-    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
-  },
-  {
-    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
-    "href": "content/rendering.html#step-3.-render-within-rstudio",
-    "title": "Rendering",
-    "section": "Step 3. Render within RStudio",
-    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
-  },
-  {
-    "objectID": "content/customizing.html",
-    "href": "content/customizing.html",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
-  },
-  {
-    "objectID": "content/customizing.html#quarto-documentation",
-    "href": "content/customizing.html#quarto-documentation",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
-  },
-  {
-    "objectID": "content/customizing.html#examples",
-    "href": "content/customizing.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFay lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
-  },
-  {
-    "objectID": "content/ch06.html",
-    "href": "content/ch06.html",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "",
-    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#learning-objectives",
-    "href": "content/ch06.html#learning-objectives",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDefine core competencies and distinguish them from ordinary capabilities and from products themselves.\nApply Teece’s dynamic capabilities framework — sensing, seizing, and reconfiguring — to firms operating in fast-changing environments.\nRecognize the strategic risk of core rigidities — the dark side of past success — and explain how organizational routines can become liabilities.\nDistinguish exploitation (deepening existing competencies) from exploration (building new ones), and understand why ambidextrous organizations can do both.\nConnect dynamic capabilities to the GenAI era — what does it mean to “sense, seize, and reconfigure” when AI accelerates every cycle?",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#from-static-resources-to-dynamic-capabilities",
-    "href": "content/ch06.html#from-static-resources-to-dynamic-capabilities",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "6.1 From Static Resources to Dynamic Capabilities",
-    "text": "6.1 From Static Resources to Dynamic Capabilities\nChapter 5 introduced the Resource-Based View as a powerful explanation for why some firms persistently outperform others. Toyota’s production system, Apple’s design culture, TSMC’s process know-how — these are deeply embedded, hard to imitate, and visibly correlated with sustained advantage.\nBut Chapter 5 left an unanswered question: what happens when the environment changes?\nKodak owned arguably the strongest set of resources in 20th-century photography — film chemistry, distribution, brand. Within 15 years (1995–2010), digital photography rendered most of those resources obsolete. Nokia had unmatched mobile-phone manufacturing and supply-chain capability — and was destroyed by Apple’s redefinition of the smartphone. Static resources are not enough. What firms need is the capability to reconfigure their resources as the environment shifts.\nThis is the territory of core competencies (核心能力) and dynamic capabilities (動態能耐) — the higher-order constructs that explain not just why a firm has advantage today, but how it will renew that advantage tomorrow.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#core-competencies",
-    "href": "content/ch06.html#core-competencies",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "6.2 Core Competencies",
-    "text": "6.2 Core Competencies\nThe concept of core competence was introduced by C. K. Prahalad and Gary Hamel in their landmark 1990 Harvard Business Review article. Their argument: managers think too much about products and business units, and not enough about the underlying competencies that produce winning products.\n\n\n\n\n\n\nNoteThree tests of a core competence (Prahalad & Hamel, 1990)\n\n\n\nA capability qualifies as a core competence when it satisfies all three:\n\nProvides access to a wide variety of markets — it is not tied to a single product.\nMakes a significant contribution to perceived customer benefits of the end product.\nIs difficult for competitors to imitate — it integrates multiple technologies and organizational routines.\n\n\n\n\n6.2.1 Examples\n\nHonda — competence in small engines (originally for motorcycles) opened markets in lawnmowers, generators, marine outboards, automobiles, and jet engines.\nSony — competence in miniaturization enabled successive generations of portable products from transistor radios to Walkmans to PlayStations.\n3M — competence in coatings and adhesives spawned tens of thousands of products from Post-it notes to surgical drapes to LCD optical films.\nApple — competence in human-centered industrial design integrated with software transferred from Mac to iPod to iPhone to AirPods to Vision Pro.\n\nThe competence is the root; products are the fruit. Competitors who study Apple’s products often miss what makes Apple difficult to copy — the underlying integration of design, software, supply chain, and retail experience.\n\n\n6.2.2 Core Competence vs. Core Product vs. End Product\nPrahalad & Hamel proposed a three-level architecture:\n\n\n\n\n\n\n\n\nLevel\nExample (Honda)\nExample (Apple)\n\n\n\n\nCore Competence\nEngineering small, efficient engines\nIntegrated industrial design + software + ecosystem\n\n\nCore Product\nHonda engine modules\niOS / silicon (e.g., M-series chips)\n\n\nEnd Product\nCivic, Accord, Odyssey, generators\niPhone, iPad, MacBook, Apple Watch\n\n\n\nThe strategic implication: a firm that loses sight of its core competence and competes only on end products will eventually be out-innovated by a competitor who continues investing at the competence level.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#dynamic-capabilities-teeces-framework",
-    "href": "content/ch06.html#dynamic-capabilities-teeces-framework",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "6.3 Dynamic Capabilities — Teece’s Framework",
-    "text": "6.3 Dynamic Capabilities — Teece’s Framework\nDavid Teece formalized dynamic capabilities in a series of papers from the 1990s through the 2010s. His definition:\n\nDynamic capabilities are the firm’s ability to integrate, build, and reconfigure internal and external competencies to address rapidly changing environments.\n\nTeece organizes dynamic capabilities into three clusters:\n\n\n\n\n\nflowchart LR\n    SENSE[\"SENSING: Identifying opportunities and threats\"]\n    SEIZE[\"SEIZING: Mobilizing resources to capture opportunities\"]\n    RECONFIG[\"RECONFIGURING: Realigning assets and structures\"]\n    SENSE --&gt; SEIZE\n    SEIZE --&gt; RECONFIG\n    RECONFIG -.feedback.-&gt; SENSE\n    style SENSE fill:#D8C3A5,stroke:#004030\n    style SEIZE fill:#004030,stroke:#004030,color:#FFFFFF\n    style RECONFIG fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\n\n6.3.1 Sensing (感知)\nSensing is about scanning the environment for emerging opportunities and threats — customer-need shifts, technological trajectories, regulatory changes, competitor moves. It requires:\n\nOutward-facing organizational structures — close customer contact, supplier intimacy, ecosystem partnerships.\nCognitive diversity — teams that include people who see different futures.\nTolerance for weak signals — willingness to take seriously evidence that doesn’t fit current assumptions.\n\n\n\n6.3.2 Seizing (掌握)\nSeizing converts sensed opportunities into committed resource allocations: building factories, hiring teams, launching products, signing partnerships. It requires:\n\nDecision speed and quality — escaping analysis paralysis.\nBusiness-model design — choosing how to monetize the opportunity.\nInvestment discipline — committing meaningfully without over-committing.\n\nThe hardest part of seizing is timing. Move too early and the market isn’t ready (Apple’s 1993 Newton); move too late and competitors have locked you out (Microsoft in mobile, 2007–2015).\n\n\n6.3.3 Reconfiguring (重組)\nReconfiguring is the most demanding cluster — actually changing the firm’s existing structures, routines, and culture to align with new realities. It requires:\n\nAsset orchestration — moving resources from declining businesses to emerging ones.\nOrganizational change capability — managing fear, identity, and politics during transitions.\nDecoupling and re-coupling — separating units that no longer fit and integrating new ones.\n\n\n\n\n\n\n\nTipTSMC as a master of dynamic capabilities\n\n\n\nTSMC’s 35-year history is a textbook case of all three clusters in action:\n\nSensing — Morris Chang sensed in the 1980s that semiconductor design and manufacturing would decouple, decades before the trend was obvious.\nSeizing — TSMC committed to a pure-play foundry model when conventional wisdom said an IDM (integrated device manufacturer) was the only viable strategy.\nReconfiguring — TSMC has repeatedly transitioned through process generations (130nm → 90nm → 65nm → … → 3nm → 2nm), each requiring a near-total reorganization of fabs, suppliers, and customer interfaces.\n\nThe result is one of the most enduring competitive advantages in modern industrial history.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#core-rigidities-the-dark-side-of-past-success",
-    "href": "content/ch06.html#core-rigidities-the-dark-side-of-past-success",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "6.4 Core Rigidities — The Dark Side of Past Success",
-    "text": "6.4 Core Rigidities — The Dark Side of Past Success\nDorothy Leonard-Barton (1992) introduced a haunting counter-concept: core rigidities (核心僵化). The same routines, values, and capabilities that produce success in one era can become obstacles in the next.\n\n\n\n\n\n\n\n\nPhase\nWhat helped\nWhat now hurts\n\n\n\n\nYear 1–10\nEngineering-led culture wins markets\n\n\n\nYear 10–25\nRoutines codify, scale, and refine\nEngineering culture rejects design and UX as “soft”\n\n\nYear 25+\n\nCannot pivot to design-led products; loses to Apple\n\n\n\nThis is the Innovator’s Dilemma as posed by Clayton Christensen — incumbent firms struggle to embrace disruptive technologies precisely because they are so good at their existing technology. Customers reward what works today; processes optimize what worked yesterday; values reject what doesn’t fit.\nThe strategic implication: a competence and a rigidity are the same thing, viewed from different time horizons. The firms that escape this trap are those that deliberately maintain a portfolio of capabilities — including some that look unproductive today but may matter tomorrow.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#ambidextrous-organizations-doing-both-at-once",
-    "href": "content/ch06.html#ambidextrous-organizations-doing-both-at-once",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "6.5 Ambidextrous Organizations — Doing Both at Once",
-    "text": "6.5 Ambidextrous Organizations — Doing Both at Once\nHow does a firm avoid core rigidities while continuing to exploit current strengths? Charles O’Reilly and Michael Tushman’s answer is the ambidextrous organization (雙元組織) — a structure that simultaneously:\n\nExploits existing competencies for short-term efficiency and profit, and\nExplores new competencies for long-term renewal.\n\nThe key design principle is structural separation: the exploration unit operates with different processes, metrics, culture, and often physical location from the exploitation unit. The two are linked at the senior-leadership level but kept separate at the operating level.\n\n\n\n\n\n\nNoteExamples of ambidextrous design\n\n\n\n\nAmazon runs AWS (cloud, exploration → now exploitation) alongside the original e-commerce business; both are stewarded under one corporate structure but with distinct PnL accountability.\nIBM at multiple points in its history launched separate skunkworks (the original PC team in Boca Raton, the Watson AI unit) outside the mainframe culture.\nToyota maintains a hybrid-vehicle strategy (Prius, exploration in early years) alongside its core internal-combustion business.\n\n\n\nThe hard part is leadership. Senior executives must allocate resources across exploitation and exploration, defend exploration units from short-term pressure, and resist the gravity of “doing what we know works.”",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#dynamic-capabilities-in-the-genai-era",
-    "href": "content/ch06.html#dynamic-capabilities-in-the-genai-era",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "6.6 Dynamic Capabilities in the GenAI Era",
-    "text": "6.6 Dynamic Capabilities in the GenAI Era\nThe 2026 environment compresses every dynamic-capability cycle:\n\nSensing accelerates — LLMs can synthesize customer reviews, social media, news, and competitor filings in hours, not weeks. Firms with mature AI workflows detect weak signals their competitors miss.\nSeizing accelerates — Code generation, design generation, and rapid prototyping shrink the time from idea to MVP from quarters to weeks.\nReconfiguring accelerates — and disrupts — AI-driven restructuring decisions (workforce reallocation, automation rollouts) happen faster, but also create new core rigidities. Firms that build their identity around “AI-first processes” may find themselves rigid against the next paradigm shift.\n\n\n\n\n\n\n\nTipDynamic capabilities as a TP analytical lens\n\n\n\nWhen you analyze your TP focal company in TP3 — Growth Strategy, ask all three questions:\n\nSensing — Has the firm seen the major external shifts (tech, regulatory, geopolitical) coming? What is its scanning machinery?\nSeizing — When the firm has identified an opportunity, how fast does it move? Cite specific examples (acquisitions, product launches, capacity decisions) with dates.\nReconfiguring — Has the firm successfully restructured itself in the past 10 years? What did it preserve, what did it shed?\n\nA firm that scores well on sensing but poorly on reconfiguring is a future Kodak. A firm that scores well on reconfiguring but poorly on sensing is constantly catching up. The greatest firms score well on all three.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#self-check-questions",
-    "href": "content/ch06.html#self-check-questions",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "Self-Check Questions",
-    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Identifying Core Competencies\n\n\n\n\n\nFor two of the following firms, identify what you believe is the firm’s true core competence (the competence behind the products, not the products themselves). Apply Prahalad & Hamel’s three-test criteria.\n\nTesla.\n統一企業 Uni-President.\nSpotify.\n王品集團 Wowprime Restaurants.\nWalmart.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Sensing Failure\n\n\n\n\n\nPick a famous case where an incumbent firm failed to sense a major shift in time (e.g., Kodak/digital, Nokia/smartphone, Blockbuster/streaming, Sears/e-commerce).\n\nReconstruct the early signals the firm could have detected.\nIdentify what organizational features blocked sensing — was it culture, structure, incentives, or all three?\nWhat sensing mechanisms could a firm in a similar position install today using GenAI tools?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Core Rigidity Diagnosis\n\n\n\n\n\nChoose your TP focal company. Identify one capability that is currently a strength but has the potential to become a core rigidity within the next 5–10 years.\n\nDescribe the capability and why it is currently valuable.\nIdentify the future environmental shift that could turn this capability into a liability.\nPropose a strategy the firm could adopt now to preserve the strength while building optionality for the shift.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Designing Ambidexterity\n\n\n\n\n\nImagine you are advising a successful Taiwanese contract manufacturer that wants to build a brand-led consumer business while maintaining its OEM/ODM core. Apply ambidextrous-organization principles:\n\nWhat aspects should be separated between the two businesses (culture, location, metrics, talent)?\nWhat aspects should be shared (technology, supplier relationships, capital allocation)?\nIdentify two leadership challenges the CEO will face during the transition.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#further-readings",
-    "href": "content/ch06.html#further-readings",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "Further Readings",
-    "text": "Further Readings\n\nPrahalad, C. K. & Hamel, G. (1990). “The Core Competence of the Corporation.” Harvard Business Review, May–June. — The foundational article.\nTeece, D. J., Pisano, G., & Shuen, A. (1997). “Dynamic Capabilities and Strategic Management.” Strategic Management Journal, 18(7), 509–533.\nTeece, D. J. (2007). “Explicating Dynamic Capabilities: The Nature and Microfoundations of (Sustainable) Enterprise Performance.” Strategic Management Journal, 28(13), 1319–1350. — The mature framework with sensing/seizing/reconfiguring.\nLeonard-Barton, D. (1992). “Core Capabilities and Core Rigidities: A Paradox in Managing New Product Development.” Strategic Management Journal, 13(S1), 111–125.\nO’Reilly, C. A. & Tushman, M. L. (2013). “Organizational Ambidexterity: Past, Present, and Future.” Academy of Management Perspectives, 27(4), 324–338.\nChristensen, C. M. (1997). The Innovator’s Dilemma. Harvard Business School Press. — Companion reading on how core competencies become core rigidities.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[CS] Corporate Strategy — Modules on dynamic capabilities and corporate renewal directly extend this chapter’s content.\n[ENT] Entrepreneurship 1: Developing the Opportunity — Sections on opportunity recognition map onto Teece’s “sensing” cluster.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/ch06.html#looking-ahead",
-    "href": "content/ch06.html#looking-ahead",
-    "title": "Core Competencies & Dynamic Capabilities",
-    "section": "Looking Ahead",
-    "text": "Looking Ahead\nChapters 5 and 6 together completed the inside-out view: static resources, value-chain activities, and the dynamic capabilities that allow firms to renew their advantage. We now have both lenses — outside-in (Chapters 3–4) and inside-out (Chapters 5–6) — and can begin synthesizing them.\nChapter 7 turns to the central question of business strategy: given an industry context and a resource base, how should a firm position itself to compete? We will introduce Porter’s Generic Strategies — cost leadership, differentiation, and focus — and the strategic decisions that shape competitive position.",
-    "crumbs": [
-      "Part I. Concepts & Frameworks",
-      "Ch 6. Core Competencies & Dynamic Capabilities"
-    ]
-  },
-  {
-    "objectID": "content/publishing.html",
-    "href": "content/publishing.html",
-    "title": "Publishing",
-    "section": "",
-    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
-  },
-  {
-    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "title": "Publishing",
-    "section": "Turn on GitHub Pages for your repo",
-    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
-  },
-  {
-    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "title": "Publishing",
-    "section": "Do your first publish to gh-pages",
-    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
-  },
-  {
-    "objectID": "content/publishing.html#dont-like-using-gh-pages",
-    "href": "content/publishing.html#dont-like-using-gh-pages",
-    "title": "Publishing",
-    "section": "Don’t like using gh-pages?",
-    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
   },
   {
     "objectID": "content/ch02.html",
