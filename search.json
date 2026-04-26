@@ -414,7 +414,84 @@
     "href": "content/ch09.html#the-spectrum-of-integration",
     "title": "Corporate Strategy — Vertical Integration",
     "section": "9.2 The Spectrum of Integration",
-    "text": "9.2 The Spectrum of Integration\nVertical integration is not binary. A useful spectrum:",
+    "text": "9.2 The Spectrum of Integration\nVertical integration is not binary. A useful spectrum:\n\n\n\n\n\nflowchart LR\n    A[\"Spot market: Buy from anyone, anytime\"]\n    B[\"Long-term contract: Stable supplier relationships\"]\n    C[\"Strategic alliance: Joint planning, shared investment\"]\n    D[\"Tapered integration: Make some, buy some\"]\n    E[\"Full integration: Own the entire stage\"]\n    A --&gt; B\n    B --&gt; C\n    C --&gt; D\n    D --&gt; E\n    style A fill:#FAF6F0,stroke:#004030\n    style B fill:#EFE4D2,stroke:#004030\n    style C fill:#D8C3A5,stroke:#004030\n    style D fill:#D8C3A5,stroke:#004030\n    style E fill:#004030,stroke:#004030,color:#FFFFFF\n\n\n\n\n\n\n\nSpot-market transactions — buying on the open market with no commitment. Maximum flexibility, no lock-in, but high search costs and no strategic relationship.\nLong-term contracts — multi-year supply agreements with specified terms. Reduce uncertainty but require contract enforcement.\nStrategic alliances — joint planning, co-investment, sometimes equity stakes (covered in Chapter 12).\nTapered integration — the firm produces a portion of its needs internally and buys the rest. Common in semiconductors, automotive, retail.\nFull integration — the firm owns 100% of the stage in question.\n\nThe tapered option deserves special attention. Producing 30–50% of demand internally provides a benchmark for external suppliers (you know the true cost), reduces dependency, and preserves market discipline — without paying the full cost of capital lock-in.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 9. Corporate Strategy — Vertical Integration"
+    ]
+  },
+  {
+    "objectID": "content/ch09.html#why-integrate-williamsons-transaction-cost-economics",
+    "href": "content/ch09.html#why-integrate-williamsons-transaction-cost-economics",
+    "title": "Corporate Strategy — Vertical Integration",
+    "section": "9.3 Why Integrate? Williamson’s Transaction Cost Economics",
+    "text": "9.3 Why Integrate? Williamson’s Transaction Cost Economics\nOliver Williamson’s Transaction Cost Economics (TCE, 交易成本經濟學), building on Ronald Coase, provides the most rigorous framework for the make-or-buy decision. The core insight: markets and firms are alternative governance structures, each with its own costs.\n\n\n\n\n\n\nImportantWhen to Make (Vertical Integration Wins)\n\n\n\nThree conditions push toward in-house production:\n\nAsset specificity (資產專屬性) — When the asset is highly specific to a particular use (e.g., a chip designed for one customer’s product), market exchange becomes risky. The supplier can hold up the buyer; the buyer can hold up the supplier. Internal production avoids this hold-up problem.\nUncertainty (不確定性) — When future requirements are hard to predict, long contracts are hard to write. Internal production allows adaptive coordination without renegotiation.\nFrequency (交易頻率) — When the same transaction occurs repeatedly, the fixed costs of internal coordination are amortized across many transactions.\n\nWhen all three are high, transaction costs in the market exceed the bureaucratic costs of internal production. Vertical integration becomes efficient.\n\n\n\n9.3.1 When to Buy (Outsourcing Wins)\nThe same logic in reverse:\n\nLow asset specificity — commodity inputs traded on liquid markets.\nLow uncertainty — stable, predictable requirements.\nSpecialist suppliers offer scale economies — the supplier serves many buyers and achieves cost levels no single buyer can match.\n\nThe TSMC foundry model is the canonical example: chip design is very specific to each customer, but fabrication has enormous economies of scale. By outsourcing fabrication to TSMC, fabless designers (NVIDIA, AMD, Apple) avoid the capital lock-in of owning fabs while TSMC achieves world-leading scale.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 9. Corporate Strategy — Vertical Integration"
+    ]
+  },
+  {
+    "objectID": "content/ch09.html#the-strategic-benefits-of-vertical-integration",
+    "href": "content/ch09.html#the-strategic-benefits-of-vertical-integration",
+    "title": "Corporate Strategy — Vertical Integration",
+    "section": "9.4 The Strategic Benefits of Vertical Integration",
+    "text": "9.4 The Strategic Benefits of Vertical Integration\nBeyond pure transaction-cost arguments, integration can serve strategic purposes:\n\n\n\n\n\n\n\n\nBenefit\nMechanism\nExample\n\n\n\n\nCost economies\nEliminate supplier markups; coordinate production schedules\nSteel mills owning iron-ore mines\n\n\nQuality control\nDirect oversight of inputs and processes\nApple’s tight control over component sourcing\n\n\nSupply security\nInsulation from supplier disruptions\nTesla’s lithium and cobalt agreements\n\n\nDifferentiation support\nProprietary control over key features\nApple Silicon (M-series chips)\n\n\nInformation access\nReal-time visibility into customer needs (forward integration)\nA consumer-goods firm running its own e-commerce\n\n\nEntry barriers\nOwning a critical stage can deter competitors\nSaudi Aramco’s integrated oil operations",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 9. Corporate Strategy — Vertical Integration"
+    ]
+  },
+  {
+    "objectID": "content/ch09.html#the-strategic-costs-of-vertical-integration",
+    "href": "content/ch09.html#the-strategic-costs-of-vertical-integration",
+    "title": "Corporate Strategy — Vertical Integration",
+    "section": "9.5 The Strategic Costs of Vertical Integration",
+    "text": "9.5 The Strategic Costs of Vertical Integration\nIntegration is not free. The costs are often less visible but equally real:\n\n\n\n\n\n\n\n\nCost\nMechanism\nExample\n\n\n\n\nBureaucratic overhead\nInternal coordination requires managers, processes, IT systems\nConglomerates with bloated headquarters\n\n\nLoss of market discipline\nInternal suppliers escape the cost pressure of external competition\nInefficient in-house IT departments\n\n\nCapital lock-in\nSpecific assets cannot be redeployed when industry shifts\nGM’s owned parts plants during the EV transition\n\n\nReduced flexibility\nCannot easily switch suppliers when better options emerge\nVertically integrated PC makers in the 1990s\n\n\nStrategic distraction\nManagement attention spread across diverse activities\nConglomerates pre-1990s\n\n\nCapability gaps\nEach stage requires different competencies; the firm may be excellent at one and mediocre at others\nManufacturing firms running poor retail operations\n\n\n\n\n\n\n\n\n\nTipThe “core focus” counter-argument\n\n\n\nThe deconstruction wave of the 1990s–2000s — driven by Hamel & Prahalad’s core-competence concept — pushed many large firms toward deintegration. IBM exited PC manufacturing; HP spun off enterprise services; GE shed financial services. The argument: focus on core competencies, outsource the rest. This is not always right — firms that under-integrate can lose strategic control of critical inputs. The pendulum swings back when supply chains become unreliable.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 9. Corporate Strategy — Vertical Integration"
+    ]
+  },
+  {
+    "objectID": "content/ch09.html#modern-patterns-of-vertical-integration",
+    "href": "content/ch09.html#modern-patterns-of-vertical-integration",
+    "title": "Corporate Strategy — Vertical Integration",
+    "section": "9.6 Modern Patterns of Vertical Integration",
+    "text": "9.6 Modern Patterns of Vertical Integration\n\n9.6.1 Reshoring and Strategic Re-integration\nAfter three decades of globalized outsourcing, several forces are pushing selective re-integration:\n\nGeopolitical risk — US-China tensions, semiconductor export controls, and supply-chain weaponization have made foreign dependence strategically dangerous.\nPandemic shocks — COVID-19 demonstrated how thin global supply chains can break catastrophically.\nSustainability requirements — Scope 3 emissions disclosure makes opaque supply chains a regulatory liability.\nAI-enabled coordination — modern ERP and AI systems lower the bureaucratic cost of internal coordination, shifting the make-or-buy threshold.\n\nThe result: firms are selectively re-integrating specific stages. Apple maintains tight control over silicon design; TSMC is building fabs in Arizona, Japan, and Germany at customer request; auto OEMs are taking equity stakes in lithium mines.\n\n\n9.6.2 Forward Integration into Direct-to-Consumer\nThe rise of e-commerce and social media has reduced the transaction costs of customer access. Many firms that once relied on retailers and distributors are integrating forward:\n\nConsumer brands launching D2C (direct-to-consumer) channels.\nManufacturers running their own brand stores (Apple Store, Tesla showrooms).\nIndustrial firms providing service contracts directly rather than through dealers.\n\nThe benefit is richer customer data and higher margins; the cost is building retail/service capabilities that may not match the firm’s manufacturing strengths.\n\n\n\n\n\n\nTipVertical integration in your TP analysis\n\n\n\nFor TP3 — Growth Strategy, ask:\n\nWhich stages of the value chain does the focal firm currently own? Which does it outsource?\nAre the outsourced stages becoming strategically critical (rising asset specificity, geopolitical risk, sustainability pressure)? Should the firm consider re-integration?\nAre the integrated stages losing competitive vitality (high cost, slow innovation)? Should the firm consider divesting?\nWhat hybrid arrangements (long-term contracts, alliances, tapered integration) might capture the benefits of both make and buy?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 9. Corporate Strategy — Vertical Integration"
+    ]
+  },
+  {
+    "objectID": "content/ch09.html#self-check-questions",
+    "href": "content/ch09.html#self-check-questions",
+    "title": "Corporate Strategy — Vertical Integration",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Diagnosing Integration Choice\n\n\n\n\n\nFor each firm, identify whether the firm has chosen primarily integration or outsourcing for the indicated stage, and assess whether the choice fits TCE logic:\n\nApple — semiconductor design vs. fabrication.\nTesla — battery cells vs. battery packs.\nInditex (Zara) — design and core garment production vs. logistics.\nTSMC — fab operations vs. chip design.\nCostco — store-brand products (Kirkland) vs. branded merchandise.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Asset Specificity Analysis\n\n\n\n\n\nFor each transaction below, assess the level of asset specificity (low / medium / high) and predict whether market exchange or vertical integration is more efficient:\n\nA printing firm purchasing standard 80gsm copy paper.\nA car manufacturer purchasing a custom-designed dashboard component.\nA coffee chain purchasing arabica beans from multiple origins.\nA pharmaceutical firm purchasing a patent-protected active ingredient available from one supplier.\nA semiconductor firm purchasing EUV lithography equipment.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Re-integration Pressure\n\n\n\n\n\nThe 2020–2026 period has seen many firms reverse decades of outsourcing decisions. Choose one Taiwan or global MNC that has recently reshored or re-integrated:\n\nIdentify the specific stage that was re-integrated.\nDiagnose which forces (geopolitical, pandemic, sustainability, AI coordination) drove the decision.\nAssess whether the move was strategically sound — what are the long-term costs the firm now bears?\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Tapered Integration Design\n\n\n\n\n\nSuppose your TP focal company currently buys 100% of a critical input from a single supplier. The supplier has recently been acquired by a competitor.\n\nDiagnose the strategic risk.\nPropose a tapered integration strategy — what fraction should be produced internally, and why?\nIdentify the resources and capabilities the firm would need to build for in-house production.\nOutline a 3-year transition plan with milestones.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 9. Corporate Strategy — Vertical Integration"
+    ]
+  },
+  {
+    "objectID": "content/ch09.html#further-readings",
+    "href": "content/ch09.html#further-readings",
+    "title": "Corporate Strategy — Vertical Integration",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nWilliamson, O. E. (1985). The Economic Institutions of Capitalism. Free Press. — Foundational text on transaction-cost economics.\nCoase, R. H. (1937). “The Nature of the Firm.” Economica, 4(16), 386–405. — The original article asking why firms exist.\nStuckey, J. & White, D. (1993). “When and When Not to Vertically Integrate.” Sloan Management Review, Spring. — Classic practitioner-oriented framework.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapter 14 — “Vertical Integration and the Scope of the Firm”.\nHelper, S. & Henderson, R. (2014). “Management Practices, Relational Contracts, and the Decline of General Motors.” Journal of Economic Perspectives, 28(1), 49–72. — Modern case study of integration’s hidden costs.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[CS] Corporate Strategy — UIUC Gies, modules on vertical scope and the make-or-buy decision.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 9. Corporate Strategy — Vertical Integration"
+    ]
+  },
+  {
+    "objectID": "content/ch09.html#looking-ahead",
+    "href": "content/ch09.html#looking-ahead",
+    "title": "Corporate Strategy — Vertical Integration",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapter 9 has examined the vertical dimension of corporate strategy: how many stages of the value chain to operate. Chapter 10 turns to the horizontal dimension: how many different businesses or product categories to operate. Together, these decisions define the scope of the firm — and through scope, much of its strategic identity.",
     "crumbs": [
       "Part I. Concepts & Frameworks",
       "Ch 9. Corporate Strategy — Vertical Integration"
