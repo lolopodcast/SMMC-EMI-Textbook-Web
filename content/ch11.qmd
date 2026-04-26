@@ -1,3 +1,130 @@
+---
+title: "Globalization & Geographical Expansion"
+subtitle: "Chapter 11 — Strategy Across Borders"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Explain why firms internationalize and identify the **drivers** (cost, market, government, competition) and **barriers** (cultural, regulatory, logistical) of cross-border expansion.
+2. Distinguish four classic **international strategies** — global standardization, multidomestic, transnational, international — using the integration–responsiveness framework.
+3. Apply the **CAGE Distance Framework** (Ghemawat) to assess the difficulty of operating across specific country pairs.
+4. Choose appropriately among **entry modes** — exporting, licensing, joint venture, wholly-owned subsidiary, M&A — based on commitment, control, and risk trade-offs.
+5. Evaluate the impact of **geopolitical bifurcation**, **supply-chain reshoring**, and **AI-enabled cross-border coordination** on global strategy in 2026.
+
+---
+
+## 11.1 Why Firms Internationalize
+
+Recall the definition of globalization from Chapter 1:
+
+> **Globalization** is the closer integration of countries and peoples, brought about by reduced costs of transportation and communication and the breaking down of artificial barriers to flows of goods, services, capital, knowledge, and people across borders.
+
+For a firm, internationalization is **not** the same as globalization — it is a **strategic choice** to participate in cross-border activity. The choice is driven by four broad motivations:
+
+| Driver | Logic |
+|---|---|
+| **Market-seeking** | Larger total addressable market; growth where home market is saturated |
+| **Resource-seeking** | Access to raw materials, skilled labor, lower-cost inputs |
+| **Efficiency-seeking** | Scale economies, location-based production cost advantages |
+| **Strategic-asset-seeking** | Acquiring technology, brands, or capabilities that exist abroad |
+
+Most multinationals have **multiple** motivations. TSMC's investments in Arizona and Japan are simultaneously market-seeking (closer to US/Japanese customers), resource-seeking (skilled engineers), and strategic (geopolitical insurance against China-Taiwan tensions).
+
+::: {.callout-note}
+## Is IBM still a "U.S. company"?
+
+A telling question: of IBM's revenue, only ~36% came from the U.S. by the early 2010s — with 33% from Europe/Middle East/Africa, 24% from Asia Pacific, and 7% from the rest of the Americas. In what meaningful sense is IBM still a "U.S. company"? Its shareholders, customers, employees, and intellectual property are spread across the globe.
+
+This is the deep question of MNC strategy: when **the firm transcends its country of origin**, what governs its identity, its tax base, and its strategic priorities?
+:::
+
+---
+
+## 11.2 Four International Strategies
+
+The most influential framework for international strategy is the **integration–responsiveness (I-R) matrix** developed by Bartlett and Ghoshal (1989). It places strategies on two axes:
+
+- **Pressure for global integration** — economies of scale, uniform customer needs, technology coordination, cost competition.
+- **Pressure for local responsiveness** — distinct customer preferences, host-government requirements, distribution-channel diversity.
+
+```{mermaid}
+flowchart TB
+    G["GLOBAL: High integration, low responsiveness — standardized worldwide"]
+    M["MULTIDOMESTIC: Low integration, high responsiveness — adapt to each country"]
+    T["TRANSNATIONAL: High integration AND high responsiveness — both/and"]
+    I["INTERNATIONAL: Low integration, low responsiveness — leverage home capabilities abroad"]
+    style G fill:#004030,stroke:#004030,color:#FFFFFF
+    style M fill:#D8C3A5,stroke:#004030
+    style T fill:#EFE4D2,stroke:#004030
+    style I fill:#FAF6F0,stroke:#004030
+```
+
+### 11.2.1 The Four Archetypes
+
+- **Global Strategy** — Standardized products and processes worldwide; advantage from scale and consistency. Examples: Intel, Boeing, semiconductor foundries.
+- **Multidomestic Strategy** — Each country operation is largely autonomous, adapting product and marketing to local preferences. Examples: Nestlé food brands, retail banking, broadcast media.
+- **Transnational Strategy** — Attempts to combine global efficiency with local responsiveness; uses cross-border knowledge transfer. Examples: Unilever, P&G, Toyota's regional design centers.
+- **International Strategy** — Develops products at home and exports or replicates them abroad with minimal adaptation. Examples: many SMEs in their early international expansion; some technology firms before geographic maturity.
+
+The choice depends on **industry characteristics**: in industries where global integration pressures are high (semiconductors, aerospace), global strategy dominates. In industries with high local responsiveness pressures (food retail, media), multidomestic prevails. The **transnational** is the hardest to execute but offers the best of both worlds when achievable.
+
+---
+
+## 11.3 The CAGE Distance Framework
+
+Pankaj Ghemawat's **CAGE framework (2001)** challenges the "world is flat" rhetoric. **Distance still matters** — and not just geographic distance. Ghemawat identifies **four dimensions of distance** between countries:
+
+| Dimension | Examples of distance |
+|---|---|
+| **C — Cultural** | Different languages, religions, social norms, ethnic groups, work attitudes |
+| **A — Administrative/Political** | Different legal systems, regulatory regimes, currencies, political alliances, trade blocs |
+| **G — Geographic** | Physical distance, time zones, climate, infrastructure, transportation cost |
+| **E — Economic** | Differences in income levels, factor costs, infrastructure, financial-market depth |
+
+::: {.callout-tip}
+## CAGE in action
+
+Two examples of CAGE diagnosing real strategic patterns:
+
+- **Why Walmart struggled in Germany** (2006 exit) — high administrative distance (employment law, anti-trust), high cultural distance (German consumer preferences for service style), high economic distance in retail formats (mature, fragmented).
+
+- **Why Korean K-pop succeeds in Taiwan** — low cultural distance (East Asian shared cultural elements), low geographic distance, comparable economic level. Same content struggles more in markets with high cultural distance from Korea.
+
+CAGE forces strategists to **identify which dimensions matter most** for their specific industry and country pair, not just geographic proximity.
+:::
+
+### 11.3.1 The Distance Asymmetry
+
+A subtle point: distance is **not always symmetric**. Cultural distance may be larger in one direction than the other (e.g., Korean firms entering Vietnam vs. vice versa, due to language and pop-culture flows). Trade barriers may be one-way. Brand-recognition flows may favor one direction. Strategists should map distance **directionally** for the specific entry decision.
+
+---
+
+## 11.4 Entry Mode Choice
+
+Once a firm has decided to enter a country, the **mode of entry** must be chosen. Entry modes vary along three trade-offs:
+
+```{mermaid}
+flowchart LR
+    A["Exporting: Low commitment, low control, low risk"]
+    B["Licensing: Royalty-based, low investment, limited control"]
+    C["Franchising: Brand and system rented out, scalable"]
+    D["Joint Venture: Shared equity, shared risk, shared control"]
+    E["Wholly-owned: Full control, full risk, highest commitment"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    style A fill:#FAF6F0,stroke:#004030
+    style B fill:#EFE4D2,stroke:#004030
+    style C fill:#EFE4D2,stroke:#004030
+    style D fill:#D8C3A5,stroke:#004030
+    style E fill:#004030,stroke:#004030,color:#FFFFFF
+```
+
 ### 11.4.1 Entry-Mode Selection Logic
 
 Three principles guide the choice:
@@ -128,4 +255,4 @@ d) Justify whether the cost increase is acceptable given the risk reduction.
 
 ## Looking Ahead
 
-Chapter 11 has examined the **geographical** scope of corporate strategy. Chapter 12 — the final chapter of Part I — addresses the **organizational mode** of corporate growth: when should a firm grow through **strategic alliances** with other firms, when through **merger
+Chapter 11 has examined the **geographical** scope of corporate strategy. Chapter 12 — the final chapter of Part I — addresses the **organizational mode** of corporate growth: when should a firm grow through **strategic alliances** with other firms, when through **mergers and acquisitions**, and when through **internal development**? These are the **vehicles** through which all the strategic moves discussed in Chapters 9–11 actually get implemented.
