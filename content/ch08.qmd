@@ -1,0 +1,51 @@
+---
+title: "Technology, Innovation & Entrepreneurship"
+subtitle: "Chapter 8 — Building Advantage Where the Rules Are Still Being Written"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Distinguish between **product**, **process**, and **business-model** innovation, and place each on the **incremental–disruptive** spectrum.
+2. Apply the **S-curve** model to predict when a maturing technology will be displaced by an emerging one.
+3. Differentiate between **sustaining** and **disruptive** innovations (Christensen) and identify the structural reasons incumbents typically lose to disruptors.
+4. Recognize the strategic role of **complementary assets** (Teece) in determining whether innovators or imitators capture the value created.
+5. Apply **opportunity-recognition** thinking from entrepreneurship — the lens of the **Lean Startup** and **Effectuation** — to both new ventures and corporate innovation efforts.
+
+---
+
+## 8.1 Why Innovation Is the Central Strategic Problem
+
+Strategy in stable industries is mostly about **positioning** within a known game. Strategy in dynamic industries is mostly about **innovation** — changing the game itself.
+
+Recall the data on accelerating technological adoption: the telephone took 75 years to reach 50% of US households; the smartphone, 6 years; ChatGPT, less than 2 months to reach 100 million users. **Industry stability is the exception, not the norm**. Every firm — and every entrepreneur entering the market — must therefore answer two questions:
+
+1. **What innovations are happening in our environment?** (sensing — Chapter 6)
+2. **Are we positioned to lead, follow, or be displaced by them?**
+
+This chapter provides the analytical apparatus to answer both.
+
+---
+
+## 8.2 Types of Innovation
+
+Innovation is not one thing. A useful taxonomy distinguishes **what** is being innovated and **how much** it changes:
+
+### 8.2.1 Three Types: Product, Process, Business Model
+
+| Type | Definition | Example |
+|---|---|---|
+| **Product Innovation** | A new or significantly improved offering | iPhone, mRNA vaccines, electric vehicles |
+| **Process Innovation** | A new or significantly improved way of producing | Toyota Production System, TSMC EUV lithography, AI-assisted code generation |
+| **Business Model Innovation** | A new way of creating, delivering, and capturing value | Netflix subscription streaming, Uber on-demand transport, TSMC pure-play foundry |
+
+The most powerful firms innovate on **all three** simultaneously. TSMC delivers product innovation (advanced nodes), process innovation (yield rates), and business-model innovation (foundry-only positioning). Apple delivers product (iPhone), process (vertical hardware-software integration), and business model (App Store ecosystem).
+
+### 8.2.2 Incremental vs. Radical vs. Disruptive
+
+The **degree** of innovation also matters:
+
+```{mermaid}
