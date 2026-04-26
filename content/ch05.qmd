@@ -62,25 +62,22 @@ The pattern is clear: **what the firm does** matters more than **where the firm 
 To make RBV concrete, consider the textbook V-P-C comparison between Toyota and General Motors during the 2000s:
 
 ```{mermaid}
-flowchart TB
-    subgraph GM["General Motors"]
-        GM_C["<b>C</b><br/>Higher cost structure"]
-        GM_PC["<b>P − C</b><br/>Thin profit margin"]
-        GM_VP["<b>V − P</b><br/>Standard consumer surplus"]
-    end
-    subgraph TO["Toyota"]
-        TO_C["<b>C</b><br/>Lower cost structure"]
-        TO_PC["<b>P − C</b><br/>Healthy profit margin"]
-        TO_VP["<b>V − P</b><br/>Higher consumer surplus"]
-    end
-    
-    GM -.>|"Same industry, same product category"| TO
-    
-    style GM fill:#EFE4D2,stroke:#004030
-    style TO fill:#004030,stroke:#004030,color:#FFFFFF
-    style TO_C fill:#D8C3A5,stroke:#004030,color:#2C2C2C
-    style TO_PC fill:#D8C3A5,stroke:#004030,color:#2C2C2C
-    style TO_VP fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+flowchart LR
+    GMC["GM: Higher Cost (C)"]
+    GMP["GM: Thin Profit (P-C)"]
+    GMV["GM: Standard Surplus (V-P)"]
+    TC["Toyota: Lower Cost (C)"]
+    TP["Toyota: Healthy Profit (P-C)"]
+    TV["Toyota: Higher Surplus (V-P)"]
+    GMC --> TC
+    GMP --> TP
+    GMV --> TV
+    style GMC fill:#EFE4D2,stroke:#004030
+    style GMP fill:#EFE4D2,stroke:#004030
+    style GMV fill:#EFE4D2,stroke:#004030
+    style TC fill:#004030,stroke:#004030,color:#FFFFFF
+    style TP fill:#004030,stroke:#004030,color:#FFFFFF
+    style TV fill:#004030,stroke:#004030,color:#FFFFFF
 ```
 
 Toyota simultaneously created **more value** (higher V — quality, reliability, fuel economy), charged **higher prices** for comparable models, and operated at **lower costs**. The result was both a higher consumer surplus (V−P) and a higher profit margin (P−C). Same industry, same regulations, same customer pool — radically different outcomes.
@@ -140,25 +137,23 @@ Capabilities are organized in layers, from concrete tasks to abstract cross-func
 
 ```{mermaid}
 flowchart TB
-    L5["<b>Cross-Functional Capabilities</b><br/>e.g., New Product Development, Customer Support, Quality Management"]
-    L4["<b>Broad Functional Capabilities</b><br/>e.g., Operations, R&D, Marketing, HR, MIS"]
-    L3["<b>Activity-Related Capabilities</b><br/>e.g., Manufacturing, Materials Management, Process Engineering"]
-    L2["<b>Specialized Capabilities</b><br/>e.g., PCB Assembly, Telset Assembly, System Assembly"]
-    L1["<b>Single-Task Capabilities</b><br/>e.g., Through-hole Insertion, Wave Soldering, Surface Mounting"]
-    L0["<b>Individuals' Specialized Knowledge</b>"]
-    
+    L5["L5: Cross-Functional Capabilities (NPD, Customer Support, QM)"]
+    L4["L4: Broad Functional Capabilities (Operations, R&D, Marketing, HR, MIS)"]
+    L3["L3: Activity-Related Capabilities (Manufacturing, Materials, Process Engineering)"]
+    L2["L2: Specialized Capabilities (PCB Assembly, Telset Assembly, System Assembly)"]
+    L1["L1: Single-Task Capabilities (Through-hole Insertion, Wave Soldering, SMT)"]
+    L0["L0: Individuals' Specialized Knowledge"]
     L0 --> L1
     L1 --> L2
     L2 --> L3
     L3 --> L4
     L4 --> L5
-    
     style L5 fill:#004030,stroke:#004030,color:#FFFFFF
     style L4 fill:#D8C3A5,stroke:#004030
     style L3 fill:#EFE4D2,stroke:#004030
     style L2 fill:#FAF6F0,stroke:#004030
     style L1 fill:#FAF6F0,stroke:#6B6B6B
-    style L0 fill:#FAF6F0,stroke:#6B6B6B,color:#6B6B6B
+    style L0 fill:#FAF6F0,stroke:#6B6B6B
 ```
 
 The higher in the hierarchy, the more **integrative** and harder to imitate. A competitor can poach an engineer (single-task capability) far more easily than it can replicate an entire **new product development capability** that integrates marketing, R&D, manufacturing, and customer support.
@@ -204,25 +199,38 @@ Where do resources and capabilities live within a firm? They live in **activitie
 
 ```{mermaid}
 flowchart LR
-    subgraph SUPPORT["Support Activities"]
-        FI["Firm Infrastructure"]
-        HR["Human Resource Management"]
-        TD["Technology Development"]
-        PR["Procurement"]
-    end
-    subgraph PRIMARY["Primary Activities"]
-        IL["Inbound<br/>Logistics"] --> OP["Operations"]
-        OP --> OL["Outbound<br/>Logistics"]
-        OL --> MS["Marketing<br/>& Sales"]
-        MS --> SV["Service"]
-    end
-    SUPPORT -.supports.-> PRIMARY
-    PRIMARY --> MARGIN["<b>MARGIN</b><br/>Net Margin = Gross Margin − Expenses<br/>Gross Margin = Revenue − Cost"]
-    
-    style PRIMARY fill:#D8C3A5,stroke:#004030
-    style SUPPORT fill:#EFE4D2,stroke:#004030
+    FI["Firm Infrastructure"]
+    HR["Human Resource Management"]
+    TD["Technology Development"]
+    PR["Procurement"]
+    IL["Inbound Logistics"]
+    OP["Operations"]
+    OL["Outbound Logistics"]
+    MS["Marketing and Sales"]
+    SV["Service"]
+    MARGIN["MARGIN"]
+    IL --> OP
+    OP --> OL
+    OL --> MS
+    MS --> SV
+    SV --> MARGIN
+    FI -.-> OP
+    HR -.-> OP
+    TD -.-> OP
+    PR -.-> OP
+    style FI fill:#EFE4D2,stroke:#004030
+    style HR fill:#EFE4D2,stroke:#004030
+    style TD fill:#EFE4D2,stroke:#004030
+    style PR fill:#EFE4D2,stroke:#004030
+    style IL fill:#D8C3A5,stroke:#004030
+    style OP fill:#D8C3A5,stroke:#004030
+    style OL fill:#D8C3A5,stroke:#004030
+    style MS fill:#D8C3A5,stroke:#004030
+    style SV fill:#D8C3A5,stroke:#004030
     style MARGIN fill:#004030,stroke:#004030,color:#FFFFFF
 ```
+
+The diagram captures the core idea: **support activities** (top, lighter shade) enable **primary activities** (bottom, darker shade), which together produce the firm's **margin** (Net Margin = Gross Margin minus Expenses; Gross Margin = Revenue minus Cost).
 
 ### 5.6.1 Primary vs. Support Activities
 
@@ -243,26 +251,13 @@ flowchart LR
 
 ### 5.6.2 The Value Chain Differs by Industry
 
-The generic value chain is a **template**. Real value chains vary substantially:
+The generic value chain is a **template**. Real value chains vary substantially. Compare two examples:
 
-```{mermaid}
-flowchart LR
-    subgraph RETAIL["Retail (e.g., 7-ELEVEN)"]
-        R1["Partnering<br/>with vendors"] --> R2["Purchasing<br/>goods"]
-        R2 --> R3["Managing<br/>inventory"]
-        R3 --> R4["Operating<br/>stores"]
-        R4 --> R5["Marketing<br/>& selling"]
-    end
-    subgraph ENG["Engineering Services"]
-        E1["Research and<br/>development"] --> E2["Engineering"]
-        E2 --> E3["Designs and<br/>solutions"]
-        E3 --> E4["Marketing<br/>& selling"]
-        E4 --> E5["Service"]
-    end
-    
-    style RETAIL fill:#EFE4D2,stroke:#004030
-    style ENG fill:#D8C3A5,stroke:#004030
-```
+**Retail (e.g., 7-ELEVEN)**: Partnering with vendors → Purchasing goods → Managing inventory → Operating stores → Marketing and selling.
+
+**Engineering Services**: Research and development → Engineering → Designs and solutions → Marketing and selling → Service.
+
+The activity sequence and the relative importance of each activity differs profoundly. A retailer's source of advantage is rarely R&D; an engineering firm's is rarely store operations.
 
 ::: {.callout-tip}
 ## TP2 application
@@ -289,22 +284,15 @@ Diagnosing this misalignment is one of the most valuable contributions a strateg
 Many of the most strategically valuable resources are **knowledge-based**. Ikujiro Nonaka's influential **Knowledge Conversion model** (the **SECI** cycle) explains how organizations create and convert knowledge:
 
 ```{mermaid}
-flowchart TB
-    subgraph TT["Tacit → Tacit"]
-        S["<b>SOCIALIZATION</b><br/>Sharing tacit knowledge<br/>from individual to organization"]
-    end
-    subgraph TE["Tacit → Explicit"]
-        E["<b>EXTERNALIZATION</b><br/>Articulating tacit knowledge<br/>into systematic, sharable form"]
-    end
-    subgraph EE["Explicit → Explicit"]
-        C["<b>COMBINATION</b><br/>Combining different units<br/>of explicit knowledge"]
-    end
-    subgraph ET["Explicit → Tacit"]
-        I["<b>INTERNALIZATION</b><br/>Converting explicit principles<br/>into intuition and routines"]
-    end
-    
-    S --> E --> C --> I --> S
-    
+flowchart LR
+    S["SOCIALIZATION: Tacit to Tacit (Sharing experience)"]
+    E["EXTERNALIZATION: Tacit to Explicit (Articulating)"]
+    C["COMBINATION: Explicit to Explicit (Combining)"]
+    I["INTERNALIZATION: Explicit to Tacit (Routinizing)"]
+    S --> E
+    E --> C
+    C --> I
+    I --> S
     style S fill:#D8C3A5,stroke:#004030
     style E fill:#004030,stroke:#004030,color:#FFFFFF
     style C fill:#EFE4D2,stroke:#004030
