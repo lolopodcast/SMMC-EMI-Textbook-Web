@@ -163,3 +163,35 @@ blockquote {
     font-weight: 600;
   }
 }
+// Copyright modal - Dark mode
+.copyright-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.copyright-modal {
+  background: $bcg-bg-card;
+  border-color: $bcg-gold-bright;
+  
+  h3 {
+    color: $bcg-gold-bright;
+    border-bottom-color: $bcg-gold-bright;
+  }
+  
+  .copyright-body {
+    color: $bcg-text-main;
+    
+    a {
+      color: $bcg-gold-bright;
+    }
+  }
+  
+  .copyright-ok {
+    background: $bcg-gold-bright;
+    color: $bcg-bg-dark;
+    
+    &:hover {
+      background: #FFFFFF;
+      color: #000;
+    }
+  }
+}
