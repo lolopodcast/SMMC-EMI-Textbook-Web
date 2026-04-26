@@ -1,0 +1,265 @@
+---
+title: "Corporate Strategy — Horizontal Diversification"
+subtitle: "Chapter 10 — Operating Multiple Businesses"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Define **horizontal diversification** and distinguish **related** from **unrelated** diversification.
+2. Apply the **economies of scope** logic to identify when sharing resources across businesses creates value.
+3. Recognize the **diversification discount** and identify when corporate-level overhead destroys more value than it creates.
+4. Apply the **BCG Growth–Share Matrix** and the **GE/McKinsey Multifactor Matrix** to analyze a multi-business portfolio.
+5. Distinguish **operational synergies** (real cost or revenue benefits) from **financial synergies** (often illusory).
+
+---
+
+## 10.1 The Horizontal Question
+
+Chapter 9 asked the **vertical** question: how many stages of the value chain does the firm operate? Chapter 10 asks the **horizontal** question: **how many different businesses or product categories does the firm operate in parallel?**
+
+The horizontal question creates four broad firm archetypes:
+
+| Type | Description | Example |
+|---|---|---|
+| **Single business** | One product/market focus | In-N-Out Burger, Uniqlo (mostly) |
+| **Dominant business** | One core business + small adjacencies | Costco (warehouse retail dominant) |
+| **Related diversified** | Multiple businesses sharing resources | Disney (entertainment, media, parks, streaming) |
+| **Unrelated diversified (conglomerate)** | Multiple businesses with little operational overlap | Berkshire Hathaway, historical GE, Tata Group |
+
+Diversification was **highly fashionable** in the 1960s–1970s, then fell out of favor in the 1980s–1990s as Wall Street pressured firms to "**stick to the knitting**." The pendulum is now somewhere in the middle: most successful diversified firms are **related** rather than purely unrelated.
+
+---
+
+## 10.2 Why Diversify? — The Logic of Economies of Scope
+
+The strongest economic case for diversification is **economies of scope (範疇經濟)**: the cost or revenue advantage that comes from sharing resources across multiple businesses.
+
+::: {.callout-note}
+## Economies of Scope vs. Economies of Scale
+
+- **Economies of scale (規模經濟)** — unit costs decline as output of a **single** product increases.
+- **Economies of scope (範疇經濟)** — total costs decline because **two or more** products share a common resource.
+:::
+
+### 10.2.1 What Resources Can Be Shared?
+
+```{mermaid}
+flowchart TB
+    SHARED["Shared resources"]
+    A["Tangible: factories, distribution networks, IT systems"]
+    B["Intangible: brand, technology, customer data"]
+    C["Capabilities: management, R&D, marketing"]
+    SHARED --> A
+    SHARED --> B
+    SHARED --> C
+    style SHARED fill:#004030,stroke:#004030,color:#FFFFFF
+    style A fill:#D8C3A5,stroke:#004030
+    style B fill:#EFE4D2,stroke:#004030
+    style C fill:#FAF6F0,stroke:#004030
+```
+
+- **Tangible resources** — a soft-drink firm uses the same bottling plants for cola, juice, and water; an airline uses the same hubs for passenger and cargo flights.
+- **Intangible resources** — Disney leverages its character IP across films, parks, merchandise, and streaming; Honda extends its small-engine competence across motorcycles, cars, and lawnmowers.
+- **Capabilities** — a firm with strong consumer-marketing capabilities can extend it across multiple consumer-facing businesses; Procter & Gamble's brand-management capability is a portable asset across hundreds of product lines.
+
+### 10.2.2 The Litmus Test for Related Diversification
+
+Michael Porter (1987) proposed three tests for whether a diversification move creates value:
+
+::: {.callout-important}
+## Porter's three tests
+
+1. **The attractiveness test** — Is the new industry structurally attractive (use Five Forces, Chapter 3)?
+2. **The cost-of-entry test** — Will the cost of entry consume the future profits? Acquisitions in attractive industries often command premiums that destroy the deal's value.
+3. **The better-off test** — Will the new business gain a meaningful competitive advantage from being part of the parent, or will the parent gain from the new business? **No mutual benefit = no economic justification for the acquisition.**
+
+Most failed diversification moves fail one or more of these tests — often the better-off test.
+:::
+
+---
+
+## 10.3 Why So Much Diversification Fails — The Discount
+
+Empirical research consistently finds a **diversification discount**: on average, diversified firms trade at a 5–15% discount to the sum of their parts. Why?
+
+| Cause | Mechanism |
+|---|---|
+| **Bureaucratic overhead** | Corporate HQ costs that are not offset by value creation in the SBUs |
+| **Cross-subsidization** | Strong businesses' cash flows propping up weak ones, blocking discipline |
+| **Slow capital reallocation** | Internal politics prevent moving resources from declining to growing businesses |
+| **Misaligned incentives** | SBU managers optimize for their own unit, not corporate value |
+| **Strategic distraction** | Senior leadership cannot deeply understand all business contexts |
+| **Information asymmetries** | External investors find it hard to value complex multi-business firms |
+
+This is why activist investors and private-equity acquirers often **break up** diversified firms — a focused successor often trades at a higher multiple than the integrated predecessor.
+
+::: {.callout-tip}
+## When the diversification discount inverts
+
+Some diversified firms trade at a **premium** rather than a discount. These firms typically have:
+
+- **Genuine operational synergies** (Disney's IP across formats; Apple's silicon across products)
+- **Superior capital allocation** (Berkshire Hathaway's reinvestment skill)
+- **Strong management talent pool** (GE in its prime, Tata Group's leadership pipeline)
+
+The lesson: diversification works **only when the corporate parent adds more value than its overhead costs**. This is a high bar.
+:::
+
+---
+
+## 10.4 Portfolio Tools — The BCG and GE Matrices
+
+Two classical tools help senior managers visualize a multi-business portfolio.
+
+### 10.4.1 BCG Growth–Share Matrix
+
+The Boston Consulting Group's matrix (1970s) plots each SBU on two dimensions:
+
+- **Industry growth rate** (vertical axis): high vs. low
+- **Relative market share** (horizontal axis): high vs. low — relative to the largest competitor
+
+```{mermaid}
+flowchart TB
+    Q1["STAR: High growth, high share — invest aggressively"]
+    Q2["QUESTION MARK: High growth, low share — invest selectively"]
+    Q3["CASH COW: Low growth, high share — harvest"]
+    Q4["DOG: Low growth, low share — divest"]
+    Q1 -.-> Q3
+    Q2 -.-> Q1
+    style Q1 fill:#004030,stroke:#004030,color:#FFFFFF
+    style Q2 fill:#D8C3A5,stroke:#004030
+    style Q3 fill:#EFE4D2,stroke:#004030
+    style Q4 fill:#FAF6F0,stroke:#6B6B6B
+```
+
+The strategic logic: **cash cows fund stars and selectively chosen question marks; dogs are divested**. The matrix is intentionally simplistic — its value is in forcing the corporate executive to allocate capital across the portfolio rather than treating each SBU's request in isolation.
+
+### 10.4.2 GE/McKinsey Multifactor Matrix
+
+GE and McKinsey developed a more nuanced matrix in the 1970s that uses **two composite dimensions**:
+
+- **Industry attractiveness** — derived from market size, growth, profitability, intensity of competition, and other factors.
+- **Business unit competitive strength** — derived from market share, brand, costs, capabilities, and other factors.
+
+Each axis has three levels (low/medium/high), creating a 3×3 grid with prescriptions ranging from "**invest and grow**" (top-right) to "**harvest or divest**" (bottom-left).
+
+The GE matrix is more analytically demanding but better suited to real-world complexity than BCG's two-variable simplification.
+
+---
+
+## 10.5 Operational vs. Financial Synergies
+
+Two types of synergies are claimed in diversification deals — but only one is typically real.
+
+### 10.5.1 Operational Synergies (Real)
+
+- **Cost reduction** through shared infrastructure, purchasing, distribution.
+- **Revenue enhancement** through cross-selling, bundling, brand extension.
+- **Capability transfer** — the parent's marketing skill applied to the new business.
+- **Knowledge integration** — proprietary insights flowing across units.
+
+These can be quantified, monitored, and held managers accountable for.
+
+### 10.5.2 Financial Synergies (Often Illusory)
+
+- **"Diversification reduces risk"** — But shareholders can diversify on their own through their portfolio choices; they don't need the firm to do it for them.
+- **"Internal capital markets allocate better than Wall Street"** — Sometimes true (Berkshire), often false (failed conglomerates).
+- **"Tax efficiencies"** — Real but typically small, and often available without full diversification.
+
+The **investor-led pushback** against unrelated diversification in the 1980s–1990s was largely a recognition that financial-synergy claims rarely justify the diversification discount.
+
+---
+
+## 10.6 Diversification in 2026
+
+Three patterns dominate:
+
+- **Platform-based related diversification** — Tech firms (Amazon, Alibaba, Tencent) extend across e-commerce, payments, cloud, media, logistics through shared digital platforms. The synergies are real and large.
+- **AI as a horizontal capability** — Firms that build internal AI/ML capabilities can apply them across multiple SBUs. This favors related diversification by **lowering the cost** of cross-business knowledge transfer.
+- **Sustainability portfolio shaping** — Many incumbents are using diversification to **rebalance toward low-carbon businesses** while harvesting legacy carbon-intensive cash cows. Oil majors investing in EV charging networks and renewables are an example.
+
+::: {.callout-tip}
+## Diversification in your TP analysis
+
+For TP3 — Growth Strategy, ask:
+
+1. Is the focal firm currently a single business, dominant business, or diversified?
+2. If diversified, are the businesses **related** through shared resources or capabilities? Or are they unrelated (conglomerate)?
+3. Apply Porter's three tests: Are any business units adding less value than they consume in corporate overhead?
+4. Map the portfolio on a BCG or GE matrix — where are the stars, cash cows, question marks, and dogs?
+5. Recommend a **portfolio shaping** action: enter a new business, exit an existing one, or reallocate capital across units.
+:::
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — Classifying Diversification
+
+For each firm, classify as single business, dominant business, related diversified, or unrelated diversified, and identify what (if anything) is shared across business units:
+
+a) **Apple** — iPhone, Mac, services, wearables.
+b) **Berkshire Hathaway** — insurance, railroads, candy, energy, more.
+c) **Uniqlo (Fast Retailing)** — Uniqlo, GU, Theory, J Brand.
+d) **Hon Hai (Foxconn)** — contract manufacturing, EVs, semiconductors, healthcare.
+e) **Tata Group** — steel, autos, software (TCS), tea, hotels, airlines.
+f) **Costco** — warehouse retail and a small set of related services.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — Applying Porter's Three Tests
+
+A Taiwan-listed packaging firm announces it will enter the EV-charging business via a USD 200M acquisition. The CEO claims "synergies in industrial sales channels."
+
+a) Apply Porter's attractiveness test — is EV charging a structurally attractive industry? Use Five Forces logic.
+b) Apply the cost-of-entry test — what would justify USD 200M as a reasonable acquisition price?
+c) Apply the better-off test — are there genuine operational synergies between packaging and EV charging?
+d) Recommend whether the deal should proceed, with reasoning.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — BCG Matrix Application
+
+For your TP focal company (or another diversified firm of your choice), build a simple BCG matrix:
+
+a) Identify the firm's main SBUs (3–6 units).
+b) For each, estimate industry growth rate and relative market share.
+c) Plot each SBU in the appropriate quadrant.
+d) Recommend a capital-allocation action for each SBU based on its position.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Diagnosing Diversification Discount
+
+A diversified Taiwan group's stock has traded at a 20% discount to the sum-of-parts valuation for several years. Activist investors are pressuring for a breakup.
+
+a) List four possible sources of the discount, drawing from Section 10.3.
+b) For each source, propose a corporate-level action that could close the discount without breaking up the group.
+c) Compare the expected value created by your reform actions vs. a full breakup. Which is preferable, and under what conditions?
+:::
+
+---
+
+## Further Readings
+
+- **Porter, M. E. (1987)**. "From Competitive Advantage to Corporate Strategy." *Harvard Business Review*, May–June. — The classic three-test framework.
+- **Markides, C. C. (1995)**. *Diversification, Refocusing, and Economic Performance*. MIT Press.
+- **Goold, M. & Campbell, A. (1998)**. "Desperately Seeking Synergy." *Harvard Business Review*, September–October.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapter 13 — "Diversification Strategy".
+- **Collis, D. J. & Montgomery, C. A. (2005)**. *Corporate Strategy: A Resource-Based Approach*. McGraw-Hill.
+
+::: {.callout-note}
+## Coursera Companion
+- **[CS] Corporate Strategy** — UIUC Gies, modules on diversification, portfolio analysis, and capital allocation directly extend this chapter.
+:::
+
+---
+
+## Looking Ahead
+
+Chapters 9 and 10 have examined the **structural scope** of the firm — vertical and horizontal. Chapter 11 turns to the **geographical** dimension: how should a firm decide which countries to operate in, and how should it adapt its strategy across diverse national contexts? This is where strategic management meets international business — the core territory of an SMMC course.
