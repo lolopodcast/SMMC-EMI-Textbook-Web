@@ -621,25 +621,22 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TB
-    subgraph GM["General Motors"]
-        GM_C["&lt;b&gt;C&lt;/b&gt;&lt;br/&gt;Higher cost structure"]
-        GM_PC["&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Thin profit margin"]
-        GM_VP["&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Standard consumer surplus"]
-    end
-    subgraph TO["Toyota"]
-        TO_C["&lt;b&gt;C&lt;/b&gt;&lt;br/&gt;Lower cost structure"]
-        TO_PC["&lt;b&gt;P − C&lt;/b&gt;&lt;br/&gt;Healthy profit margin"]
-        TO_VP["&lt;b&gt;V − P&lt;/b&gt;&lt;br/&gt;Higher consumer surplus"]
-    end
-    
-    GM -.&gt;|"Same industry, same product category"| TO
-    
-    style GM fill:#EFE4D2,stroke:#004030
-    style TO fill:#004030,stroke:#004030,color:#FFFFFF
-    style TO_C fill:#D8C3A5,stroke:#004030,color:#2C2C2C
-    style TO_PC fill:#D8C3A5,stroke:#004030,color:#2C2C2C
-    style TO_VP fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+<pre class="mermaid mermaid-js">flowchart LR
+    GMC["GM: Higher Cost (C)"]
+    GMP["GM: Thin Profit (P-C)"]
+    GMV["GM: Standard Surplus (V-P)"]
+    TC["Toyota: Lower Cost (C)"]
+    TP["Toyota: Healthy Profit (P-C)"]
+    TV["Toyota: Higher Surplus (V-P)"]
+    GMC --&gt; TC
+    GMP --&gt; TP
+    GMV --&gt; TV
+    style GMC fill:#EFE4D2,stroke:#004030
+    style GMP fill:#EFE4D2,stroke:#004030
+    style GMV fill:#EFE4D2,stroke:#004030
+    style TC fill:#004030,stroke:#004030,color:#FFFFFF
+    style TP fill:#004030,stroke:#004030,color:#FFFFFF
+    style TV fill:#004030,stroke:#004030,color:#FFFFFF
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -757,25 +754,23 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart TB
-    L5["&lt;b&gt;Cross-Functional Capabilities&lt;/b&gt;&lt;br/&gt;e.g., New Product Development, Customer Support, Quality Management"]
-    L4["&lt;b&gt;Broad Functional Capabilities&lt;/b&gt;&lt;br/&gt;e.g., Operations, R&amp;D, Marketing, HR, MIS"]
-    L3["&lt;b&gt;Activity-Related Capabilities&lt;/b&gt;&lt;br/&gt;e.g., Manufacturing, Materials Management, Process Engineering"]
-    L2["&lt;b&gt;Specialized Capabilities&lt;/b&gt;&lt;br/&gt;e.g., PCB Assembly, Telset Assembly, System Assembly"]
-    L1["&lt;b&gt;Single-Task Capabilities&lt;/b&gt;&lt;br/&gt;e.g., Through-hole Insertion, Wave Soldering, Surface Mounting"]
-    L0["&lt;b&gt;Individuals' Specialized Knowledge&lt;/b&gt;"]
-    
+    L5["L5: Cross-Functional Capabilities (NPD, Customer Support, QM)"]
+    L4["L4: Broad Functional Capabilities (Operations, R&amp;D, Marketing, HR, MIS)"]
+    L3["L3: Activity-Related Capabilities (Manufacturing, Materials, Process Engineering)"]
+    L2["L2: Specialized Capabilities (PCB Assembly, Telset Assembly, System Assembly)"]
+    L1["L1: Single-Task Capabilities (Through-hole Insertion, Wave Soldering, SMT)"]
+    L0["L0: Individuals' Specialized Knowledge"]
     L0 --&gt; L1
     L1 --&gt; L2
     L2 --&gt; L3
     L3 --&gt; L4
     L4 --&gt; L5
-    
     style L5 fill:#004030,stroke:#004030,color:#FFFFFF
     style L4 fill:#D8C3A5,stroke:#004030
     style L3 fill:#EFE4D2,stroke:#004030
     style L2 fill:#FAF6F0,stroke:#004030
     style L1 fill:#FAF6F0,stroke:#6B6B6B
-    style L0 fill:#FAF6F0,stroke:#6B6B6B,color:#6B6B6B
+    style L0 fill:#FAF6F0,stroke:#6B6B6B
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -843,23 +838,34 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
-    subgraph SUPPORT["Support Activities"]
-        FI["Firm Infrastructure"]
-        HR["Human Resource Management"]
-        TD["Technology Development"]
-        PR["Procurement"]
-    end
-    subgraph PRIMARY["Primary Activities"]
-        IL["Inbound&lt;br/&gt;Logistics"] --&gt; OP["Operations"]
-        OP --&gt; OL["Outbound&lt;br/&gt;Logistics"]
-        OL --&gt; MS["Marketing&lt;br/&gt;&amp; Sales"]
-        MS --&gt; SV["Service"]
-    end
-    SUPPORT -.supports.-&gt; PRIMARY
-    PRIMARY --&gt; MARGIN["&lt;b&gt;MARGIN&lt;/b&gt;&lt;br/&gt;Net Margin = Gross Margin − Expenses&lt;br/&gt;Gross Margin = Revenue − Cost"]
-    
-    style PRIMARY fill:#D8C3A5,stroke:#004030
-    style SUPPORT fill:#EFE4D2,stroke:#004030
+    FI["Firm Infrastructure"]
+    HR["Human Resource Management"]
+    TD["Technology Development"]
+    PR["Procurement"]
+    IL["Inbound Logistics"]
+    OP["Operations"]
+    OL["Outbound Logistics"]
+    MS["Marketing and Sales"]
+    SV["Service"]
+    MARGIN["MARGIN"]
+    IL --&gt; OP
+    OP --&gt; OL
+    OL --&gt; MS
+    MS --&gt; SV
+    SV --&gt; MARGIN
+    FI -.-&gt; OP
+    HR -.-&gt; OP
+    TD -.-&gt; OP
+    PR -.-&gt; OP
+    style FI fill:#EFE4D2,stroke:#004030
+    style HR fill:#EFE4D2,stroke:#004030
+    style TD fill:#EFE4D2,stroke:#004030
+    style PR fill:#EFE4D2,stroke:#004030
+    style IL fill:#D8C3A5,stroke:#004030
+    style OP fill:#D8C3A5,stroke:#004030
+    style OL fill:#D8C3A5,stroke:#004030
+    style MS fill:#D8C3A5,stroke:#004030
+    style SV fill:#D8C3A5,stroke:#004030
     style MARGIN fill:#004030,stroke:#004030,color:#FFFFFF
 </pre>
 </div>
@@ -867,6 +873,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>The diagram captures the core idea: <strong>support activities</strong> (top, lighter shade) enable <strong>primary activities</strong> (bottom, darker shade), which together produce the firm’s <strong>margin</strong> (Net Margin = Gross Margin minus Expenses; Gross Margin = Revenue minus Cost).</p>
 <section id="primary-vs.-support-activities" class="level3">
 <h3 class="anchored" data-anchor-id="primary-vs.-support-activities">5.6.1 Primary vs.&nbsp;Support Activities</h3>
 <p><strong>Primary activities</strong> directly contribute to creating, selling, and supporting the product:</p>
@@ -887,34 +894,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-value-chain-differs-by-industry" class="level3">
 <h3 class="anchored" data-anchor-id="the-value-chain-differs-by-industry">5.6.2 The Value Chain Differs by Industry</h3>
-<p>The generic value chain is a <strong>template</strong>. Real value chains vary substantially:</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    subgraph RETAIL["Retail (e.g., 7-ELEVEN)"]
-        R1["Partnering&lt;br/&gt;with vendors"] --&gt; R2["Purchasing&lt;br/&gt;goods"]
-        R2 --&gt; R3["Managing&lt;br/&gt;inventory"]
-        R3 --&gt; R4["Operating&lt;br/&gt;stores"]
-        R4 --&gt; R5["Marketing&lt;br/&gt;&amp; selling"]
-    end
-    subgraph ENG["Engineering Services"]
-        E1["Research and&lt;br/&gt;development"] --&gt; E2["Engineering"]
-        E2 --&gt; E3["Designs and&lt;br/&gt;solutions"]
-        E3 --&gt; E4["Marketing&lt;br/&gt;&amp; selling"]
-        E4 --&gt; E5["Service"]
-    end
-    
-    style RETAIL fill:#EFE4D2,stroke:#004030
-    style ENG fill:#D8C3A5,stroke:#004030
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
+<p>The generic value chain is a <strong>template</strong>. Real value chains vary substantially. Compare two examples:</p>
+<p><strong>Retail (e.g., 7-ELEVEN)</strong>: Partnering with vendors → Purchasing goods → Managing inventory → Operating stores → Marketing and selling.</p>
+<p><strong>Engineering Services</strong>: Research and development → Engineering → Designs and solutions → Marketing and selling → Service.</p>
+<p>The activity sequence and the relative importance of each activity differs profoundly. A retailer’s source of advantage is rarely R&amp;D; an engineering firm’s is rarely store operations.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -951,22 +934,15 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TB
-    subgraph TT["Tacit → Tacit"]
-        S["&lt;b&gt;SOCIALIZATION&lt;/b&gt;&lt;br/&gt;Sharing tacit knowledge&lt;br/&gt;from individual to organization"]
-    end
-    subgraph TE["Tacit → Explicit"]
-        E["&lt;b&gt;EXTERNALIZATION&lt;/b&gt;&lt;br/&gt;Articulating tacit knowledge&lt;br/&gt;into systematic, sharable form"]
-    end
-    subgraph EE["Explicit → Explicit"]
-        C["&lt;b&gt;COMBINATION&lt;/b&gt;&lt;br/&gt;Combining different units&lt;br/&gt;of explicit knowledge"]
-    end
-    subgraph ET["Explicit → Tacit"]
-        I["&lt;b&gt;INTERNALIZATION&lt;/b&gt;&lt;br/&gt;Converting explicit principles&lt;br/&gt;into intuition and routines"]
-    end
-    
-    S --&gt; E --&gt; C --&gt; I --&gt; S
-    
+<pre class="mermaid mermaid-js">flowchart LR
+    S["SOCIALIZATION: Tacit to Tacit (Sharing experience)"]
+    E["EXTERNALIZATION: Tacit to Explicit (Articulating)"]
+    C["COMBINATION: Explicit to Explicit (Combining)"]
+    I["INTERNALIZATION: Explicit to Tacit (Routinizing)"]
+    S --&gt; E
+    E --&gt; C
+    C --&gt; I
+    I --&gt; S
     style S fill:#D8C3A5,stroke:#004030
     style E fill:#004030,stroke:#004030,color:#FFFFFF
     style C fill:#EFE4D2,stroke:#004030
