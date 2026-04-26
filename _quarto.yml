@@ -12,8 +12,9 @@ website:
   favicon: images/favicon.ico
   
   page-footer:
+    page-footer:
     right: "Built with [Quarto](https://quarto.org/)."
-    left: "&copy; 2026 Prof. Shihmin Lo, Department of International Business Studies, National Chi Nan University"
+    left: "&copy; 2026 [Prof. Shihmin Lo](https://www.ibs.ncnu.edu.tw/index.php/faculty/tenured-professor/299-smlo), Department of International Business Studies, National Chi Nan University, Taiwan"
   
   sidebar:
     background: "#004030"
