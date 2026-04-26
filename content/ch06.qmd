@@ -1,0 +1,256 @@
+---
+title: "Core Competencies & Dynamic Capabilities"
+subtitle: "Chapter 6 — Renewing Advantage in a Changing World"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Define **core competencies** and distinguish them from ordinary capabilities and from products themselves.
+2. Apply Teece's **dynamic capabilities** framework — **sensing, seizing, and reconfiguring** — to firms operating in fast-changing environments.
+3. Recognize the strategic risk of **core rigidities** — the dark side of past success — and explain how organizational routines can become liabilities.
+4. Distinguish **exploitation** (deepening existing competencies) from **exploration** (building new ones), and understand why **ambidextrous organizations** can do both.
+5. Connect dynamic capabilities to the **GenAI era** — what does it mean to "sense, seize, and reconfigure" when AI accelerates every cycle?
+
+---
+
+## 6.1 From Static Resources to Dynamic Capabilities
+
+Chapter 5 introduced the Resource-Based View as a powerful explanation for why some firms persistently outperform others. Toyota's production system, Apple's design culture, TSMC's process know-how — these are **deeply embedded**, hard to imitate, and visibly correlated with sustained advantage.
+
+But Chapter 5 left an unanswered question: **what happens when the environment changes?**
+
+Kodak owned arguably the strongest set of resources in 20th-century photography — film chemistry, distribution, brand. Within 15 years (1995–2010), digital photography rendered most of those resources obsolete. Nokia had unmatched mobile-phone manufacturing and supply-chain capability — and was destroyed by Apple's redefinition of the smartphone. **Static resources are not enough.** What firms need is the capability to **reconfigure** their resources as the environment shifts.
+
+This is the territory of **core competencies (核心能力)** and **dynamic capabilities (動態能耐)** — the higher-order constructs that explain not just *why* a firm has advantage today, but *how* it will renew that advantage tomorrow.
+
+---
+
+## 6.2 Core Competencies
+
+The concept of **core competence** was introduced by C. K. Prahalad and Gary Hamel in their landmark 1990 *Harvard Business Review* article. Their argument: managers think too much about products and business units, and not enough about the underlying **competencies** that produce winning products.
+
+::: {.callout-note}
+## Three tests of a core competence (Prahalad & Hamel, 1990)
+
+A capability qualifies as a **core competence** when it satisfies all three:
+
+1. **Provides access to a wide variety of markets** — it is not tied to a single product.
+2. **Makes a significant contribution to perceived customer benefits** of the end product.
+3. **Is difficult for competitors to imitate** — it integrates multiple technologies and organizational routines.
+:::
+
+### 6.2.1 Examples
+
+- **Honda** — competence in *small engines* (originally for motorcycles) opened markets in lawnmowers, generators, marine outboards, automobiles, and jet engines.
+- **Sony** — competence in *miniaturization* enabled successive generations of portable products from transistor radios to Walkmans to PlayStations.
+- **3M** — competence in *coatings and adhesives* spawned tens of thousands of products from Post-it notes to surgical drapes to LCD optical films.
+- **Apple** — competence in *human-centered industrial design integrated with software* transferred from Mac to iPod to iPhone to AirPods to Vision Pro.
+
+The competence is the **root**; products are the **fruit**. Competitors who study Apple's products often miss what makes Apple difficult to copy — the underlying integration of design, software, supply chain, and retail experience.
+
+### 6.2.2 Core Competence vs. Core Product vs. End Product
+
+Prahalad & Hamel proposed a three-level architecture:
+
+| Level | Example (Honda) | Example (Apple) |
+|---|---|---|
+| **Core Competence** | Engineering small, efficient engines | Integrated industrial design + software + ecosystem |
+| **Core Product** | Honda engine modules | iOS / silicon (e.g., M-series chips) |
+| **End Product** | Civic, Accord, Odyssey, generators | iPhone, iPad, MacBook, Apple Watch |
+
+The strategic implication: a firm that loses sight of its **core competence** and competes only on **end products** will eventually be out-innovated by a competitor who continues investing at the competence level.
+
+---
+
+## 6.3 Dynamic Capabilities — Teece's Framework
+
+David Teece formalized **dynamic capabilities** in a series of papers from the 1990s through the 2010s. His definition:
+
+> **Dynamic capabilities** are the firm's ability to **integrate, build, and reconfigure** internal and external competencies to address rapidly changing environments.
+
+Teece organizes dynamic capabilities into three clusters:
+
+```{mermaid}
+flowchart LR
+    SENSE["SENSING: Identifying opportunities and threats"]
+    SEIZE["SEIZING: Mobilizing resources to capture opportunities"]
+    RECONFIG["RECONFIGURING: Realigning assets and structures"]
+    SENSE --> SEIZE
+    SEIZE --> RECONFIG
+    RECONFIG -.feedback.-> SENSE
+    style SENSE fill:#D8C3A5,stroke:#004030
+    style SEIZE fill:#004030,stroke:#004030,color:#FFFFFF
+    style RECONFIG fill:#EFE4D2,stroke:#004030
+```
+
+### 6.3.1 Sensing (感知)
+
+Sensing is about scanning the environment for emerging opportunities and threats — customer-need shifts, technological trajectories, regulatory changes, competitor moves. It requires:
+
+- **Outward-facing organizational structures** — close customer contact, supplier intimacy, ecosystem partnerships.
+- **Cognitive diversity** — teams that include people who see different futures.
+- **Tolerance for weak signals** — willingness to take seriously evidence that doesn't fit current assumptions.
+
+### 6.3.2 Seizing (掌握)
+
+Seizing converts sensed opportunities into committed resource allocations: building factories, hiring teams, launching products, signing partnerships. It requires:
+
+- **Decision speed and quality** — escaping analysis paralysis.
+- **Business-model design** — choosing how to monetize the opportunity.
+- **Investment discipline** — committing meaningfully without over-committing.
+
+The hardest part of seizing is **timing**. Move too early and the market isn't ready (Apple's 1993 Newton); move too late and competitors have locked you out (Microsoft in mobile, 2007–2015).
+
+### 6.3.3 Reconfiguring (重組)
+
+Reconfiguring is the most demanding cluster — actually changing the firm's existing structures, routines, and culture to align with new realities. It requires:
+
+- **Asset orchestration** — moving resources from declining businesses to emerging ones.
+- **Organizational change capability** — managing fear, identity, and politics during transitions.
+- **Decoupling and re-coupling** — separating units that no longer fit and integrating new ones.
+
+::: {.callout-tip}
+## TSMC as a master of dynamic capabilities
+
+TSMC's 35-year history is a textbook case of all three clusters in action:
+
+- **Sensing** — Morris Chang sensed in the 1980s that semiconductor design and manufacturing would decouple, decades before the trend was obvious.
+- **Seizing** — TSMC committed to a pure-play foundry model when conventional wisdom said an IDM (integrated device manufacturer) was the only viable strategy.
+- **Reconfiguring** — TSMC has repeatedly transitioned through process generations (130nm → 90nm → 65nm → ... → 3nm → 2nm), each requiring a near-total reorganization of fabs, suppliers, and customer interfaces.
+
+The result is one of the most enduring competitive advantages in modern industrial history.
+:::
+
+---
+
+## 6.4 Core Rigidities — The Dark Side of Past Success
+
+Dorothy Leonard-Barton (1992) introduced a haunting counter-concept: **core rigidities (核心僵化)**. The same routines, values, and capabilities that produce success in one era can become **obstacles** in the next.
+
+| Phase | What helped | What now hurts |
+|---|---|---|
+| **Year 1–10** | Engineering-led culture wins markets | |
+| **Year 10–25** | Routines codify, scale, and refine | Engineering culture rejects design and UX as "soft" |
+| **Year 25+** | | Cannot pivot to design-led products; loses to Apple |
+
+This is the **Innovator's Dilemma** as posed by Clayton Christensen — incumbent firms struggle to embrace disruptive technologies precisely because they are **so good** at their existing technology. Customers reward what works today; processes optimize what worked yesterday; values reject what doesn't fit.
+
+The strategic implication: **a competence and a rigidity are the same thing**, viewed from different time horizons. The firms that escape this trap are those that **deliberately maintain a portfolio of capabilities** — including some that look unproductive today but may matter tomorrow.
+
+---
+
+## 6.5 Ambidextrous Organizations — Doing Both at Once
+
+How does a firm avoid core rigidities while continuing to exploit current strengths? Charles O'Reilly and Michael Tushman's answer is the **ambidextrous organization (雙元組織)** — a structure that simultaneously:
+
+- **Exploits** existing competencies for short-term efficiency and profit, **and**
+- **Explores** new competencies for long-term renewal.
+
+The key design principle is **structural separation**: the exploration unit operates with different processes, metrics, culture, and often physical location from the exploitation unit. The two are linked at the senior-leadership level but kept separate at the operating level.
+
+::: {.callout-note}
+## Examples of ambidextrous design
+
+- **Amazon** runs AWS (cloud, exploration → now exploitation) alongside the original e-commerce business; both are stewarded under one corporate structure but with distinct PnL accountability.
+- **IBM** at multiple points in its history launched separate skunkworks (the original PC team in Boca Raton, the Watson AI unit) outside the mainframe culture.
+- **Toyota** maintains a hybrid-vehicle strategy (Prius, exploration in early years) alongside its core internal-combustion business.
+:::
+
+The hard part is **leadership**. Senior executives must allocate resources across exploitation and exploration, defend exploration units from short-term pressure, and resist the gravity of "doing what we know works."
+
+---
+
+## 6.6 Dynamic Capabilities in the GenAI Era
+
+The 2026 environment compresses every dynamic-capability cycle:
+
+- **Sensing accelerates** — LLMs can synthesize customer reviews, social media, news, and competitor filings in hours, not weeks. Firms with mature AI workflows detect weak signals their competitors miss.
+- **Seizing accelerates** — Code generation, design generation, and rapid prototyping shrink the time from idea to MVP from quarters to weeks.
+- **Reconfiguring accelerates — and disrupts** — AI-driven restructuring decisions (workforce reallocation, automation rollouts) happen faster, but also create new core rigidities. Firms that build their identity around "AI-first processes" may find themselves rigid against the next paradigm shift.
+
+::: {.callout-tip}
+## Dynamic capabilities as a TP analytical lens
+
+When you analyze your TP focal company in **TP3 — Growth Strategy**, ask all three questions:
+
+1. **Sensing** — Has the firm seen the major external shifts (tech, regulatory, geopolitical) coming? What is its scanning machinery?
+2. **Seizing** — When the firm has identified an opportunity, how fast does it move? Cite specific examples (acquisitions, product launches, capacity decisions) with dates.
+3. **Reconfiguring** — Has the firm successfully restructured itself in the past 10 years? What did it preserve, what did it shed?
+
+A firm that scores well on sensing but poorly on reconfiguring is a **future Kodak**. A firm that scores well on reconfiguring but poorly on sensing is **constantly catching up**. The greatest firms score well on all three.
+:::
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — Identifying Core Competencies
+
+For two of the following firms, identify what you believe is the firm's true **core competence** (the competence behind the products, not the products themselves). Apply Prahalad & Hamel's three-test criteria.
+
+a) Tesla.
+b) 統一企業 Uni-President.
+c) Spotify.
+d) 王品集團 Wowprime Restaurants.
+e) Walmart.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — Sensing Failure
+
+Pick a famous case where an incumbent firm **failed to sense** a major shift in time (e.g., Kodak/digital, Nokia/smartphone, Blockbuster/streaming, Sears/e-commerce).
+
+a) Reconstruct the early signals the firm could have detected.
+b) Identify what organizational features blocked sensing — was it culture, structure, incentives, or all three?
+c) What sensing mechanisms could a firm in a similar position install today using GenAI tools?
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Core Rigidity Diagnosis
+
+Choose your TP focal company. Identify **one capability** that is currently a strength but has the potential to become a **core rigidity** within the next 5–10 years.
+
+a) Describe the capability and why it is currently valuable.
+b) Identify the future environmental shift that could turn this capability into a liability.
+c) Propose a strategy the firm could adopt now to preserve the strength while building optionality for the shift.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Designing Ambidexterity
+
+Imagine you are advising a successful Taiwanese contract manufacturer that wants to build a brand-led consumer business while maintaining its OEM/ODM core. Apply ambidextrous-organization principles:
+
+a) What aspects should be **separated** between the two businesses (culture, location, metrics, talent)?
+b) What aspects should be **shared** (technology, supplier relationships, capital allocation)?
+c) Identify two leadership challenges the CEO will face during the transition.
+:::
+
+---
+
+## Further Readings
+
+- **Prahalad, C. K. & Hamel, G. (1990)**. "The Core Competence of the Corporation." *Harvard Business Review*, May–June. — The foundational article.
+- **Teece, D. J., Pisano, G., & Shuen, A. (1997)**. "Dynamic Capabilities and Strategic Management." *Strategic Management Journal*, 18(7), 509–533.
+- **Teece, D. J. (2007)**. "Explicating Dynamic Capabilities: The Nature and Microfoundations of (Sustainable) Enterprise Performance." *Strategic Management Journal*, 28(13), 1319–1350. — The mature framework with sensing/seizing/reconfiguring.
+- **Leonard-Barton, D. (1992)**. "Core Capabilities and Core Rigidities: A Paradox in Managing New Product Development." *Strategic Management Journal*, 13(S1), 111–125.
+- **O'Reilly, C. A. & Tushman, M. L. (2013)**. "Organizational Ambidexterity: Past, Present, and Future." *Academy of Management Perspectives*, 27(4), 324–338.
+- **Christensen, C. M. (1997)**. *The Innovator's Dilemma*. Harvard Business School Press. — Companion reading on how core competencies become core rigidities.
+
+::: {.callout-note}
+## Coursera Companion
+- **[CS] Corporate Strategy** — Modules on dynamic capabilities and corporate renewal directly extend this chapter's content.
+- **[ENT] Entrepreneurship 1: Developing the Opportunity** — Sections on opportunity recognition map onto Teece's "sensing" cluster.
+:::
+
+---
+
+## Looking Ahead
+
+Chapters 5 and 6 together completed the **inside-out** view: static resources, value-chain activities, and the dynamic capabilities that allow firms to renew their advantage. We now have both lenses — outside-in (Chapters 3–4) and inside-out (Chapters 5–6) — and can begin synthesizing them.
+
+Chapter 7 turns to the central question of business strategy: **given an industry context and a resource base, how should a firm position itself to compete?** We will introduce **Porter's Generic Strategies** — cost leadership, differentiation, and focus — and the strategic decisions that shape competitive position.
