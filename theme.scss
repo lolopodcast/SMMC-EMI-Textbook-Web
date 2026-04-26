@@ -208,7 +208,7 @@ blockquote {
   font-style: italic;
   color: $bcg-gray-soft;
 }
-// TTS Controls
+// TTS Controls — sticky on scroll
 .tts-controls {
   display: flex;
   flex-wrap: wrap;
@@ -216,23 +216,29 @@ blockquote {
   align-items: center;
   margin: 1rem 0 2rem 0;
   padding: 0.6rem 0.8rem;
-  background: rgba(0, 64, 48, 0.04);
-  border-left: 3px solid $bcg-gold;
-  border-radius: 3px;
+  background: rgba(0, 64, 48, 0.95);
+  border: 1px solid $bcg-gold;
+  border-radius: 4px;
+  position: sticky;
+  top: 0.5rem;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 64, 48, 0.15);
   
   button {
     font-size: 0.85rem;
     padding: 0.3rem 0.7rem;
-    background: #FFF;
-    border: 1px solid $bcg-green;
+    background: $bcg-gold;
+    border: 1px solid $bcg-gold;
     color: $bcg-green;
     border-radius: 3px;
     cursor: pointer;
+    font-weight: 600;
     transition: all 0.15s;
     
     &:hover {
-      background: $bcg-green;
-      color: $bcg-gold;
+      background: #FFFFFF;
+      color: $bcg-green-dark;
     }
     
     &:active {
@@ -243,7 +249,7 @@ blockquote {
   .tts-status {
     margin-left: auto;
     font-size: 0.85rem;
-    color: $bcg-gray-soft;
+    color: $bcg-gold;
     font-style: italic;
     min-height: 1.2em;
   }
