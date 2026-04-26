@@ -1,0 +1,419 @@
+---
+title: "Resource-Based View & Value Chain"
+subtitle: "Chapter 5 — Inside-Out Perspective: What Makes a Firm Distinctive"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Explain why **Inside-Out** analysis (the Resource-Based View) becomes critical when external environments change rapidly.
+2. Distinguish between **resources** (what a firm has) and **capabilities** (what a firm can do), and classify resources as tangible or intangible.
+3. Apply the **VRIO/VRIN test** to determine whether a resource provides competitive parity, temporary advantage, or sustained competitive advantage.
+4. Map a firm's **value chain** and identify which primary and support activities are sources of differentiation or cost advantage.
+5. Recognize the role of **knowledge conversion** (Nonaka's SECI model) in building hard-to-imitate capabilities.
+
+---
+
+## 5.1 Why the Resource-Based View Becomes Critical
+
+Chapter 3 examined external structure; Chapter 4 examined competitive dynamics. Both share a common assumption: **the environment determines opportunity**. But what happens when the environment itself becomes unpredictable?
+
+Consider a firm in 2020 trying to plan a 5-year strategy: COVID-19, supply-chain reshoring, the GenAI revolution, geopolitical bifurcation, and rate hikes were all either unforeseen or grossly mis-estimated. **External-fit-based strategies** built on stable assumptions failed catastrophically.
+
+The **Resource-Based View (RBV, 資源基礎觀點)** offers a different anchor:
+
+> When the external environment is subject to rapid change, internal resources and capabilities offer a **more secure basis for strategy** than market focus.
+
+The logic is straightforward: customer needs evolve, technologies disrupt, competitors copy products — but a firm's **deeply embedded capabilities** are slower to imitate and slower to obsolesce. They are the most durable foundation for competitive advantage.
+
+::: {.callout-note}
+## Key Definition — RBV
+The **Resource-Based View** holds that sustained competitive advantage derives from a firm's heterogeneous bundle of resources and capabilities, especially those that are valuable, rare, costly to imitate, and effectively organized.
+:::
+
+### 5.1.1 Two Foundational Assumptions
+
+The RBV rests on two assumptions that distinguish it from the Industrial Organization (I/O) view:
+
+- **Resource Heterogeneity (資源異質性)** — Bundles of resources and capabilities **differ across firms** within the same industry. Southwest Airlines and Alaska Airlines fly similar routes with similar aircraft, yet their resource bundles differ in ways that produce very different unit economics — including informal organizational culture, employee productivity, and operational philosophies.
+
+- **Resource Immobility (資源不流動性)** — Resources tend to be **"sticky"** — they don't easily transfer between firms. Decades of failed attempts to imitate Southwest's coherent activity system are evidence: even when competitors **see** the model, they cannot **transplant** it.
+
+### 5.1.2 How Much Do Firm-Specific Factors Explain?
+
+Recall the variance-decomposition findings from Chapter 1. Firm-specific effects consistently explain **30–45%** of profitability variance — substantially more than industry effects (~20%):
+
+| Study | Industry Effects | Firm-Specific Effects | Unexplained |
+|---|---|---|---|
+| Schmalensee (1985) | 19.6% | 0.6% | 80.4% |
+| Rumelt (1991) | 4.0% | 44.2% | 44.8% |
+| McGahan & Porter (1997) | 18.7% | 31.7% | 48.4% |
+| Hawawini et al. (2003) | 8.1% | 35.8% | 52.0% |
+
+The pattern is clear: **what the firm does** matters more than **where the firm is**. RBV provides the analytical apparatus to study what a firm does and why it works.
+
+---
+
+## 5.2 Value Creation, Compared — Toyota vs. GM
+
+To make RBV concrete, consider the textbook V-P-C comparison between Toyota and General Motors during the 2000s:
+
+```{mermaid}
+flowchart TB
+    subgraph GM["General Motors"]
+        GM_C["<b>C</b><br/>Higher cost structure"]
+        GM_PC["<b>P − C</b><br/>Thin profit margin"]
+        GM_VP["<b>V − P</b><br/>Standard consumer surplus"]
+    end
+    subgraph TO["Toyota"]
+        TO_C["<b>C</b><br/>Lower cost structure"]
+        TO_PC["<b>P − C</b><br/>Healthy profit margin"]
+        TO_VP["<b>V − P</b><br/>Higher consumer surplus"]
+    end
+    
+    GM -.>|"Same industry, same product category"| TO
+    
+    style GM fill:#EFE4D2,stroke:#004030
+    style TO fill:#004030,stroke:#004030,color:#FFFFFF
+    style TO_C fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style TO_PC fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+    style TO_VP fill:#D8C3A5,stroke:#004030,color:#2C2C2C
+```
+
+Toyota simultaneously created **more value** (higher V — quality, reliability, fuel economy), charged **higher prices** for comparable models, and operated at **lower costs**. The result was both a higher consumer surplus (V−P) and a higher profit margin (P−C). Same industry, same regulations, same customer pool — radically different outcomes.
+
+The structural explanation is incomplete. The RBV explanation — Toyota's **production system, supplier network, and continuous improvement culture** — accounts for the persistent gap.
+
+---
+
+## 5.3 Resources — The Building Blocks
+
+Resources are the **stocks** a firm possesses. They divide into two broad categories:
+
+### 5.3.1 Tangible Resources
+
+| Type | Characteristics | Indicators |
+|---|---|---|
+| **Financial** (財務資源) | Borrowing capacity, internal funds generation | Debt/Equity ratio, credit rating, net cash flow |
+| **Physical** (實體資源) | Plant and equipment, land, buildings, raw materials | Market value of fixed assets, scale of plants, alternative uses |
+
+### 5.3.2 Intangible Resources
+
+| Type | Characteristics | Indicators |
+|---|---|---|
+| **Technology** (技術資源) | Patents, copyrights, know-how, R&D facilities | Number of patents, royalty income, R&D expenditure, R&D headcount |
+| **Reputation** (聲譽資源) | Brand, customer loyalty, supplier and government relations | Brand equity, customer retention, supplier loyalty |
+| **Human Resources** (人力資源) | Training, experience, adaptability, commitment, loyalty | Employee qualifications, pay rates, turnover |
+
+::: {.callout-tip}
+## A useful Chinese mnemonic — "產銷人發財資"
+A traditional Taiwanese MBA mnemonic for the firm's functional resources, plus reputation:
+
+- **產 (Production)** — operations, plants, capacity
+- **銷 (Sales/Marketing)** — channels, customer base, brand
+- **人 (Human)** — talent, training, culture
+- **發 (R&D)** — patents, know-how, innovation pipeline
+- **財 (Finance)** — capital, borrowing, cash flow
+- **資 (Information / Resources)** — information systems, data assets
+
+Together, these six categories cover most of what shows up on a firm's balance sheet **plus** its critical intangibles. Use this to structure your TP2 internal analysis.
+:::
+
+In 1980, roughly **80% of S&P 500 market value** was captured in book value (tangible). By 2010, only **30%** was — meaning **70% of modern firm value lies in intangibles** that traditional accounting struggles to measure. This shift makes RBV **more, not less**, important over time.
+
+---
+
+## 5.4 Capabilities — Putting Resources to Work
+
+Resources alone do not create advantage — they must be **transformed into effective uses** by the firm's **capabilities (能耐)**.
+
+> Resources × Capabilities → Effective uses → Competitive advantage
+
+A bank with a vast deposit base (resource) creates no advantage if it cannot underwrite loans well (capability). A semiconductor firm with brilliant engineers (resource) creates no advantage if it cannot manage cross-functional product development (capability).
+
+### 5.4.1 Hierarchy of Capabilities
+
+Capabilities are organized in layers, from concrete tasks to abstract cross-functional integration:
+
+```{mermaid}
+flowchart TB
+    L5["<b>Cross-Functional Capabilities</b><br/>e.g., New Product Development, Customer Support, Quality Management"]
+    L4["<b>Broad Functional Capabilities</b><br/>e.g., Operations, R&D, Marketing, HR, MIS"]
+    L3["<b>Activity-Related Capabilities</b><br/>e.g., Manufacturing, Materials Management, Process Engineering"]
+    L2["<b>Specialized Capabilities</b><br/>e.g., PCB Assembly, Telset Assembly, System Assembly"]
+    L1["<b>Single-Task Capabilities</b><br/>e.g., Through-hole Insertion, Wave Soldering, Surface Mounting"]
+    L0["<b>Individuals' Specialized Knowledge</b>"]
+    
+    L0 --> L1
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
+    L4 --> L5
+    
+    style L5 fill:#004030,stroke:#004030,color:#FFFFFF
+    style L4 fill:#D8C3A5,stroke:#004030
+    style L3 fill:#EFE4D2,stroke:#004030
+    style L2 fill:#FAF6F0,stroke:#004030
+    style L1 fill:#FAF6F0,stroke:#6B6B6B
+    style L0 fill:#FAF6F0,stroke:#6B6B6B,color:#6B6B6B
+```
+
+The higher in the hierarchy, the more **integrative** and harder to imitate. A competitor can poach an engineer (single-task capability) far more easily than it can replicate an entire **new product development capability** that integrates marketing, R&D, manufacturing, and customer support.
+
+This is why **cross-functional capabilities are the most strategically valuable** — and the hardest to build, because they require organizational design choices, not just hiring.
+
+---
+
+## 5.5 The VRIN/VRIO Test
+
+Not every resource provides competitive advantage. The **VRIN framework (or VRIO, depending on the textbook)** asks four questions to assess strategic value:
+
+::: {.callout-important}
+## VRIN — Four conditions for sustained competitive advantage
+
+- **V — Valuable (有價值)** — Does the resource help the firm exploit opportunities or neutralize threats?
+- **R — Rare (稀有)** — Is the resource possessed by only a few competitors?
+- **I — Inimitable (難以模仿)** — Is the resource costly or difficult for competitors to imitate?
+- **N — Non-substitutable (難以替代)** — Are there no strategic equivalents that achieve the same effect?
+:::
+
+A resource that is **only** Valuable provides **competitive parity** — necessary to play, insufficient to win. Adding **Rarity** produces **temporary competitive advantage**. Adding **Inimitability** and **Non-substitutability** produces **sustained competitive advantage (SCA, 持續性競爭優勢)**.
+
+### 5.5.1 Sources of Inimitability
+
+Why are some resources hard to imitate? Four mechanisms:
+
+- **Physical uniqueness (實體獨特性)** — Geographic location (a unique mining claim), patented molecule, exclusive distribution rights.
+- **Path dependency (路徑依賴)** — The resource accumulated over years through specific historical events that cannot be re-run. Toyota's supplier relationships took 50+ years to build.
+- **Causal ambiguity (因果模糊)** — Even insiders cannot fully explain why the resource works. Firms can replicate the visible elements but miss the invisible ones.
+- **Social complexity (社會複雜性)** — Resources rooted in interpersonal trust, organizational culture, or community relationships that emerge from social processes, not deliberate design.
+
+::: {.callout-tip}
+## Why Southwest Airlines remained un-copiable
+Multiple US carriers — Continental Lite, Delta Song, United Ted — explicitly tried to replicate Southwest's low-cost model. All failed. Southwest's advantage rested on a **socially complex** activity system: pilots loading luggage, an informal organization, employees who genuinely identified with the company. These cannot be recreated by an executive memo. The activity system itself was visible, but the **culture that made it function** was not.
+:::
+
+---
+
+## 5.6 Mapping the Value Chain
+
+Where do resources and capabilities live within a firm? They live in **activities** — and Michael Porter's **Value Chain (價值鏈)** is the canonical map of those activities.
+
+```{mermaid}
+flowchart LR
+    subgraph SUPPORT["Support Activities"]
+        FI["Firm Infrastructure"]
+        HR["Human Resource Management"]
+        TD["Technology Development"]
+        PR["Procurement"]
+    end
+    subgraph PRIMARY["Primary Activities"]
+        IL["Inbound<br/>Logistics"] --> OP["Operations"]
+        OP --> OL["Outbound<br/>Logistics"]
+        OL --> MS["Marketing<br/>& Sales"]
+        MS --> SV["Service"]
+    end
+    SUPPORT -.supports.-> PRIMARY
+    PRIMARY --> MARGIN["<b>MARGIN</b><br/>Net Margin = Gross Margin − Expenses<br/>Gross Margin = Revenue − Cost"]
+    
+    style PRIMARY fill:#D8C3A5,stroke:#004030
+    style SUPPORT fill:#EFE4D2,stroke:#004030
+    style MARGIN fill:#004030,stroke:#004030,color:#FFFFFF
+```
+
+### 5.6.1 Primary vs. Support Activities
+
+**Primary activities** directly contribute to creating, selling, and supporting the product:
+
+- **Inbound Logistics (進料物流)** — receiving, warehousing, inventory control of raw materials.
+- **Operations (生產營運)** — transforming inputs into the final product.
+- **Outbound Logistics (出料物流)** — finished-goods storage, order processing, distribution.
+- **Marketing & Sales (行銷與銷售)** — customer-facing activities that drive purchase decisions.
+- **Service (售後服務)** — post-sale support, repair, customer success.
+
+**Support activities** enable the primary activities:
+
+- **Firm Infrastructure (公司基礎)** — general management, finance, accounting, legal, planning.
+- **HRM (人力資源管理)** — recruiting, training, compensation, retention.
+- **Technology Development (技術開發)** — R&D, process engineering, IT systems.
+- **Procurement (採購)** — sourcing inputs across the firm.
+
+### 5.6.2 The Value Chain Differs by Industry
+
+The generic value chain is a **template**. Real value chains vary substantially:
+
+```{mermaid}
+flowchart LR
+    subgraph RETAIL["Retail (e.g., 7-ELEVEN)"]
+        R1["Partnering<br/>with vendors"] --> R2["Purchasing<br/>goods"]
+        R2 --> R3["Managing<br/>inventory"]
+        R3 --> R4["Operating<br/>stores"]
+        R4 --> R5["Marketing<br/>& selling"]
+    end
+    subgraph ENG["Engineering Services"]
+        E1["Research and<br/>development"] --> E2["Engineering"]
+        E2 --> E3["Designs and<br/>solutions"]
+        E3 --> E4["Marketing<br/>& selling"]
+        E4 --> E5["Service"]
+    end
+    
+    style RETAIL fill:#EFE4D2,stroke:#004030
+    style ENG fill:#D8C3A5,stroke:#004030
+```
+
+::: {.callout-tip}
+## TP2 application
+In **TP2 — Internal Analysis**, do not just paste Porter's generic value chain into your slides. **Customize** it for your focal firm:
+
+1. List the firm's actual primary activities by examining its 10-K, annual report, or website.
+2. Identify which 1–2 activities are sources of **differentiation** — where the firm raises V relative to competitors.
+3. Identify which 1–2 activities are sources of **cost advantage** — where the firm operates at a lower C.
+4. The remaining activities are typically **at parity** — necessary but not distinctive.
+
+This focused diagnosis is far more useful than a comprehensive but bland generic chain.
+:::
+
+### 5.6.3 Value Chain vs. Organizational Structure
+
+A subtle but critical point: a firm's **value chain** and its **organizational chart** are not the same thing. The org chart shows reporting lines (董事會、總經理、各部門); the value chain shows **how activities create value**. A well-designed organization aligns the two; a poorly designed one creates structural friction in which the org chart obstructs the value chain.
+
+Diagnosing this misalignment is one of the most valuable contributions a strategist can make.
+
+---
+
+## 5.7 Knowledge as a Resource — Nonaka's SECI Model
+
+Many of the most strategically valuable resources are **knowledge-based**. Ikujiro Nonaka's influential **Knowledge Conversion model** (the **SECI** cycle) explains how organizations create and convert knowledge:
+
+```{mermaid}
+flowchart TB
+    subgraph TT["Tacit → Tacit"]
+        S["<b>SOCIALIZATION</b><br/>Sharing tacit knowledge<br/>from individual to organization"]
+    end
+    subgraph TE["Tacit → Explicit"]
+        E["<b>EXTERNALIZATION</b><br/>Articulating tacit knowledge<br/>into systematic, sharable form"]
+    end
+    subgraph EE["Explicit → Explicit"]
+        C["<b>COMBINATION</b><br/>Combining different units<br/>of explicit knowledge"]
+    end
+    subgraph ET["Explicit → Tacit"]
+        I["<b>INTERNALIZATION</b><br/>Converting explicit principles<br/>into intuition and routines"]
+    end
+    
+    S --> E --> C --> I --> S
+    
+    style S fill:#D8C3A5,stroke:#004030
+    style E fill:#004030,stroke:#004030,color:#FFFFFF
+    style C fill:#EFE4D2,stroke:#004030
+    style I fill:#FAF6F0,stroke:#004030
+```
+
+- **Tacit knowledge (內隱知識)** — knowing-how, embedded in individual experience and intuition. Hard to articulate, hard to transfer.
+- **Explicit knowledge (外顯知識)** — knowing-what, codified in documents, manuals, databases. Easy to copy, easy to lose strategic edge.
+
+The strategic insight: **firms that can convert tacit to explicit (Externalization) build durable knowledge assets**. Firms that rely solely on tacit knowledge are vulnerable when key individuals leave. Firms that rely solely on explicit knowledge can be copied via document leakage.
+
+::: {.callout-tip}
+## How GenAI changes knowledge management
+
+In 2026, AI tools are accelerating the **Externalization** step. Recording employee interviews and using LLMs to extract decision heuristics, naming the unspoken patterns in customer service transcripts, generating SOPs from observed behavior — all are now within reach. This compresses what used to take years of consulting engagements into weeks.
+
+But beware: **explicit knowledge is also more easily extracted by competitors** — through employee transitions, AI-assisted competitive intelligence, or simple prompt engineering against public data. Knowledge advantages now decay faster.
+:::
+
+---
+
+## 5.8 The Resources & Capabilities Diagnostic Map
+
+Once a firm has inventoried its resources and capabilities, the diagnostic question is: **which ones actually matter?** A useful tool plots each resource against two axes:
+
+- **Strategic Importance** — How critical is this for industry success?
+- **Relative Strength** — How does our position compare to competitors'?
+
+The four quadrants:
+
+| Quadrant | Meaning | Action |
+|---|---|---|
+| **Key Strengths** (high importance, high strength) | Our core competitive advantages | Defend, leverage, extend |
+| **Key Weaknesses** (high importance, low strength) | Critical gaps | Invest aggressively, partner, or exit |
+| **Superfluous Strengths** (low importance, high strength) | Wasted distinctiveness | Redirect resources, or find a market that values them |
+| **Zone of Irrelevance** (low importance, low strength) | Background noise | Ignore, divest |
+
+::: {.callout-note}
+## Ducati case (Grant, 2016)
+A classic illustration: Ducati Motor's diagnostic map showed **Brand, Design, New Product Development, and Engineering** as key strengths; **Distribution, Manufacturing, and Customer Service** as key weaknesses; **Location and Proprietary Technology** as superfluous strengths. The strategic implication was clear: **invest in distribution and manufacturing**, not in further refining what was already exceptional. Many premium-brand turnarounds follow this pattern.
+:::
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — VRIN Diagnosis
+
+Choose a Taiwan MNC (e.g., 台積電 TSMC, 大立光 Largan, 鴻海 Foxconn, 統一企業 Uni-President).
+
+a) Identify three of the firm's most important resources or capabilities.
+b) For each, apply the VRIN test: Valuable? Rare? Inimitable? Non-substitutable?
+c) Classify each resource as **competitive parity**, **temporary advantage**, or **sustained competitive advantage**, and justify the classification.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — Sources of Inimitability
+
+For each of the following famously hard-to-copy resources, identify which inimitability mechanism (physical uniqueness, path dependency, causal ambiguity, or social complexity) is most likely the dominant source:
+
+a) Toyota's supplier network in central Japan.
+b) Coca-Cola's brand in the global South.
+c) Chick-fil-A's customer-service culture.
+d) De Beers' historical control of diamond mines.
+e) Pixar's collaborative storytelling process.
+f) TSMC's process-node yield rates.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Customizing the Value Chain
+
+For your TP focal company, customize Porter's generic value chain:
+
+a) Replace each generic primary activity with the firm's actual primary activity (use the firm's annual report or website).
+b) Identify the **two activities** where the firm differentiates itself — what raises V?
+c) Identify the **two activities** where the firm has cost advantages — what lowers C?
+d) Identify **one activity** that may be a hidden weakness — currently at parity or below, but with rising strategic importance.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Knowledge Conversion in Practice
+
+Pick a process at NCNU (e.g., new student orientation, course registration, faculty research collaboration).
+
+a) Identify one piece of **tacit** knowledge essential to the process.
+b) Propose how to **externalize** it (convert to explicit form) using either traditional methods (interviews, manuals) or AI-assisted methods.
+c) What would be lost in the conversion? What would be gained?
+d) How would you **internalize** the resulting explicit knowledge so that new staff develop the right intuitions?
+:::
+
+---
+
+## Further Readings
+
+- **Barney, J. B. (1991)**. "Firm Resources and Sustained Competitive Advantage." *Journal of Management*, 17(1), 99–120. — The foundational RBV paper.
+- **Wernerfelt, B. (1984)**. "A Resource-Based View of the Firm." *Strategic Management Journal*, 5(2), 171–180. — The article that named the field.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapter 5 — "Analyzing Resources and Capabilities". Wiley.
+- **Porter, M. E. (1985)**. *Competitive Advantage: Creating and Sustaining Superior Performance*. Free Press. — The canonical value chain reference.
+- **Nonaka, I. & Takeuchi, H. (1995)**. *The Knowledge-Creating Company*. Oxford University Press. — Source of the SECI model.
+- **Collis, D. J. & Montgomery, C. A. (2008)**. "Competing on Resources." *Harvard Business Review*, July–August.
+
+::: {.callout-note}
+## Coursera Companion
+- **[CS] Corporate Strategy** — Modules on resource-based competition and value-chain analysis directly complement this chapter.
+:::
+
+---
+
+## Looking Ahead
+
+Chapter 5 has provided the foundational vocabulary of inside-out analysis: resources, capabilities, value chain, and the VRIN test for sustained advantage. But static resources are not enough in a fast-changing world. Chapter 6 introduces **core competencies, complementary assets, and dynamic capabilities** — the higher-order constructs that explain how firms **renew** their advantage as the environment evolves.
