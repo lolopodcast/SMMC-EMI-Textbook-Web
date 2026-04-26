@@ -328,3 +328,82 @@ blockquote {
     }
   }
 }
+// Copyright notice modal
+.copyright-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 64, 48, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.copyright-modal {
+  background: #FAF6F0;
+  max-width: 520px;
+  width: 90%;
+  padding: 1.8rem 2rem;
+  border-radius: 6px;
+  border: 2px solid $bcg-gold;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  font-family: $font-family-sans-serif;
+  
+  h3 {
+    color: $bcg-green;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-family: $font-family-serif;
+    border-bottom: 2px solid $bcg-gold;
+    padding-bottom: 0.4em;
+  }
+  
+  .copyright-body {
+    color: $bcg-gray-text;
+    line-height: 1.6;
+    
+    p {
+      margin: 0.6em 0;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid $bcg-gold;
+      margin: 1em 0;
+    }
+    
+    a {
+      color: $bcg-green;
+      font-weight: 600;
+    }
+  }
+  
+  .copyright-ok {
+    margin-top: 1.2em;
+    background: $bcg-green;
+    color: $bcg-gold;
+    border: none;
+    padding: 0.7em 1.4em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.15s;
+    width: 100%;
+    
+    &:hover {
+      background: $bcg-green-dark;
+      color: #FFFFFF;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
