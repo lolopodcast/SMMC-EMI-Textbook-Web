@@ -1,0 +1,131 @@
+### 11.4.1 Entry-Mode Selection Logic
+
+Three principles guide the choice:
+
+1. **Higher commitment when the asset is strategic** — Core technology, key brand assets, and proprietary know-how favor wholly-owned operations to prevent leakage.
+2. **Lower commitment when uncertainty is high** — In unfamiliar markets or volatile regulatory environments, lower-commitment modes preserve optionality.
+3. **Match the partner's capability gap** — When local market knowledge or regulatory access is needed, joint ventures with local partners can be powerful — but managing JV conflict is itself a capability.
+
+::: {.callout-note}
+## The classic JV trap
+
+Joint ventures are popular at entry but often unstable over time. The typical pattern: at year 1, both partners have complementary skills and need each other. By year 5, knowledge has flowed from the technology partner to the local partner; the local partner no longer needs the foreigner; the foreigner has not built local capability. Outcome: the foreigner exits at a disadvantage. **Anti-pattern**: relying on JVs without an explicit plan to absorb local knowledge.
+:::
+
+---
+
+## 11.5 Liability of Foreignness — and How to Overcome It
+
+Every international entrant faces the **liability of foreignness (LOF, 外國者劣勢)** — costs and disadvantages that local firms do not bear:
+
+- **Cultural unfamiliarity** — slower decision-making, mis-reading consumer signals.
+- **Regulatory complexity** — relationships, licenses, compliance the firm does not have.
+- **Discrimination** — explicit (procurement preferences for local firms) or implicit (consumer skepticism).
+- **Communication and coordination costs** — across time zones, languages, distance.
+
+Overcoming LOF requires **either** building local capabilities (hiring local managers, partnering, acquiring), **or** offering value the local market cannot get from local firms (proprietary technology, premium brand, scale economies).
+
+### 11.5.1 The Born-Global Phenomenon
+
+Some firms — especially in software, gaming, and creative industries — are **born global**, operating across borders from day one. These firms minimize LOF by:
+
+- **Digital-first operations** that don't require physical presence.
+- **Highly portable products** (software, content) that travel without adaptation.
+- **Distributed teams** that already include the cultural and language diversity of target markets.
+
+Born-global firms challenge the traditional staged-internationalization model (Uppsala model) in which firms gradually expand from psychically close to distant markets.
+
+---
+
+## 11.6 Globalization in 2026 — Slowbalization, Bifurcation, and AI
+
+The 1990–2008 era of accelerating globalization has given way to a more complex pattern often called **slowbalization** or **regionalization**:
+
+- **Geopolitical bifurcation** — US-aligned and China-aligned ecosystems are diverging in technology standards, capital flows, and regulatory regimes. MNCs increasingly need **bloc-specific strategies**.
+- **Supply-chain reshoring and friend-shoring** — Pandemic and geopolitical shocks have shifted firms toward shorter, more resilient supply chains, often within trusted political alliances rather than purely cost-optimal locations.
+- **AI-enabled cross-border coordination** — Translation, cross-cultural communication, and remote management are dramatically easier in 2026 than they were in 2010. The **administrative and cultural distance** components of CAGE have **partially eroded**.
+- **Sustainability standards diverging across blocs** — EU Carbon Border Adjustment Mechanism, US Inflation Reduction Act, China's own decarbonization roadmap create different compliance regimes that fracture global strategy.
+
+The implication: **the global standardization strategy has become harder**, while **transnational strategy** — combining global integration where possible with bloc-specific responsiveness — is increasingly necessary.
+
+::: {.callout-tip}
+## Internationalization in your TP analysis
+
+For TP3 — Growth Strategy, ask:
+
+1. What is the focal firm's current geographic footprint? Which countries account for >10% of revenue?
+2. Which I-R archetype best describes the current strategy — global, multidomestic, transnational, international?
+3. Apply CAGE: what are the largest distances the firm faces in its main growth markets?
+4. Are there countries where the firm has under-invested due to liability of foreignness? What entry mode would minimize that liability?
+5. How will geopolitical bifurcation affect the firm in the next 5 years? Which bloc(s) should it prioritize?
+:::
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — Identifying International Strategy
+
+For each Taiwan-headquartered firm, classify the international strategy archetype (global, multidomestic, transnational, international) and justify with two pieces of evidence:
+
+a) **TSMC** — semiconductor foundry.
+b) **王品集團 Wowprime** — restaurant brands across Taiwan, China, Japan, Southeast Asia.
+c) **HTC** — smartphone and VR (historically and currently).
+d) **誠品 Eslite** — bookstore and lifestyle retail.
+e) **長榮海運 Evergreen Marine** — global container shipping.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — CAGE Distance Analysis
+
+Choose a Taiwan firm planning to enter a major foreign market (e.g., Foxconn entering Vietnam, Kuo Yang entering Saudi Arabia, Foxconn entering India, a Taiwan beverage firm entering France).
+
+a) For each CAGE dimension, identify two specific distance factors between Taiwan and the target market.
+b) Rank the CAGE dimensions by their likely impact on entry difficulty.
+c) Recommend two specific actions to mitigate the largest distance risks.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Entry Mode Recommendation
+
+A Taiwan-listed pharmaceutical firm wants to launch a proprietary biologic drug in Brazil. The drug requires complex regulatory approvals; the firm has no Brazilian operations; the local market is large but regulatorily complex.
+
+a) Identify and evaluate **three** alternative entry modes (exporting, licensing, JV, wholly-owned subsidiary, acquisition).
+b) For each mode, list two main advantages and two main risks.
+c) Recommend the preferred mode with clear justification, citing the trade-offs from Section 11.4.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Slowbalization Strategy
+
+Suppose your TP focal company currently runs a fully integrated global supply chain spanning Taiwan, China, Mexico, and Eastern Europe. Geopolitical pressures are rising.
+
+a) Map the current dependencies and identify which links carry the greatest geopolitical risk.
+b) Propose a **friend-shoring** restructuring — which production should move to which bloc?
+c) Quantify (with reasonable estimates) the cost increase the firm should expect from the restructuring.
+d) Justify whether the cost increase is acceptable given the risk reduction.
+:::
+
+---
+
+## Further Readings
+
+- **Bartlett, C. A. & Ghoshal, S. (1989)**. *Managing Across Borders: The Transnational Solution*. Harvard Business School Press. — The I-R framework and transnational strategy.
+- **Ghemawat, P. (2001)**. "Distance Still Matters: The Hard Reality of Global Expansion." *Harvard Business Review*, September. — The CAGE framework.
+- **Ghemawat, P. (2007)**. *Redefining Global Strategy*. Harvard Business School Press. — Extended treatment of semi-globalization.
+- **Hill, C. W. L. (2021)**. *International Business: Competing in the Global Marketplace*, 13th ed. McGraw-Hill.
+- **Peng, M. W. (2009)**. *Global Strategy*, 2nd ed. South-Western. — Integrates strategy and IB perspectives.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapter 15 — "Implementing Corporate Strategy: Multinational Operations".
+
+::: {.callout-note}
+## Coursera Companion
+- **[CS] Corporate Strategy** — UIUC Gies, modules on internationalization and global strategy directly extend this chapter.
+- **[ENT] Entrepreneurship 1** — sections on born-global ventures.
+:::
+
+---
+
+## Looking Ahead
+
+Chapter 11 has examined the **geographical** scope of corporate strategy. Chapter 12 — the final chapter of Part I — addresses the **organizational mode** of corporate growth: when should a firm grow through **strategic alliances** with other firms, when through **merger
