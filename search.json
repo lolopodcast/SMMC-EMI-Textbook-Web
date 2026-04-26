@@ -392,32 +392,125 @@
     "text": "Add your pages the project\n\nAdd the files to _quarto.yml"
   },
   {
-    "objectID": "content/rendering.html",
-    "href": "content/rendering.html",
-    "title": "Rendering",
+    "objectID": "content/ch07.html",
+    "href": "content/ch07.html",
+    "title": "Competitive Advantages & Generic Strategies",
     "section": "",
-    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
+    "text": "🔊 Read Aloud (EN) 🔊 朗讀 (中文) ⏸ ⏹ 🐢 🐰",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
   },
   {
-    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "title": "Rendering",
-    "section": "Step 1. Make sure you have a recent RStudio",
-    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
+    "objectID": "content/ch07.html#learning-objectives",
+    "href": "content/ch07.html#learning-objectives",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this chapter, students should be able to:\n\nDefine competitive advantage (CA) in terms of the V-P-C framework, and distinguish between temporary and sustainable advantage.\nApply Porter’s Generic Strategies — cost leadership, differentiation, and focus — to classify a firm’s positioning choice.\nRecognize the “stuck in the middle” problem and explain when hybrid strategies actually work.\nEvaluate strategic positioning using the Strategy Canvas (Kim & Mauborgne) to visualize differentiation.\nConnect generic strategies to the firm’s resources (Chapter 5) and dynamic capabilities (Chapter 6) — strategy is positioning plus the capacity to deliver it.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
   },
   {
-    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "title": "Rendering",
-    "section": "Step 2. Clone and create RStudio project",
-    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
+    "objectID": "content/ch07.html#what-is-competitive-advantage",
+    "href": "content/ch07.html#what-is-competitive-advantage",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.1 What Is Competitive Advantage?",
+    "text": "7.1 What Is Competitive Advantage?\nThroughout Chapters 3–6 we have been circling a central concept without defining it precisely. Now we make it explicit.\n\n\n\n\n\n\nNoteDefinition — Competitive Advantage (競爭優勢)\n\n\n\nA firm has a competitive advantage when it consistently earns above-average returns relative to its industry rivals. In V-P-C terms, this means the firm achieves either a higher (V−C) — more economic value created per unit — or captures a higher share of (V−C) through pricing power.\n\n\nCompetitive advantage is always relative. A firm cannot have an “absolute” advantage in isolation — it has an advantage over specific competitors in specific markets. This is why competitor identification (Chapter 4) is foundational: without knowing who you compete against, you cannot know whether you have an advantage.\n\n7.1.1 Temporary vs. Sustainable Advantage\n\n\n\n\n\n\n\n\n\nType\nDuration\nDriver\nExample\n\n\n\n\nTemporary CA\nMonths to ~3 years\nProduct novelty, first-mover position, regulatory window\nLatest smartphone feature, early-mover in a new geography\n\n\nSustainable CA\n5+ years\nVRIN-passing resources, dynamic capabilities, structural positioning\nTSMC foundry leadership, Costco membership model, LVMH brand portfolio\n\n\n\nIn hypercompetitive industries (D’Aveni, 1994) — software, consumer electronics, fashion — even “sustainable” advantage rarely lasts more than a decade. The ability to chain together temporary advantages through dynamic capabilities (Chapter 6) is itself a form of sustained advantage.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
   },
   {
-    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
-    "href": "content/rendering.html#step-3.-render-within-rstudio",
-    "title": "Rendering",
-    "section": "Step 3. Render within RStudio",
-    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
+    "objectID": "content/ch07.html#porters-generic-strategies",
+    "href": "content/ch07.html#porters-generic-strategies",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.2 Porter’s Generic Strategies",
+    "text": "7.2 Porter’s Generic Strategies\nMichael Porter’s 1980 framework remains the most influential map of strategic positioning. It identifies the choice on two dimensions:\n\n\n\n\n\nflowchart TB\n    title[\"Porter's Generic Strategies\"]\n    CL[\"Cost Leadership: Broad market, lowest cost\"]\n    DIFF[\"Differentiation: Broad market, unique offering\"]\n    FC[\"Focused Cost: Narrow segment, lowest cost in segment\"]\n    FD[\"Focused Differentiation: Narrow segment, unique to segment\"]\n    style CL fill:#D8C3A5,stroke:#004030\n    style DIFF fill:#004030,stroke:#004030,color:#FFFFFF\n    style FC fill:#EFE4D2,stroke:#004030\n    style FD fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\nThe two dimensions are:\n\nSource of advantage: lower cost vs. higher perceived value (differentiation)\nCompetitive scope: broad market vs. narrow segment (focus)\n\n\n7.2.1 Cost Leadership (成本領導)\nA cost-leadership strategy aims to be the lowest-cost producer in the industry, then either:\n\nCharge industry-average prices and earn higher margins, or\nCharge below-industry-average prices and gain market share.\n\nSources of cost advantage typically include:\n\nEconomies of scale — fixed costs spread over high volume.\nEconomies of learning — unit costs decline predictably with cumulative experience.\nProcess efficiency — superior operational design (e.g., Toyota Production System).\nInput cost advantages — preferential access to raw materials, energy, or labor.\nVertical integration efficiencies — reduced transaction costs across the value chain.\n\n\n\n\n\n\n\nTipCost leadership is not “cheap”\n\n\n\nA cost leader maintains competitive product quality while minimizing cost. Walmart, Costco, IKEA, and Toyota are all cost leaders — none of them sells obviously inferior products. The discipline is to deliver acceptable V at structurally lower C, not to race quality to the bottom.\n\n\n\n\n7.2.2 Differentiation (差異化)\nA differentiation strategy aims to be uniquely valuable to customers along dimensions they care about — features, design, brand, service, ecosystem — and charge a premium that exceeds the cost of providing the differentiation.\nSources of differentiation typically include:\n\nProduct features — performance, reliability, design.\nBrand and reputation — accumulated trust, status signaling.\nCustomer service and relationships — perceived value of the experience.\nEcosystem and complementarity — value derived from compatible products and services.\nProprietary technology — patents, trade secrets, network effects.\n\nThe classic differentiators include Apple (design + ecosystem), BMW (engineering + brand), Starbucks (third-place experience), and Hermès (craftsmanship + scarcity).\n\n\n7.2.3 Focus (聚焦)\nA focus strategy targets a narrow market segment that is poorly served by broad-market competitors, and competes within that segment on either cost or differentiation. Examples:\n\nFocused cost: Aldi (limited assortment, hard discount in groceries).\nFocused differentiation: Ferrari (ultra-premium sports cars), Bloomberg Terminal (financial professionals).\n\nFocus works when the segment is large enough to support the firm but small enough that broad-market competitors cannot serve it efficiently.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#the-stuck-in-the-middle-problem",
+    "href": "content/ch07.html#the-stuck-in-the-middle-problem",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.3 The “Stuck in the Middle” Problem",
+    "text": "7.3 The “Stuck in the Middle” Problem\nPorter’s controversial argument: firms that try to simultaneously pursue cost leadership and differentiation often achieve neither — they are “stuck in the middle” (卡在中間), with cost structure too high to compete on price and offering too generic to command a premium.\n\n\n\n\n\nflowchart LR\n    A[\"Trying to be all things to all customers\"]\n    B[\"Costs creep up: customization, variety, complexity\"]\n    C[\"Differentiation diluted: cannot focus on any one customer well\"]\n    D[\"Margins squeezed from both ends\"]\n    A --&gt; B\n    A --&gt; C\n    B --&gt; D\n    C --&gt; D\n    style D fill:#EFE4D2,stroke:#004030\n\n\n\n\n\n\nClassic examples include US legacy airlines (sandwiched between low-cost carriers and premium full-service), and middle-tier department stores (squeezed between fast fashion and luxury).\n\n7.3.1 When Hybrid Strategies Work\nThe “stuck in the middle” warning is not absolute. Hybrid strategies can work when:\n\nOperational excellence reduces the trade-off — Toyota achieves both quality and low cost; IKEA achieves both design and price; Costco achieves both broad assortment and low prices.\nDifferent segments are served by different parts of the firm — Toyota’s Lexus division differentiates while the Toyota brand pursues mass market.\nIndustry structure changes — digital platforms enable mass customization at low marginal cost (Amazon, Shopify-powered storefronts).\n\nThe key insight: hybrid strategies require organizational sophistication — usually only large, mature firms can execute them. Younger or smaller firms generally must pick a clear position.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#strategy-canvas-visualizing-differentiation",
+    "href": "content/ch07.html#strategy-canvas-visualizing-differentiation",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.4 Strategy Canvas — Visualizing Differentiation",
+    "text": "7.4 Strategy Canvas — Visualizing Differentiation\nW. Chan Kim and Renée Mauborgne’s Strategy Canvas (from Blue Ocean Strategy, 2005) offers a powerful complement to Porter’s framework. Instead of classifying strategies, it visualizes them.\nThe canvas plots competitive factors on the x-axis and investment level on the y-axis. Each firm’s strategy appears as a curve. Strong differentiation shows up as a curve that diverges from competitors’.\nFor example, Cirque du Soleil’s strategy curve in the circus industry diverged dramatically from traditional circuses:\n\n\n\nFactor\nTraditional Circus\nCirque du Soleil\n\n\n\n\nStar performers\nHigh\nEliminated\n\n\nAnimal shows\nHigh\nEliminated\n\n\nAisle concession sales\nHigh\nReduced\n\n\nMultiple show arenas\nHigh\nReduced\n\n\nUnique venue\nLow\nHigh\n\n\nTheme\nLow\nHigh\n\n\nRefined environment\nLow\nHigh\n\n\nMultiple productions\nLow\nHigh\n\n\nArtistic music and dance\nLow\nHigh\n\n\n\nCirque didn’t out-compete traditional circuses; it redefined the category. This is the Blue Ocean logic — create uncontested market space rather than fight for share in a “Red Ocean” of bloody competition.\n\n\n\n\n\n\nTipThe Four Actions Framework\n\n\n\nKim & Mauborgne propose four questions to design a Blue Ocean strategy:\n\nEliminate — Which factors taken for granted in the industry should be eliminated?\nReduce — Which factors should be reduced well below industry standard?\nRaise — Which factors should be raised well above industry standard?\nCreate — Which factors should be created that the industry has never offered?\n\nApply these to your TP focal company in TP3 to identify potential repositioning moves.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#connecting-strategy-to-capability",
+    "href": "content/ch07.html#connecting-strategy-to-capability",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.5 Connecting Strategy to Capability",
+    "text": "7.5 Connecting Strategy to Capability\nA generic strategy is a positioning choice — but positioning without underlying capability is hollow. Chapter 5 (RBV) and Chapter 6 (dynamic capabilities) return here as essential complements:\n\n\n\n\n\n\n\n\nStrategy\nRequired Resources\nRequired Capabilities\n\n\n\n\nCost Leadership\nScale, efficient assets, low-cost inputs\nOperational excellence, supply-chain mastery, continuous cost engineering\n\n\nDifferentiation\nBrand, IP, design talent, ecosystem partners\nInnovation pipeline, customer insight, premium service delivery\n\n\nFocused Cost\nNiche operations, narrow asset base\nDeep segment knowledge, lean operations\n\n\nFocused Differentiation\nNiche brand, specialist talent\nExpert-level customer intimacy, segment-specific innovation\n\n\n\n\n\n\n\n\n\nImportantThe integration test\n\n\n\nAsk of any proposed strategy: Does the firm’s resource base and capability portfolio actually support this position? A “differentiation” strategy without R&D capability is wishful thinking. A “cost leadership” strategy without operational discipline collapses on first cost shock. Strategy = position × capability, not just position.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#generic-strategies-in-2026",
+    "href": "content/ch07.html#generic-strategies-in-2026",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "7.6 Generic Strategies in 2026",
+    "text": "7.6 Generic Strategies in 2026\nThree forces are reshaping how generic strategies play out:\n\nAI compresses differentiation lifecycles — what once took 18 months to copy now takes 6 weeks. Differentiators must run faster, with shorter advantage windows but more frequent renewal.\nSustainability becomes a differentiation axis — carbon-neutral supply chains, circular product design, ESG-aligned sourcing are increasingly value drivers, not just compliance costs.\nGeopolitical bifurcation favors focus — firms that try to be globally undifferentiated face mounting compliance complexity. Specializing in one bloc (US-aligned vs. China-aligned) is increasingly a viable focus strategy.\n\nThe generic-strategies framework remains valid; the clock speed and the available positioning axes have changed.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#self-check-questions",
+    "href": "content/ch07.html#self-check-questions",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "Self-Check Questions",
+    "text": "Self-Check Questions\n\n\n\n\n\n\nCautionQuestion 1 — Classifying Generic Strategies\n\n\n\n\n\nFor each of the following Taiwan companies, identify the dominant generic strategy and justify with two pieces of evidence:\n\n全聯福利中心 PX Mart.\n鼎泰豐 Din Tai Fung.\n微星科技 MSI (gaming PCs).\n統一超商 7-ELEVEN Taiwan.\n大同電鍋 TATUNG rice cookers.\n誠品書店 Eslite Bookstore.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 2 — Diagnosing Stuck-in-the-Middle\n\n\n\n\n\nIdentify a firm (Taiwan or global) that you believe is currently stuck in the middle.\n\nDescribe its current positioning ambiguity.\nIdentify the cost-leader and differentiator competitors squeezing it.\nRecommend a clear repositioning — should it move toward cost leadership, differentiation, or focus? Justify with reference to its existing resources and capabilities.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 3 — Strategy Canvas\n\n\n\n\n\nFor your TP focal company, build a simple Strategy Canvas:\n\nIdentify 6–8 competitive factors that customers in this industry care about.\nPlot the focal firm’s investment level (Low / Medium / High) for each factor.\nPlot two main competitors on the same axes.\nIdentify one factor where the focal firm could eliminate investment, and one where it could create a new dimension of competition.\n\n\n\n\n\n\n\n\n\n\nCautionQuestion 4 — Strategy + Capability Integration\n\n\n\n\n\nSuppose a Taiwanese mid-sized contract manufacturer announces it will pursue a branded differentiation strategy in consumer electronics over the next 5 years.\n\nList the resources and capabilities such a strategy requires (cite Chapter 5 categories).\nIdentify the gaps between current contract-manufacturing capabilities and required branded-business capabilities.\nRecommend whether the firm should build, buy, or partner to close each gap.\nWhat dynamic capabilities (Chapter 6) will be tested most heavily in this transition?",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#further-readings",
+    "href": "content/ch07.html#further-readings",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "Further Readings",
+    "text": "Further Readings\n\nPorter, M. E. (1980). Competitive Strategy: Techniques for Analyzing Industries and Competitors. Free Press. — The foundational text on generic strategies.\nPorter, M. E. (1985). Competitive Advantage: Creating and Sustaining Superior Performance. Free Press. — The deeper treatment with value-chain integration.\nKim, W. C. & Mauborgne, R. (2005). Blue Ocean Strategy. Harvard Business School Press. — Strategy Canvas and Four Actions Framework.\nMagretta, J. (2011). Understanding Michael Porter: The Essential Guide to Competition and Strategy. Harvard Business Review Press. — A clear, modern summary.\nGrant, R. M. (2016). Contemporary Strategy Analysis, 9th ed., Chapters 7–9 — covers cost advantage, differentiation, and industry evolution.\n\n\n\n\n\n\n\nNoteCoursera Companion\n\n\n\n\n[CS] Corporate Strategy — UIUC Gies, modules on competitive positioning directly extend this chapter.\n[ENT] Entrepreneurship 1 — opportunity-segmentation modules complement the focus-strategy discussion.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
+  },
+  {
+    "objectID": "content/ch07.html#looking-ahead",
+    "href": "content/ch07.html#looking-ahead",
+    "title": "Competitive Advantages & Generic Strategies",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nChapter 7 has provided the framework for how to compete in an established industry. But not every firm operates in an established industry — many are creating new markets, deploying disruptive technologies, or operating as entrepreneurial ventures. Chapter 8 turns to technology, innovation, and entrepreneurship — the strategic logic of building advantage where the rules of competition are still being written.",
+    "crumbs": [
+      "Part I. Concepts & Frameworks",
+      "Ch 7. Competitive Advantages & Generic Strategies"
+    ]
   },
   {
     "objectID": "content/ch04.html",
@@ -539,6 +632,34 @@
       "Part I. Concepts & Frameworks",
       "Ch 4. Competitive Analysis & Co-opetitive Dynamics"
     ]
+  },
+  {
+    "objectID": "content/rendering.html",
+    "href": "content/rendering.html",
+    "title": "Rendering",
+    "section": "",
+    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
+  },
+  {
+    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "title": "Rendering",
+    "section": "Step 1. Make sure you have a recent RStudio",
+    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
+  },
+  {
+    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "title": "Rendering",
+    "section": "Step 2. Clone and create RStudio project",
+    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
+  },
+  {
+    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
+    "href": "content/rendering.html#step-3.-render-within-rstudio",
+    "title": "Rendering",
+    "section": "Step 3. Render within RStudio",
+    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
   },
   {
     "objectID": "content/customizing.html",

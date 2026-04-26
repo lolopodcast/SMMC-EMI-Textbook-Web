@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publishing – SMMC-EMI Course Textbook</title>
+<title>Competitive Advantages &amp; Generic Strategies – SMMC-EMI Course Textbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/ch08.qmd" rel="next">
+<link href="../content/ch06.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -74,6 +76,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -249,9 +255,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      SMMC-EMI Course Textbook
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/ch01.html">Part I. Concepts &amp; Frameworks</a></li><li class="breadcrumb-item"><a href="../content/ch07.html">Ch 7. Competitive Advantages &amp; Generic Strategies</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -295,13 +299,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Part I. Concepts &amp; Frameworks</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/ch01.html" class="sidebar-item-text sidebar-link">
@@ -340,7 +344,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/ch07.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/ch07.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Ch 7. Competitive Advantages &amp; Generic Strategies</span></a>
   </div>
 </li>
@@ -462,19 +466,38 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On This Page</h2>
    
   <ul>
-  <li><a href="#turn-on-github-pages-for-your-repo" id="toc-turn-on-github-pages-for-your-repo" class="nav-link active" data-scroll-target="#turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</a></li>
-  <li><a href="#do-your-first-publish-to-gh-pages" id="toc-do-your-first-publish-to-gh-pages" class="nav-link" data-scroll-target="#do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></a></li>
-  <li><a href="#dont-like-using-gh-pages" id="toc-dont-like-using-gh-pages" class="nav-link" data-scroll-target="#dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#what-is-competitive-advantage" id="toc-what-is-competitive-advantage" class="nav-link" data-scroll-target="#what-is-competitive-advantage">7.1 What Is Competitive Advantage?</a>
+  <ul class="collapse">
+  <li><a href="#temporary-vs.-sustainable-advantage" id="toc-temporary-vs.-sustainable-advantage" class="nav-link" data-scroll-target="#temporary-vs.-sustainable-advantage">7.1.1 Temporary vs.&nbsp;Sustainable Advantage</a></li>
+  </ul></li>
+  <li><a href="#porters-generic-strategies" id="toc-porters-generic-strategies" class="nav-link" data-scroll-target="#porters-generic-strategies">7.2 Porter’s Generic Strategies</a>
+  <ul class="collapse">
+  <li><a href="#cost-leadership-成本領導" id="toc-cost-leadership-成本領導" class="nav-link" data-scroll-target="#cost-leadership-成本領導">7.2.1 Cost Leadership (成本領導)</a></li>
+  <li><a href="#differentiation-差異化" id="toc-differentiation-差異化" class="nav-link" data-scroll-target="#differentiation-差異化">7.2.2 Differentiation (差異化)</a></li>
+  <li><a href="#focus-聚焦" id="toc-focus-聚焦" class="nav-link" data-scroll-target="#focus-聚焦">7.2.3 Focus (聚焦)</a></li>
+  </ul></li>
+  <li><a href="#the-stuck-in-the-middle-problem" id="toc-the-stuck-in-the-middle-problem" class="nav-link" data-scroll-target="#the-stuck-in-the-middle-problem">7.3 The “Stuck in the Middle” Problem</a>
+  <ul class="collapse">
+  <li><a href="#when-hybrid-strategies-work" id="toc-when-hybrid-strategies-work" class="nav-link" data-scroll-target="#when-hybrid-strategies-work">7.3.1 When Hybrid Strategies Work</a></li>
+  </ul></li>
+  <li><a href="#strategy-canvas-visualizing-differentiation" id="toc-strategy-canvas-visualizing-differentiation" class="nav-link" data-scroll-target="#strategy-canvas-visualizing-differentiation">7.4 Strategy Canvas — Visualizing Differentiation</a></li>
+  <li><a href="#connecting-strategy-to-capability" id="toc-connecting-strategy-to-capability" class="nav-link" data-scroll-target="#connecting-strategy-to-capability">7.5 Connecting Strategy to Capability</a></li>
+  <li><a href="#generic-strategies-in-2026" id="toc-generic-strategies-in-2026" class="nav-link" data-scroll-target="#generic-strategies-in-2026">7.6 Generic Strategies in 2026</a></li>
+  <li><a href="#self-check-questions" id="toc-self-check-questions" class="nav-link" data-scroll-target="#self-check-questions">Self-Check Questions</a></li>
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings">Further Readings</a></li>
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/publishing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch07.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch07.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/ch01.html">Part I. Concepts &amp; Frameworks</a></li><li class="breadcrumb-item"><a href="../content/ch07.html">Ch 7. Competitive Advantages &amp; Generic Strategies</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Publishing</h1>
+<h1 class="title">Competitive Advantages &amp; Generic Strategies</h1>
+<p class="subtitle lead">Chapter 7 — Choosing How to Compete</p>
 </div>
 
 
@@ -491,90 +514,466 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To get your Quarto webpage to show up with the url</p>
-<pre><code>yourname.github.io/yourrepo</code></pre>
-<p>you have a few steps.</p>
-<section id="turn-on-github-pages-for-your-repo" class="level2">
-<h2 class="anchored" data-anchor-id="turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</h2>
-<ul>
-<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.</li>
-<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
-</ul>
-<p>The GitHub Action will automatically recreate your website when you push to GitHub <strong>after</strong> you do the initial <code>gh-pages</code> set-up</p>
+<div class="tts-controls">
+<p><button onclick="TTS.speak('en')" title="Read in English">🔊 Read Aloud (EN)</button> <button onclick="TTS.speak('zh')" title="朗讀中文">🔊 朗讀 (中文)</button> <button onclick="TTS.pause()" title="Pause / Resume">⏸</button> <button onclick="TTS.stop()" title="Stop">⏹</button> <button onclick="TTS.setRate(-0.2)" title="Slower">🐢</button> <button onclick="TTS.setRate(0.2)" title="Faster">🐰</button> <span class="tts-status"></span></p>
+</div>
+<script src="../assets/tts-player.js"></script>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>After completing this chapter, students should be able to:</p>
+<ol type="1">
+<li>Define <strong>competitive advantage (CA)</strong> in terms of the V-P-C framework, and distinguish between <strong>temporary</strong> and <strong>sustainable</strong> advantage.</li>
+<li>Apply <strong>Porter’s Generic Strategies</strong> — cost leadership, differentiation, and focus — to classify a firm’s positioning choice.</li>
+<li>Recognize the <strong>“stuck in the middle”</strong> problem and explain when hybrid strategies actually work.</li>
+<li>Evaluate strategic positioning using the <strong>Strategy Canvas</strong> (Kim &amp; Mauborgne) to visualize differentiation.</li>
+<li>Connect generic strategies to the firm’s <strong>resources</strong> (Chapter 5) and <strong>dynamic capabilities</strong> (Chapter 6) — strategy is positioning <em>plus</em> the capacity to deliver it.</li>
+</ol>
+<hr>
 </section>
-<section id="do-your-first-publish-to-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></h2>
-<p>The first time you publish to <code>gh-pages</code>, you need to do so locally.</p>
-<ul>
-<li>On your local computer, open a terminal window and <code>cd</code> to your repo directory. Here is what that <code>cd</code> command looks like for me. You command will look different because your local repo will be somewhere else on your computer.</li>
-</ul>
-<pre><code>cd ~/Documents/GitHub/NOAA-quarto-simple</code></pre>
-<ul>
-<li>Publish to the <code>gh-pages</code>. In the terminal type</li>
-</ul>
-<pre><code>quarto publish gh-pages</code></pre>
-<p>This is going to render your webpage and then push the <code>_site</code> contents to the <code>gh-pages</code> branch.</p>
+<section id="what-is-competitive-advantage" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-competitive-advantage">7.1 What Is Competitive Advantage?</h2>
+<p>Throughout Chapters 3–6 we have been circling a central concept without defining it precisely. Now we make it explicit.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Definition — Competitive Advantage (競爭優勢)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A firm has a <strong>competitive advantage</strong> when it consistently earns <strong>above-average returns</strong> relative to its industry rivals. In V-P-C terms, this means the firm achieves either a <strong>higher (V−C)</strong> — more economic value created per unit — or captures a <strong>higher share of (V−C)</strong> through pricing power.</p>
+</div>
+</div>
+<p>Competitive advantage is always <strong>relative</strong>. A firm cannot have an “absolute” advantage in isolation — it has an advantage <em>over specific competitors</em> in <em>specific markets</em>. This is why competitor identification (Chapter 4) is foundational: without knowing who you compete against, you cannot know whether you have an advantage.</p>
+<section id="temporary-vs.-sustainable-advantage" class="level3">
+<h3 class="anchored" data-anchor-id="temporary-vs.-sustainable-advantage">7.1.1 Temporary vs.&nbsp;Sustainable Advantage</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Duration</th>
+<th>Driver</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Temporary CA</strong></td>
+<td>Months to ~3 years</td>
+<td>Product novelty, first-mover position, regulatory window</td>
+<td>Latest smartphone feature, early-mover in a new geography</td>
+</tr>
+<tr class="even">
+<td><strong>Sustainable CA</strong></td>
+<td>5+ years</td>
+<td>VRIN-passing resources, dynamic capabilities, structural positioning</td>
+<td>TSMC foundry leadership, Costco membership model, LVMH brand portfolio</td>
+</tr>
+</tbody>
+</table>
+<p>In <strong>hypercompetitive industries</strong> (D’Aveni, 1994) — software, consumer electronics, fashion — even “sustainable” advantage rarely lasts more than a decade. The ability to <strong>chain together temporary advantages</strong> through dynamic capabilities (Chapter 6) is itself a form of sustained advantage.</p>
+<hr>
 </section>
-<section id="dont-like-using-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</h2>
-<p>In some cases, you don’t want your website on the <code>gh-pages</code> branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the <code>gh-pages</code> branch.</p>
-<p>Here are the changes you need to make if you to avoid <code>gh-pages</code> branch.</p>
+</section>
+<section id="porters-generic-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="porters-generic-strategies">7.2 Porter’s Generic Strategies</h2>
+<p>Michael Porter’s 1980 framework remains the most influential map of strategic positioning. It identifies the choice on <strong>two dimensions</strong>:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    title["Porter's Generic Strategies"]
+    CL["Cost Leadership: Broad market, lowest cost"]
+    DIFF["Differentiation: Broad market, unique offering"]
+    FC["Focused Cost: Narrow segment, lowest cost in segment"]
+    FD["Focused Differentiation: Narrow segment, unique to segment"]
+    style CL fill:#D8C3A5,stroke:#004030
+    style DIFF fill:#004030,stroke:#004030,color:#FFFFFF
+    style FC fill:#EFE4D2,stroke:#004030
+    style FD fill:#EFE4D2,stroke:#004030
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>The two dimensions are:</p>
 <ul>
-<li>At the top of <code>_quarto.yml</code> add the following:</li>
+<li><strong>Source of advantage</strong>: lower cost vs.&nbsp;higher perceived value (differentiation)</li>
+<li><strong>Competitive scope</strong>: broad market vs.&nbsp;narrow segment (focus)</li>
 </ul>
-<pre><code>project: 
-  type: website
-  output-dir: docs</code></pre>
+<section id="cost-leadership-成本領導" class="level3">
+<h3 class="anchored" data-anchor-id="cost-leadership-成本領導">7.2.1 Cost Leadership (成本領導)</h3>
+<p>A cost-leadership strategy aims to be <strong>the lowest-cost producer</strong> in the industry, then either:</p>
 <ul>
-<li>On GitHub under Settings &gt; Pages set pages to be made from the <code>main</code> branch and the docs directory.</li>
-<li>Make sure <code>docs</code> is not listed in <code>.gitignore</code></li>
-<li>Publish the site the first time locally using <code>quarto publish</code> from the terminal</li>
-<li>Change the GitHub Action because you can’t use <code>quarto publish gh-pages</code>. You’ll need to push to the main branch yourself (in the GitHub Action)</li>
+<li><strong>Charge industry-average prices</strong> and earn higher margins, <strong>or</strong></li>
+<li><strong>Charge below-industry-average prices</strong> and gain market share.</li>
 </ul>
-<pre><code>on:
-  push:
-    branches: main
-
-name: Render and Publish
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2 
-        
-      - name: Set up R (needed for Rmd)
-        uses: r-lib/actions/setup-r@v2
-
-      - name: Install packages (needed for Rmd)
-        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite"))'
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          # To install LaTeX to build PDF book 
-          # tinytex: true 
-          # uncomment below and fill to pin a version
-          # version: 0.9.600
-      
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-
-      - name: Set up Git
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-
-      - name: Commit all changes and push
-        run: |
-          git add -A &amp;&amp; git commit -m 'Build site' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"</code></pre>
+<p>Sources of cost advantage typically include:</p>
+<ul>
+<li><strong>Economies of scale</strong> — fixed costs spread over high volume.</li>
+<li><strong>Economies of learning</strong> — unit costs decline predictably with cumulative experience.</li>
+<li><strong>Process efficiency</strong> — superior operational design (e.g., Toyota Production System).</li>
+<li><strong>Input cost advantages</strong> — preferential access to raw materials, energy, or labor.</li>
+<li><strong>Vertical integration efficiencies</strong> — reduced transaction costs across the value chain.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Cost leadership is not “cheap”
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A cost leader maintains <strong>competitive product quality</strong> while minimizing cost. Walmart, Costco, IKEA, and Toyota are all cost leaders — none of them sells obviously inferior products. The discipline is to deliver acceptable V at structurally lower C, not to race quality to the bottom.</p>
+</div>
+</div>
+</section>
+<section id="differentiation-差異化" class="level3">
+<h3 class="anchored" data-anchor-id="differentiation-差異化">7.2.2 Differentiation (差異化)</h3>
+<p>A differentiation strategy aims to be <strong>uniquely valuable</strong> to customers along dimensions they care about — features, design, brand, service, ecosystem — and charge a <strong>premium</strong> that exceeds the cost of providing the differentiation.</p>
+<p>Sources of differentiation typically include:</p>
+<ul>
+<li><strong>Product features</strong> — performance, reliability, design.</li>
+<li><strong>Brand and reputation</strong> — accumulated trust, status signaling.</li>
+<li><strong>Customer service and relationships</strong> — perceived value of the experience.</li>
+<li><strong>Ecosystem and complementarity</strong> — value derived from compatible products and services.</li>
+<li><strong>Proprietary technology</strong> — patents, trade secrets, network effects.</li>
+</ul>
+<p>The classic differentiators include Apple (design + ecosystem), BMW (engineering + brand), Starbucks (third-place experience), and Hermès (craftsmanship + scarcity).</p>
+</section>
+<section id="focus-聚焦" class="level3">
+<h3 class="anchored" data-anchor-id="focus-聚焦">7.2.3 Focus (聚焦)</h3>
+<p>A focus strategy targets a <strong>narrow market segment</strong> that is poorly served by broad-market competitors, and competes within that segment on either cost or differentiation. Examples:</p>
+<ul>
+<li><strong>Focused cost</strong>: Aldi (limited assortment, hard discount in groceries).</li>
+<li><strong>Focused differentiation</strong>: Ferrari (ultra-premium sports cars), Bloomberg Terminal (financial professionals).</li>
+</ul>
+<p>Focus works when the segment is large enough to support the firm but small enough that broad-market competitors cannot serve it efficiently.</p>
+<hr>
+</section>
+</section>
+<section id="the-stuck-in-the-middle-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-stuck-in-the-middle-problem">7.3 The “Stuck in the Middle” Problem</h2>
+<p>Porter’s controversial argument: firms that try to <strong>simultaneously pursue cost leadership and differentiation</strong> often achieve neither — they are <strong>“stuck in the middle”</strong> (卡在中間), with cost structure too high to compete on price and offering too generic to command a premium.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A["Trying to be all things to all customers"]
+    B["Costs creep up: customization, variety, complexity"]
+    C["Differentiation diluted: cannot focus on any one customer well"]
+    D["Margins squeezed from both ends"]
+    A --&gt; B
+    A --&gt; C
+    B --&gt; D
+    C --&gt; D
+    style D fill:#EFE4D2,stroke:#004030
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Classic examples include US legacy airlines (sandwiched between low-cost carriers and premium full-service), and middle-tier department stores (squeezed between fast fashion and luxury).</p>
+<section id="when-hybrid-strategies-work" class="level3">
+<h3 class="anchored" data-anchor-id="when-hybrid-strategies-work">7.3.1 When Hybrid Strategies Work</h3>
+<p>The “stuck in the middle” warning is not absolute. Hybrid strategies can work when:</p>
+<ul>
+<li><strong>Operational excellence reduces the trade-off</strong> — Toyota achieves both quality and low cost; IKEA achieves both design and price; Costco achieves both broad assortment and low prices.</li>
+<li><strong>Different segments are served by different parts of the firm</strong> — Toyota’s Lexus division differentiates while the Toyota brand pursues mass market.</li>
+<li><strong>Industry structure changes</strong> — digital platforms enable mass customization at low marginal cost (Amazon, Shopify-powered storefronts).</li>
+</ul>
+<p>The key insight: hybrid strategies require <strong>organizational sophistication</strong> — usually only large, mature firms can execute them. Younger or smaller firms generally must pick a clear position.</p>
+<hr>
+</section>
+</section>
+<section id="strategy-canvas-visualizing-differentiation" class="level2">
+<h2 class="anchored" data-anchor-id="strategy-canvas-visualizing-differentiation">7.4 Strategy Canvas — Visualizing Differentiation</h2>
+<p>W. Chan Kim and Renée Mauborgne’s <strong>Strategy Canvas</strong> (from <em>Blue Ocean Strategy</em>, 2005) offers a powerful complement to Porter’s framework. Instead of classifying strategies, it <strong>visualizes</strong> them.</p>
+<p>The canvas plots <strong>competitive factors</strong> on the x-axis and <strong>investment level</strong> on the y-axis. Each firm’s strategy appears as a curve. Strong differentiation shows up as a curve that <strong>diverges</strong> from competitors’.</p>
+<p>For example, Cirque du Soleil’s strategy curve in the circus industry diverged dramatically from traditional circuses:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Traditional Circus</th>
+<th>Cirque du Soleil</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Star performers</td>
+<td>High</td>
+<td>Eliminated</td>
+</tr>
+<tr class="even">
+<td>Animal shows</td>
+<td>High</td>
+<td>Eliminated</td>
+</tr>
+<tr class="odd">
+<td>Aisle concession sales</td>
+<td>High</td>
+<td>Reduced</td>
+</tr>
+<tr class="even">
+<td>Multiple show arenas</td>
+<td>High</td>
+<td>Reduced</td>
+</tr>
+<tr class="odd">
+<td>Unique venue</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+<tr class="even">
+<td>Theme</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td>Refined environment</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+<tr class="even">
+<td>Multiple productions</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+<tr class="odd">
+<td>Artistic music and dance</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<p>Cirque didn’t out-compete traditional circuses; it <strong>redefined the category</strong>. This is the <strong>Blue Ocean</strong> logic — create uncontested market space rather than fight for share in a “Red Ocean” of bloody competition.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The Four Actions Framework
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kim &amp; Mauborgne propose four questions to design a Blue Ocean strategy:</p>
+<ol type="1">
+<li><strong>Eliminate</strong> — Which factors taken for granted in the industry should be eliminated?</li>
+<li><strong>Reduce</strong> — Which factors should be reduced well below industry standard?</li>
+<li><strong>Raise</strong> — Which factors should be raised well above industry standard?</li>
+<li><strong>Create</strong> — Which factors should be created that the industry has never offered?</li>
+</ol>
+<p>Apply these to your TP focal company in TP3 to identify potential repositioning moves.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="connecting-strategy-to-capability" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-strategy-to-capability">7.5 Connecting Strategy to Capability</h2>
+<p>A generic strategy is <strong>a positioning choice</strong> — but positioning without underlying capability is hollow. Chapter 5 (RBV) and Chapter 6 (dynamic capabilities) return here as essential complements:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Required Resources</th>
+<th>Required Capabilities</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cost Leadership</strong></td>
+<td>Scale, efficient assets, low-cost inputs</td>
+<td>Operational excellence, supply-chain mastery, continuous cost engineering</td>
+</tr>
+<tr class="even">
+<td><strong>Differentiation</strong></td>
+<td>Brand, IP, design talent, ecosystem partners</td>
+<td>Innovation pipeline, customer insight, premium service delivery</td>
+</tr>
+<tr class="odd">
+<td><strong>Focused Cost</strong></td>
+<td>Niche operations, narrow asset base</td>
+<td>Deep segment knowledge, lean operations</td>
+</tr>
+<tr class="even">
+<td><strong>Focused Differentiation</strong></td>
+<td>Niche brand, specialist talent</td>
+<td>Expert-level customer intimacy, segment-specific innovation</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>The integration test
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ask of any proposed strategy: <em>Does the firm’s resource base and capability portfolio actually support this position?</em> A “differentiation” strategy without R&amp;D capability is wishful thinking. A “cost leadership” strategy without operational discipline collapses on first cost shock. <strong>Strategy = position × capability</strong>, not just position.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="generic-strategies-in-2026" class="level2">
+<h2 class="anchored" data-anchor-id="generic-strategies-in-2026">7.6 Generic Strategies in 2026</h2>
+<p>Three forces are reshaping how generic strategies play out:</p>
+<ul>
+<li><strong>AI compresses differentiation lifecycles</strong> — what once took 18 months to copy now takes 6 weeks. Differentiators must run faster, with shorter advantage windows but more frequent renewal.</li>
+<li><strong>Sustainability becomes a differentiation axis</strong> — carbon-neutral supply chains, circular product design, ESG-aligned sourcing are increasingly value drivers, not just compliance costs.</li>
+<li><strong>Geopolitical bifurcation favors focus</strong> — firms that try to be globally undifferentiated face mounting compliance complexity. Specializing in one bloc (US-aligned vs.&nbsp;China-aligned) is increasingly a viable focus strategy.</li>
+</ul>
+<p>The generic-strategies framework remains valid; the <strong>clock speed</strong> and the <strong>available positioning axes</strong> have changed.</p>
+<hr>
+</section>
+<section id="self-check-questions" class="level2">
+<h2 class="anchored" data-anchor-id="self-check-questions">Self-Check Questions</h2>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 1 — Classifying Generic Strategies
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For each of the following Taiwan companies, identify the dominant generic strategy and justify with two pieces of evidence:</p>
+<ol type="a">
+<li>全聯福利中心 PX Mart.</li>
+<li>鼎泰豐 Din Tai Fung.</li>
+<li>微星科技 MSI (gaming PCs).</li>
+<li>統一超商 7-ELEVEN Taiwan.</li>
+<li>大同電鍋 TATUNG rice cookers.</li>
+<li>誠品書店 Eslite Bookstore.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 2 — Diagnosing Stuck-in-the-Middle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Identify a firm (Taiwan or global) that you believe is currently <strong>stuck in the middle</strong>.</p>
+<ol type="a">
+<li>Describe its current positioning ambiguity.</li>
+<li>Identify the cost-leader and differentiator competitors squeezing it.</li>
+<li>Recommend a clear repositioning — should it move toward cost leadership, differentiation, or focus? Justify with reference to its existing resources and capabilities.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 3 — Strategy Canvas
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For your TP focal company, build a simple Strategy Canvas:</p>
+<ol type="a">
+<li>Identify 6–8 <strong>competitive factors</strong> that customers in this industry care about.</li>
+<li>Plot the focal firm’s investment level (Low / Medium / High) for each factor.</li>
+<li>Plot two main competitors on the same axes.</li>
+<li>Identify one factor where the focal firm could <strong>eliminate</strong> investment, and one where it could <strong>create</strong> a new dimension of competition.</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Question 4 — Strategy + Capability Integration
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Suppose a Taiwanese mid-sized contract manufacturer announces it will pursue a <strong>branded differentiation strategy</strong> in consumer electronics over the next 5 years.</p>
+<ol type="a">
+<li>List the resources and capabilities such a strategy requires (cite Chapter 5 categories).</li>
+<li>Identify the gaps between current contract-manufacturing capabilities and required branded-business capabilities.</li>
+<li>Recommend whether the firm should build, buy, or partner to close each gap.</li>
+<li>What dynamic capabilities (Chapter 6) will be tested most heavily in this transition?</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="further-readings" class="level2">
+<h2 class="anchored" data-anchor-id="further-readings">Further Readings</h2>
+<ul>
+<li><strong>Porter, M. E. (1980)</strong>. <em>Competitive Strategy: Techniques for Analyzing Industries and Competitors</em>. Free Press. — The foundational text on generic strategies.</li>
+<li><strong>Porter, M. E. (1985)</strong>. <em>Competitive Advantage: Creating and Sustaining Superior Performance</em>. Free Press. — The deeper treatment with value-chain integration.</li>
+<li><strong>Kim, W. C. &amp; Mauborgne, R. (2005)</strong>. <em>Blue Ocean Strategy</em>. Harvard Business School Press. — Strategy Canvas and Four Actions Framework.</li>
+<li><strong>Magretta, J. (2011)</strong>. <em>Understanding Michael Porter: The Essential Guide to Competition and Strategy</em>. Harvard Business Review Press. — A clear, modern summary.</li>
+<li><strong>Grant, R. M. (2016)</strong>. <em>Contemporary Strategy Analysis</em>, 9th ed., Chapters 7–9 — covers cost advantage, differentiation, and industry evolution.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Coursera Companion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>[CS] Corporate Strategy</strong> — UIUC Gies, modules on competitive positioning directly extend this chapter.</li>
+<li><strong>[ENT] Entrepreneurship 1</strong> — opportunity-segmentation modules complement the focus-strategy discussion.</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>Chapter 7 has provided the framework for <strong>how to compete</strong> in an established industry. But not every firm operates in an established industry — many are creating new markets, deploying disruptive technologies, or operating as entrepreneurial ventures. Chapter 8 turns to <strong>technology, innovation, and entrepreneurship</strong> — the strategic logic of building advantage where the rules of competition are still being written.</p>
 
 
 </section>
@@ -993,6 +1392,18 @@ jobs:
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/ch06.html" class="pagination-link" aria-label="Ch 6. Core Competencies &amp; Dynamic Capabilities">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Ch 6. Core Competencies &amp; Dynamic Capabilities</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/ch08.qmd" class="pagination-link" aria-label="Ch 8. Technology, Innovation &amp; Entrepreneurship">
+        <span class="nav-page-text">Ch 8. Technology, Innovation &amp; Entrepreneurship</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1001,7 +1412,7 @@ jobs:
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/publishing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/ch07.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/ch07.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
