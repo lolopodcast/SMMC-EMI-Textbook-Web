@@ -1,0 +1,281 @@
+---
+title: "Strategic Alliances and M&A"
+subtitle: "Chapter 12 — Vehicles for Strategic Growth"
+---
+
+{{< include ../_includes/tts-player.html >}}
+
+## Learning Objectives
+
+After completing this chapter, students should be able to:
+
+1. Distinguish among three modes of strategic growth — **internal development**, **strategic alliances**, and **mergers & acquisitions (M&A)** — and identify the conditions favoring each.
+2. Classify strategic alliances by structure (equity, non-equity), purpose (R&D, marketing, supply chain), and partner relationship (horizontal, vertical, complementor).
+3. Apply the **make-buy-ally** decision framework to choose among growth vehicles.
+4. Recognize why **most M&A deals destroy value**, and identify the conditions under which M&A creates value.
+5. Evaluate **integration challenges** in M&A — cultural, organizational, customer-facing — and design integration plans that preserve the value created by the deal.
+
+---
+
+## 12.1 Three Vehicles for Strategic Growth
+
+Every strategic move discussed in Chapters 7–11 — pursuing a generic strategy, integrating vertically, diversifying horizontally, expanding geographically — must be **executed through some organizational vehicle**. Three are common:
+
+| Vehicle | Description | Example |
+|---|---|---|
+| **Internal development (內部發展)** | Build the new capability or business in-house | Apple developing M-series silicon |
+| **Strategic alliance (策略聯盟)** | Partner with another firm without merging | Star Alliance airline cooperation |
+| **Mergers & acquisitions (M&A, 併購)** | Acquire or merge with another firm | Microsoft acquiring Activision Blizzard |
+
+Each vehicle trades off three factors: **speed**, **commitment**, and **control**. Internal development is slow but preserves full control; M&A is fast but creates integration risk; alliances offer speed without full commitment but constrain decision rights.
+
+---
+
+## 12.2 Strategic Alliances — Structures and Purposes
+
+A **strategic alliance** is a cooperative arrangement between two or more independent firms to pursue shared strategic objectives without merging. Alliances vary in **structure** and **purpose**.
+
+### 12.2.1 Equity vs. Non-Equity Alliances
+
+```{mermaid}
+flowchart LR
+    NE["Non-equity: Contractual cooperation, no shared ownership"]
+    EQ["Equity: One partner takes a stake in the other"]
+    JV["Joint Venture: New legal entity jointly owned"]
+    NE --> EQ
+    EQ --> JV
+    style NE fill:#FAF6F0,stroke:#004030
+    style EQ fill:#D8C3A5,stroke:#004030
+    style JV fill:#004030,stroke:#004030,color:#FFFFFF
+```
+
+- **Non-equity alliances** — Marketing partnerships, R&D consortia, licensing agreements, supply contracts. Fast to set up, easy to dissolve, lowest commitment.
+- **Equity alliances** — One firm takes a minority stake in the partner, signaling commitment and aligning incentives. Common in technology partnerships.
+- **Joint ventures** — A new legal entity jointly owned and controlled by two or more parents. Highest commitment among alliances; often used for market entry, large R&D programs, or capital-intensive projects.
+
+### 12.2.2 Purpose-Based Classification
+
+| Purpose | Examples |
+|---|---|
+| **Technology / R&D** | Pre-competitive research consortia, joint patent development |
+| **Marketing / Distribution** | Cross-promotion agreements, co-branded products, distribution partnerships |
+| **Production / Supply chain** | Long-term supply contracts, joint manufacturing facilities |
+| **Standards / Ecosystem** | USB-C, 5G, HDMI standard-setting alliances |
+| **Market entry** | JVs with local partners for entry into restricted or unfamiliar markets |
+
+::: {.callout-tip}
+## TSMC's alliance strategy
+
+TSMC operates a sophisticated **alliance ecosystem**:
+
+- **Customer alliances** — close design-process integration with key customers (Apple, NVIDIA, AMD) without entering chip design.
+- **Supplier alliances** — long-term partnerships with EUV-machine maker ASML, including co-investment in R&D.
+- **Standards alliances** — participation in industry-wide foundry standards (e.g., compute express link).
+- **Geographic alliances** — strategic partnerships with host governments (US, Japan, Germany) for fab investments backed by subsidies.
+
+The result: TSMC operates within a **value web** that creates structural dependencies favoring TSMC, without TSMC having to acquire any of these partners.
+:::
+
+### 12.2.3 When Alliances Outperform M&A
+
+Alliances are typically preferred when:
+
+- **The needed capability is one of many** — full acquisition would burden the buyer with unwanted businesses.
+- **Outcomes are uncertain** — alliance preserves optionality; can be dissolved if results disappoint.
+- **Antitrust risk in M&A is high** — alliances avoid the regulatory scrutiny full mergers attract.
+- **Cultures are very different** — keeping organizations separate avoids integration friction.
+
+---
+
+## 12.3 The Alliance Lifecycle and Failure Modes
+
+Alliances are notoriously fragile. Studies consistently show **40–60% alliance failure rates**. Common failure modes:
+
+| Stage | Failure mode |
+|---|---|
+| **Formation** | Partner mismatch — different objectives, mismatched scale, incompatible cultures |
+| **Operation** | Free-riding — one partner extracts value while contributing less |
+| **Operation** | Knowledge leakage — proprietary technology flows to a partner who becomes a competitor |
+| **Operation** | Power asymmetry shifts — a partner who needed the alliance no longer does |
+| **Dissolution** | Disagreements over IP, customer relationships, residual assets |
+
+Successful alliances typically share three features:
+
+1. **Clear objectives and metrics** — partners know what each is contributing and what success looks like.
+2. **Aligned incentives** — risk and reward are shared in proportion to contribution.
+3. **Active alliance management** — dedicated managers, regular reviews, mechanisms for resolving disputes.
+
+---
+
+## 12.4 Mergers and Acquisitions — A Field Where Most Lose
+
+The empirical evidence on M&A is sobering:
+
+> **Studies consistently find that 50–70% of M&A deals destroy value for the acquirer's shareholders.** The acquired firm's shareholders typically gain (the premium), while the acquirer's shareholders typically lose.
+
+Why is the failure rate so high? Several mechanisms:
+
+| Cause | Mechanism |
+|---|---|
+| **Overpayment** | Premium paid exceeds the synergies achievable; deal economics are negative from day one |
+| **Synergy overestimation** | Pre-deal forecasts are optimistic; actual cost savings and revenue benefits are smaller |
+| **Cultural clash** | Two organizations that look similar on paper operate very differently in practice |
+| **Customer attrition** | Customers leave during the disruption of integration |
+| **Talent flight** | Key people from the acquired firm leave, taking knowledge and relationships |
+| **Strategic distraction** | Senior leadership absorbed in integration; competitive position erodes during the transition |
+
+### 12.4.1 When M&A Creates Value
+
+The minority of value-creating deals share common features:
+
+- **Clear strategic rationale** beyond financial-engineering (real operational synergies, capability acquisition, market access).
+- **Disciplined valuation** — walking away when the price exceeds the standalone value plus realistic synergies.
+- **Pre-planned integration** — integration design begins before the deal closes, not after.
+- **Cultural compatibility** — or explicit acceptance of cultural differences with separate-but-aligned operating models.
+- **Retained key talent** — through compensation design, role clarity, and respect for the acquired firm's identity.
+
+::: {.callout-tip}
+## Acquisition archetypes that work
+
+- **Bolt-on acquisitions** — small acquisitions of specific capabilities or geographies, integrated into the buyer's existing structure. Lower risk than transformational deals.
+- **Roll-ups** — acquiring multiple players in a fragmented industry to achieve scale economies. Works when integration playbook is well-developed.
+- **Capability acquisitions** — buying a small firm primarily for its technology and team (e.g., big tech "acqui-hires"). Works when the buyer can absorb the talent without losing them.
+- **Distress acquisitions** — buying troubled firms at favorable prices when synergies and turnaround capabilities exist.
+
+**Transformational megamergers** (large firms of similar size) have the worst track record.
+:::
+
+---
+
+## 12.5 The Make-Buy-Ally Decision Framework
+
+How to choose among the three vehicles? A useful decision logic:
+
+```{mermaid}
+flowchart TB
+    Q1["Is the capability core to long-term competitive advantage?"]
+    Q2["Is speed critical?"]
+    Q3["Is the target willing to be acquired at a fair price?"]
+    Q4["Can integration risks be managed?"]
+    INTERNAL["INTERNAL DEVELOPMENT"]
+    ALLIANCE["ALLIANCE"]
+    MA["M&A"]
+    Q1 -->|"Yes, and time permits"| INTERNAL
+    Q1 -->|"Yes, but speed needed"| Q2
+    Q1 -->|"No, supplementary capability"| ALLIANCE
+    Q2 -->|"Yes"| Q3
+    Q2 -->|"No"| INTERNAL
+    Q3 -->|"Yes"| Q4
+    Q3 -->|"No"| ALLIANCE
+    Q4 -->|"Yes"| MA
+    Q4 -->|"No"| ALLIANCE
+    style INTERNAL fill:#D8C3A5,stroke:#004030
+    style ALLIANCE fill:#EFE4D2,stroke:#004030
+    style MA fill:#004030,stroke:#004030,color:#FFFFFF
+```
+
+The framework is intentionally simplified. Real decisions involve trade-offs across multiple dimensions and often combine vehicles (e.g., starting with an alliance, then acquiring the partner).
+
+---
+
+## 12.6 Growth Vehicles in 2026
+
+Several patterns are reshaping how firms choose growth vehicles:
+
+- **AI-driven M&A diligence** — AI tools accelerate due-diligence on financial, operational, and cultural dimensions, lowering the cost of evaluating deals. But AI cannot replace judgment on integration feasibility.
+- **Geopolitical screening of M&A** — Cross-border deals face increasing national-security review (CFIUS in the US, similar regimes in EU, UK, and increasingly Asia). Some deals that were routine 10 years ago are now blocked.
+- **Ecosystem-style alliances** — Platform firms (Apple, Amazon, Microsoft) build vast networks of small alliances rather than acquiring many partners, preserving optionality and reducing antitrust exposure.
+- **Sustainability-driven divestitures** — Firms selling carbon-intensive businesses to investors who can manage them outside public-market scrutiny. The other side of the deal: specialized acquirers consolidating "unloved" assets.
+
+::: {.callout-tip}
+## Vehicle choice in your TP analysis
+
+For TP3 — Growth Strategy, recommend **how** the firm should pursue your proposed growth direction, not just **what**:
+
+1. Should it build internally (preserve control, slow)?
+2. Should it ally (faster, optionality, but limited control)?
+3. Should it acquire (fastest, but integration risk)?
+
+Justify with reference to the firm's resources (Chapter 5), capabilities (Chapter 6), and the strategic urgency. A great strategic recommendation that comes with the wrong vehicle choice will fail in execution.
+:::
+
+---
+
+## Self-Check Questions
+
+::: {.callout-caution collapse="true"}
+## Question 1 — Classifying Growth Vehicles
+
+For each of the following recent moves, identify the growth vehicle (internal, alliance, M&A) and assess its strategic logic:
+
+a) **Microsoft acquiring Activision Blizzard** (closed 2023).
+b) **Tesla building its Berlin Gigafactory** from scratch.
+c) **Toyota–BMW R&D alliance** on hydrogen fuel cells.
+d) **TSMC's Arizona fab** built with US-government incentives.
+e) **Adobe's attempted acquisition of Figma** (blocked in 2023).
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 2 — Diagnosing Alliance Risk
+
+Suppose Taiwan firm A enters a 50/50 JV with Chinese firm B to manufacture and distribute consumer electronics in mainland China. A contributes brand and technology; B contributes manufacturing and distribution.
+
+a) Identify three failure modes from Section 12.3 most likely to affect this JV.
+b) Recommend governance mechanisms to mitigate each risk.
+c) Predict the JV's likely state in 5 years if no preventive action is taken.
+d) Suggest an exit strategy if the JV becomes non-viable.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 3 — Why M&A Fails
+
+Pick a famous M&A deal that destroyed value (e.g., AOL–Time Warner, Daimler–Chrysler, HP–Autonomy, Microsoft–Nokia).
+
+a) Identify the strategic rationale claimed at the time.
+b) Diagnose which causes from Section 12.4 contributed most to the failure.
+c) Identify a related deal in the same period that worked, and contrast the design choices.
+:::
+
+::: {.callout-caution collapse="true"}
+## Question 4 — Make-Buy-Ally Recommendation
+
+A Taiwanese mid-sized fintech wants to add AI-driven robo-advisory capabilities to its existing wealth-management platform within 18 months. Three options:
+
+a) **Build internally** — hire AI engineers and develop in-house.
+b) **Ally** — partner with a specialized robo-advisory startup.
+c) **Acquire** — buy a small robo-advisor outright.
+
+For each option, list two pros and two cons. Apply the make-buy-ally framework from Section 12.5 and recommend the best path with justification.
+:::
+
+---
+
+## Further Readings
+
+- **Williamson, O. E. (1991)**. "Comparative Economic Organization: The Analysis of Discrete Structural Alternatives." *Administrative Science Quarterly*, 36(2), 269–296.
+- **Dyer, J. H., Kale, P., & Singh, H. (2004)**. "When to Ally and When to Acquire." *Harvard Business Review*, July–August. — Practical decision framework.
+- **Kale, P. & Singh, H. (2009)**. "Managing Strategic Alliances: What Do We Know Now, and Where Do We Go From Here?" *Academy of Management Perspectives*, 23(3), 45–62.
+- **Christensen, C. M., Alton, R., Rising, C., & Waldeck, A. (2011)**. "The New M&A Playbook." *Harvard Business Review*, March.
+- **Bower, J. L. (2001)**. "Not All M&As Are Alike — and That Matters." *Harvard Business Review*, March. — The five archetypes of acquisitions.
+- **Grant, R. M. (2016)**. *Contemporary Strategy Analysis*, 9th ed., Chapter 15 — sections on growth modes.
+
+::: {.callout-note}
+## Coursera Companion
+- **[CS] Corporate Strategy** — UIUC Gies, modules on corporate development, M&A, and alliances directly extend this chapter.
+:::
+
+---
+
+## Looking Ahead — Transition to Part II
+
+Chapter 12 concludes **Part I** of this textbook — the **conceptual frameworks** of strategic management. Across twelve chapters, we have built the analytical vocabulary you will need to make sense of any strategic situation:
+
+- **The V-P-C lens** for value creation, capture, and sustaining (Ch 2)
+- **External analysis** through PESTEL, Five Forces, and competitive dynamics (Ch 3–4)
+- **Internal analysis** through resources, capabilities, value chain, and dynamic capabilities (Ch 5–6)
+- **Business-level positioning** through generic strategies and innovation (Ch 7–8)
+- **Corporate-level scope** through vertical, horizontal, geographical, and organizational choices (Ch 9–12)
+
+**Part II** turns from concepts to **practice**. Over the next six chapters, we walk you through the actual operational steps of the **Term Project (TP)** — selecting a focal company (Ch 13), conducting external and internal analysis (Ch 14–16), formulating a growth strategy (Ch 17), and presenting your work in the end-of-semester **SPA contest** (Ch 18). Every framework in Part I will be applied here, and your group's TP submission will become the most concrete demonstration of what this course has taught you.
+
+The frameworks are tools. Part II is where you learn to use them.
