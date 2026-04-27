@@ -1,1 +1,82 @@
+<!-- ============================================================
+     SMMC-EMI Textbook · Friendly Copyright Notice
+     每次右鍵點擊都會跳出友善版權提醒對話框
+     ============================================================ -->
 
+<style>
+  .smmc-copyright-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 64, 48, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  .smmc-copyright-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .smmc-copyright-modal {
+    background: #FAF6F0;
+    color: #2C2C2C;
+    max-width: 520px;
+    width: calc(100% - 2rem);
+    border-radius: 14px;
+    box-shadow: 0 24px 60px rgba(0, 64, 48, 0.35);
+    border-top: 6px solid #004030;
+    padding: 2rem 2rem 1.5rem;
+    transform: translateY(20px) scale(0.96);
+    transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+    line-height: 1.65;
+  }
+  .smmc-copyright-overlay.is-open .smmc-copyright-modal {
+    transform: translateY(0) scale(1);
+  }
+  .smmc-copyright-title {
+    color: #004030;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .smmc-copyright-title::before {
+    content: "📚";
+    font-size: 1.4rem;
+  }
+  .smmc-copyright-subtitle {
+    color: #6B6B6B;
+    font-size: 0.85rem;
+    margin: 0 0 1.2rem;
+    font-style: italic;
+  }
+  .smmc-copyright-body {
+    font-size: 0.95rem;
+    margin: 0 0 1.5rem;
+  }
+  .smmc-copyright-body strong { color: #004030; }
+  .smmc-copyright-body .smmc-license {
+    display: inline-block;
+    background: #D8C3A5;
+    color: #004030;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin: 0 0.15rem;
+  }
+  .smmc-copyright-divider {
+    border: 0;
+    border-top: 1px solid #E5DDD0;
+    margin: 1.2rem 0;
+  }
+  .smmc-copyright-cite {
+    background: #EFE4D
