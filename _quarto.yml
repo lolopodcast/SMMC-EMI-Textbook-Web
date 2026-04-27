@@ -103,7 +103,8 @@ format:
     back-to-top-navigation: true
     mermaid:
       theme: neutral
-    include-in-header:
+    include-after-body:
+      - _partials/copyright-notice.html
       - text: |
           <meta name="referrer" content="strict-origin-when-cross-origin">
           <meta name="robots" content="index, follow, max-snippet:200, max-image-preview:large">
