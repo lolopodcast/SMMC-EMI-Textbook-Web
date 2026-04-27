@@ -44,9 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6bd7958194434c37723e667758bde609.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-6d80c4f801f565e7ed4ac6e68bc89f28.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-6bd7958194434c37723e667758bde609.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0b55b6ebfdfab54f7a595aebe1461714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e7a651381c86812df0521b3987086487.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-0b55b6ebfdfab54f7a595aebe1461714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -519,8 +519,89 @@ title: your title
 </section>
 
 </main> <!-- /main -->
+<!-- ============================================================
+     SMMC-EMI Textbook · Friendly Copyright Notice
+     每次右鍵點擊都會跳出友善版權提醒對話框
+     ============================================================ -->
 
-<script id="quarto-html-after-body" type="application/javascript">
+<style>
+  .smmc-copyright-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 64, 48, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  .smmc-copyright-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .smmc-copyright-modal {
+    background: #FAF6F0;
+    color: #2C2C2C;
+    max-width: 520px;
+    width: calc(100% - 2rem);
+    border-radius: 14px;
+    box-shadow: 0 24px 60px rgba(0, 64, 48, 0.35);
+    border-top: 6px solid #004030;
+    padding: 2rem 2rem 1.5rem;
+    transform: translateY(20px) scale(0.96);
+    transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+    line-height: 1.65;
+  }
+  .smmc-copyright-overlay.is-open .smmc-copyright-modal {
+    transform: translateY(0) scale(1);
+  }
+  .smmc-copyright-title {
+    color: #004030;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .smmc-copyright-title::before {
+    content: "📚";
+    font-size: 1.4rem;
+  }
+  .smmc-copyright-subtitle {
+    color: #6B6B6B;
+    font-size: 0.85rem;
+    margin: 0 0 1.2rem;
+    font-style: italic;
+  }
+  .smmc-copyright-body {
+    font-size: 0.95rem;
+    margin: 0 0 1.5rem;
+  }
+  .smmc-copyright-body strong { color: #004030; }
+  .smmc-copyright-body .smmc-license {
+    display: inline-block;
+    background: #D8C3A5;
+    color: #004030;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin: 0 0.15rem;
+  }
+  .smmc-copyright-divider {
+    border: 0;
+    border-top: 1px solid #E5DDD0;
+    margin: 1.2rem 0;
+  }
+  .smmc-copyright-cite {
+    background: #EFE4D
+<script id = "quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -937,19 +1018,21 @@ title: your title
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 <a href="https://www.ibs.ncnu.edu.tw/index.php/faculty/tenured-professor/299-smlo">Prof.&nbsp;Shihmin Lo</a> · Department of International Business Studies · National Chi Nan University, Taiwan<br>
-Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> · For educational use only · Not for commercial republication</p>
-</div>   
+      <div class='footer-contents'>&copy; 2026 [Prof. Shihmin Lo](https://www.ibs.ncnu.edu.tw/index.php/faculty/tenured-professor/299-smlo) · Department of International Business Studies · National Chi Nan University, Taiwan  
+Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) · For educational use only · Not for commercial republication
+</div>  
+    </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/add-content.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/add-content.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org/">Quarto</a> · <a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new">Report an issue</a></p>
-</div>
+      <div class='footer-contents'>Built with [Quarto](https://quarto.org/) · [Report an issue](https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new)
+</div>  
+    </div>
   </div>
 </footer>
 
+</body>
 
-
-
-</body></html>
+</html>
+</style></div><footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/edit/main/content/add-content.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/blob/main/content/add-content.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lolopodcast/SMMC-EMI-Textbook-Web/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
