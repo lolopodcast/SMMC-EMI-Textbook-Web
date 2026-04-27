@@ -103,8 +103,7 @@ format:
     back-to-top-navigation: true
     mermaid:
       theme: neutral
-    include-after-body:
-      - _partials/copyright-notice.html
+    include-in-header:
       - text: |
           <meta name="referrer" content="strict-origin-when-cross-origin">
           <meta name="robots" content="index, follow, max-snippet:200, max-image-preview:large">
@@ -112,4 +111,5 @@ format:
           <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
           <meta name="copyright" content="© 2026 Prof. Shihmin Lo, NCNU. CC BY-NC-SA 4.0">
           <meta name="author" content="Prof. Shihmin Lo, National Chi Nan University, Taiwan">
-          <script src="assets/copyright-notice.js" defer></script>
+    include-after-body:
+      - _partials/copyright-notice.html
